@@ -4418,7 +4418,7 @@ This is what determines when the model stops calculating</doc>
 				<isee:placeholder x="1321.5" y="1540.58" name="Behavioral Placeholder"/>
 				<isee:placeholder x="1321.5" y="1629.58" name="Planetary Boundaries Placeholder"/>
 			</view>
-			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="115" home_view="true" type="interface">
+			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" home_view="true" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4447,7 +4447,7 @@ This is what determines when the model stops calculating</doc>
 					<image width="4400" height="2475" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Intro Page BG.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
