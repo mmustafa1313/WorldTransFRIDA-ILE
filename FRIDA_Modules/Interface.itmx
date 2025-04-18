@@ -5,7 +5,7 @@
 		<name>Interface</name>
 		<uuid>53030c2e-cd2f-4ffd-b370-dc25b4a09591</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8" isee:build_number="3578" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="3.8.1" isee:build_number="3623" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="NaN" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
@@ -26,6 +26,7 @@
 			<isee:ignored_word>INvestment</isee:ignored_word>
 			<isee:ignored_word>Edenhofer</isee:ignored_word>
 			<isee:ignored_word>hydropower</isee:ignored_word>
+			<isee:ignored_word>C3S</isee:ignored_word>
 		</isee:ignored_words>
 	</isee:prefs>
 	<isee:multiplayer_settings include_chat="true" allow_observers="false" advance_time_increment="1" max_advance_time_in_ms="0" model_stops_when_players_drop="false" observer_start_page="home_page" enabled="false"/>
@@ -448,19 +449,19 @@
 				<units>1</units>
 			</aux>
 			<aux name="Set GDPpp\nTarget Value">
-				<eqn>0 {100} {NAN}</eqn>
+				<eqn>NAN</eqn>
 				<format precision="1"/>
 				<range min="20" max="200"/>
 				<units>bc$/Mp/year</units>
 			</aux>
 			<aux name="Set STA\nTarget Year">
-				<eqn>0 {2100} {NAN}</eqn>
+				<eqn>NAN</eqn>
 				<format precision="1"/>
 				<range min="2026" max="2150"/>
 				<units>Year</units>
 			</aux>
 			<aux name="Set GDPpp\nTarget Year">
-				<eqn>0 {2100} {NAN}</eqn>
+				<eqn>NAN</eqn>
 				<format precision="1"/>
 				<range min="2026" max="2150"/>
 				<units>Year</units>
@@ -485,14 +486,13 @@
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="Set STA\nTarget Value">
-				<eqn>0 {2} {NAN}</eqn>
+				<eqn>NAN</eqn>
 				<format precision="1"/>
 				<range min="1" max="6"/>
 				<units>deg C</units>
 			</aux>
 			<aux name="Next to Policy Page\nButton Visibility">
-				<eqn>IF BullsEye_STA_Visibility=1 AND BullsEye_GDPpp_Visibility=1  AND
-BullsEye_Inequality_Visibility = 1 THEN 1 ELSE 0</eqn>
+				<eqn>IF BullsEye_STA_Visibility + BullsEye_GDPpp_Visibility + BullsEye_Inequality_Visibility &gt;= 1 THEN 1 ELSE 0</eqn>
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="Set Your Goal Reminder">
@@ -713,13 +713,13 @@ BullsEye_Inequality_Visibility = 1 THEN 1 ELSE 0</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Set Inequality\nTarget Value">
-				<eqn>0 {100} {NAN}</eqn>
+				<eqn>NAN</eqn>
 				<format precision="0.01"/>
 				<range min="0" max="0.2"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Set Inequality\nTarget Year">
-				<eqn>0 {2100} {NAN}</eqn>
+				<eqn>NAN</eqn>
 				<format precision="1"/>
 				<range min="2026" max="2150"/>
 				<units>Year</units>
@@ -800,7 +800,7 @@ BullsEye_Inequality_Visibility = 1 THEN 1 ELSE 0</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1091" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="1761.25" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="433.75" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>

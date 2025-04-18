@@ -3526,7 +3526,7 @@ This is what determines when the model stops calculating</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="8" isee:scroll_x="752.5" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="8" isee:scroll_x="752.5" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4450,7 +4450,7 @@ This is what determines when the model stops calculating</doc>
 				<text_box text_align="center" vertical_text_align="center" font_color="yellow" font_size="14pt" appearance="transparent" x="0" y="464" width="1066" height="64">Please note that this Integrated Learning Environment is a work in progress, shared for transparency and early feedback,
  and may be subject to ongoing updates and improvements.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4500,6 +4500,7 @@ Choose a specific area for your focus :</text_box>
 						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
 						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
 						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<isee:annotation z_index="16" font_color="white" border_width="thin" border_style="none" transparent="true" corner_radius="9" popup_background_color="#F5FFE0" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="1032.59" y="569.441" width="18.838" height="19.1558" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."2nd_Page-Next_Page_Message_Visibility"'>
@@ -4529,7 +4530,7 @@ Choose a specific area for your focus :</text_box>
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4592,6 +4593,7 @@ Choose a specific area for your focus :</text_box>
 				<button transparent="true" label="" isee:tooltip="" x="388.48" y="517.534" width="21" height="23" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Play_Button_Visibility">
 					<actions>
 						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 					<image width="256" height="256" size_to_parent="true">r../Graphics/play-button-arrowhead.png</image>
 				</button>
@@ -4613,7 +4615,7 @@ Choose a specific area for your focus :</text_box>
 						<action>restore_all</action>
 					</actions>
 				</button>
-				<button z_index="15" transparent="true" label="" isee:tooltip="" x="388.48" y="517.534" width="21" height="23" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Pause_Button_Visibility">
+				<button z_index="15" transparent="true" label="" isee:tooltip="" x="388.48" y="518.534" width="21" height="23" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Pause_Button_Visibility">
 					<actions>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="0" isee:entity="Interface.Play_Button_Pressed">control_entity</action>
 						<action>pause</action>
@@ -4770,12 +4772,6 @@ Chaotic energy transitions, delayed infrastructure, and supply disruptions cause
 
 Your decisions will shape the future - so pay attention to how your choices play out.
 </text_box>
-				<graphics_frame z_index="34" fill="none" x="25.2174" y="414.71" width="280" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_1980_Appearance">
-					<image width="612" height="408" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">D:/NEW DOWNLOADS/ChatGPT_Image_Apr_16__2025__11_58_33_PM-removebg-preview.png</image>
-				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="19.8261" y="334.403" width="275" height="200" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_2000_Appearance">
-					<image width="200" height="200" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/2000 Icons.png</image>
-				</graphics_frame>
 			</view>
 			<view isee:template_view="template:2" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
@@ -4808,7 +4804,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="66.63" width="225" height="26">Bottom 40% Share of Income</text_box>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="771.06" y="66.63" width="225" height="26">More Details</text_box>
-				<isee:animation_object z_index="30" x="111.962" y="119.925" width="777.978" height="383.217" isee:immediately_update_on_user_input="true" isee:use_active_value="true">
+				<isee:animation_object z_index="30" x="111.962" y="119.925" width="777.978" height="383.217" isee:locked="true" isee:immediately_update_on_user_input="true" isee:use_active_value="true">
 					<image>r../Graphics/Bullseye Dashboard.svg</image>
 					<isee:animation_location_transforms>
 						<isee:animation_location_transform selector="#path4, #path3, #path2, #path1, #path5" x_variable="Interface.STA_Dashboard_Bulls_Eye_X_Axis" y_variable="Interface.STA_Dashboard_Bulls_Eye_Y_Axis"/>
@@ -5035,7 +5031,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="352.364" y="60.5402" width="170.217" height="38.87">Real GDP Per Person</text_box>
 			</view>
-			<view isee:template_view="template:3" isee:name="More Details Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:3" isee:name="More Details Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5044,10 +5040,9 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Climate_Placeholder[*]"/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
@@ -5055,7 +5050,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:selector x="691" y="116" width="287" height="20" isee:locked="true" select_placeholder="true" placeholder="Climate_Placeholder"/>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="112.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:3" isee:name="Other Metrics Behavioral Change" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="Other Metrics Behavioral Change" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5064,10 +5059,9 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Behavioral_Placeholder[*]"/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
@@ -5075,7 +5069,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:selector x="628.391" y="116" width="349.609" height="20" select_placeholder="true" placeholder="Behavioral_Placeholder"/>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="169.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:3" isee:name="Other Metrics Concrete" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="Other Metrics Concrete" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5084,10 +5078,9 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Concrete_Placeholder[*]"/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
@@ -5095,7 +5088,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:selector x="750" y="116" width="228" height="20" isee:locked="true" select_placeholder="true" placeholder="Concrete_Placeholder"/>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="227.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:3" isee:name="Other Metrics Demographics" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="Other Metrics Demographics" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5106,16 +5099,15 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Demographics_Placeholder[*]"/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
 				</stacked_container>
 			</view>
-			<view isee:template_view="template:3" isee:name="Other Metrics Economy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="Other Metrics Economy" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5124,10 +5116,9 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Economy_Placeholder[*]"/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
@@ -5144,10 +5135,9 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Energy_Placeholder[*]"/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
@@ -5164,10 +5154,9 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name='"Land_Use_&amp;_Agriculture_Placeholder"[*]'/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
@@ -5175,7 +5164,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:selector x="704" y="116" width="274" height="20" isee:locked="true" select_placeholder="true" placeholder='"Land_Use_&amp;_Agriculture_Placeholder"'/>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="427.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:3" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+			<view isee:template_view="template:3" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5184,10 +5173,9 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Planetary_Boundaries_Placeholder[*]"/>
 						</plot>
-						<isee:confidence_intervals include_mean="true">
+						<isee:confidence_intervals include_mean="false">
+							<isee:confidence_interval>0</isee:confidence_interval>
 							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>0.75</isee:confidence_interval>
-							<isee:confidence_interval>0.95</isee:confidence_interval>
 							<isee:confidence_interval>1</isee:confidence_interval>
 						</isee:confidence_intervals>
 					</graph>
@@ -5325,7 +5313,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5342,10 +5330,15 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button z_index="21" background="#FFFF7F" transparent="true" corner_radius="21" isee:flat="false" label="" isee:tooltip="" x="1023.2" y="560.508" width="37.6261" height="37.022" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Next_to_Policy_Page_Button_Visibility">
 					<actions>
-						<action target="next_page">navigate</action>
+						<action target="back_page">navigate</action>
 					</actions>
 				</button>
-				<isee:data_manager_widget background="#F5FFE0" header_font_size="10pt" x="73.913" y="129.13" width="945.217" height="412.174"/>
+				<isee:data_manager_widget background="#F5FFE0" font_size="12pt" x="73.913" y="128.13" width="932.217" height="343.174"/>
+				<button background="#F5FFE0" font_weight="bold" font_color="#082A5C" font_size="14pt" border_width="thin" border_style="none" corner_radius="8" isee:flat="true" label="Done" isee:tooltip="" x="925.286" y="489.571" width="84.7143" height="45.7143">
+					<actions>
+						<action target="back_page">navigate</action>
+					</actions>
+				</button>
 			</view>
 			<view isee:template_view="template:1" isee:name="Credits" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
@@ -5364,7 +5357,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:4" isee:name="Dashboard Input - Energy" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="Dashboard Input - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
