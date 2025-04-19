@@ -5,7 +5,7 @@
 		<name>FRIDA</name>
 		<uuid>fe807591-4e3d-4e2c-b464-70ec4fb12094</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="3623" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="3.8.1" isee:build_number="development" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<sim_specs isee:sim_duration="Interface.simulation_delay" isee:run_prefix="Run" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
@@ -4450,7 +4450,7 @@ This is what determines when the model stops calculating</doc>
 				<text_box text_align="center" vertical_text_align="center" font_color="yellow" font_size="14pt" appearance="transparent" x="0" y="464" width="1066" height="64">Please note that this Integrated Learning Environment is a work in progress, shared for transparency and early feedback,
  and may be subject to ongoing updates and improvements.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4514,9 +4514,9 @@ Choose a specific area for your focus :</text_box>
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="21.2691" y="59.1311" width="22.2609" height="24.0284">
 					<actions>
 						<action>restore_all</action>
-						<action>start</action>
 						<action isee:run_name_to_set="EMB">set_run_name</action>
 						<action target="interface:3">navigate</action>
+						<action>start</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Model Behavior " x="50.6087" y="11.0743" width="21.3913" height="24.0284">
@@ -4530,7 +4530,7 @@ Choose a specific area for your focus :</text_box>
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4626,7 +4626,7 @@ Choose a specific area for your focus :</text_box>
 				<isee:shape z_index="-9" background="white" border_color="white" border_width="2" border_style="none" opacity="0.2" transparent_background="false" corner_radius="5" x="326" y="59.0142" width="730.986" height="494.51" isee:locked="true" kind="rectangle"/>
 				<numeric_input z_index="24" font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="983" y="109" width="65" height="20" isee:locked="true" min="1" max="3" title="Target Value" isee:navigate_to="false" show_name="false">
 					<entity name="Interface.Set_STA_Target_Value"/>
-					<reset_to after="one_time_unit">0</reset_to>
+					<reset_to after="never">0</reset_to>
 				</numeric_input>
 				<numeric_input z_index="25" font_weight="bold" font_color="#082A5C" font_size="14pt" input_expands="true" x="983" y="145" width="65" height="20" isee:locked="true" isee:tab_index="1" min="2026" max="2150" title="Target Year" isee:navigate_to="false" show_name="false">
 					<entity name="Interface.Set_STA_Target_Year"/>
@@ -4665,7 +4665,7 @@ Choose a specific area for your focus :</text_box>
 						<isee:animation_location_transform selector="#path4, #path3, #path2, #path1, #path5" x_variable="Interface.GDPpp_Bulls_Eye_X_Axis" y_variable="Interface.GDPpp_Bulls_Eye_Y_Axis"/>
 					</isee:animation_location_transforms>
 				</isee:animation_object>
-				<isee:annotation z_index="22" border_width="0" border_style="none" transparent="true" isee:flat="false" popup_background_color="#F5FFE0" popup_font_weight="bold" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="968.346" y="563.584" width="90.308" height="30.8708" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Set_Your_Goal_Reminder">
+				<isee:annotation z_index="22" border_width="0" border_style="none" transparent="true" isee:flat="false" popup_background_color="#F5FFE0" popup_font_weight="bold" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="1025.37" y="563.584" width="33.288" height="30.8708" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Set_Your_Goal_Reminder">
 					<popup x="943.128" y="504.107" width="112.231" height="48.283">
 						<text>Set your targets
  to continue.</text>
@@ -4674,6 +4674,7 @@ Choose a specific area for your focus :</text_box>
 				<button z_index="21" background="#FFFF7F" transparent="true" corner_radius="21" isee:flat="false" label="" isee:tooltip="" x="1023.2" y="560.508" width="37.6261" height="37.022" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Next_to_Policy_Page_Button_Visibility">
 					<actions>
 						<action target="next_page">navigate</action>
+						<action>stop</action>
 					</actions>
 				</button>
 				<button z_index="26" background="#F5FFE0" border_width="thin" border_style="none" transparent="false" corner_radius="8" isee:flat="false" isee:native_tooltip="false" label="Reset" isee:tooltip="" x="995" y="174.95" width="44.9091" height="21.8182" isee:locked="true">
@@ -4715,9 +4716,9 @@ Choose a specific area for your focus :</text_box>
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="8.26087" y="34.9858" width="22.2609" height="24.0284">
 					<actions>
 						<action>restore_all</action>
-						<action>start</action>
 						<action isee:run_name_to_set="EMB">set_run_name</action>
 						<action target="interface:3">navigate</action>
+						<action>start</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Model Behavior " x="64.087" y="34.9858" width="21.3913" height="24.0284">
