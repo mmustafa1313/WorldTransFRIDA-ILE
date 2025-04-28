@@ -4534,7 +4534,7 @@ Choose a specific area for your focus :</text_box>
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4949,7 +4949,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:2" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:2" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4957,7 +4957,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="3482" height="1704" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard BG Page 3.png</image>
 				</graphics_frame>
 				<stacked_container x="47" y="93" width="872" height="450" isee:locked="true">
-					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" title="Bottom 40% Share of Real Income (fraction)" isee:fill_intensity="0.3" to="2150" from="2030" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.3" to="2150" from="2030" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Circular_Flow.Labour_share_of_GDP[*]"/>
 							<scale min="0" max="1"/>
@@ -4997,7 +4997,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="58.63" width="225" height="26">Labour Share of GDP</text_box>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="771.06" y="66.63" width="225" height="26">More Details</text_box>
 				<stacked_container x="47" y="93" width="872" height="450">
-					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="Bottom 40% Share of Real Income (fraction)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Circular_Flow.Labour_share_of_GDP[*]"/>
 							<scale min="0" max="1"/>
