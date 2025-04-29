@@ -486,8 +486,6 @@
 				<connect2 to="Finance.firms_paying_interest" from="Circular_Flow.firms_paying_interest"/>
 				<connect to="Interface.income_inequality" from="Circular_Flow.income_inequality"/>
 				<connect2 to="Interface.income_inequality" from="Circular_Flow.income_inequality"/>
-				<connect to="Interface.Labour_share_of_GDP" from="Circular_Flow.Labour_share_of_GDP"/>
-				<connect2 to="Interface.Labour_share_of_GDP" from="Circular_Flow.Labour_share_of_GDP"/>
 				<connect to="Employment.non_bank_profits_1" from="Circular_Flow.non_bank_profits"/>
 				<connect2 to="Employment.non_bank_profits_1" from="Circular_Flow.non_bank_profits"/>
 				<connect to="Inflation.non_bank_profits" from="Circular_Flow.non_bank_profits"/>

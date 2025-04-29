@@ -3055,8 +3055,8 @@
 				<format scale_by="auto"/>
 				<connect to="Interface.income_inequality" from="Circular_Flow.income_inequality"/>
 				<connect2 to="Interface.income_inequality" from="Circular_Flow.income_inequality"/>
-				<connect to="Interface.Labour_share_of_GDP" from="Circular_Flow.Labour_share_of_GDP"/>
-				<connect2 to="Interface.Labour_share_of_GDP" from="Circular_Flow.Labour_share_of_GDP"/>
+				<connect to="Interface.Labour_Share_of_GDP_1" from="Circular_Flow.Labour_share_of_GDP"/>
+				<connect2 to="Interface.Labour_Share_of_GDP_1" from="Circular_Flow.Labour_share_of_GDP"/>
 				<connect to="Circular_Flow.Population_1" from="Demographics.Population"/>
 				<connect2 to="Circular_Flow.Population_1" from="Demographics.Population"/>
 				<connect to="Circular_Flow.profit_tax_policy_start_year" from="Government_Regulations.profit_tax_policy_start_year"/>
@@ -3393,8 +3393,8 @@ This is what determines when the model stops calculating</doc>
 				<connect2 to="Interface.irrigation_efficiency_multiplier" from="Government_Regulations.irrigation_efficiency_multiplier"/>
 				<connect to="Interface.irrigation_fraction_policy" from="Government_Regulations.irrigation_fraction_policy"/>
 				<connect2 to="Interface.irrigation_fraction_policy" from="Government_Regulations.irrigation_fraction_policy"/>
-				<connect to="Interface.Labour_share_of_GDP" from="Circular_Flow.Labour_share_of_GDP"/>
-				<connect2 to="Interface.Labour_share_of_GDP" from="Circular_Flow.Labour_share_of_GDP"/>
+				<connect to="Interface.Labour_Share_of_GDP_1" from="Circular_Flow.Labour_share_of_GDP"/>
+				<connect2 to="Interface.Labour_Share_of_GDP_1" from="Circular_Flow.Labour_share_of_GDP"/>
 				<connect to="Interface.max_change_per_year_in_unemployment" from="Government_Regulations.max_change_per_year_in_unemployment"/>
 				<connect2 to="Interface.max_change_per_year_in_unemployment" from="Government_Regulations.max_change_per_year_in_unemployment"/>
 				<connect to="Interface.max_change_per_year_in_inflation" from="Government_Regulations.max_change_per_year_in_inflation"/>
@@ -3496,12 +3496,12 @@ This is what determines when the model stops calculating</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#CEDB39" thickness="1"/>
-						<isee:series_style color="#DB4239" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#388CDB" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="#3F668A" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#575C27" thickness="1"/>
-						<isee:series_style color="#5C2D2A" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -3530,7 +3530,7 @@ This is what determines when the model stops calculating</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="8" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="8" isee:scroll_y="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4423,7 +4423,7 @@ This is what determines when the model stops calculating</doc>
 				<isee:placeholder x="1321.5" y="1540.58" name="Behavioral Placeholder"/>
 				<isee:placeholder x="1321.5" y="1629.58" name="Planetary Boundaries Placeholder"/>
 			</view>
-			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="170" home_view="true" type="interface">
+			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="110" home_view="true" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4454,7 +4454,7 @@ This is what determines when the model stops calculating</doc>
 				<text_box text_align="center" vertical_text_align="center" font_color="yellow" font_size="14pt" appearance="transparent" x="0" y="464" width="1066" height="64">Please note that this Integrated Learning Environment is a work in progress, shared for transparency and early feedback,
  and may be subject to ongoing updates and improvements.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4534,7 +4534,7 @@ Choose a specific area for your focus :</text_box>
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4559,10 +4559,11 @@ Choose a specific area for your focus :</text_box>
 					</graph>
 				</stacked_container>
 				<stacked_container x="327" y="348.34" width="570" height="168" isee:locked="true">
-					<graph axis_color="white" grid_color="white" legend_position="bottom" isee:transparent="true" isee:hide_border="true" axis_label_font_size="10pt" width="570" height="168" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="18" num_y_grid_lines="0" num_x_labels="18" num_y_labels="5" title="Labour Share of GDP" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph axis_color="white" grid_color="white" legend_position="bottom" isee:transparent="true" isee:hide_border="true" axis_label_font_size="10pt" width="570" height="168" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="18" num_y_grid_lines="0" num_x_labels="18" num_y_labels="3" title="Labour Share of GDP" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Circular_Flow.Labour_share_of_GDP[*]"/>
-							<scale min="0" max="1"/>
+							<format precision="1" scale_by="1" display_as="percent"/>
+							<entity name="Interface.Labour_Share_of_GDP[*]"/>
+							<scale min="25" max="75"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -4647,7 +4648,7 @@ Choose a specific area for your focus :</text_box>
 				</numeric_input>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="248.97" width="75" height="26.5873">Target Value</text_box>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="286.97" width="75" height="26.5873">Target Year</text_box>
-				<numeric_input font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="981" y="394.71" width="65" height="20" isee:locked="true" isee:tab_index="4" min="0.3" max="0.7" title="Target Value" isee:navigate_to="false" show_name="false">
+				<numeric_input font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="981" y="394.71" width="65" height="20" isee:locked="true" isee:tab_index="4" min="25" max="75" title="Target Value" isee:navigate_to="false" show_name="false">
 					<entity name="Interface.Set_Inequality_Target_Value"/>
 					<reset_to after="never">0</reset_to>
 				</numeric_input>
@@ -4710,7 +4711,7 @@ Choose a specific area for your focus :</text_box>
 						<isee:animation_location_transform selector="#path4, #path3, #path2, #path1, #path5" x_variable="Interface.STA_Bulls_Eye_X_Axis" y_variable="Interface.STA_Bulls_Eye_Y_Axis"/>
 					</isee:animation_location_transforms>
 				</isee:animation_object>
-				<isee:animation_object z_index="33" x="387.22" y="374.75" width="477" height="101.5" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.BullsEye_GDPpp_Visibility" isee:immediately_update_on_user_input="true" isee:use_active_value="true">
+				<isee:animation_object z_index="33" x="387.22" y="374.75" width="477" height="101.5" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.BullsEye_Inequality_Visibility" isee:immediately_update_on_user_input="true" isee:use_active_value="true">
 					<image>r../Graphics/Bulls Eye Goal Setting.svg</image>
 					<isee:animation_location_transforms>
 						<isee:animation_location_transform selector="#path4, #path3, #path2, #path1, #path5" x_variable="Interface.Inequality_Bulls_Eye_X_Axis" y_variable="Interface.Inequality_Bulls_Eye_Y_Axis"/>
@@ -4777,7 +4778,7 @@ Chaotic energy transitions, delayed infrastructure, and supply disruptions cause
 Your decisions will shape the future - so pay attention to how your choices play out.
 </text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:2" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4815,7 +4816,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</isee:animation_location_transforms>
 				</isee:animation_object>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard STA B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard STA B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4863,7 +4864,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</isee:animation_location_transforms>
 				</isee:animation_object>
 			</view>
-			<view isee:template_view="template:2" isee:name="Dashboard GDP" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:2" isee:name="Dashboard GDP" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4901,7 +4902,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard GDPpp B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard GDPpp B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4949,7 +4950,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:2" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:2" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4957,10 +4958,10 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="3482" height="1704" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard BG Page 3.png</image>
 				</graphics_frame>
 				<stacked_container x="47" y="93" width="872" height="450" isee:locked="true">
-					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.3" to="2150" from="2030" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.3" to="2150" from="2030" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Circular_Flow.Labour_share_of_GDP[*]"/>
-							<scale min="0" max="1"/>
+							<entity name="Interface.Labour_Share_of_GDP[*]"/>
+							<scale min="25" max="75"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -4986,7 +4987,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard Inequality B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard Inequality B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4997,10 +4998,10 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="58.63" width="225" height="26">Labour Share of GDP</text_box>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="771.06" y="66.63" width="225" height="26">More Details</text_box>
 				<stacked_container x="47" y="93" width="872" height="450">
-					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Circular_Flow.Labour_share_of_GDP[*]"/>
-							<scale min="0" max="1"/>
+							<entity name="Interface.Labour_Share_of_GDP[*]"/>
+							<scale min="25" max="75"/>
 						</plot>
 						<isee:time_points>
 							<isee:time_point>2030</isee:time_point>
@@ -5033,7 +5034,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="352.364" y="60.5402" width="170.217" height="38.87">Real GDP Per Person</text_box>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5643,7 +5644,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5687,7 +5688,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5724,7 +5725,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</graphical_input>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5757,7 +5758,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</graphical_input>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Government" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Government" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5846,7 +5847,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</slider>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>

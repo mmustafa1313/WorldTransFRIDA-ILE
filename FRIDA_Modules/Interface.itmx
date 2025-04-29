@@ -674,10 +674,10 @@
 				<range min="2030" max="2150"/>
 				<units>Year</units>
 			</aux>
-			<aux name="Test Sta value">
+			<aux name="Test Y Axis value">
 				<eqn>1</eqn>
 				<format precision="1"/>
-				<range min="0" max="8"/>
+				<range min="25" max="75"/>
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="STA Dashboard\nBulls Eye\nY Axis">
@@ -714,8 +714,8 @@
 			</aux>
 			<aux name="Set Inequality\nTarget Value">
 				<eqn>NAN</eqn>
-				<format precision="0.01"/>
-				<range min="0.3" max="0.7"/>
+				<format precision="1" display_as="percent"/>
+				<range min="25" max="75"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Set Inequality\nTarget Year">
@@ -729,11 +729,16 @@
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="Inequality Bulls Eye Y Axis">
-				<eqn>(1-(Set_Inequality_Target_Value-0)/(Inequality_Max-0))*Bulls_Eye_Animation_Height</eqn>
+				<eqn>
+
+(1-(Set_Inequality_Target_Value-25)/(Inequality_Max-25))*Bulls_Eye_Animation_Height
+
+
+{(1-(Test_Y_Axis_value-25)/(Inequality_Max-25))*Bulls_Eye_Animation_Height}</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="Inequality Max">
-				<eqn>1</eqn>
+				<eqn>75</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Inequality Bulls Eye X Axis">
@@ -741,7 +746,7 @@
 				<units>px</units>
 			</aux>
 			<aux name="Inequality Dashboard\nBulls Eye Y Axis">
-				<eqn>(1-(Set_Inequality_Target_Value-0)/(Inequality_Max-0))*Bulls_Eye_Dashboard_Animation_Height</eqn>
+				<eqn>(1-(Set_Inequality_Target_Value-25)/(Inequality_Max-25))*Bulls_Eye_Dashboard_Animation_Height</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="Inequality Dashboard\nBulls Eye X Axis">
@@ -757,11 +762,19 @@
 				<format precision="1"/>
 				<units>years</units>
 			</aux>
-			<aux name="Labour share of GDP" access="input">
+			<aux name="Labour Share of GDP 1" access="input">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Labour Share of GDP">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Labour_Share_of_GDP_1 * 100</eqn>
+				<format precision="1" display_as="percent"/>
 				<units>dmnl</units>
 			</aux>
 		</variables>
@@ -807,7 +820,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="285" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="617" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1051,7 +1064,7 @@
 					<to>Goal_Setting_Message_Appearance</to>
 				</connector>
 				<aux x="946.01" y="678.25" name="Test Year"/>
-				<aux x="725.977" y="706.25" name="Test Sta value"/>
+				<aux x="1633.98" y="635.25" name="Test Y Axis value"/>
 				<connector uid="44" angle="219.006">
 					<from>Set_STA_Target_Value</from>
 					<to>STA_Bulls_Eye_Y_Axis</to>
@@ -1156,7 +1169,7 @@
 					<from>show_descriptive_text</from>
 					<to>Text_2025_Appearance</to>
 				</connector>
-				<aux label_side="left" x="1624.23" y="463.929" name="Set Inequality\nTarget Value"/>
+				<aux label_side="left" label_angle="135" x="1624.23" y="463.929" name="Set Inequality\nTarget Value"/>
 				<aux label_side="left" x="1803.65" y="463.929" name="Set Inequality\nTarget Year"/>
 				<aux label_side="right" x="1611.73" y="305.846" name="BullsEye Inequality\nVisibility"/>
 				<connector uid="98" angle="94.5211">
@@ -1168,10 +1181,6 @@
 					<to>BullsEye_Inequality_Visibility</to>
 				</connector>
 				<aux label_side="left" x="1624.23" y="514.449" name="Inequality Bulls Eye Y Axis"/>
-				<connector uid="100" angle="270">
-					<from>Set_Inequality_Target_Value</from>
-					<to>Inequality_Bulls_Eye_Y_Axis</to>
-				</connector>
 				<aux x="1681.75" y="560.833" name="Inequality Max"/>
 				<connector uid="101" angle="45.6283">
 					<from>
@@ -1207,17 +1216,17 @@
 					<to>Inequality_Bulls_Eye_X_Axis</to>
 				</connector>
 				<aux label_side="left" x="1685.5" y="714.286" name="Inequality Dashboard\nBulls Eye Y Axis"/>
-				<connector uid="111" angle="271.4">
+				<connector uid="111" angle="272.519">
 					<from>Inequality_Max</from>
 					<to>Inequality_Dashboard_Bulls_Eye_Y_Axis</to>
 				</connector>
-				<connector uid="112" angle="90">
+				<connector uid="112" angle="92.2083">
 					<from>
 						<alias uid="113"/>
 					</from>
 					<to>Inequality_Dashboard_Bulls_Eye_Y_Axis</to>
 				</connector>
-				<connector uid="114" angle="189.509">
+				<connector uid="114" angle="180.223">
 					<from>Set_Inequality_Target_Value</from>
 					<to>Inequality_Dashboard_Bulls_Eye_Y_Axis</to>
 				</connector>
@@ -1254,7 +1263,16 @@
 					<from>show_descriptive_text</from>
 					<to>Goal_Setting_Boxes_Curtain_Disappear</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="1496.25" y="32.4286" name="Labour share of GDP"/>
+				<aux font_style="italic" font_weight="bold" x="1496.25" y="32.4286" name="Labour Share of GDP 1"/>
+				<aux x="1496.25" y="125.309" name="Labour Share of GDP"/>
+				<connector uid="125" angle="270">
+					<from>Labour_Share_of_GDP_1</from>
+					<to>Labour_Share_of_GDP</to>
+				</connector>
+				<connector uid="127" angle="266.362">
+					<from>Set_Inequality_Target_Value</from>
+					<to>Inequality_Bulls_Eye_Y_Axis</to>
+				</connector>
 				<alias font_style="italic" uid="28" x="1051.04" y="580.667" width="18" height="18">
 					<of>Bulls_Eye_Animation_Height</of>
 				</alias>
@@ -1292,7 +1310,7 @@
 				<alias font_style="italic" uid="110" x="1848.92" y="566.167" width="18" height="18">
 					<of>Bulls_Eye_Animation_Width</of>
 				</alias>
-				<alias font_style="italic" uid="113" x="1676.5" y="773.833" width="18" height="18">
+				<alias font_style="italic" uid="113" x="1679.5" y="783.083" width="18" height="18">
 					<of>Bulls_Eye_Dashboard_Animation_Height</of>
 				</alias>
 				<alias color="blue" background="white" font_style="italic" uid="117" x="1963.5" y="706.833" width="18" height="18">
