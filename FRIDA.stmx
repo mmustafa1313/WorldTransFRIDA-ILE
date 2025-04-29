@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="3" uses_conveyor="" uses_submodels=""/>
 		<name>FRIDA</name>
-		<uuid>fe807591-4e3d-4e2c-b464-70ec4fb12094</uuid>
+		<uuid>5d1f3eac-8a8b-4331-a9e9-5ec84008ddb8</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="3.8.1" isee:build_number="3623" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
@@ -2717,6 +2717,8 @@
 				<connect2 to="Food_Demand.policy_start_year" from="Behavioral_Choices.start_year"/>
 				<connect to="Food_Demand.start_year" from="Behavioral_Choices.start_year"/>
 				<connect2 to="Food_Demand.start_year" from="Behavioral_Choices.start_year"/>
+				<connect to="Behavioral_Change_Outputs.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect2 to="Behavioral_Change_Outputs.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Food_Demand.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect2 to="Food_Demand.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Interface.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
@@ -2733,6 +2735,8 @@
 				<connect2 to="Animal_Products_Demand.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 				<connect to="Climate_Risk_Perception.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 				<connect2 to="Climate_Risk_Perception.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
+				<connect to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
+				<connect2 to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect to="Food_Demand.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect2 to="Food_Demand.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect to="Interface.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
@@ -2953,6 +2957,16 @@
 				<format scale_by="auto"/>
 				<connect to="Food_Demand.average_yearly_demand_per_capita" from="Animal_Products_Demand.average_yearly_demand_per_capita"/>
 				<connect2 to="Food_Demand.average_yearly_demand_per_capita" from="Animal_Products_Demand.average_yearly_demand_per_capita"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
 				<connect to="Animal_Products_Demand.additional_environmental_consciousness_policy" from="Behavioral_Choices.additional_environmental_consciousness_policy"/>
 				<connect2 to="Animal_Products_Demand.additional_environmental_consciousness_policy" from="Behavioral_Choices.additional_environmental_consciousness_policy"/>
 				<connect to="Animal_Products_Demand.animal_products_production_1" from="Animal_Products.animal_products_production"/>
@@ -2987,6 +3001,16 @@
 				<connect2 to="Climate_Risk_Perception.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Food_Demand.Average_Daily_Demand_Per_Capita" from="Total_Food_Demand.average_daily_demand_per_capita"/>
 				<connect2 to="Food_Demand.Average_Daily_Demand_Per_Capita" from="Total_Food_Demand.average_daily_demand_per_capita"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
 				<connect to="Total_Food_Demand.animal_products_production_1" from="Animal_Products.animal_products_production"/>
 				<connect2 to="Total_Food_Demand.animal_products_production_1" from="Animal_Products.animal_products_production"/>
 				<connect to="Total_Food_Demand.crop_supply_for_vegetal_products_1" from="Food_Demand.crop_supply_for_vegetal_products"/>
@@ -3439,6 +3463,30 @@ This is what determines when the model stops calculating</doc>
 				<connect2 to="Interface.unemployment_goal_policy" from="Government_Regulations.unemployment_goal_policy"/>
 				<connect to="Interface.wealth_tax_policy" from="Government_Regulations.wealth_tax_policy"/>
 				<connect2 to="Interface.wealth_tax_policy" from="Government_Regulations.wealth_tax_policy"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
+				<connect to="Behavioral_Change_Outputs.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect2 to="Behavioral_Change_Outputs.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
+				<connect2 to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
 			</module>
 			<isee:placeholder name="Climate Placeholder">
 				<dimensions>
@@ -3468,7 +3516,7 @@ This is what determines when the model stops calculating</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>Animal_Products.animal_products_production[Run]{Animal Products Production} + Animal_Products.aquatic_animal_product_share[Run]{Aquatic Animal Product Share} + Animal_Products_Demand.Desired_Average_Daily_Demand_Per_Capita[Run]{Desired Average Daily Demand per Capita} + Animal_Products.animal_products_balance[Run]{Animal Products Balance} + Crop.crop_production[Run]{Crop Production} + Crop.crop_balance[Run]{Crop Balance} + Crop.cropland_net_primary_production[Run]{Cropland Net Primary Production} + degraded_land_soil_carbon.degraded_land_litter[Run]{Degraded Land Litter} + Food_Demand.direct_food_demand_per_person_per_day[Run]{Direct Food Demand per Person Per Day} + Food_Demand.feed_production[Run]{Feed Production} + Food_Demand.vegetal_product_demand_per_person_per_day[Run]{Vegetal Product Demand per Person per Day} + Forest.mature_forest_net_primary_production[Run]{Mature Forest Net Primary Production} + Forest.young_forest_net_primary_production[Run]{Young Forest Net Primary Production} + Freshwater.agricultural_water_withdrawal[Run]{Agricultural Water Withdrawal} + Freshwater.available_water_supply[Run]{Available Water Supply} + Freshwater.fraction_of_water_withdrawal_for_agriculture[Run]{Fraction of Water Withdrawal for Agriculture} + Freshwater.irrigated_cropland[Run]{Irrigated Cropland} + Freshwater.non_agricultural_water_withdrawl[Run]{Non Agricultural Water Withdrawal} + Freshwater.total_water_withdrawal[Run]{Total Water Withdrawal} + Land_Nutrients.fertilizer_use[Run]{Fertilizer Use} + Land_Nutrients.man_made_fertilizer_use[Run]{Man Made Fertilizer Use} + Land_Nutrients.manure_fertilizer_use[Run]{Manure Fertilizer Use} + Land_Use.Cropland[Run]{Cropland} + Land_Use.Degraded_Land[Run]{Degraded Land} + Land_Use.Forest_Land[Run]{Forest Land} + Land_Use.Grassland[Run]{Grassland} + Land_Use.Mature_Forest[Run]{Mature Forest} + Land_Use.Young_Forest[Run]{Young Forest}</eqn>
+				<eqn>Animal_Products.animal_products_production[Run]{Animal Products Production} + Animal_Products.aquatic_animal_product_share[Run]{Aquatic Animal Product Share} + Animal_Products.animal_products_balance[Run]{Animal Products Balance} + Crop.crop_production[Run]{Crop Production} + Crop.crop_balance[Run]{Crop Balance} + Crop.cropland_net_primary_production[Run]{Cropland Net Primary Production} + degraded_land_soil_carbon.degraded_land_litter[Run]{Degraded Land Litter} + Food_Demand.direct_food_demand_per_person_per_day[Run]{Total Food Demand per Person Per Day} + Food_Demand.feed_production[Run]{Feed Production} + Food_Demand.vegetal_product_demand_per_person_per_day[Run]{Vegetal Product Demand per Person per Day} + Food_Demand.animal_product_demand_per_person_per_day[Run]{Animal Product Demand per Person per Day} + Food_Demand.share_of_diet_from_animal_products[Run]{Share of Diet from Animal Products} + Forest.mature_forest_net_primary_production[Run]{Mature Forest Net Primary Production} + Forest.young_forest_net_primary_production[Run]{Young Forest Net Primary Production} + Freshwater.agricultural_water_withdrawal[Run]{Agricultural Water Withdrawal} + Freshwater.available_water_supply[Run]{Available Water Supply} + Freshwater.fraction_of_water_withdrawal_for_agriculture[Run]{Fraction of Water Withdrawal for Agriculture} + Freshwater.irrigated_cropland[Run]{Irrigated Cropland} + Freshwater.non_agricultural_water_withdrawl[Run]{Non Agricultural Water Withdrawal} + Freshwater.total_water_withdrawal[Run]{Total Water Withdrawal} + Land_Nutrients.fertilizer_use[Run]{Fertilizer Use} + Land_Nutrients.man_made_fertilizer_use[Run]{Man Made Fertilizer Use} + Land_Nutrients.manure_fertilizer_use[Run]{Manure Fertilizer Use} + Land_Use.Cropland[Run]{Cropland} + Land_Use.Degraded_Land[Run]{Degraded Land} + Land_Use.Forest_Land[Run]{Forest Land} + Land_Use.Grassland[Run]{Grassland} + Land_Use.Mature_Forest[Run]{Mature Forest} + Land_Use.Young_Forest[Run]{Young Forest}</eqn>
 			</isee:placeholder>
 			<isee:placeholder name="Concrete Placeholder">
 				<dimensions>
@@ -3476,17 +3524,33 @@ This is what determines when the model stops calculating</doc>
 				</dimensions>
 				<eqn>Concrete.CO2_emissions[Run]{CO2 Emissions} + Concrete.concrete_waste_generation[Run]{Concrete Waste Generation} + Concrete.In_use_concrete_stock[Run]{In Use Concrete Stock} + Concrete.Infrastructure_concrete_stock_in_use[Run]{Infrastruture Concrete Stock in Use} + Concrete.new_RS_construction[Run]{New RS Construction} + Concrete.residential_concrete_stock_in_use[Run]{Residential Concrete Stock in Use} + Concrete.total_yearly_concrete_use[Run]{Total Yearly Concrete Use}</eqn>
 			</isee:placeholder>
-			<isee:placeholder name="Behavioral Placeholder">
+			<isee:placeholder name="Behavioral Placeholder old">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>Animal_Products_Demand.Desired_Demand_from_Accessibility[Run]{Animal Products Desired Demand from Accessibility} + Animal_Products_Demand.desired_demand_from_descriptive_norm[Run]{Animal Products Desired Demand from Descriptive Norm} + Animal_Products_Demand.desired_demand_from_personal_norm[Run]{Animal Products Desired Demand from Personal Norm} + Animal_Products_Demand.perceived_consumption_risk[Run]{Animal Products Perceived Consumption Risk} + Animal_Products_Demand.Perceived_Social_Value[Run]{Animal Products Received Social Value} + Animal_Products_Demand.weight_of_accessibility[Run]{Animal Products Weight of Accessibility} + Animal_Products_Demand.Desired_Average_Daily_Demand_Per_Capita[Run]{Animal Products Desired Average Daily Demand Per Capita} + Climate_Risk_Perception.perceived_climate_change_risk[Run]{Perceived Climate Change Risk} + Climate_Risk_Perception.Perceived_Climate_Extremes_Exposure[Run]{Perceived Climate Extremes Exposure} + Climate_Risk_Perception.Perceived_SLR_Flooding_Exposure[Run]{Perceived SLR Flooding Exposure} + Climate_Risk_Perception.Perceived_Temperature_Anomaly[Run]{Perceived Temperature Anomaly} + Climate_Risk_Perception.Reference_Climate_Extremes_Exposure[Run]{Reference Climate Extremes Exposure} + Climate_Risk_Perception.Reference_SLR_Flooding_Exposure[Run]{Reference SLR Flooding Exposure} + Climate_Risk_Perception.Reference_Temperature_Anomaly[Run]{Reference Temperature Anomaly} + Total_Food_Demand.Desired_Demand_from_Accessibility[Run]{Total Food Demand Desired Demand from Accessibility} + Total_Food_Demand.desired_demand_from_descriptive_norm[Run]{Total Food Demand Desired Demand from Description Norm} + Total_Food_Demand.desired_demand_from_personal_norm[Run]{Total Food Demand Desired Demand from Personal Norm} + Total_Food_Demand.perceived_consumption_risk[Run]{Total Food Demand Perceived Consumption Risk} + Total_Food_Demand.Perceived_Social_Value[Run]{Total Food Demand Perceived Social Value} + Total_Food_Demand.weight_of_accessibility[Run]{Total Food Demand Weight of Accessibility}</eqn>
 			</isee:placeholder>
-			<isee:placeholder name="Planetary Boundaries Placeholder">
+			<isee:placeholder name="Biosphere Indicators\nPlaceholder">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>Planetary_Boundaries.&quot;PB1:1_HANPP_as_fraction_of_Holocene_net_primary_production&quot;[Run]{HANPP as fraction of Holocene net Primary Production} + Planetary_Boundaries.&quot;PB2:1_Fraction_forest_removed&quot;[Run]{Fraction Forest Removed} + Planetary_Boundaries.&quot;PB3:1_Maximum_amount_of_consumptive_blue_water_use&quot;[Run]{Maximum Amount of Consumptive Blue Water Use} + Planetary_Boundaries.&quot;PB4:1_Intentionally_fixed_N_applied_to_the_agricultural_system&quot;[Run]{Intentionally Fixed N Applied to the Agricultural System} + Planetary_Boundaries.&quot;PB4:2_P_flow_from_fertilizers_to_erodible_soils&quot;[Run]{P Flow from Fertilizers to Erodible Soils}</eqn>
+			</isee:placeholder>
+			<isee:placeholder name="Behavioral Placeholder">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Behavioral_Change_Outputs.Desired_Animal_Products_Demand_from_Accessibility[Run]{Desired Animal Products Demand
+from Accessibility} + Behavioral_Change_Outputs.Desired_Animal_Products_Demand_from_Descriptive_Norm[Run]{Desired Animal Products Demand
+from Descriptive Norm} + Behavioral_Change_Outputs.Desired_Animal_Products_Demand_from_Personal_Norm[Run]{Desired Animal Products Demand
+from Personal Norm} + Behavioral_Change_Outputs.Perceived_Animal_Products_Social_Value[Run]{Perceived Animal Products
+Social Value} + Behavioral_Change_Outputs.Perceived_Animal_Products_Consumption_Risk[Run]{Perceived Animal Products
+Consumption Risk} + Climate_Risk_Perception.perceived_climate_change_risk[Run]{Perceived Climate Change Risk} + Climate_Risk_Perception.Perceived_Climate_Extremes_Exposure[Run]{Perceived Climate Extremes Exposure} + Climate_Risk_Perception.Perceived_SLR_Flooding_Exposure[Run]{Perceived SLR Flooding Exposure} + Climate_Risk_Perception.Perceived_Temperature_Anomaly[Run]{Perceived Temperature Anomaly} + Climate_Risk_Perception.Reference_Climate_Extremes_Exposure[Run]{Reference Climate Extremes Exposure} + Climate_Risk_Perception.Reference_SLR_Flooding_Exposure[Run]{Reference SLR Flooding Exposure} + Climate_Risk_Perception.Reference_Temperature_Anomaly[Run]{Reference Temperature Anomaly} + Behavioral_Change_Outputs.Desired_Total_Food_Demand_from_Accessibility[Run]{Desired Total Food Demand
+from Accessibility} + Behavioral_Change_Outputs.Desired_Total_Food_Demand_from_Descriptive_Norm[Run]{Desired Total Food Demand
+from Descriptive Norm} + Behavioral_Change_Outputs.Desired_Total_Food_Demand_from_Personal_Norm[Run]{Desired Total Food Demand
+from Personal Norm} + Behavioral_Change_Outputs.Perceived_Total_Food_Social_Value[Run]{Perceived Total Food
+Social Value} + Behavioral_Change_Outputs.Perceived_Total_Food_Consumption_Risk[Run]{Perceived Total Food
+Consumption Risk}</eqn>
 			</isee:placeholder>
 		</variables>
 		<views>
@@ -3530,7 +3594,7 @@ This is what determines when the model stops calculating</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="8" isee:scroll_y="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="8" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4388,7 +4452,7 @@ This is what determines when the model stops calculating</doc>
 					<to>Behavioral_Change</to>
 				</connector>
 				<aux x="1006.5" y="48.1667" name="Simulation End"/>
-				<isee:placeholder x="1135.5" y="978.583" name="Dashboard Right Placeholder"/>
+				<isee:placeholder x="1147.5" y="983.583" name="Dashboard Right Placeholder"/>
 				<module label_side="center" x="929.75" y="229" name="Interface"/>
 				<connector uid="166" isee:thickness="2" angle="3.53141" isee:autocreated="true">
 					<from>Government_Regulations</from>
@@ -4415,13 +4479,18 @@ This is what determines when the model stops calculating</doc>
 					<to>Interface</to>
 				</connector>
 				<isee:placeholder x="1321.5" y="983.583" name="Climate Placeholder"/>
-				<isee:placeholder x="1321.5" y="1075.58" name="Demographics Placeholder"/>
-				<isee:placeholder x="1321.5" y="1173.58" name="Economy Placeholder"/>
-				<isee:placeholder x="1321.5" y="1270.58" name="Energy Placeholder"/>
-				<isee:placeholder x="1321.5" y="1365.58" name="Land Use &amp; Agriculture Placeholder"/>
-				<isee:placeholder x="1321.5" y="1456.58" name="Concrete Placeholder"/>
-				<isee:placeholder x="1321.5" y="1540.58" name="Behavioral Placeholder"/>
-				<isee:placeholder x="1321.5" y="1629.58" name="Planetary Boundaries Placeholder"/>
+				<isee:placeholder x="1321.5" y="1141.58" name="Demographics Placeholder"/>
+				<isee:placeholder x="1321.5" y="1061.58" name="Economy Placeholder"/>
+				<isee:placeholder x="1321.5" y="1222.58" name="Energy Placeholder"/>
+				<isee:placeholder x="1321.5" y="1304.58" name="Land Use &amp; Agriculture Placeholder"/>
+				<isee:placeholder x="1321.5" y="1470.58" name="Concrete Placeholder"/>
+				<isee:placeholder x="1178.5" y="1393.58" name="Behavioral Placeholder old"/>
+				<isee:placeholder x="1321.5" y="1546.58" name="Biosphere Indicators\nPlaceholder"/>
+				<connector uid="172" isee:thickness="2" angle="22.7705" isee:autocreated="true">
+					<from>Behavioral_Change</from>
+					<to>Interface</to>
+				</connector>
+				<isee:placeholder x="1321.5" y="1393.58" name="Behavioral Placeholder"/>
 			</view>
 			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="110" home_view="true" type="interface">
 				<style>
@@ -4454,7 +4523,7 @@ This is what determines when the model stops calculating</doc>
 				<text_box text_align="center" vertical_text_align="center" font_color="yellow" font_size="14pt" appearance="transparent" x="0" y="464" width="1066" height="64">Please note that this Integrated Learning Environment is a work in progress, shared for transparency and early feedback,
  and may be subject to ongoing updates and improvements.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4783,7 +4852,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="47" y="93" width="872" height="450" isee:locked="true">
-					<graph font_color="#F5FFE0" axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" to="2150" from="2030" isee:allow_zero_axis="true" left_axis_title="°C" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph font_color="#F5FFE0" axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" to="2150" from="2020" isee:allow_zero_axis="true" left_axis_title="°C" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<format precision="0.01" scale_by="1"/>
 							<entity name="Energy_Balance_Model.Surface_Temperature_Anomaly[*]"/>
@@ -4816,7 +4885,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</isee:animation_location_transforms>
 				</isee:animation_object>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard STA B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard STA B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4830,13 +4899,14 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 				<stacked_container x="47" y="93" width="872" height="450" isee:locked="true">
-					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="°C" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="°C" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<format precision="0.01" scale_by="1"/>
 							<entity name="Energy_Balance_Model.Surface_Temperature_Anomaly[*]"/>
 							<scale min="0" max="6"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -4864,7 +4934,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</isee:animation_location_transforms>
 				</isee:animation_object>
 			</view>
-			<view isee:template_view="template:2" isee:name="Dashboard GDP" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:2" isee:name="Dashboard GDP" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4872,7 +4942,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="3482" height="1703" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard BG Page 2.png</image>
 				</graphics_frame>
 				<stacked_container x="47" y="93" width="872" height="450" isee:locked="true">
-					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" to="2150" from="2030" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" to="2150" from="2020" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#AFFED0" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<format precision="1" scale_by="1" display_as="currency"/>
 							<entity name="Demographics.real_GDP_per_person[*]"/>
@@ -4902,7 +4972,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard GDPpp B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard GDPpp B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4914,13 +4984,14 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="66.63" width="225" height="26">Labour Share of GDP</text_box>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="771.06" y="66.63" width="225" height="26">More Details</text_box>
 				<stacked_container x="47" y="93" width="872" height="450">
-					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#AFFED0" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<format precision="1" scale_by="1" display_as="currency"/>
 							<entity name="Demographics.real_GDP_per_person[*]"/>
 							<scale min="0" max="200"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -4958,7 +5029,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="3482" height="1704" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard BG Page 3.png</image>
 				</graphics_frame>
 				<stacked_container x="47" y="93" width="872" height="450" isee:locked="true">
-					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.3" to="2150" from="2030" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#174887" font_color="#F5FFE0" axis_color="#F5FFE0" grid_color="#F5FFE0" isee:graph_area_color="#F5FFE0" isee:transparent="true" isee:hide_border="true" axis_title_font_color="#F5FFE0" axis_label_font_color="#F5FFE0" width="872" height="450" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.3" to="2150" from="2020" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Interface.Labour_Share_of_GDP[*]"/>
 							<scale min="25" max="75"/>
@@ -4987,7 +5058,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard Inequality B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard Inequality B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4998,12 +5069,13 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="58.63" width="225" height="26">Labour Share of GDP</text_box>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="771.06" y="66.63" width="225" height="26">More Details</text_box>
 				<stacked_container x="47" y="93" width="872" height="450">
-					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph axis_color="white" grid_color="white" isee:graph_area_color="white" isee:transparent="true" isee:hide_border="true" width="872" height="450" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="5" num_y_labels="5" title="Labour Share of GDP (fraction)" isee:fill_intensity="0.25" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Interface.Labour_Share_of_GDP[*]"/>
 							<scale min="25" max="75"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5039,7 +5111,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.3" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" to="2150" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Climate_Placeholder[*]"/>
 						</plot>
@@ -5059,16 +5131,17 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Climate - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:5" isee:name="Climate - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Climate_Placeholder[*]"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5094,14 +5167,14 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Behavioral Change" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.3" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Behavioral_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Economy_Placeholder[*]"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -5110,8 +5183,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 						</isee:confidence_intervals>
 					</graph>
 				</stacked_container>
-				<isee:selector x="628.391" y="116" width="349.609" height="20" select_placeholder="true" placeholder="Behavioral_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="169.5" width="14.121" height="30" kind="vline"/>
+				<isee:selector x="475.66" y="116" width="503" height="20" isee:locked="true" select_placeholder="true" placeholder="Economy_Placeholder"/>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="160.5" width="14.121" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
 						<action target="interface:12">navigate</action>
@@ -5119,18 +5192,18 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Behavioral Change - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:5" isee:name="Economy - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:selector x="628.391" y="116" width="349.609" height="20" select_placeholder="true" placeholder="Behavioral_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="169.5" width="14.121" height="30" kind="vline"/>
+				<isee:selector x="475.66" y="116" width="503" height="20" isee:locked="true" select_placeholder="true" placeholder="Economy_Placeholder"/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Behavioral_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Economy_Placeholder[*]"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5153,15 +5226,16 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="160.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Concrete" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Demographics" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.3" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Concrete_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Demographics_Placeholder[*]"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -5170,8 +5244,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 						</isee:confidence_intervals>
 					</graph>
 				</stacked_container>
-				<isee:selector x="750" y="116" width="228" height="20" isee:locked="true" select_placeholder="true" placeholder="Concrete_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="227.5" width="14.121" height="30" kind="vline"/>
+				<isee:selector x="725.455" y="116" width="252" height="20" isee:locked="true" select_placeholder="true" placeholder="Demographics_Placeholder"/>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="207.5" width="14.121" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
 						<action target="interface:14">navigate</action>
@@ -5179,18 +5253,18 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Concrete B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:5" isee:name="Demographics - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:selector x="750" y="116" width="228" height="20" isee:locked="true" select_placeholder="true" placeholder="Concrete_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="227.5" width="14.121" height="30" kind="vline"/>
+				<isee:selector x="725.45" y="116" width="252" height="20" isee:locked="true" select_placeholder="true" placeholder="Demographics_Placeholder"/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Concrete_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Demographics_Placeholder[*]"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5213,17 +5287,18 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="207.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Demographics" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="274.5" width="14.12" height="30" kind="vline"/>
-				<isee:selector x="729" y="116" width="249" height="20" isee:locked="true" select_placeholder="true" placeholder="Demographics_Placeholder"/>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="254.5" width="14.12" height="30" kind="vline"/>
+				<isee:selector x="581.515" y="116" width="396" height="20" isee:locked="true" select_placeholder="true" placeholder="Energy_Placeholder"/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.3" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Demographics_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Energy_Placeholder[*]"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -5239,18 +5314,18 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Demographics B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:5" isee:name="Energy - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="274.5" width="14.12" height="30" kind="vline"/>
-				<isee:selector x="729" y="116" width="249" height="20" isee:locked="true" select_placeholder="true" placeholder="Demographics_Placeholder"/>
+				<isee:selector x="581.51" y="116" width="396" height="20" select_placeholder="true" placeholder="Energy_Placeholder"/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Demographics_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Energy_Placeholder[*]"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5273,15 +5348,16 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="254.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Economy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Land Use Agriculture" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="2" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.3" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Economy_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="2" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name='"Land_Use_&amp;_Agriculture_Placeholder"[*]'/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -5290,8 +5366,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 						</isee:confidence_intervals>
 					</graph>
 				</stacked_container>
-				<isee:selector x="466" y="116" width="512" height="20" isee:locked="true" select_placeholder="true" placeholder="Economy_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="321.5" width="14.12" height="30" kind="vline"/>
+				<isee:selector x="698.727" y="116" width="279.27" height="20" isee:locked="true" select_placeholder="true" placeholder='"Land_Use_&amp;_Agriculture_Placeholder"'/>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="311.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
 						<action target="interface:18">navigate</action>
@@ -5299,18 +5375,18 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Economy B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:5" isee:name="Land Use Agriculture - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:selector x="466" y="116" width="512" height="20" isee:locked="true" select_placeholder="true" placeholder="Economy_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="321.5" width="14.12" height="30" kind="vline"/>
+				<isee:selector x="698.73" y="116" width="279.27" height="20" isee:locked="true" select_placeholder="true" placeholder='"Land_Use_&amp;_Agriculture_Placeholder"'/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Economy_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name='"Land_Use_&amp;_Agriculture_Placeholder"[*]'/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5333,15 +5409,16 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="311.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Behavioral Change" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.1" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Energy_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Behavioral_Placeholder[*]"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -5350,8 +5427,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 						</isee:confidence_intervals>
 					</graph>
 				</stacked_container>
-				<isee:selector x="570.696" y="116" width="407.304" height="20" select_placeholder="true" placeholder="Energy_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="369.5" width="14.12" height="30" kind="vline"/>
+				<isee:selector x="633.423" y="116" width="344.577" height="20" isee:locked="true" select_placeholder="true" placeholder="Behavioral_Placeholder"/>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="378.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
 						<action target="interface:20">navigate</action>
@@ -5359,18 +5436,18 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Energy B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:5" isee:name="Behavioral Change - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:selector x="570.696" y="116" width="407.304" height="20" select_placeholder="true" placeholder="Energy_Placeholder"/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="369.5" width="14.12" height="30" kind="vline"/>
+				<isee:selector x="633.42" y="116" width="344.58" height="20" isee:locked="true" select_placeholder="true" placeholder="Behavioral_Placeholder"/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Energy_Placeholder[*]"/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="2" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Behavioral_Placeholder[*]"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5393,15 +5470,16 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="378.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Land Use Agriculture" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Concrete" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.3" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name='"Land_Use_&amp;_Agriculture_Placeholder"[*]'/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Concrete_Placeholder[*]"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -5410,8 +5488,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 						</isee:confidence_intervals>
 					</graph>
 				</stacked_container>
-				<isee:selector x="704" y="116" width="274" height="20" isee:locked="true" select_placeholder="true" placeholder='"Land_Use_&amp;_Agriculture_Placeholder"'/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="427.5" width="14.12" height="30" kind="vline"/>
+				<isee:selector x="704" y="116" width="274" height="20" isee:locked="true" select_placeholder="true" placeholder="Concrete_Placeholder"/>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="435.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
 						<action target="interface:22">navigate</action>
@@ -5419,18 +5497,18 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Land Use B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:5" isee:name="Concrete - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:selector x="704" y="116" width="274" height="20" isee:locked="true" select_placeholder="true" placeholder='"Land_Use_&amp;_Agriculture_Placeholder"'/>
-				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="427.5" width="14.12" height="30" kind="vline"/>
+				<isee:selector x="704" y="116" width="274" height="20" isee:locked="true" select_placeholder="true" placeholder="Concrete_Placeholder"/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name='"Land_Use_&amp;_Agriculture_Placeholder"[*]'/>
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Concrete_Placeholder[*]"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5453,15 +5531,16 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
+				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="435.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" isee:fill_intensity="0.3" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" isee:fill_intensity="0.3" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#DBBE2C" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Planetary_Boundaries_Placeholder[*]"/>
+							<entity name="Biosphere_Indicators_Placeholder[*]"/>
 						</plot>
 						<isee:confidence_intervals include_mean="false">
 							<isee:confidence_interval>0</isee:confidence_interval>
@@ -5470,7 +5549,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						</isee:confidence_intervals>
 					</graph>
 				</stacked_container>
-				<isee:selector x="652" y="116" width="326" height="20" isee:locked="true" select_placeholder="true" placeholder="Planetary_Boundaries_Placeholder"/>
+				<isee:selector x="652" y="116" width="326" height="20" isee:locked="true" select_placeholder="true" placeholder="Biosphere_Indicators_Placeholder"/>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="493.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
@@ -5479,18 +5558,19 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Biosphere Indicator B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:5" isee:name="Biosphere Indicator B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:selector x="652" y="116" width="326" height="20" isee:locked="true" select_placeholder="true" placeholder="Planetary_Boundaries_Placeholder"/>
+				<isee:selector x="652" y="116" width="326" height="20" isee:locked="true" select_placeholder="true" placeholder="Biosphere_Indicators_Placeholder"/>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="493.5" width="14.12" height="30" kind="vline"/>
 				<stacked_container x="246" y="142.5" width="765" height="390" isee:locked="true">
-					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="14" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph isee:transparent="true" isee:hide_border="true" width="765" height="390" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="15" num_y_grid_lines="0" num_x_labels="13" num_y_labels="5" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#CEDB39" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Planetary_Boundaries_Placeholder[*]"/>
+							<entity name="Biosphere_Indicators_Placeholder[*]"/>
 						</plot>
 						<isee:time_points>
+							<isee:time_point>2020</isee:time_point>
 							<isee:time_point>2030</isee:time_point>
 							<isee:time_point>2040</isee:time_point>
 							<isee:time_point>2050</isee:time_point>
@@ -5514,7 +5594,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Dashboard More Details Single Run Plot" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:1" isee:name="Dashboard More Details Single Run Plot" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5567,8 +5647,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 				<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="3" width="1066" height="30">DASHBOARD</text_box>
-				<stacked_container x="101.561" y="109.07" width="933.384" height="426.817" isee:appearance="dropdown">
-					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" title="Energy Shares" isee:fill_intensity="1" isee:stacked_area_max="1" from="2030" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+				<stacked_container x="101.561" y="109.07" width="933.384" height="426.817" isee:appearance="dropdown" visible_index="1">
+					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" title="Energy Shares" isee:fill_intensity="1" isee:stacked_area_max="1" from="2020" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="black" title="Coal" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name='energy_supply."Fossil_Energy_Output_Share,_coal"[MEAN]'/>
 						</plot>
@@ -5594,7 +5674,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 							<entity name="energy_supply.Wind_Energy_Output_Share[MEAN]"/>
 						</plot>
 					</graph>
-					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="13" num_y_labels="3" title="Income Shares" isee:fill_intensity="1" isee:stacked_area_max="1" from="2030" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" title="Income Shares" isee:fill_intensity="1" isee:stacked_area_max="1" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" title="Bank Profits" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Circular_Flow.share_of_gross_income_from_bank_profits[MEAN]"/>
 						</plot>
@@ -5644,7 +5724,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5652,7 +5732,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<graphics_frame z_index="1" fill="none" x="7" y="7" width="80" height="80">
 					<image width="520" height="520" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Menu Button 5.png</image>
 				</graphics_frame>
-				<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="0" y="93" width="1066" height="30">Manege Runs</text_box>
+				<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="0" y="92.0909" width="1066" height="30">Manege Runs</text_box>
 				<isee:shape z_index="-9" background="white" border_color="white" border_width="2" border_style="none" opacity="0.2" transparent_background="false" corner_radius="5" x="11.6522" y="92.3185" width="1042.7" height="457.119" kind="rectangle"/>
 				<button z_index="13" transparent="true" corner_radius="12" isee:flat="false" isee:highlight_on_hover="false" isee:highlight_color="#F0F0F0" label="" isee:tooltip="" x="5.6763" y="563.11" width="34.6674" height="31.8182">
 					<actions>
@@ -5664,7 +5744,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action target="back_page">navigate</action>
 					</actions>
 				</button>
-				<isee:data_manager_widget background="#F5FFE0" font_size="12pt" x="73.913" y="128.13" width="932.217" height="343.174"/>
+				<isee:data_manager_widget background="white" font_size="12pt" x="31.1857" y="128.13" width="1003.63" height="343.174"/>
 				<button background="#F5FFE0" font_weight="bold" font_color="#082A5C" font_size="14pt" border_width="thin" border_style="none" corner_radius="8" isee:flat="true" label="Done" isee:tooltip="" x="925.286" y="489.571" width="84.7143" height="45.7143">
 					<actions>
 						<action target="back_page">navigate</action>
@@ -5725,7 +5805,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</graphical_input>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5758,7 +5838,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</graphical_input>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Government" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Government" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5847,7 +5927,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</slider>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5876,7 +5956,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</slider>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6368,42 +6448,42 @@ Your decisions will shape the future - so pay attention to how your choices play
 							<action target="interface:3">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="133.333" y="118.32" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="133.333" y="118.32" width="68.2108" height="18.361">
 						<actions>
 							<action target="interface:9">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="137.12" y="166.32" width="102.455" height="32.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="166.32" width="76.0914" height="20.5428">
 						<actions>
 							<action target="interface:11">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="137.12" y="234.32" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="214.32" width="102.455" height="18.361">
 						<actions>
 							<action target="interface:13">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="279.681" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="260.32" width="60.6368" height="18.361">
 						<actions>
 							<action target="interface:15">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="137.12" y="328.32" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="313.775" width="84.9414" height="32.9065">
 						<actions>
 							<action target="interface:17">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="376.681" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="141.545" y="376.681" width="76.0914" height="31.0883">
 						<actions>
 							<action target="interface:19">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="424.681" width="102.455" height="35.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="443.772" width="76.0914" height="17.1792">
 						<actions>
 							<action target="interface:21">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="494.32" width="102.455" height="32.361">
+					<button transparent="true" label="" isee:tooltip="" x="141.545" y="489.775" width="76.0914" height="35.0883">
 						<actions>
 							<action target="interface:23">navigate</action>
 						</actions>
@@ -6572,42 +6652,42 @@ Your decisions will shape the future - so pay attention to how your choices play
 							<action target="interface:3">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="133.333" y="118.32" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="133.333" y="118.32" width="71.5459" height="18.361">
 						<actions>
 							<action target="interface:10">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="137.12" y="166.32" width="102.455" height="32.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="166.32" width="74.2732" height="22.361">
 						<actions>
 							<action target="interface:12">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="137.12" y="234.32" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="215.229" width="102.455" height="18.361">
 						<actions>
 							<action target="interface:14">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="279.681" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="260.32" width="63.9719" height="18.361">
 						<actions>
 							<action target="interface:16">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="137.12" y="328.32" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="309.229" width="88.5777" height="33.8155">
 						<actions>
 							<action target="interface:18">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="376.681" width="102.455" height="18.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="375.772" width="74.2732" height="35.6337">
 						<actions>
 							<action target="interface:20">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="424.681" width="102.455" height="35.361">
+					<button transparent="true" label="" isee:tooltip="" x="137.12" y="443.772" width="74.2732" height="16.2701">
 						<actions>
 							<action target="interface:22">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="" x="141.545" y="494.32" width="102.455" height="32.361">
+					<button transparent="true" label="" isee:tooltip="" x="141.545" y="494.32" width="79.7277" height="32.361">
 						<actions>
 							<action target="interface:24">navigate</action>
 						</actions>
