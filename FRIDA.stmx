@@ -5,7 +5,7 @@
 		<name>FRIDA</name>
 		<uuid>5d1f3eac-8a8b-4331-a9e9-5ec84008ddb8</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="3623" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="3.8.1" isee:build_number="3632" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<sim_specs isee:sim_duration="Interface.simulation_delay" isee:run_prefix="Run" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
@@ -5747,7 +5747,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="140" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5764,27 +5764,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<graphics_frame z_index="-3" fill="none" x="12.51" y="63.5404" width="1006.63" height="482" isee:locked="true">
 					<image width="3483" height="1648" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard Input Menu BG DT 1-min.png</image>
 				</graphics_frame>
-				<graphical_input background="#F5FFE0" x="100" y="200" width="150" height="175" title="Carbon Tax ($/tCO2e/Year)" isee:lock_x_values="true" isee:navigate_to="false" show_name="true" isee:fill_intensity="0.5" isee:series_color="black" isee:input_precision="1" isee:x_axis_title="" isee:y_axis_title="">
-					<entity name="Government_Regulations.tax_on_CO2e_emissions"/>
-					<reset_to after="never">0</reset_to>
-				</graphical_input>
-				<graphical_input background="#F5FFE0" x="700" y="200" width="150" height="175" title="Renewable Energy Production Capacity Tax Rate" isee:lock_x_values="true" isee:navigate_to="false" show_name="true" isee:fill_intensity="0.5" isee:series_color="black" isee:input_precision="0.001" isee:x_axis_title="" isee:y_axis_title="">
-					<entity name="Government_Regulations.renewable_capacity_placeholder"/>
-					<reset_to after="never">0</reset_to>
-				</graphical_input>
-				<isee:selector font_color="#082A5C" x="712" y="150" width="126" height="30" select_placeholder="true" placeholder="Government_Regulations.renewable_capacity_placeholder"/>
-				<isee:selector font_color="#082A5C" x="335" y="150" width="80" height="30" select_placeholder="true" placeholder="Government_Regulations.fossil_extraction_capacity_placeholder"/>
-				<graphical_input background="#F5FFE0" x="300" y="200" width="150" height="175" title="Fossil Extraction Capacity Tax Rate" isee:lock_x_values="true" isee:navigate_to="false" show_name="true" isee:fill_intensity="0.5" isee:series_color="black" isee:input_precision="0.001" isee:x_axis_title="" isee:y_axis_title="">
-					<entity name="Government_Regulations.fossil_extraction_capacity_placeholder"/>
-					<reset_to after="never">0</reset_to>
-				</graphical_input>
-				<isee:selector font_color="#082A5C" x="535" y="150" width="80" height="30" select_placeholder="true" placeholder="Government_Regulations.fossil_production_capacity_placeholder"/>
-				<graphical_input background="#F5FFE0" x="500" y="200" width="150" height="175" title="Fossil Production Capacity Tax Rate" isee:lock_x_values="true" isee:navigate_to="false" show_name="true" isee:fill_intensity="0.5" isee:series_color="black" isee:input_precision="0.001" isee:x_axis_title="" isee:y_axis_title="">
-					<entity name="Government_Regulations.fossil_production_capacity_placeholder"/>
-					<reset_to after="never">0</reset_to>
-				</graphical_input>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="140" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5796,28 +5777,16 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<graphics_frame fill="none" x="12.51" y="63.54" width="1006.63" height="482" isee:locked="true">
 					<image width="3483" height="1648" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard Input Menu BG DT 2.png</image>
 				</graphics_frame>
-				<graphical_input background="#F5FFE0" x="100" y="200" width="150" height="175" title="Forestation Policy (MHa/Year)" isee:lock_x_values="true" isee:navigate_to="false" show_name="true" isee:fill_intensity="0.5" isee:series_color="black" isee:input_precision="0.1" isee:x_axis_title="" isee:y_axis_title="">
-					<entity name="Government_Regulations.forestation_policy"/>
-					<reset_to after="never">0</reset_to>
-				</graphical_input>
-				<switch label_side="left" isee:appearance="checkbox" x="404.215" y="154.41" width="141.571" height="30" title="Customize Irrigated Cropland Fraction" show_name="true">
-					<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
-					<reset_to after="never">0</reset_to>
-				</switch>
-				<graphical_input background="#F5FFE0" x="400" y="200" width="150" height="175" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" title="Irrigated Cropland Fraction" isee:lock_x_values="true" isee:navigate_to="false" show_name="true" isee:fill_intensity="0.5" isee:series_color="black" isee:input_precision="0.01" isee:x_axis_title="" isee:y_axis_title="">
-					<entity name="Government_Regulations.irrigation_fraction_policy"/>
-					<reset_to after="never">0</reset_to>
-				</graphical_input>
 				<switch label_side="left" isee:appearance="checkbox" x="700.143" y="150.41" width="149.714" height="30" title="Customize Non Agricultural Water Use" show_name="true">
 					<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<graphical_input background="#F5FFE0" x="700" y="200" width="150" height="175" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Non Agricultural Water Use (m^3/Million People/Year)" isee:lock_x_values="true" isee:navigate_to="false" show_name="true" isee:fill_intensity="0.5" isee:series_color="black" isee:input_precision="10000000" isee:x_axis_title="" isee:y_axis_title="">
-					<entity name="Government_Regulations.non_agricultural_water_use_policy"/>
+				<switch label_side="left" isee:appearance="checkbox" x="404.215" y="154.41" width="141.571" height="30" title="Customize Irrigated Cropland Fraction" show_name="true">
+					<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
 					<reset_to after="never">0</reset_to>
-				</graphical_input>
+				</switch>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Government" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Government" background="#082A5C" page_width="1066" page_height="600" zoom="140" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5906,7 +5875,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</slider>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="140" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5935,7 +5904,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</slider>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="140" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5981,7 +5950,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</graphical_input>
 			</view>
 			<isee:templates>
-				<view isee:name="All Page Background" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="template">
+				<view isee:name="All Page Background" background="#082A5C" page_width="1066" page_height="600" zoom="140" type="template">
 					<style>
 						<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 					</style>
@@ -5993,7 +5962,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<image width="128" height="128" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/next-button (6).png</image>
 					</graphics_frame>
 				</view>
-				<view isee:template_view="template:1" isee:name="Dashboard Template" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="template">
+				<view isee:template_view="template:1" isee:name="Dashboard Template" background="#082A5C" page_width="1066" page_height="600" zoom="140" type="template">
 					<style>
 						<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 					</style>
@@ -6042,70 +6011,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Save scenario" x="1025" y="205" width="25" height="25" isee:locked="true">
 						<actions>
-							<action type="export_parameter_values" orientation="vertical">
-								<entity name="Behavioral_Choices.additional_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.food_demand_policy"/>
-								<entity name="Behavioral_Choices.per_person_use_of_energy_policy"/>
-								<entity name="Behavioral_Choices.switch_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_energy_demand_policy"/>
-								<entity name="Behavioral_Choices.switch_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.switch_food_demand_policy"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[1]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[2]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[3]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[4]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[5]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[6]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[7]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[8]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[9]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[10]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[11]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[1]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[2]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[3]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[4]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[5]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[6]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[7]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[8]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[9]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[10]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[11]"/>
-								<entity name="Government_Regulations.additional_transfers_policy"/>
-								<entity name="Government_Regulations.animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.concrete_infrastructure_maintenance_policy"/>
-								<entity name="Government_Regulations.concrete_residential_and_service_maintenance_policy"/>
-								<entity name="Government_Regulations.forestation_policy"/>
-								<entity name="Government_Regulations.inflation_goal_policy"/>
-								<entity name="Government_Regulations.Infrastructure_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy_start_year"/>
-								<entity name="Government_Regulations.Residential_and_Service_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.switch_animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.switch_profit_tax_policy"/>
-								<entity name="Government_Regulations.switch_wage_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_profit_tax_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_unemployment_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_inflation_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wealth_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wage_tax_policy"/>
-								<entity name="Government_Regulations.unemployment_goal_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy_start_year"/>
-								<entity name="Government_Regulations.wealth_tax_policy"/>
-								<entity name="Government_Regulations.wealth_tax_policy_start_year"/>
-								<entity name="Concrete.actual_concrete_infrastructure_longevity_policy"/>
-								<entity name="Concrete.actual_concrete_residential_longevity_policy"/>
-								<entity name="Concrete.actual_maintenance_policy"/>
-							</action>
+							<action type="export_parameter_values" orientation="vertical"/>
 						</actions>
 						<image width="64" height="64" size_to_parent="true">r../Graphics/save.png</image>
 					</button>
@@ -6965,6 +6871,226 @@ ELSE 1</eqn>
 			<connector uid="1" angle="259.046">
 				<from>input</from>
 				<to>output</to>
+			</connector>
+		</view>
+	</macro>
+	<macro name="SIXPARM">
+		<eqn>Output</eqn>
+		<parm>first level</parm>
+		<parm>start year first level</parm>
+		<parm>time to implement first level</parm>
+		<parm>second level</parm>
+		<parm>time to start second level</parm>
+		<parm>time to implement second level</parm>
+		<variables>
+			<aux name="Output" access="output">
+				<doc>${Policy}
+</doc>
+				<eqn>RAMP(first_level/time_to_implement_first_level, start_year_first_level, start_year_first_level+time_to_implement_first_level)
++
+RAMP((second_level -first_level)/time_to_implement_second_level, start_year_first_level  + time_to_start_second_level, start_year_first_level + time_to_start_second_level + time_to_implement_second_level)</eqn>
+				<units>first_level</units>
+			</aux>
+			<aux name="start\nyear first level" access="input">
+				<eqn>2025</eqn>
+				<format precision="1"/>
+				<range min="2025" max="2100"/>
+				<units>year</units>
+			</aux>
+			<aux name="time to implement first level" access="input">
+				<eqn>10</eqn>
+				<format precision="1"/>
+				<range min="5" max="50"/>
+				<units>Year</units>
+			</aux>
+			<aux name="first level" access="input">
+				<eqn>100
+
+
+
+{c$/(tCO2e/year)}</eqn>
+				<format precision="1"/>
+				<range min="0" max="300"/>
+				<units>widget</units>
+			</aux>
+			<aux name="time to\nstart second level" access="input">
+				<eqn>50</eqn>
+				<format precision="1"/>
+				<range min="5" max="100"/>
+				<units>year</units>
+			</aux>
+			<aux name="time to implement second level" access="input">
+				<eqn>10</eqn>
+				<format precision="1"/>
+				<range min="5" max="50"/>
+				<units>Year</units>
+			</aux>
+			<aux name="second level" access="input">
+				<eqn>50
+
+{c$/(tCO2e/year)}</eqn>
+				<format precision="1"/>
+				<range min="0" max="300"/>
+				<units>widget</units>
+			</aux>
+		</variables>
+		<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+				<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+					<shape type="rectangle" width="45" height="35"/>
+				</stock>
+				<flow color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+					<shape type="circle" radius="18"/>
+				</flow>
+				<isee:placeholder color="#228B22" background="white" font_color="#228B22" font_size="11pt" label_side="bottom"/>
+				<module color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+					<shape type="rectangle" width="67" height="55"/>
+				</module>
+				<aux color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+					<shape type="circle" radius="18"/>
+				</aux>
+				<group color="red" background="white" font_color="red" font_size="11pt"/>
+				<connector color="#FF007F" background="white" font_color="#FF007F" font_size="9pt" isee:thickness="1"/>
+				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+				<graph color="black" background="white" font_size="12pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="12pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="9pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+					<isee:series_styles>
+						<isee:series_style color="blue" thickness="1"/>
+						<isee:series_style color="red" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="#008F44" thickness="1"/>
+						<isee:series_style color="#FF7F00" thickness="1"/>
+						<isee:series_style color="#7F00FF" thickness="1"/>
+						<isee:series_style color="#0CA0FF" thickness="1"/>
+						<isee:series_style color="lime" thickness="1"/>
+						<isee:series_style color="#FF007F" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1"/>
+						<isee:series_style color="#F586FF" thickness="1"/>
+						<isee:series_style color="black" thickness="1"/>
+						<isee:series_style color="#C8C8C8" thickness="1"/>
+					</isee:series_styles>
+				</graph>
+				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			</style>
+			<aux x="485.651" y="284.67" name="Output"/>
+			<aux font_weight="bold" x="298.833" y="212.5" name="start\nyear first level"/>
+			<aux font_weight="bold" x="298.833" y="311.5" name="time to implement first level"/>
+			<aux font_weight="bold" x="298.833" y="396.5" name="first level"/>
+			<aux font_weight="bold" x="670.83" y="214.5" name="time to\nstart second level"/>
+			<aux font_weight="bold" x="670.83" y="313.5" name="time to implement second level"/>
+			<aux font_weight="bold" x="670.83" y="398.5" name="second level"/>
+			<connector uid="1" angle="353.82">
+				<from>start_year_first_level</from>
+				<to>Output</to>
+			</connector>
+			<connector uid="2" angle="15.4463">
+				<from>time_to_implement_first_level</from>
+				<to>Output</to>
+			</connector>
+			<connector uid="3" angle="33.0707">
+				<from>first_level</from>
+				<to>Output</to>
+			</connector>
+			<connector uid="4" angle="191.004">
+				<from>time_to_start_second_level</from>
+				<to>Output</to>
+			</connector>
+			<connector uid="5" angle="169.719">
+				<from>time_to_implement_second_level</from>
+				<to>Output</to>
+			</connector>
+			<connector uid="6" angle="147.94">
+				<from>second_level</from>
+				<to>Output</to>
+			</connector>
+		</view>
+	</macro>
+	<macro name="THREEPARM">
+		<eqn>Output</eqn>
+		<parm>first level</parm>
+		<parm>start year first level</parm>
+		<parm>time to implement first level</parm>
+		<variables>
+			<aux name="Output" access="output">
+				<doc>${Policy}
+</doc>
+				<eqn>RAMP(first_level/time_to_implement_first_level, start_year_first_level, start_year_first_level+time_to_implement_first_level)</eqn>
+				<units>first_level</units>
+			</aux>
+			<aux name="start\nyear first level" access="input">
+				<eqn>2025</eqn>
+				<format precision="1" scale_by="auto"/>
+				<range min="2025" max="2100"/>
+				<units>year</units>
+			</aux>
+			<aux name="time to implement first level" access="input">
+				<eqn>10</eqn>
+				<format precision="1" scale_by="auto"/>
+				<range min="5" max="50"/>
+				<units>Year</units>
+			</aux>
+			<aux name="first level" access="input">
+				<eqn>100</eqn>
+				<format precision="1" scale_by="auto"/>
+				<range min="0" max="300"/>
+				<units>widget</units>
+			</aux>
+		</variables>
+		<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+				<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+					<shape type="rectangle" width="45" height="35"/>
+				</stock>
+				<flow color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+					<shape type="circle" radius="18"/>
+				</flow>
+				<isee:placeholder color="#228B22" background="white" font_color="#228B22" font_size="11pt" label_side="bottom"/>
+				<module color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+					<shape type="rectangle" width="67" height="55"/>
+				</module>
+				<aux color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+					<shape type="circle" radius="18"/>
+				</aux>
+				<group color="red" background="white" font_color="red" font_size="11pt"/>
+				<connector color="#FF007F" background="white" font_color="#FF007F" font_size="9pt" isee:thickness="1"/>
+				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+				<graph color="black" background="white" font_size="12pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="12pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="9pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+					<isee:series_styles>
+						<isee:series_style color="blue" thickness="1"/>
+						<isee:series_style color="red" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="#008F44" thickness="1"/>
+						<isee:series_style color="#FF7F00" thickness="1"/>
+						<isee:series_style color="#7F00FF" thickness="1"/>
+						<isee:series_style color="#0CA0FF" thickness="1"/>
+						<isee:series_style color="lime" thickness="1"/>
+						<isee:series_style color="#FF007F" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1"/>
+						<isee:series_style color="#F586FF" thickness="1"/>
+						<isee:series_style color="black" thickness="1"/>
+						<isee:series_style color="#C8C8C8" thickness="1"/>
+					</isee:series_styles>
+				</graph>
+				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			</style>
+			<aux x="485.651" y="284.67" name="Output"/>
+			<aux font_weight="bold" x="298.833" y="212.5" name="start\nyear first level"/>
+			<aux font_weight="bold" x="298.833" y="311.5" name="time to implement first level"/>
+			<aux font_weight="bold" x="298.833" y="396.5" name="first level"/>
+			<connector uid="1" angle="353.82">
+				<from>start_year_first_level</from>
+				<to>Output</to>
+			</connector>
+			<connector uid="2" angle="15.4463">
+				<from>time_to_implement_first_level</from>
+				<to>Output</to>
+			</connector>
+			<connector uid="3" angle="33.0707">
+				<from>first_level</from>
+				<to>Output</to>
 			</connector>
 		</view>
 	</macro>
