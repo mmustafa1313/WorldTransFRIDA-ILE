@@ -5,7 +5,7 @@
 		<name>Behavioral Change</name>
 		<uuid>6b3172a7-ef66-4feb-8f28-f439698b1c18</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="development" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="3.8.1" isee:build_number="3623" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
@@ -30,6 +30,7 @@
 			<isee:ignored_word>INvestment</isee:ignored_word>
 			<isee:ignored_word>Edenhofer</isee:ignored_word>
 			<isee:ignored_word>hydropower</isee:ignored_word>
+			<isee:ignored_word>C3S</isee:ignored_word>
 		</isee:ignored_words>
 	</isee:prefs>
 	<isee:multiplayer_settings include_chat="true" allow_observers="false" advance_time_increment="1" max_advance_time_in_ms="0" model_stops_when_players_drop="false" observer_start_page="home_page" enabled="false"/>
@@ -261,6 +262,16 @@
 				<format scale_by="auto"/>
 				<connect to="Food_Demand.average_yearly_demand_per_capita" from="Animal_Products_Demand.average_yearly_demand_per_capita"/>
 				<connect2 to="Food_Demand.average_yearly_demand_per_capita" from="Animal_Products_Demand.average_yearly_demand_per_capita"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
 				<connect to="Animal_Products_Demand.additional_environmental_consciousness_policy" from="Behavioral_Choices.additional_environmental_consciousness_policy"/>
 				<connect2 to="Animal_Products_Demand.additional_environmental_consciousness_policy" from="Behavioral_Choices.additional_environmental_consciousness_policy"/>
 				<connect to="Animal_Products_Demand.animal_products_production_1" from="Animal_Products.animal_products_production"/>
@@ -284,6 +295,16 @@
 				<format scale_by="auto"/>
 				<connect to="Food_Demand.Average_Daily_Demand_Per_Capita" from="Total_Food_Demand.average_daily_demand_per_capita"/>
 				<connect2 to="Food_Demand.Average_Daily_Demand_Per_Capita" from="Total_Food_Demand.average_daily_demand_per_capita"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
 				<connect to="Total_Food_Demand.animal_products_production_1" from="Animal_Products.animal_products_production"/>
 				<connect2 to="Total_Food_Demand.animal_products_production_1" from="Animal_Products.animal_products_production"/>
 				<connect to="Total_Food_Demand.crop_supply_for_vegetal_products_1" from="Food_Demand.crop_supply_for_vegetal_products"/>
@@ -347,7 +368,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="2" isee:page_rows="2" zoom="160" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="2" isee:page_rows="2" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -727,7 +748,7 @@
 				<eqn>(Perceived_Average_Consumption-Reference_Short_Term_Consumption)/Reference_Short_Term_Consumption/time_horizon_for_short_term_perception</eqn>
 				<units>dmnl/year</units>
 			</aux>
-			<aux name="desired demand\nfrom descriptive norm">
+			<aux name="desired demand\nfrom descriptive norm" access="output">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -799,7 +820,7 @@
 				<eqn>Perceived_Average_Consumption/Reference_Long_Term_Consumption</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="desired demand\nfrom personal norm">
+			<aux name="desired demand\nfrom personal norm" access="output">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -880,7 +901,7 @@ Planetary health diet from EAT Lancet https://www.thelancet.com/journals/lancet/
 				<eqn>average_daily_consumption_per_capita/healthy_reference_daily_consumption_per_capita</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="perceived\nconsumption risk">
+			<aux name="perceived\nconsumption risk" access="output">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -1021,7 +1042,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
-			<stock name="Perceived\nSocial Value">
+			<stock name="Perceived\nSocial Value" access="output" isee:autocreated="true">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -1170,7 +1191,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<eqn>Average_Daily_Demand_Per_Capita_1*share_of_demand_from_consumption_domain</eqn>
 				<units>kcal/person/day</units>
 			</aux>
-			<stock name="Desired Demand\nfrom Accessibility">
+			<stock name="Desired Demand\nfrom Accessibility" access="output" isee:autocreated="true">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -1651,15 +1672,14 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -1688,7 +1708,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="4" isee:page_rows="3" isee:scroll_x="612.5" isee:scroll_y="658.333" zoom="120" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="4" isee:page_rows="3" isee:scroll_x="612.5" isee:scroll_y="658.333" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -2929,15 +2949,14 @@ Magalhães SdS, Miranda DK, Miranda DMd, Malloy-Diniz LF, Romano-Silva MA (2018)
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -2966,7 +2985,7 @@ Magalhães SdS, Miranda DK, Miranda DMd, Malloy-Diniz LF, Romano-Silva MA (2018)
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="3" isee:page_rows="3" isee:scroll_y="415" zoom="120" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="3" isee:page_rows="3" isee:scroll_y="415" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -3638,7 +3657,7 @@ Magalhães SdS, Miranda DK, Miranda DMd, Malloy-Diniz LF, Romano-Silva MA (2018)
 				<eqn>(Perceived_Average_Consumption-Reference_Short_Term_Consumption)/Reference_Short_Term_Consumption/time_horizon_for_short_term_perception</eqn>
 				<units>dmnl/year</units>
 			</aux>
-			<aux name="desired demand\nfrom descriptive norm">
+			<aux name="desired demand\nfrom descriptive norm" access="output">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -3710,7 +3729,7 @@ Magalhães SdS, Miranda DK, Miranda DMd, Malloy-Diniz LF, Romano-Silva MA (2018)
 				<eqn>Perceived_Average_Consumption/Reference_Long_Term_Consumption</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="desired demand\nfrom personal norm">
+			<aux name="desired demand\nfrom personal norm" access="output">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -3823,7 +3842,7 @@ Planetary health diet from EAT Lancet https://www.thelancet.com/journals/lancet/
 				<eqn>average_daily_consumption_per_capita/healthy_reference_daily_consumption_per_capita</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="perceived\nconsumption risk">
+			<aux name="perceived\nconsumption risk" access="output">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -3957,7 +3976,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
-			<stock name="Perceived\nSocial Value">
+			<stock name="Perceived\nSocial Value" access="output" isee:autocreated="true">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -4160,7 +4179,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<eqn>MIN(Desired_Average_Daily_Demand_Per_Capita, Desired_Demand_from_Accessibility)</eqn>
 				<units>kcal/person/day</units>
 			</aux>
-			<stock name="Desired Demand\nfrom Accessibility">
+			<stock name="Desired Demand\nfrom Accessibility" access="output" isee:autocreated="true">
 				<doc>${Explanatory Variable}
 </doc>
 				<dimensions>
@@ -4521,15 +4540,14 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -4558,7 +4576,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="68.5714" zoom="140" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="68.5714" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>

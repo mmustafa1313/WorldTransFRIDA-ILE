@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xmile version="1.0" xmlns="http://docs.oasis-open.org/xmile/ns/XMILE/v1.0" xmlns:isee="http://iseesystems.com/XMILE">
 	<header>
-		<smile version="1.0" namespace="std, isee" uses_arrays="1"/>
+		<smile version="1.0" namespace="std, isee" uses_arrays="1" uses_submodels=""/>
 		<name>Interface</name>
-		<uuid>53030c2e-cd2f-4ffd-b370-dc25b4a09591</uuid>
+		<uuid>fe807591-4e3d-4e2c-b464-70ec4fb12094</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="development" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="3.8.1" isee:build_number="3623" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="NaN" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
@@ -508,11 +508,11 @@
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="Bulls Eye\nAnimation Width">
-				<eqn>481</eqn>
+				<eqn>477</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="Bulls Eye\nAnimation Height">
-				<eqn>103</eqn>
+				<eqn>101.5</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="STA Bulls Eye X Axis">
@@ -674,10 +674,10 @@
 				<range min="2030" max="2150"/>
 				<units>Year</units>
 			</aux>
-			<aux name="Test Sta value">
+			<aux name="Test Y Axis value">
 				<eqn>1</eqn>
 				<format precision="1"/>
-				<range min="0" max="8"/>
+				<range min="25" max="75"/>
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="STA Dashboard\nBulls Eye\nY Axis">
@@ -697,7 +697,7 @@
 				<units>px</units>
 			</aux>
 			<aux name="Time Minimum">
-				<eqn>2030</eqn>
+				<eqn>2020</eqn>
 				<units>Year</units>
 			</aux>
 			<aux name="GDPpp Dashboard Bulls Eye Y Axis">
@@ -714,8 +714,8 @@
 			</aux>
 			<aux name="Set Inequality\nTarget Value">
 				<eqn>NAN</eqn>
-				<format precision="0.01"/>
-				<range min="0" max="0.2"/>
+				<format precision="1" display_as="percent"/>
+				<range min="25" max="75"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Set Inequality\nTarget Year">
@@ -729,11 +729,16 @@
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="Inequality Bulls Eye Y Axis">
-				<eqn>(1-(Set_Inequality_Target_Value-0)/(Inequality_Max-0))*Bulls_Eye_Animation_Height</eqn>
+				<eqn>
+
+(1-(Set_Inequality_Target_Value-25)/(Inequality_Max-25))*Bulls_Eye_Animation_Height
+
+
+{(1-(Test_Y_Axis_value-25)/(Inequality_Max-25))*Bulls_Eye_Animation_Height}</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="Inequality Max">
-				<eqn>0.2</eqn>
+				<eqn>75</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Inequality Bulls Eye X Axis">
@@ -741,7 +746,7 @@
 				<units>px</units>
 			</aux>
 			<aux name="Inequality Dashboard\nBulls Eye Y Axis">
-				<eqn>(1-(Set_Inequality_Target_Value-0)/(Inequality_Max-0))*Bulls_Eye_Dashboard_Animation_Height</eqn>
+				<eqn>(1-(Set_Inequality_Target_Value-25)/(Inequality_Max-25))*Bulls_Eye_Dashboard_Animation_Height</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="Inequality Dashboard\nBulls Eye X Axis">
@@ -757,6 +762,48 @@
 				<format precision="1"/>
 				<units>years</units>
 			</aux>
+			<aux name="Labour Share of GDP 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Labour Share of GDP">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Labour_Share_of_GDP_1 * 100</eqn>
+				<format precision="1" display_as="percent"/>
+				<units>dmnl</units>
+			</aux>
+			<module name="Behavioral Change\nOutputs" isee:label="">
+				<format scale_by="auto"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility" from="Animal_Products_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect2 to="Behavioral_Change_Outputs.Desired_Demand_from_Accessibility_1" from="Total_Food_Demand.Desired_Demand_from_Accessibility"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm" from="Animal_Products_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_descriptive_norm_1" from="Total_Food_Demand.desired_demand_from_descriptive_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm" from="Animal_Products_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect2 to="Behavioral_Change_Outputs.desired_demand_from_personal_norm_1" from="Total_Food_Demand.desired_demand_from_personal_norm"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk" from="Animal_Products_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect2 to="Behavioral_Change_Outputs.perceived_consumption_risk_1" from="Total_Food_Demand.perceived_consumption_risk"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value" from="Animal_Products_Demand.Perceived_Social_Value"/>
+				<connect to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
+				<connect2 to="Behavioral_Change_Outputs.Perceived_Social_Value_1" from="Total_Food_Demand.Perceived_Social_Value"/>
+				<connect to="Behavioral_Change_Outputs.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect2 to="Behavioral_Change_Outputs.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
+				<connect2 to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
+			</module>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -800,7 +847,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="4" isee:page_rows="5" isee:scroll_y="100" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="740" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1044,7 +1091,7 @@
 					<to>Goal_Setting_Message_Appearance</to>
 				</connector>
 				<aux x="946.01" y="678.25" name="Test Year"/>
-				<aux x="725.977" y="706.25" name="Test Sta value"/>
+				<aux x="1633.98" y="635.25" name="Test Y Axis value"/>
 				<connector uid="44" angle="219.006">
 					<from>Set_STA_Target_Value</from>
 					<to>STA_Bulls_Eye_Y_Axis</to>
@@ -1149,7 +1196,7 @@
 					<from>show_descriptive_text</from>
 					<to>Text_2025_Appearance</to>
 				</connector>
-				<aux label_side="left" x="1624.23" y="463.929" name="Set Inequality\nTarget Value"/>
+				<aux label_side="left" label_angle="135" x="1624.23" y="463.929" name="Set Inequality\nTarget Value"/>
 				<aux label_side="left" x="1803.65" y="463.929" name="Set Inequality\nTarget Year"/>
 				<aux label_side="right" x="1611.73" y="305.846" name="BullsEye Inequality\nVisibility"/>
 				<connector uid="98" angle="94.5211">
@@ -1161,18 +1208,14 @@
 					<to>BullsEye_Inequality_Visibility</to>
 				</connector>
 				<aux label_side="left" x="1624.23" y="514.449" name="Inequality Bulls Eye Y Axis"/>
-				<connector uid="100" angle="270">
-					<from>Set_Inequality_Target_Value</from>
-					<to>Inequality_Bulls_Eye_Y_Axis</to>
-				</connector>
-				<aux x="1685.5" y="564.949" name="Inequality Max"/>
+				<aux x="1681.75" y="560.833" name="Inequality Max"/>
 				<connector uid="101" angle="45.6283">
 					<from>
 						<alias uid="102"/>
 					</from>
 					<to>Inequality_Bulls_Eye_Y_Axis</to>
 				</connector>
-				<connector uid="103" angle="140.504">
+				<connector uid="103" angle="141.117">
 					<from>Inequality_Max</from>
 					<to>Inequality_Bulls_Eye_Y_Axis</to>
 				</connector>
@@ -1199,23 +1242,23 @@
 					</from>
 					<to>Inequality_Bulls_Eye_X_Axis</to>
 				</connector>
-				<aux label_side="left" x="1707.23" y="714.449" name="Inequality Dashboard\nBulls Eye Y Axis"/>
-				<connector uid="111" angle="278.27">
+				<aux label_side="left" x="1685.5" y="714.286" name="Inequality Dashboard\nBulls Eye Y Axis"/>
+				<connector uid="111" angle="272.519">
 					<from>Inequality_Max</from>
 					<to>Inequality_Dashboard_Bulls_Eye_Y_Axis</to>
 				</connector>
-				<connector uid="112" angle="54.211">
+				<connector uid="112" angle="92.2083">
 					<from>
 						<alias uid="113"/>
 					</from>
 					<to>Inequality_Dashboard_Bulls_Eye_Y_Axis</to>
 				</connector>
-				<connector uid="114" angle="213.595">
+				<connector uid="114" angle="180.223">
 					<from>Set_Inequality_Target_Value</from>
 					<to>Inequality_Dashboard_Bulls_Eye_Y_Axis</to>
 				</connector>
 				<aux label_side="left" x="1903.65" y="714.449" name="Inequality Dashboard\nBulls Eye X Axis"/>
-				<connector uid="115" angle="6.96033">
+				<connector uid="115" angle="340.968">
 					<from>Set_Inequality_Target_Year</from>
 					<to>Inequality_Dashboard_Bulls_Eye_X_Axis</to>
 				</connector>
@@ -1225,13 +1268,13 @@
 					</from>
 					<to>Inequality_Dashboard_Bulls_Eye_X_Axis</to>
 				</connector>
-				<connector uid="118" angle="79.4608">
+				<connector uid="118" angle="94.676">
 					<from>
 						<alias uid="119"/>
 					</from>
 					<to>Inequality_Dashboard_Bulls_Eye_X_Axis</to>
 				</connector>
-				<connector uid="120" angle="46.3972">
+				<connector uid="120" angle="36.4589">
 					<from>
 						<alias uid="121"/>
 					</from>
@@ -1247,6 +1290,17 @@
 					<from>show_descriptive_text</from>
 					<to>Goal_Setting_Boxes_Curtain_Disappear</to>
 				</connector>
+				<aux font_style="italic" font_weight="bold" x="1496.25" y="32.4286" name="Labour Share of GDP 1"/>
+				<aux x="1496.25" y="125.309" name="Labour Share of GDP"/>
+				<connector uid="125" angle="270">
+					<from>Labour_Share_of_GDP_1</from>
+					<to>Labour_Share_of_GDP</to>
+				</connector>
+				<connector uid="127" angle="266.362">
+					<from>Set_Inequality_Target_Value</from>
+					<to>Inequality_Bulls_Eye_Y_Axis</to>
+				</connector>
+				<module color="#919191" font_color="#919191" label_side="center" x="1648.13" y="41.4286" width="109.5" height="60.625" name="Behavioral Change\nOutputs"/>
 				<alias font_style="italic" uid="28" x="1051.04" y="580.667" width="18" height="18">
 					<of>Bulls_Eye_Animation_Height</of>
 				</alias>
@@ -1284,19 +1338,373 @@
 				<alias font_style="italic" uid="110" x="1848.92" y="566.167" width="18" height="18">
 					<of>Bulls_Eye_Animation_Width</of>
 				</alias>
-				<alias font_style="italic" uid="113" x="1658.5" y="761.833" width="18" height="18">
+				<alias font_style="italic" uid="113" x="1679.5" y="783.083" width="18" height="18">
 					<of>Bulls_Eye_Dashboard_Animation_Height</of>
 				</alias>
 				<alias color="blue" background="white" font_style="italic" uid="117" x="1963.5" y="706.833" width="18" height="18">
 					<shape type="circle" radius="18"/>
 					<of>Time_Minimum</of>
 				</alias>
-				<alias font_style="italic" uid="119" x="1903.5" y="781.833" width="18" height="18">
+				<alias font_style="italic" uid="119" x="1901" y="783.083" width="18" height="18">
 					<of>Bulls_Eye_Dashboard_Animation_Width</of>
 				</alias>
-				<alias font_style="italic" uid="121" x="1841" y="759.333" width="18" height="18">
+				<alias font_style="italic" uid="121" x="1830.92" y="752.536" width="18" height="18">
 					<of>Time_Max</of>
 				</alias>
+			</view>
+		</views>
+	</model>
+	<model name="Behavioral_Change_Outputs">
+		<variables>
+			<isee:placeholder name="Behavioral Placeholder">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Behavioral_Change_Outputs.Desired_Animal_Products_Demand_from_Accessibility[Run]{Desired Animal Products Demand
+from Accessibility} + Behavioral_Change_Outputs.Desired_Animal_Products_Demand_from_Descriptive_Norm[Run]{Desired Animal Products Demand
+from Descriptive Norm} + Behavioral_Change_Outputs.Desired_Animal_Products_Demand_from_Personal_Norm[Run]{Desired Animal Products Demand
+from Personal Norm} + Behavioral_Change_Outputs.Perceived_Animal_Products_Social_Value[Run]{Perceived Animal Products
+Social Value} + Behavioral_Change_Outputs.Perceived_Animal_Products_Consumption_Risk[Run]{Perceived Animal Products
+Consumption Risk} + Climate_Risk_Perception.perceived_climate_change_risk[Run]{Perceived Climate Change Risk} + Climate_Risk_Perception.Perceived_Climate_Extremes_Exposure[Run]{Perceived Climate Extremes Exposure} + Climate_Risk_Perception.Perceived_SLR_Flooding_Exposure[Run]{Perceived SLR Flooding Exposure} + Climate_Risk_Perception.Perceived_Temperature_Anomaly[Run]{Perceived Temperature Anomaly} + Climate_Risk_Perception.Reference_Climate_Extremes_Exposure[Run]{Reference Climate Extremes Exposure} + Climate_Risk_Perception.Reference_SLR_Flooding_Exposure[Run]{Reference SLR Flooding Exposure} + Climate_Risk_Perception.Reference_Temperature_Anomaly[Run]{Reference Temperature Anomaly} + Behavioral_Change_Outputs.Desired_Total_Food_Demand_from_Accessibility[Run]{Desired Total Food Demand
+from Accessibility} + Behavioral_Change_Outputs.Desired_Total_Food_Demand_from_Descriptive_Norm[Run]{Desired Total Food Demand
+from Descriptive Norm} + Behavioral_Change_Outputs.Desired_Total_Food_Demand_from_Personal_Norm[Run]{Desired Total Food Demand
+from Personal Norm} + Behavioral_Change_Outputs.Perceived_Total_Food_Social_Value[Run]{Perceived Total Food
+Social Value} + Behavioral_Change_Outputs.Perceived_Total_Food_Consumption_Risk[Run]{Perceived Total Food
+Consumption Risk}</eqn>
+			</isee:placeholder>
+			<stock name="Desired Demand\nfrom Accessibility" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>kcal/person/day</units>
+			</stock>
+			<stock name="Perceived\nSocial Value" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</stock>
+			<aux name="desired demand\nfrom personal norm" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>kcal/person/day</units>
+			</aux>
+			<aux name="desired demand\nfrom descriptive norm" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>kcal/person/day</units>
+			</aux>
+			<aux name="perceived\nconsumption risk" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="switch food demand\npolicy 1" access="input">
+				<eqn>0</eqn>
+				<units>dmnl</units>
+			</aux>
+			<stock name="Desired Demand\nfrom Accessibility 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>kcal/person/day</units>
+			</stock>
+			<aux name="desired demand\nfrom descriptive norm 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>kcal/person/day</units>
+			</aux>
+			<aux name="desired demand\nfrom personal norm 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>kcal/person/day</units>
+			</aux>
+			<stock name="Perceived\nSocial Value 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</stock>
+			<aux name="perceived\nconsumption risk 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Desired Total Food Demand\nfrom Accessibility">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_food_demand_policy_1 THEN NAN ELSE Desired_Demand_from_Accessibility_1</eqn>
+				<units>kCal/Person/Day</units>
+			</aux>
+			<aux name="Desired Total Food Demand\nfrom Descriptive Norm">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_food_demand_policy_1 THEN NAN ELSE desired_demand_from_descriptive_norm_1</eqn>
+				<units>kCal/Person/Day</units>
+			</aux>
+			<aux name="Desired Total Food Demand\nfrom Personal Norm">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_food_demand_policy_1 THEN NAN ELSE desired_demand_from_personal_norm_1</eqn>
+				<units>kCal/Person/Day</units>
+			</aux>
+			<aux name="Perceived Total Food\nConsumption Risk">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_food_demand_policy_1 THEN NAN ELSE perceived_consumption_risk_1</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Perceived Total Food\nSocial Value">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_food_demand_policy_1 THEN NAN ELSE Perceived_Social_Value_1</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Desired Animal Products Demand\nfrom Accessibility">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_animal_products_fraction_policy THEN NAN ELSE Desired_Demand_from_Accessibility</eqn>
+				<units>kCal/Person/Day</units>
+			</aux>
+			<aux name="Desired Animal Products Demand\nfrom Descriptive Norm">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_animal_products_fraction_policy THEN NAN ELSE desired_demand_from_descriptive_norm</eqn>
+				<units>kCal/Person/Day</units>
+			</aux>
+			<aux name="Desired Animal Products Demand\nfrom Personal Norm">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_animal_products_fraction_policy THEN NAN ELSE desired_demand_from_personal_norm</eqn>
+				<units>kCal/Person/Day</units>
+			</aux>
+			<aux name="Perceived Animal Products\nConsumption Risk">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_animal_products_fraction_policy THEN NAN ELSE perceived_consumption_risk</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Perceived Animal Products\nSocial Value">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>IF switch_animal_products_fraction_policy THEN NAN ELSE Perceived_Social_Value</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="switch animal products\nfraction policy" access="input">
+				<eqn>0</eqn>
+				<units>dmnl</units>
+			</aux>
+		</variables>
+		<views>
+			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+					<isee:series_styles>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
+					</isee:series_styles>
+				</graph>
+				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+				<button color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595"/>
+				<isee:annotation color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595" popup_corner_radius="0" popup_background_color="#FFFECF"/>
+				<slider color="#0075FF" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:stacked_container color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:dual_slider color="#66CC66" background="silver" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:sim_speed_slider color="black" background="white"/>
+				<isee:time_slider color="#E95F74" background="silver"/>
+				<isee:pie_input color="black" background="white" font_size="12pt" legend_position="bottom" isee:transparent="false"/>
+				<knob color="#66CC66" background="#E0E0E0" font_size="12pt" label_side="bottom" wrap_title="true"/>
+				<numeric_input color="black" background="#E0E0E0" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<isee:dropdown_input color="black" background="white" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<switch color="black" background="#E0E0E0" font_size="12pt" label_side="top" wrap_title="true" isee:appearance="switch" isee:on_color="green"/>
+				<options color="black" background="white" appearance="radio-buttons" arrangement="vertical"/>
+				<graphical_input color="black" background="#E0E0E0" font_size="12pt" isee:show_hover_tip="true"/>
+				<group_input color="black" background="#E0E0E0" font_size="12pt"/>
+				<lamp color="black" background="white" font_size="9pt"/>
+				<gauge color="black" background="white" font_size="9pt" needle_color="#F09F72" bar_color="#EEEEEE" bar_progress_color="black" appearance="radial" num_major_ticks="11" num_minor_ticks="11" show_numeric_value="true"/>
+				<isee:spatial_map color="black" background="white" font_size="12pt"/>
+				<isee:animation_object color="black" background="white" font_size="12pt"/>
+				<isee:navigation_widget color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="6" appearance="tabs" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:shape color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid" opacity="1" transparent_background="true" corner_radius="1"/>
+				<isee:selector color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
+				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			</style>
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+						<shape type="rectangle" width="45" height="35"/>
+					</stock>
+					<flow color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+						<shape type="circle" radius="18"/>
+					</flow>
+					<isee:placeholder color="#228B22" background="white" font_color="#228B22" font_size="11pt" label_side="bottom"/>
+					<module color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+						<shape type="rectangle" width="67" height="55"/>
+					</module>
+					<aux color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+						<shape type="circle" radius="18"/>
+					</aux>
+					<group color="red" background="white" font_color="red" font_size="11pt"/>
+					<connector color="#FF007F" background="white" font_color="#FF007F" font_size="9pt" isee:thickness="1"/>
+					<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+					<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+					<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+					<graph color="black" background="white" font_size="12pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="12pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="9pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+						<isee:series_styles>
+							<isee:series_style color="blue" thickness="1"/>
+							<isee:series_style color="red" thickness="1"/>
+							<isee:series_style color="#008F44" thickness="1"/>
+							<isee:series_style color="#FF7F00" thickness="1"/>
+							<isee:series_style color="#7F00FF" thickness="1"/>
+							<isee:series_style color="#0CA0FF" thickness="1"/>
+							<isee:series_style color="lime" thickness="1"/>
+							<isee:series_style color="#FF007F" thickness="1"/>
+							<isee:series_style color="aqua" thickness="1"/>
+							<isee:series_style color="#F586FF" thickness="1"/>
+							<isee:series_style color="black" thickness="1"/>
+							<isee:series_style color="#C8C8C8" thickness="1"/>
+						</isee:series_styles>
+					</graph>
+					<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+				</style>
+				<isee:placeholder x="701" y="44.33" name="Behavioral Placeholder"/>
+				<text_box font_weight="bold" uid="1" x="193.125" y="120" width="162.5" height="21.125">TOTAL FOOD DEMAND</text_box>
+				<text_box font_weight="bold" uid="2" x="564.625" y="131.875" width="185.625" height="21.125">ANIMAL PRODUCTS DEMAND</text_box>
+				<stock font_style="italic" font_weight="bold" x="483.75" y="162.5" name="Desired Demand\nfrom Accessibility"/>
+				<stock font_style="italic" font_weight="bold" x="758.75" y="314.375" name="Perceived\nSocial Value"/>
+				<aux font_style="italic" font_weight="bold" x="613.875" y="248.75" name="desired demand\nfrom personal norm"/>
+				<aux font_style="italic" font_weight="bold" x="564.375" y="179" name="desired demand\nfrom descriptive norm"/>
+				<aux font_style="italic" font_weight="bold" x="706" y="172.5" name="perceived\nconsumption risk"/>
+				<aux font_style="italic" font_weight="bold" x="213.375" y="506.455" name="switch food demand\npolicy 1"/>
+				<stock font_style="italic" font_weight="bold" x="82.5" y="152.5" name="Desired Demand\nfrom Accessibility 1"/>
+				<aux font_style="italic" font_weight="bold" x="163" y="172.5" name="desired demand\nfrom descriptive norm 1"/>
+				<aux font_style="italic" font_weight="bold" x="213.375" y="242.5" name="desired demand\nfrom personal norm 1"/>
+				<stock font_style="italic" font_weight="bold" x="369.625" y="324.25" name="Perceived\nSocial Value 1"/>
+				<aux font_style="italic" font_weight="bold" x="310.625" y="172.5" name="perceived\nconsumption risk 1"/>
+				<aux x="96.25" y="365.625" name="Desired Total Food Demand\nfrom Accessibility"/>
+				<connector uid="3" angle="273.691">
+					<from>Desired_Demand_from_Accessibility_1</from>
+					<to>Desired_Total_Food_Demand_from_Accessibility</to>
+				</connector>
+				<connector uid="4" angle="129.75">
+					<from>switch_food_demand_policy_1</from>
+					<to>Desired_Total_Food_Demand_from_Accessibility</to>
+				</connector>
+				<aux x="176.625" y="411.875" name="Desired Total Food Demand\nfrom Descriptive Norm"/>
+				<connector uid="5" angle="273.258">
+					<from>desired_demand_from_descriptive_norm_1</from>
+					<to>Desired_Total_Food_Demand_from_Descriptive_Norm</to>
+				</connector>
+				<connector uid="6" angle="111.234">
+					<from>switch_food_demand_policy_1</from>
+					<to>Desired_Total_Food_Demand_from_Descriptive_Norm</to>
+				</connector>
+				<aux label_side="bottom" x="219" y="334.5" name="Desired Total Food Demand\nfrom Personal Norm"/>
+				<connector uid="7" angle="88.1264">
+					<from>switch_food_demand_policy_1</from>
+					<to>Desired_Total_Food_Demand_from_Personal_Norm</to>
+				</connector>
+				<connector uid="8" angle="273.499">
+					<from>desired_demand_from_personal_norm_1</from>
+					<to>Desired_Total_Food_Demand_from_Personal_Norm</to>
+				</connector>
+				<aux x="297.75" y="383.625" name="Perceived Total Food\nConsumption Risk"/>
+				<aux label_side="bottom" x="341.875" y="443.455" name="Perceived Total Food\nSocial Value"/>
+				<connector uid="9" angle="55.5139">
+					<from>switch_food_demand_policy_1</from>
+					<to>Perceived_Total_Food_Consumption_Risk</to>
+				</connector>
+				<connector uid="10" angle="26.1174">
+					<from>switch_food_demand_policy_1</from>
+					<to>Perceived_Total_Food_Social_Value</to>
+				</connector>
+				<connector uid="11" angle="266.51">
+					<from>perceived_consumption_risk_1</from>
+					<to>Perceived_Total_Food_Consumption_Risk</to>
+				</connector>
+				<connector uid="12" angle="256.895">
+					<from>Perceived_Social_Value_1</from>
+					<to>Perceived_Total_Food_Social_Value</to>
+				</connector>
+				<aux x="483.75" y="377" name="Desired Animal Products Demand\nfrom Accessibility"/>
+				<aux x="564.375" y="425.455" name="Desired Animal Products Demand\nfrom Descriptive Norm"/>
+				<aux label_side="bottom" x="613.875" y="328.375" name="Desired Animal Products Demand\nfrom Personal Norm"/>
+				<aux x="706" y="383.625" name="Perceived Animal Products\nConsumption Risk"/>
+				<aux x="746.25" y="447.875" name="Perceived Animal Products\nSocial Value"/>
+				<connector uid="13" angle="264.651">
+					<from>Perceived_Social_Value</from>
+					<to>Perceived_Animal_Products_Social_Value</to>
+				</connector>
+				<connector uid="14" angle="270">
+					<from>perceived_consumption_risk</from>
+					<to>Perceived_Animal_Products_Consumption_Risk</to>
+				</connector>
+				<connector uid="15" angle="270">
+					<from>desired_demand_from_personal_norm</from>
+					<to>Desired_Animal_Products_Demand_from_Personal_Norm</to>
+				</connector>
+				<connector uid="16" angle="270">
+					<from>desired_demand_from_descriptive_norm</from>
+					<to>Desired_Animal_Products_Demand_from_Descriptive_Norm</to>
+				</connector>
+				<connector uid="17" angle="270">
+					<from>Desired_Demand_from_Accessibility</from>
+					<to>Desired_Animal_Products_Demand_from_Accessibility</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="595.875" y="506.455" name="switch animal products\nfraction policy"/>
+				<connector uid="18" angle="135.22">
+					<from>switch_animal_products_fraction_policy</from>
+					<to>Desired_Animal_Products_Demand_from_Accessibility</to>
+				</connector>
+				<connector uid="19" angle="111.251">
+					<from>switch_animal_products_fraction_policy</from>
+					<to>Desired_Animal_Products_Demand_from_Descriptive_Norm</to>
+				</connector>
+				<connector uid="20" angle="80.1103">
+					<from>switch_animal_products_fraction_policy</from>
+					<to>Desired_Animal_Products_Demand_from_Personal_Norm</to>
+				</connector>
+				<connector uid="21" angle="41.6801">
+					<from>switch_animal_products_fraction_policy</from>
+					<to>Perceived_Animal_Products_Consumption_Risk</to>
+				</connector>
+				<connector uid="22" angle="14.2186">
+					<from>switch_animal_products_fraction_policy</from>
+					<to>Perceived_Animal_Products_Social_Value</to>
+				</connector>
 			</view>
 		</views>
 	</model>
