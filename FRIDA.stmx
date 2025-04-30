@@ -65,7 +65,7 @@
 		<dim name="Renewable_Age_Group" size="7"/>
 		<dim name="Run" size="11"/>
 	</dimensions>
-	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rerun_on_structure_change="false" rifp="true">
+	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_accessible="true" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rerun_on_structure_change="false" rifp="true">
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -3594,7 +3594,7 @@ Consumption Risk}</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="8" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="8" isee:scroll_y="420" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4492,7 +4492,7 @@ Consumption Risk}</eqn>
 				</connector>
 				<isee:placeholder x="1321.5" y="1393.58" name="Behavioral Placeholder"/>
 			</view>
-			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="110" home_view="true" type="interface">
+			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="150" home_view="true" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4523,7 +4523,7 @@ Consumption Risk}</eqn>
 				<text_box text_align="center" vertical_text_align="center" font_color="yellow" font_size="14pt" appearance="transparent" x="0" y="464" width="1066" height="64">Please note that this Integrated Learning Environment is a work in progress, shared for transparency and early feedback,
  and may be subject to ongoing updates and improvements.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4539,26 +4539,11 @@ We will explore questions such as:
 
 The simulation results can be analyzed in various target areas to make decisions that impact key aspects of society and the environment.
 
-Choose a specific area for your focus :</text_box>
-				<options font_weight="bold" font_color="#005500" font_size="14pt" appearance="radio-buttons" arrangement="horizontal" x="39.53" y="341.355" width="984.98" height="30.4762">
-					<entity name="Interface.Page_2_Option_1" title="Cool the Earth, Help People">
-						<reset_to after="never">0</reset_to>
-					</entity>
-					<entity name="Interface.Page_2_Option_2" title="Grow Green, Live Better">
-						<reset_to after="never">0</reset_to>
-					</entity>
-					<entity name="Interface.Page_2_Option_3" title="Power Up for a Clean Future">
-						<reset_to after="never">0</reset_to>
-					</entity>
-					<entity name="Interface.Page_2_Option_5" title="Smart Minds, Green Futures">
-						<reset_to after="never">0</reset_to>
-					</entity>
-				</options>
-				<text_box font_size="14pt" padding="20" appearance="transparent" x="19.6404" y="362.831" width="1026.72" height="140.231" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Page_2_Option_1">You&apos;ll explore how reducing GHG emissions can make the world a better place for everyone. You&apos;ll be focusing on three key areas that define our future:
+You&apos;ll explore how reducing GHG emissions can make the world a better place for everyone. You&apos;ll be focusing on three key areas that define our future:
 
 1. Surface Temperature Anomaly (STA) – This tells us how much the Earth’s temperature is changing over time.
 2. GDP per Person – This shows the economic health of countries and its impacts people&apos;s lives.
-3. Income Inequality – This examines the wealth disparity and how it might be reduced.</text_box>
+3. Labour Share of GDP – This examines one portion of the wealth disparity and how it might be reduced.</text_box>
 				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="6.87747" width="1066" height="34.7826" isee:locked="true">FRIDA GLOBAL CLIMATE SIMULATOR
 </text_box>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="0" y="35.1027" width="1066" height="37.62" isee:locked="true">Exploring the Co-Evolution of Climate and Humanity</text_box>
@@ -4567,7 +4552,7 @@ Choose a specific area for your focus :</text_box>
 						<action target="interface:0">navigate</action>
 					</actions>
 				</button>
-				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="1032.59" y="566.058" width="18.838" height="25.9222" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."2nd_Page-Next_Page_Option_Visibility"'>
+				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="1032.59" y="566.058" width="18.838" height="25.9222">
 					<actions>
 						<action target="next_page">navigate</action>
 						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
@@ -4576,11 +4561,6 @@ Choose a specific area for your focus :</text_box>
 						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
-				<isee:annotation z_index="16" font_color="white" border_width="thin" border_style="none" transparent="true" corner_radius="9" popup_background_color="#F5FFE0" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="1032.59" y="569.441" width="18.838" height="19.1558" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."2nd_Page-Next_Page_Message_Visibility"'>
-					<popup x="858.318" y="508.455" width="174.273" height="34.5455">
-						<text>Make a selection to continue.</text>
-					</popup>
-				</isee:annotation>
 				<graphics_frame fill="none" x="7" y="7" width="80" height="80">
 					<image width="520" height="517" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Menu Button 1.png</image>
 				</graphics_frame>
@@ -4603,7 +4583,7 @@ Choose a specific area for your focus :</text_box>
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4697,34 +4677,10 @@ Choose a specific area for your focus :</text_box>
 				</button>
 				<text_box font_weight="bold" text_align="center" vertical_text_align="center" font_color="white" appearance="transparent" x="877.327" y="521.422" width="26.09" height="15.6521">Year</text_box>
 				<isee:shape z_index="-9" background="white" border_color="white" border_width="2" border_style="none" opacity="0.2" transparent_background="false" corner_radius="5" x="326" y="59.0142" width="730.986" height="494.51" isee:locked="true" kind="rectangle"/>
-				<numeric_input z_index="24" font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="983" y="109" width="65" height="20" isee:locked="true" min="1" max="3" title="Target Value" isee:navigate_to="false" show_name="false">
-					<entity name="Interface.Set_STA_Target_Value"/>
-					<reset_to after="never">0</reset_to>
-				</numeric_input>
-				<numeric_input z_index="25" font_weight="bold" font_color="#082A5C" font_size="14pt" input_expands="true" x="983" y="145" width="65" height="20" isee:locked="true" isee:tab_index="1" min="2026" max="2150" title="Target Year" isee:navigate_to="false" show_name="false">
-					<entity name="Interface.Set_STA_Target_Year"/>
-					<reset_to after="never">0</reset_to>
-				</numeric_input>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="106.21" width="75" height="26.5873">Target Value</text_box>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="144.21" width="75" height="26.5873">Target Year</text_box>
-				<numeric_input z_index="19" font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="981" y="247.76" width="65" height="20" isee:locked="true" isee:tab_index="2" min="20" max="200" title="Target Value" isee:navigate_to="false" show_name="false">
-					<entity name="Interface.Set_GDPpp_Target_Value"/>
-					<reset_to after="never">0</reset_to>
-				</numeric_input>
-				<numeric_input z_index="20" font_weight="bold" font_color="#082A5C" font_size="14pt" input_expands="true" x="981" y="286.76" width="65" height="20" isee:locked="true" isee:tab_index="3" min="2026" max="2150" title="Target Year" isee:navigate_to="false" show_name="false">
-					<entity name="Interface.Set_GDPpp_Target_Year"/>
-					<reset_to after="never">0</reset_to>
-				</numeric_input>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="248.97" width="75" height="26.5873">Target Value</text_box>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="286.97" width="75" height="26.5873">Target Year</text_box>
-				<numeric_input font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="981" y="394.71" width="65" height="20" isee:locked="true" isee:tab_index="4" min="25" max="75" title="Target Value" isee:navigate_to="false" show_name="false">
-					<entity name="Interface.Set_Inequality_Target_Value"/>
-					<reset_to after="never">0</reset_to>
-				</numeric_input>
-				<numeric_input font_weight="bold" font_color="#082A5C" font_size="14pt" input_expands="true" x="981" y="431.71" width="65" height="20" isee:locked="true" isee:tab_index="5" title="Target Year" isee:navigate_to="false" show_name="false">
-					<entity name="Interface.Set_Inequality_Target_Year"/>
-					<reset_to after="never">0</reset_to>
-				</numeric_input>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="393.92" width="75" height="26.5873">Target Value</text_box>
 				<text_box font_weight="bold" vertical_text_align="center" font_color="white" appearance="transparent" x="903" y="430.92" width="75" height="26.5873">Target Year</text_box>
 				<button z_index="13" transparent="true" corner_radius="12" isee:flat="false" isee:highlight_on_hover="false" isee:highlight_color="#F0F0F0" label="" isee:tooltip="" x="5.6763" y="563.11" width="34.6674" height="31.8182">
@@ -4768,7 +4724,7 @@ Choose a specific area for your focus :</text_box>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="0" isee:entity="Interface.Set_GDPpp_Target_Year">control_entity</action>
 					</actions>
 				</button>
-				<isee:shape z_index="28" background="#39557D" border_color="white" border_width="2" border_style="none" opacity="1" transparent_background="false" corner_radius="5" x="897" y="75.7575" width="159.788" height="411.985" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Goal_Setting_Boxes_Curtain_Disappear" kind="rectangle"/>
+				<isee:shape z_index="28" background="#39557D" border_color="white" border_width="2" border_style="none" opacity="1" transparent_background="false" corner_radius="5" x="897" y="75.7575" width="159.788" height="419.909" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Goal_Setting_Boxes_Curtain_Disappear" kind="rectangle"/>
 				<isee:animation_object z_index="32" x="387.22" y="87.72" width="477" height="101.5" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.BullsEye_STA_Visibility" isee:immediately_update_on_user_input="true" isee:use_active_value="true">
 					<image>r../Graphics/Bulls Eye Goal Setting.svg</image>
 					<isee:animation_location_transforms>
@@ -4846,8 +4802,32 @@ Chaotic energy transitions, delayed infrastructure, and supply disruptions cause
 
 Your decisions will shape the future - so pay attention to how your choices play out.
 </text_box>
+				<numeric_input z_index="24" font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="982.182" y="110.909" width="65" height="20" isee:tab_index="-1" min="1" max="3" title="Target Value" isee:navigate_to="false" show_name="false">
+					<entity name="Interface.Set_STA_Target_Value"/>
+					<reset_to after="never">0</reset_to>
+				</numeric_input>
+				<numeric_input z_index="25" font_weight="bold" font_color="#082A5C" font_size="14pt" input_expands="true" x="982.182" y="146.909" width="65" height="20" isee:tab_index="-1" min="2026" max="2150" title="Target Year" isee:navigate_to="false" show_name="false">
+					<entity name="Interface.Set_STA_Target_Year"/>
+					<reset_to after="never">0</reset_to>
+				</numeric_input>
+				<numeric_input z_index="19" font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="980.182" y="249.669" width="65" height="20" isee:tab_index="-1" min="20" max="200" title="Target Value" isee:navigate_to="false" show_name="false">
+					<entity name="Interface.Set_GDPpp_Target_Value"/>
+					<reset_to after="never">0</reset_to>
+				</numeric_input>
+				<numeric_input z_index="20" font_weight="bold" font_color="#082A5C" font_size="14pt" input_expands="true" x="980.182" y="288.669" width="65" height="20" isee:tab_index="-1" min="2026" max="2150" title="Target Year" isee:navigate_to="false" show_name="false">
+					<entity name="Interface.Set_GDPpp_Target_Year"/>
+					<reset_to after="never">0</reset_to>
+				</numeric_input>
+				<numeric_input font_weight="bold" font_color="#082A5C" font_size="14pt" label_side="left" wrap_title="true" input_expands="true" x="980.182" y="396.619" width="65" height="20" isee:tab_index="-1" min="25" max="75" title="Target Value" isee:navigate_to="false" show_name="false">
+					<entity name="Interface.Set_Inequality_Target_Value"/>
+					<reset_to after="never">0</reset_to>
+				</numeric_input>
+				<numeric_input font_weight="bold" font_color="#082A5C" font_size="14pt" input_expands="true" x="980.182" y="433.619" width="65" height="20" isee:tab_index="-1" title="Target Year" isee:navigate_to="false" show_name="false">
+					<entity name="Interface.Set_Inequality_Target_Year"/>
+					<reset_to after="never">0</reset_to>
+				</numeric_input>
 			</view>
-			<view isee:template_view="template:2" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4885,7 +4865,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</isee:animation_location_transforms>
 				</isee:animation_object>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard STA B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard STA B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="150" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5021,7 +5001,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:2" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5058,7 +5038,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard Inequality B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard Inequality B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5106,7 +5086,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="352.364" y="60.5402" width="170.217" height="38.87">Real GDP Per Person</text_box>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5167,7 +5147,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="150" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5228,7 +5208,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="160.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Demographics" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Demographics" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5350,7 +5330,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="254.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Land Use Agriculture" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Land Use Agriculture" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5411,7 +5391,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="311.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Behavioral Change" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Behavioral Change" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5533,7 +5513,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="435.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
