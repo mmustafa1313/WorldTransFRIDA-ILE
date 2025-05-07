@@ -6105,7 +6105,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="382.918" y="106" width="268.53" height="40" isee:locked="true" title="Customize Irrigated Cropland Fraction" show_name="true">
+				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="431.489" y="106" width="211.387" height="40" isee:locked="true" title="Customize Irrigated Cropland" show_name="true">
 					<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
