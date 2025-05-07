@@ -6618,7 +6618,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</isee:annotation>
 			</view>
 			<isee:templates>
-				<view isee:name="All Page Background" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="template">
+				<view isee:name="All Page Background" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="template">
 					<style>
 						<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 					</style>
@@ -6769,69 +6769,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Save scenario" x="1025" y="205" width="25" height="25" isee:locked="true">
 						<actions>
-							<action type="export_parameter_values" orientation="vertical">
-								<entity name="Behavioral_Choices.additional_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.food_demand_policy"/>
-								<entity name="Behavioral_Choices.switch_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_energy_demand_policy"/>
-								<entity name="Behavioral_Choices.switch_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.switch_food_demand_policy"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[1]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[2]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[3]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[4]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[5]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[6]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[7]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[8]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[9]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[10]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[11]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[1]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[2]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[3]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[4]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[5]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[6]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[7]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[8]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[9]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[10]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[11]"/>
-								<entity name="Government_Regulations.additional_transfers_policy"/>
-								<entity name="Government_Regulations.animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.concrete_infrastructure_maintenance_policy"/>
-								<entity name="Government_Regulations.concrete_residential_and_service_maintenance_policy"/>
-								<entity name="Government_Regulations.forestation_policy"/>
-								<entity name="Government_Regulations.inflation_goal_policy"/>
-								<entity name="Government_Regulations.Infrastructure_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy_start_year"/>
-								<entity name="Government_Regulations.Residential_and_Service_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.switch_animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.switch_profit_tax_policy"/>
-								<entity name="Government_Regulations.switch_wage_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_profit_tax_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_unemployment_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_inflation_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wealth_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wage_tax_policy"/>
-								<entity name="Government_Regulations.unemployment_goal_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy_start_year"/>
-								<entity name="Government_Regulations.wealth_tax_policy"/>
-								<entity name="Government_Regulations.wealth_tax_policy_start_year"/>
-								<entity name="Concrete.actual_concrete_infrastructure_longevity_policy"/>
-								<entity name="Concrete.actual_concrete_residential_longevity_policy"/>
-								<entity name="Concrete.actual_maintenance_policy"/>
-							</action>
+							<action type="export_parameter_values" orientation="vertical"/>
 						</actions>
 						<image width="64" height="64" size_to_parent="true">r../Graphics/save.png</image>
 					</button>
@@ -6899,69 +6837,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Save scenario" x="1011" y="257" width="25" height="25" isee:locked="true">
 						<actions>
-							<action type="export_parameter_values" orientation="vertical">
-								<entity name="Behavioral_Choices.additional_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.food_demand_policy"/>
-								<entity name="Behavioral_Choices.switch_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_energy_demand_policy"/>
-								<entity name="Behavioral_Choices.switch_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.switch_food_demand_policy"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[1]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[2]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[3]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[4]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[5]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[6]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[7]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[8]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[9]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[10]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[11]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[1]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[2]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[3]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[4]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[5]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[6]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[7]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[8]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[9]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[10]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[11]"/>
-								<entity name="Government_Regulations.additional_transfers_policy"/>
-								<entity name="Government_Regulations.animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.concrete_infrastructure_maintenance_policy"/>
-								<entity name="Government_Regulations.concrete_residential_and_service_maintenance_policy"/>
-								<entity name="Government_Regulations.forestation_policy"/>
-								<entity name="Government_Regulations.inflation_goal_policy"/>
-								<entity name="Government_Regulations.Infrastructure_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy_start_year"/>
-								<entity name="Government_Regulations.Residential_and_Service_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.switch_animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.switch_profit_tax_policy"/>
-								<entity name="Government_Regulations.switch_wage_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_profit_tax_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_unemployment_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_inflation_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wealth_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wage_tax_policy"/>
-								<entity name="Government_Regulations.unemployment_goal_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy_start_year"/>
-								<entity name="Government_Regulations.wealth_tax_policy"/>
-								<entity name="Government_Regulations.wealth_tax_policy_start_year"/>
-								<entity name="Concrete.actual_concrete_infrastructure_longevity_policy"/>
-								<entity name="Concrete.actual_concrete_residential_longevity_policy"/>
-								<entity name="Concrete.actual_maintenance_policy"/>
-							</action>
+							<action type="export_parameter_values" orientation="vertical"/>
 						</actions>
 						<image width="64" height="64" size_to_parent="true">r../Graphics/save.png</image>
 					</button>
@@ -7102,69 +6978,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Save scenario" x="1011" y="257" width="25" height="25" isee:locked="true">
 						<actions>
-							<action type="export_parameter_values" orientation="vertical">
-								<entity name="Behavioral_Choices.additional_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.food_demand_policy"/>
-								<entity name="Behavioral_Choices.switch_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
-								<entity name="Behavioral_Choices.switch_energy_demand_policy"/>
-								<entity name="Behavioral_Choices.switch_environmental_consciousness_policy"/>
-								<entity name="Behavioral_Choices.switch_food_demand_policy"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[1]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[2]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[3]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[4]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[5]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[6]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[7]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[8]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[9]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[10]"/>
-								<entity name="Circular_Flow.Redistributive_impact_of_fiscal_policy[11]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[1]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[2]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[3]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[4]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[5]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[6]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[7]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[8]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[9]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[10]"/>
-								<entity name="Government.interest_rate_policy_discrepancy[11]"/>
-								<entity name="Government_Regulations.additional_transfers_policy"/>
-								<entity name="Government_Regulations.animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.concrete_infrastructure_maintenance_policy"/>
-								<entity name="Government_Regulations.concrete_residential_and_service_maintenance_policy"/>
-								<entity name="Government_Regulations.forestation_policy"/>
-								<entity name="Government_Regulations.inflation_goal_policy"/>
-								<entity name="Government_Regulations.Infrastructure_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy"/>
-								<entity name="Government_Regulations.profit_tax_policy_start_year"/>
-								<entity name="Government_Regulations.Residential_and_Service_buildings_longevity_policy"/>
-								<entity name="Government_Regulations.switch_animal_product_efficiency_policy"/>
-								<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
-								<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
-								<entity name="Government_Regulations.switch_profit_tax_policy"/>
-								<entity name="Government_Regulations.switch_wage_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_profit_tax_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_unemployment_policy"/>
-								<entity name="Government_Regulations.time_to_start_central_bank_inflation_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wealth_tax_policy"/>
-								<entity name="Government_Regulations.time_to_implement_wage_tax_policy"/>
-								<entity name="Government_Regulations.unemployment_goal_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy"/>
-								<entity name="Government_Regulations.wage_tax_policy_start_year"/>
-								<entity name="Government_Regulations.wealth_tax_policy"/>
-								<entity name="Government_Regulations.wealth_tax_policy_start_year"/>
-								<entity name="Concrete.actual_concrete_infrastructure_longevity_policy"/>
-								<entity name="Concrete.actual_concrete_residential_longevity_policy"/>
-								<entity name="Concrete.actual_maintenance_policy"/>
-							</action>
+							<action type="export_parameter_values" orientation="vertical"/>
 						</actions>
 						<image width="64" height="64" size_to_parent="true">r../Graphics/save.png</image>
 					</button>
