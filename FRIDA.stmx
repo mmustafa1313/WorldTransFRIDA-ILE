@@ -4606,7 +4606,7 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" isee:scroll_x="140" zoom="105" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4718,9 +4718,8 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 					</isee:animation_location_transforms>
 				</isee:animation_object>
 				<isee:annotation z_index="22" border_width="0" border_style="none" transparent="true" isee:flat="false" popup_background_color="#F5FFE0" popup_font_weight="bold" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="1025.37" y="563.584" width="33.288" height="30.8708" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Set_Your_Goal_Reminder">
-					<popup x="943.128" y="504.107" width="112.231" height="48.283">
-						<text>Set your targets
- to continue.</text>
+					<popup x="900.271" y="493.631" width="155.088" height="58.7592">
+						<text>Run the simulation to the end, and set at least one target to continue.</text>
 					</popup>
 				</isee:annotation>
 				<button z_index="21" background="#FFFF7F" transparent="true" corner_radius="21" isee:flat="false" label="" isee:tooltip="" x="1023.2" y="560.508" width="37.6261" height="37.022" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Next_to_Policy_Page_Button_Visibility">
@@ -6095,7 +6094,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6181,15 +6180,15 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<slider z_index="32" color="#0075FF" label_side="left" input_expands="false" input_width="200" x="44" y="111" width="290" height="153" isee:locked="true" min="50" max="100" title="Minimum percentage of taxes spent by government" isee:navigate_to="false" show_name="true">
-					<entity name="Government_Regulations.minimum_percentage_of_taxes_spent_by_government"/>
+				<slider z_index="32" color="#0075FF" label_side="left" input_expands="false" input_width="200" x="44" y="111" width="290" height="153" isee:locked="true" title="Minimum percentage of taxes spent by government" isee:navigate_to="false" show_name="true">
+					<entity name="Government_Regulations.minimum_percentage_of_taxes_spent_by_government_policy"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="375" y="140" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_government_debt_to_GDP_ratio" title="Government Debt to GDP Ratio Target" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.government_debt_to_GDP_ratio_target"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="32" color="#0075FF" label_side="left" x="45" y="326" width="290" height="75" isee:locked="true" title="Central Bank Inflation Target" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="45" y="326" width="290" height="75" isee:locked="true" title="Central Bank Inflation Target" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.inflation_goal_policy"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
@@ -6209,14 +6208,14 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</switch>
 				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="375" y="355" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_profit_tax_policy" title="Profit Tax Rate" isee:navigate_to="false" show_name="true">
-					<entity name="Government_Regulations.profit_tax_policy"/>
+					<entity name="Government_Regulations.profit_tax_policy_input"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="360" y="481.27" width="310" height="30" isee:locked="true">Profit Tax</text_box>
 				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
 				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="705" y="140" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wage_tax_policy" title="Wage Tax Rate" isee:navigate_to="false" show_name="true">
-					<entity name="Government_Regulations.wage_tax_policy"/>
+					<entity name="Government_Regulations.wage_tax_policy_input"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="690" y="264.91" width="310" height="30" isee:locked="true">Wage Tax</text_box>
@@ -6226,7 +6225,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</switch>
 				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="705" y="355" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wealth_tax_policy" title="Wealth Tax Rate" isee:navigate_to="false" show_name="true">
-					<entity name="Government_Regulations.wealth_tax_policy"/>
+					<entity name="Government_Regulations.wealth_tax_policy_input"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="690" y="481.27" width="310" height="30" isee:locked="true">Wealth Tax</text_box>
@@ -6275,7 +6274,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="267" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wage_tax_policy">
 					<actions>
-						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.wage_tax_policy">set_placeholder</action>
+						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.wage_tax_policy_input">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_wage_tax_policy">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Start_Year"' isee:placeholder_value="Government_Regulations.wage_tax_policy_start_year">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="15" isee:entity="Interface.Dialogue_Title">control_entity</action>
@@ -6285,7 +6284,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="483.5" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_profit_tax_policy">
 					<actions>
-						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.profit_tax_policy">set_placeholder</action>
+						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.profit_tax_policy_input">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_profit_tax_policy">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Start_Year"' isee:placeholder_value="Government_Regulations.profit_tax_policy_start_year">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="16" isee:entity="Interface.Dialogue_Title">control_entity</action>
@@ -6295,7 +6294,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="484" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wealth_tax_policy">
 					<actions>
-						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.wealth_tax_policy">set_placeholder</action>
+						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.wealth_tax_policy_input">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_wealth_tax_policy">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Start_Year"' isee:placeholder_value="Government_Regulations.wealth_tax_policy_start_year">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="17" isee:entity="Interface.Dialogue_Title">control_entity</action>
