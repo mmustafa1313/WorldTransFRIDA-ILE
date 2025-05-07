@@ -296,7 +296,7 @@ tax_rate_on_newly_installed_hydropower_capacity_start_year_first_level,
 tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_hydropower_capacity_second_level,
 tax_rate_on_newly_installed_hydropower_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed\nnuclear energy capacity" access="output" isee:autocreated="true">
@@ -305,11 +305,11 @@ tax_rate_on_newly_installed_nuclear_capacity_start_year_first_level,
 tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_nuclear_capacity_second_level,
 tax_rate_on_newly_installed_nuclear_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed\ncoal extraction capacity" access="output" isee:autocreated="true">
-				<eqn>SIXPARM(tax_rate_on_newly_installed_coal_extraction_capacity_first_level, tax_rate_on_newly_installed_coal_extraction_capacity_start_year_first_level, tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_first_level, tax_rate_on_newly_installed_coal_extraction_capacity_second_level, tax_rate_on_newly_installed_coal_extraction_capacity_time_to_start_second_level, tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_second_level)</eqn>
+				<eqn>SIXPARM(tax_rate_on_newly_installed_coal_extraction_capacity_first_level, tax_rate_on_newly_installed_coal_extraction_capacity_start_year_first_level, tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_first_level, tax_rate_on_newly_installed_coal_extraction_capacity_second_level, tax_rate_on_newly_installed_coal_extraction_capacity_time_to_start_second_level, tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed\ncoal energy production capacity" access="output" isee:autocreated="true">
@@ -318,7 +318,7 @@ tax_rate_on_newly_installed_coal_energy_production_capacity_start_year_first_lev
 tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_coal_energy_production_capacity_second_level,
 tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed\noil extraction capacity" access="output" isee:autocreated="true">
@@ -327,7 +327,7 @@ tax_rate_on_newly_installed_oil_extraction_capacity_start_year_first_level,
 tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_oil_extraction_capacity_second_level,
 tax_rate_on_newly_installed_oil_extraction_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed oil energy\nproduction capacity" access="output" isee:autocreated="true">
@@ -336,7 +336,7 @@ tax_rate_on_newly_installed_oil_energy_production_capacity_start_year_first_leve
 tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_oil_energy_production_capacity_second_level,
 tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed\ngas extraction capacity" access="output" isee:autocreated="true">
@@ -345,7 +345,7 @@ tax_rate_on_newly_installed_gas_extraction_capacity_start_year_first_level,
 tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_gas_extraction_capacity_second_level,
 tax_rate_on_newly_installed_gas_extraction_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed gas energy\nproduction capacity" access="output" isee:autocreated="true">
@@ -354,7 +354,7 @@ tax_rate_on_newly_installed_gas_energy_production_capacity_start_year_first_leve
 tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_gas_energy_production_capacity_second_level,
 tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed\nbio energy capacity" access="output" isee:autocreated="true">
@@ -363,7 +363,7 @@ tax_rate_on_newly_installed_bio_energy_capacity_start_year_first_level,
 tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_bio_energy_capacity_second_level,
 tax_rate_on_newly_installed_bio_energy_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="concrete residential and service\nmaintenance policy" access="output">
@@ -417,7 +417,8 @@ tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_second_level)<
 			</aux>
 			<aux name="irrigation fraction policy" access="output">
 				<eqn>THREEPARM(irrigation_fraction_first_level, 
-irrigation_fraction_start_year_first_level, irrigation_fraction_time_to_implement_first_level)</eqn>
+irrigation_fraction_start_year_first_level, irrigation_fraction_time_to_implement_first_level)/100</eqn>
+				<format precision="1" display_as="percent"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="switch non agricultural\nwater use policy" access="output">
@@ -596,9 +597,9 @@ This policy lever simulates stricter/looser building standards for concrete stru
 			<aux name="minimum percentage of\ntaxes spent by government" access="output" isee:autocreated="true">
 				<doc>${Policy}
 </doc>
-				<eqn>0.9</eqn>
-				<format precision="0.01"/>
-				<range min="0.5" max="1"/>
+				<eqn>0.9*100</eqn>
+				<format precision="1" display_as="percent"/>
+				<range min="50" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="No SLR adaptation strategy" access="output" isee:autocreated="true">
@@ -637,7 +638,7 @@ This policy lever simulates stricter/looser building standards for concrete stru
 				<range min="5" max="50"/>
 				<units>years</units>
 			</aux>
-			<aux name="computed government debt to GDP ratio target" access="output" isee:autocreated="true">
+			<aux name="computed government debt\nto GDP ratio target" access="output" isee:autocreated="true">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -783,7 +784,7 @@ tax_rate_on_newly_installed_solar_energy_capacity_start_year_first_level,
 tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_solar_energy_capacity_second_level,
 tax_rate_on_newly_installed_solar_energy_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed\nwind\nenergy capacity" access="output" isee:autocreated="true">
@@ -792,7 +793,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_start_year_first_level,
 tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_first_level, 
 tax_rate_on_newly_installed_wind_energy_capacity_second_level,
 tax_rate_on_newly_installed_wind_energy_capacity_time_to_start_second_level,
-tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)</eqn>
+tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)/100</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="SLR adaptation start year" access="output">
@@ -869,7 +870,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -877,7 +878,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
+				<format precision="1" prefix="$ "/>
 				<range min="0" max="300"/>
 				<units>c$/(tCO2e/year)</units>
 			</aux>
@@ -893,7 +894,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -901,7 +902,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
+				<format precision="1" prefix="$ "/>
 				<range min="0" max="300"/>
 				<units>c$/(tCO2e/year)</units>
 			</aux>
@@ -917,16 +918,16 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
-			<aux name="tax rate on newly installed coal extraction capacity first level">
+			<aux name="tax rate on newly installed coal\nextraction capacity first level">
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed coal extraction capacity\ntime to start second level">
@@ -941,7 +942,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -949,8 +950,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="irrigation fraction start\nyear first level">
@@ -965,7 +966,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -973,8 +974,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0.239</eqn>
-				<format precision="1"/>
-				<range min="0.15" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="15" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed oil extraction capacity\nstart year first level">
@@ -989,7 +990,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -997,8 +998,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed oil extraction capacity\ntime to start second level">
@@ -1013,7 +1014,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1021,8 +1022,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed gas extraction capacity\nstart year first level">
@@ -1037,7 +1038,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1045,8 +1046,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed gas extraction capacity\ntime to start second level">
@@ -1061,7 +1062,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1069,8 +1070,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed coal energy production capacity\nstart year first level">
@@ -1085,7 +1086,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1093,8 +1094,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed coal energy production capacity\ntime to start second level">
@@ -1109,7 +1110,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1117,8 +1118,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed oil energy production capacity\nstart year first level">
@@ -1133,7 +1134,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1141,8 +1142,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed oil energy production capacity\ntime to start second level">
@@ -1157,7 +1158,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1165,8 +1166,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed gas energy production capacity\nstart year first level">
@@ -1181,7 +1182,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1189,8 +1190,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed gas energy production capacity\ntime to start second level">
@@ -1205,7 +1206,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1213,8 +1214,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed hydropower capacity\nstart year first level">
@@ -1229,7 +1230,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1237,8 +1238,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed hydropower capacity\ntime to start second level">
@@ -1253,7 +1254,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1261,8 +1262,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed bio energy capacity\nstart year first level">
@@ -1277,7 +1278,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1285,8 +1286,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed bio energy capacity\ntime to start second level">
@@ -1301,7 +1302,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1309,8 +1310,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed nuclear capacity\nstart year first level">
@@ -1325,7 +1326,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1333,8 +1334,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed nuclear capacity\ntime to start second level">
@@ -1349,7 +1350,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1357,8 +1358,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed solar energy capacity\nstart year first level">
@@ -1373,16 +1374,16 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
-			<aux name="tax rate on newly installed\nsolar energy capacity first level">
+			<aux name="tax rate on newly installed\nsolar energy\ncapacity first level">
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed solar energy capacity\ntime to start second level">
@@ -1397,7 +1398,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1405,8 +1406,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on\nnewly installed wind energy capacity\nstart year first level">
@@ -1421,16 +1422,16 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
-			<aux name="tax rate on newly installed\nwind energy capacity first level">
+			<aux name="tax rate on newly installed\nwind energy capacity\nfirst level">
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="tax rate on newly installed wind energy capacity\ntime to start second level">
@@ -1445,7 +1446,7 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1453,8 +1454,8 @@ tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level)
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="-0.75" max="1"/>
+				<format precision="1" display_as="percent"/>
+				<range min="-75" max="100"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="forestation policy" access="output" isee:autocreated="true">
@@ -1487,7 +1488,7 @@ forestation_time_to_implement_second_level)</eqn>
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1495,7 +1496,7 @@ forestation_time_to_implement_second_level)</eqn>
 				<doc>${Policy}
 </doc>
 				<eqn>0</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" Mha/year"/>
 				<range min="0" max="9"/>
 				<units>Mha/year</units>
 			</aux>
@@ -1511,7 +1512,7 @@ forestation_time_to_implement_second_level)</eqn>
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1535,7 +1536,7 @@ forestation_time_to_implement_second_level)</eqn>
 				<doc>${Policy}
 </doc>
 				<eqn>10</eqn>
-				<format precision="1"/>
+				<format precision="1" suffix=" years"/>
 				<range min="5" max="50"/>
 				<units>Year</units>
 			</aux>
@@ -1547,6 +1548,62 @@ forestation_time_to_implement_second_level)</eqn>
 				<range min="150000000" max="173500000"/>
 				<units>m^3/Mp/year</units>
 			</aux>
+			<isee:placeholder name="First Level Placeholder">
+				<eqn>Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_first_level + Government_Regulations.tax_on_CO2e_emissions_first_level + Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_first_level + Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_first_level + Government_Regulations.forestation_first_level</eqn>
+			</isee:placeholder>
+			<isee:placeholder name="Start Year First Level\nPlaceholder" isee:derived_units="true">
+				<eqn>Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_start_year_first_level + Government_Regulations.tax_on_CO2e_emissions_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_start_year_first_level + Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_start_year_first_level + Government_Regulations.forestation_start_year_first_level</eqn>
+				<units>years</units>
+			</isee:placeholder>
+			<isee:placeholder name="Time to implement first level placeholder">
+				<eqn>Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_first_level + Government_Regulations.tax_on_CO2e_emissions_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_first_level + Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_first_level + Government_Regulations.forestation_time_to_implement_first_level</eqn>
+			</isee:placeholder>
+			<isee:placeholder name="Second Level Placeholder" isee:derived_units="true">
+				<eqn>Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_second_level + Government_Regulations.tax_on_CO2e_emissions_second_level + Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_second_level + Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_second_level + Government_Regulations.forestation_second_level</eqn>
+				<units>dmnl</units>
+			</isee:placeholder>
+			<isee:placeholder name="Start Year Second Level\nPlaceholder" isee:derived_units="true">
+				<eqn>Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_start_second_level + Government_Regulations.tax_on_CO2e_emissions_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_time_to_start_second_level + Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_time_to_start_second_level + Government_Regulations.forestation_time_to_start_second_level</eqn>
+				<units>years</units>
+			</isee:placeholder>
+			<isee:placeholder name="Time to implement second\nlevel placeholder">
+				<eqn>Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_second_level + Government_Regulations.tax_on_CO2e_emissions_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_second_level + Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level + Government_Regulations.forestation_time_to_implement_second_level</eqn>
+			</isee:placeholder>
+			<aux name="switch forestation policy" access="output">
+				<doc>${Policy}
+</doc>
+				<eqn>0</eqn>
+				<format precision="1" scale_by="auto"/>
+				<range min="0" max="1"/>
+				<units>dmnl</units>
+			</aux>
+			<isee:placeholder name="three parm -\nImplementation time" isee:derived_units="true">
+				<eqn>Government_Regulations.time_for_government_to_change_the_debt_to_GDP_ratio_target + Government_Regulations.time_to_implement_wage_tax_policy + Government_Regulations.time_to_implement_wealth_tax_policy + Government_Regulations.time_to_implement_profit_tax_policy</eqn>
+				<units>years</units>
+			</isee:placeholder>
+			<isee:placeholder name="three parm -\nStart Year" isee:derived_units="true">
+				<eqn>Government_Regulations.debt_to_gdp_level_start_year + Government_Regulations.wage_tax_policy_start_year + Government_Regulations.wealth_tax_policy_start_year + Government_Regulations.profit_tax_policy_start_year</eqn>
+				<units>years</units>
+			</isee:placeholder>
+			<aux name="switch wealth tax policy" access="output" isee:autocreated="true">
+				<doc>${Policy}
+</doc>
+				<eqn>0</eqn>
+				<format precision="1"/>
+				<range min="0" max="1"/>
+				<units>dmnl</units>
+			</aux>
+			<aux name="switch government debt to GDP ratio" access="output" isee:autocreated="true">
+				<doc>${Policy}
+</doc>
+				<eqn>0</eqn>
+				<format precision="1"/>
+				<range min="0" max="1"/>
+				<units>dmnl</units>
+			</aux>
+			<isee:placeholder name="three parm -\nRate">
+				<eqn>Government_Regulations.government_debt_to_GDP_ratio_target + Government_Regulations.wage_tax_policy + Government_Regulations.wealth_tax_policy + Government_Regulations.profit_tax_policy</eqn>
+			</isee:placeholder>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -1596,7 +1653,7 @@ forestation_time_to_implement_second_level)</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="2" isee:page_rows="10" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="2" isee:page_rows="10" isee:scroll_x="54" isee:scroll_y="3200" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1651,9 +1708,9 @@ N2O 1:273</text_box>
 				<text_box uid="3" x="215.611" y="475.81" width="220.555" height="54.1111">Tax/Subsidy for new installation of energy capacity. 
 Negative taxes are subsidies</text_box>
 				<aux x="799.444" y="301.031" name="Moratorium on fossil energy year"/>
-				<aux x="1014.03" y="3454.03" name="tax rate on newly installed\nhydropower capacity"/>
+				<aux x="1013.03" y="3454.03" name="tax rate on newly installed\nhydropower capacity"/>
 				<aux x="1061.25" y="3935.84" name="tax rate on newly installed\nnuclear energy capacity"/>
-				<aux x="763.151" y="1969.67" name="tax rate on newly installed\ncoal extraction capacity"/>
+				<aux x="858.151" y="2023.67" name="tax rate on newly installed\ncoal extraction capacity"/>
 				<aux x="289.417" y="2919.31" name="tax rate on newly installed\ncoal energy production capacity"/>
 				<text_box uid="4" x="133.611" y="548.333" width="77.2222" height="21.3333">Fossil Fuel</text_box>
 				<text_box uid="5" x="283.112" y="548.333" width="77.2222" height="21.3333">Fossil Energy</text_box>
@@ -1667,13 +1724,13 @@ Negative taxes are subsidies</text_box>
 				<aux x="314.667" y="3905" name="tax rate on newly installed\nbio energy capacity"/>
 				<aux x="124.611" y="93.75" name="concrete residential and service\nmaintenance policy"/>
 				<aux x="124.611" y="164.643" name="concrete infrastructure maintenance policy"/>
-				<aux x="686.25" y="1216.43" name="switch animal product\nefficiency policy"/>
-				<aux label_side="bottom" x="533.125" y="1216.43" name="animal product\nefficiency policy"/>
-				<aux x="687.084" y="1286.43" name="switch irrigation fraction policy"/>
+				<aux x="772.203" y="1214.64" name="switch animal product\nefficiency policy"/>
+				<aux label_side="bottom" x="772.203" y="1278.22" name="animal product\nefficiency policy"/>
+				<aux background="lime" x="317.084" y="5613.88" name="switch irrigation fraction policy"/>
 				<aux label_side="bottom" x="389.376" y="5452.5" name="irrigation fraction policy"/>
-				<aux x="692.084" y="1360.6" name="switch non agricultural\nwater use policy"/>
+				<aux background="lime" x="772.084" y="5613.88" name="switch non agricultural\nwater use policy"/>
 				<aux label_side="bottom" x="821.459" y="5443.1" name="non agricultural\nwater use policy"/>
-				<aux label_side="bottom" x="533.125" y="1143.93" name="irrigation efficiency multiplier"/>
+				<aux label_side="bottom" x="772.203" y="1137.83" name="irrigation efficiency multiplier"/>
 				<text_box uid="10" x="1078.33" y="242.66" width="192.5" height="26.3333">CCS of emissions from Energy</text_box>
 				<aux x="1155.83" y="289.92" name="share of coal emissions stored"/>
 				<aux x="1156.67" y="349.667" name="share of oil\nemissions stored"/>
@@ -1683,24 +1740,24 @@ Negative taxes are subsidies</text_box>
 				<aux x="452.791" y="404" name="biofuels SO2 emissions\ntax reduction share"/>
 				<aux x="1230" y="826.834" name="inflation goal policy"/>
 				<aux x="1212" y="1182.26" name="unemployment goal policy"/>
-				<aux x="55.9443" y="974.17" name="wage tax policy"/>
-				<aux x="105.833" y="919.14" name="switch wage tax policy"/>
-				<aux x="284.5" y="976.81" name="profit tax policy"/>
-				<aux x="165" y="974.17" name="time to implement\nwage tax policy"/>
-				<aux x="55.9443" y="1031.25" name="wage tax policy start year"/>
+				<aux x="102.611" y="865.241" name="wage tax policy"/>
+				<aux background="lime" x="102.611" y="803.069" name="switch wage tax policy"/>
+				<aux x="304.024" y="865.956" name="profit tax policy"/>
+				<aux x="102.611" y="916.67" name="time to implement\nwage tax policy"/>
+				<aux x="102.611" y="987" name="wage tax policy start year"/>
 				<aux color="black" font_color="black" x="286.834" y="93.75" name="Residential and Service\nbuildings longevity policy"/>
 				<aux color="black" font_color="black" x="282" y="161.57" name="Infrastructure\nbuildings longevity policy"/>
-				<aux x="87.1667" y="1166.43" name="wealth tax policy"/>
-				<aux x="172.917" y="1469.35" name="government debt to\nGDP ratio target"/>
-				<aux x="308.25" y="1717.91" name="minimum percentage of\ntaxes spent by government"/>
+				<aux x="515.976" y="865.241" name="wealth tax policy"/>
+				<aux x="188.631" y="1198.64" name="government debt to\nGDP ratio target"/>
+				<aux x="779.083" y="1505.75" name="minimum percentage of\ntaxes spent by government"/>
 				<aux x="945.834" y="942.5" name="No SLR adaptation strategy"/>
 				<text_box uid="11" x="875.417" y="895.001" width="140.833" height="19.6667">Sea level rise adaptation</text_box>
 				<aux x="945.834" y="1005" name="Protection as SLR\nadaptation strategy"/>
 				<aux x="945.834" y="1075.83" name="Retreat as SLR adaptation strategy"/>
-				<aux x="329.5" y="1201.75" name="additional transfers policy"/>
-				<aux x="172.917" y="1533.75" name="time for government to change\nthe debt to GDP ratio target"/>
-				<aux x="326.25" y="1523.75" name="computed government debt to GDP ratio target"/>
-				<aux x="299.083" y="1443.75" name="calibration period\ngovernment debt to GDP ratio target"/>
+				<aux x="772.203" y="1067.82" name="additional transfers policy"/>
+				<aux x="188.631" y="1263.04" name="time for government to change\nthe debt to GDP ratio target"/>
+				<aux x="341.964" y="1253.04" name="computed government debt\nto GDP ratio target"/>
+				<aux x="314.797" y="1173.04" name="calibration period\ngovernment debt to GDP ratio target"/>
 				<connector uid="16" angle="280.758">
 					<from>calibration_period_government_debt_to_GDP_ratio_target</from>
 					<to>computed_government_debt_to_GDP_ratio_target</to>
@@ -1756,16 +1813,16 @@ Negative taxes are subsidies</text_box>
 					<from>time_to_start_central_bank_unemployment_policy</from>
 					<to>actual_unemployment_goal</to>
 				</connector>
-				<aux x="464.167" y="1595.83" name="debt to gdp level start year"/>
-				<connector uid="45" angle="137.936">
+				<aux x="462.381" y="1267.62" name="debt to gdp level start year"/>
+				<connector uid="45" angle="158.625">
 					<from>debt_to_gdp_level_start_year</from>
 					<to>computed_government_debt_to_GDP_ratio_target</to>
 				</connector>
-				<aux x="340" y="923.307" name="switch profit tax policy"/>
-				<aux x="390" y="976.81" name="time to implement\nprofit tax policy"/>
-				<aux x="278.444" y="1047.92" name="profit tax policy start year"/>
-				<aux x="175.5" y="1171.14" name="time to implement\nwealth tax policy"/>
-				<aux x="78.1107" y="1219.75" name="wealth tax policy start year"/>
+				<aux background="lime" x="304.024" y="803.783" name="switch profit tax policy"/>
+				<aux x="304.024" y="917.384" name="time to implement\nprofit tax policy"/>
+				<aux x="304.024" y="987.714" name="profit tax policy start year"/>
+				<aux x="515.976" y="916.67" name="time to implement\nwealth tax policy"/>
+				<aux x="515.976" y="987" name="wealth tax policy start year"/>
 				<aux label_side="left" label_angle="135" x="174.667" y="1987.67" name="tax on CO2e\nemissions start year first level"/>
 				<aux label_side="left" label_angle="225" x="174.667" y="2062.67" name="tax on CO2e emissions\ntime to implement\nfirst level"/>
 				<aux label_side="left" x="174.667" y="2162" name="tax on CO2e emissions\nfirst level"/>
@@ -1780,7 +1837,7 @@ Negative taxes are subsidies</text_box>
 					<from>tax_on_CO2e_emissions_time_to_implement_first_level</from>
 					<to>tax_on_CO2e_emissions</to>
 				</connector>
-				<connector uid="48" angle="60.1799">
+				<connector uid="48" angle="50.9643">
 					<from>tax_on_CO2e_emissions_first_level</from>
 					<to>tax_on_CO2e_emissions</to>
 				</connector>
@@ -1796,12 +1853,12 @@ Negative taxes are subsidies</text_box>
 					<from>tax_on_CO2e_emissions_second_level</from>
 					<to>tax_on_CO2e_emissions</to>
 				</connector>
-				<aux label_side="top" x="653" y="1936.67" name="tax rate on\nnewly installed coal extraction capacity\nstart year first level"/>
-				<aux x="604.667" y="2015.33" name="tax rate on newly installed coal extraction capacity\ntime to implement first level"/>
-				<aux x="639.667" y="2095.33" name="tax rate on newly installed coal extraction capacity first level"/>
-				<aux label_side="top" x="905" y="1936.67" name="tax rate on newly installed coal extraction capacity\ntime to start second level"/>
-				<aux x="928.333" y="2009.67" name="tax rate on newly installed coal extraction capacity\ntime to implement second level"/>
-				<aux x="861.666" y="2095.33" name="tax rate on newly installed coal extraction capacity second level"/>
+				<aux label_side="top" x="748" y="1990.67" name="tax rate on\nnewly installed coal extraction capacity\nstart year first level"/>
+				<aux x="699.667" y="2069.33" name="tax rate on newly installed coal extraction capacity\ntime to implement first level"/>
+				<aux x="734.667" y="2149.33" name="tax rate on newly installed coal\nextraction capacity first level"/>
+				<aux label_side="top" x="1000" y="1990.67" name="tax rate on newly installed coal extraction capacity\ntime to start second level"/>
+				<aux x="1023.33" y="2063.67" name="tax rate on newly installed coal extraction capacity\ntime to implement second level"/>
+				<aux x="956.666" y="2149.33" name="tax rate on newly installed coal extraction capacity second level"/>
 				<connector uid="52" angle="343.322">
 					<from>tax_rate_on_newly_installed_coal_extraction_capacity_start_year_first_level</from>
 					<to>tax_rate_on_newly_installed_coal_extraction_capacity</to>
@@ -1877,7 +1934,7 @@ Negative taxes are subsidies</text_box>
 				<aux label_side="top" x="1070.83" y="2370" name="tax rate on newly installed gas extraction capacity\ntime to start second level"/>
 				<aux x="1070.83" y="2459.67" name="tax rate on newly installed gas extraction capacity\ntime to implement second level"/>
 				<aux x="1070.83" y="2559.99" name="tax rate on newly installed\ngas extraction\ncapacity second level"/>
-				<connector uid="67" angle="342.138">
+				<connector uid="67" angle="343.532">
 					<from>tax_rate_on_newly_installed_gas_extraction_capacity_start_year_first_level</from>
 					<to>tax_rate_on_newly_installed_gas_extraction_capacity</to>
 				</connector>
@@ -1997,27 +2054,27 @@ Negative taxes are subsidies</text_box>
 				<aux label_side="top" x="1163.75" y="3400.42" name="tax rate on newly installed hydropower capacity\ntime to start second level"/>
 				<aux x="1163.75" y="3490.09" name="tax rate on newly installed hydropower capacity\ntime to implement second level"/>
 				<aux x="1163.75" y="3590.41" name="tax rate on newly installed\nhydropower capacity\nsecond level"/>
-				<connector uid="91" angle="56.2377">
+				<connector uid="91" angle="56.4031">
 					<from>tax_rate_on_newly_installed_hydropower_capacity_first_level</from>
 					<to>tax_rate_on_newly_installed_hydropower_capacity</to>
 				</connector>
-				<connector uid="92" angle="349.265">
+				<connector uid="92" angle="342.378">
 					<from>tax_rate_on_newly_installed_hydropower_capacity_start_year_first_level</from>
 					<to>tax_rate_on_newly_installed_hydropower_capacity</to>
 				</connector>
-				<connector uid="93" angle="31.8894">
+				<connector uid="93" angle="31.9666">
 					<from>tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_first_level</from>
 					<to>tax_rate_on_newly_installed_hydropower_capacity</to>
 				</connector>
-				<connector uid="94" angle="130.978">
+				<connector uid="94" angle="137.859">
 					<from>tax_rate_on_newly_installed_hydropower_capacity_second_level</from>
 					<to>tax_rate_on_newly_installed_hydropower_capacity</to>
 				</connector>
-				<connector uid="95" angle="200.39">
+				<connector uid="95" angle="199.58">
 					<from>tax_rate_on_newly_installed_hydropower_capacity_time_to_start_second_level</from>
 					<to>tax_rate_on_newly_installed_hydropower_capacity</to>
 				</connector>
-				<connector uid="96" angle="160.661">
+				<connector uid="96" angle="166.545">
 					<from>tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_second_level</from>
 					<to>tax_rate_on_newly_installed_hydropower_capacity</to>
 				</connector>
@@ -2083,7 +2140,7 @@ Negative taxes are subsidies</text_box>
 				</connector>
 				<aux label_side="top" x="153" y="4334.17" name="tax rate on\nnewly installed solar energy capacity\nstart year first level"/>
 				<aux x="153" y="4428.66" name="tax rate on newly installed solar energy capacity\ntime to implement first level"/>
-				<aux x="153" y="4524.16" name="tax rate on newly installed\nsolar energy capacity first level"/>
+				<aux x="153" y="4524.16" name="tax rate on newly installed\nsolar energy\ncapacity first level"/>
 				<aux label_side="top" x="472.5" y="4334.17" name="tax rate on newly installed solar energy capacity\ntime to start second level"/>
 				<aux x="472.5" y="4423.84" name="tax rate on newly installed solar energy capacity\ntime to implement second level"/>
 				<aux x="472.5" y="4524.16" name="tax rate on newly installed\nsolar energy capacity\nsecond level"/>
@@ -2113,7 +2170,7 @@ Negative taxes are subsidies</text_box>
 				</connector>
 				<aux label_side="top" x="895.5" y="4320.42" name="tax rate on\nnewly installed wind energy capacity\nstart year first level"/>
 				<aux x="895.5" y="4414.91" name="tax rate on newly installed wind energy capacity\ntime to implement first level"/>
-				<aux x="895.5" y="4510.41" name="tax rate on newly installed\nwind energy capacity first level"/>
+				<aux x="895.5" y="4510.41" name="tax rate on newly installed\nwind energy capacity\nfirst level"/>
 				<aux label_side="top" x="1215" y="4320.42" name="tax rate on newly installed wind energy capacity\ntime to start second level"/>
 				<aux x="1215" y="4410.09" name="tax rate on newly installed wind energy capacity\ntime to implement second level"/>
 				<aux x="1215" y="4510.41" name="tax rate on newly installed\nwind energy capacity\nsecond level"/>
@@ -2144,11 +2201,11 @@ Negative taxes are subsidies</text_box>
 				<aux x="303.75" y="4920.06" name="forestation policy"/>
 				<aux label_side="top" x="140.5" y="4870.42" name="forestation\nstart year first level"/>
 				<aux x="140.5" y="4964.91" name="forestation\ntime to implement first level"/>
-				<aux x="140.5" y="5060.41" name="forestation\nfirst level"/>
+				<aux x="143.5" y="5060.41" name="forestation\nfirst level"/>
 				<aux label_side="top" x="460" y="4870.42" name="forestation\ntime to start second level"/>
 				<aux x="460" y="4960.09" name="forestation\ntime to implement\nsecond level"/>
 				<aux x="460" y="5060.41" name="forestation\nsecond level"/>
-				<connector uid="127" angle="38.7228">
+				<connector uid="127" angle="41.2125">
 					<from>forestation_first_level</from>
 					<to>forestation_policy</to>
 				</connector>
@@ -2187,6 +2244,18 @@ Negative taxes are subsidies</text_box>
 					<from>non_agricultural_water_use_time_to_implement_first_level</from>
 					<to>non_agricultural_water_use_policy</to>
 				</connector>
+				<isee:placeholder x="353.5" y="5193" name="First Level Placeholder"/>
+				<isee:placeholder label_side="bottom" x="614.459" y="5193" name="Start Year First Level\nPlaceholder"/>
+				<isee:placeholder x="490.459" y="5193" name="Time to implement first level placeholder"/>
+				<isee:placeholder x="765.5" y="5193" name="Second Level Placeholder"/>
+				<isee:placeholder label_side="bottom" x="1079.17" y="5193" name="Start Year Second Level\nPlaceholder"/>
+				<isee:placeholder x="925" y="5193" name="Time to implement second\nlevel placeholder"/>
+				<aux background="lime" x="592.917" y="5012.05" name="switch forestation policy"/>
+				<isee:placeholder x="282.143" y="1077.14" name="three parm -\nImplementation time"/>
+				<isee:placeholder x="425" y="1077.14" name="three parm -\nStart Year"/>
+				<aux background="lime" x="515.976" y="803.069" name="switch wealth tax policy"/>
+				<aux background="lime" x="480.381" y="1180.64" name="switch government debt to GDP ratio"/>
+				<isee:placeholder x="140.476" y="1077.14" name="three parm -\nRate"/>
 			</view>
 		</views>
 	</model>
