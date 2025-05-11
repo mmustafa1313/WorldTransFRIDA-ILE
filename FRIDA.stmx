@@ -4976,7 +4976,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:3" isee:name="Dashboard GDPpp B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:3" isee:name="Dashboard GDPpp B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5110,7 +5110,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="352.364" y="60.5402" width="170.217" height="38.87">Real GDP Per Person</text_box>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5135,7 +5135,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Climate - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:5" isee:name="Climate - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5171,7 +5171,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5232,7 +5232,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="160.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Demographics" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Demographics" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5293,7 +5293,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="207.5" width="14.121" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5354,7 +5354,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="254.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Land Use Agriculture" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Land Use Agriculture" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5415,7 +5415,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="311.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Behavioral Change" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Behavioral Change" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5476,7 +5476,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="378.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics - Concrete" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics - Concrete" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5501,7 +5501,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:5" isee:name="Concrete - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:5" isee:name="Concrete - B&amp;W" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5537,7 +5537,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="435.5" width="14.12" height="30" kind="vline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:4" isee:name="Other Metrics Biosphere Indicators" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5598,7 +5598,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Dashboard More Details Single Run Plot" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:1" isee:name="Dashboard More Details Single Run Plot" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5651,7 +5651,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 				<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="3" width="1066" height="30">DASHBOARD</text_box>
-				<stacked_container x="101.561" y="109.07" width="933.384" height="426.817" isee:appearance="dropdown" visible_index="1">
+				<stacked_container x="101.561" y="109.07" width="933.384" height="426.817" isee:appearance="dropdown">
 					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" title="Energy Shares" isee:fill_intensity="1" isee:stacked_area_max="1" from="2020" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="black" title="Coal" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name='energy_supply."Fossil_Energy_Output_Share,_coal"[MEAN]'/>
@@ -5728,7 +5728,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:1" isee:name="Manage Runs" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5772,66 +5772,60 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Non Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:7" isee:name="Dashboard Input - Non Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<slider z_index="28" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="110" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="140" width="270" height="77.5" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_on_CO2e_emissions_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="29" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="180" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="29" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="217.5" width="270" height="77.5" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_on_CO2e_emissions_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="264.91" width="310" height="30" isee:locked="true">Carbon Tax</text_box>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="180" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="108" width="310" height="30" isee:locked="true">Carbon Tax</text_box>
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="217.5" width="270" height="77.5" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<isee:shape z_index="24" background="white" border_width="thin" border_style="none" opacity="1" transparent_background="false" corner_radius="11" x="30" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="25" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="26" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="28" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="28" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="27" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="110" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="140" width="270" height="77.5" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="180" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="217.5" width="270" height="77.5" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="110" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="140" width="270" height="77.5" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="395" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="432.5" width="270" height="77.5" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="325" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="355" width="270" height="77.5" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="395" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="432.5" width="270" height="77.5" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="325" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="355" width="270" height="77.5" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="395" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="432.5" width="270" height="77.5" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="325" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="355" width="270" height="77.5" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.302" y="267" width="25" height="25" isee:locked="true">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="312.3" y="110.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_on_CO2e_emissions_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_on_CO2e_emissions_time_to_implement_first_level">set_placeholder</action>
@@ -5844,28 +5838,28 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="264.91" width="310" height="30" isee:locked="true">Hydro Power Energy Tax</text_box>
-				<graphics_frame z_index="32" fill="none" x="363.878" y="268.5" width="22" height="22" isee:locked="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="108" width="310" height="30" isee:locked="true">Hydro Power Energy Tax</text_box>
+				<graphics_frame z_index="32" fill="none" x="363.878" y="112" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="264.91" width="310" height="30" isee:locked="true">Bio Energy Tax</text_box>
-				<graphics_frame z_index="32" fill="none" x="694.787" y="268.9" width="22" height="22" isee:locked="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="108" width="310" height="30" isee:locked="true">Bio Energy Tax</text_box>
+				<graphics_frame z_index="32" fill="none" x="694.787" y="112" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="481.273" width="310" height="30" isee:locked="true">Nuclear Energy Tax</text_box>
-				<graphics_frame z_index="32" fill="none" x="33.7" y="485.5" width="22" height="22" isee:locked="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="325" width="310" height="30" isee:locked="true">Nuclear Energy Tax</text_box>
+				<graphics_frame z_index="32" fill="none" x="33.7" y="329" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="481.273" width="310" height="30" isee:locked="true">Solar Energy Tax</text_box>
-				<graphics_frame z_index="32" fill="none" x="363.88" y="485.5" width="22" height="22" isee:locked="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="325" width="310" height="30" isee:locked="true">Solar Energy Tax</text_box>
+				<graphics_frame z_index="32" fill="none" x="363.88" y="329" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="481.273" width="310" height="30" isee:locked="true">Wind Energy Tax</text_box>
-				<graphics_frame z_index="32" fill="none" x="694.79" y="485.5" width="22" height="22" isee:locked="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="325" width="310" height="30" isee:locked="true">Wind Energy Tax</text_box>
+				<graphics_frame z_index="32" fill="none" x="694.79" y="329" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
 				<isee:shape z_index="35" background="white" border_color="#FFFCE0" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="96.652" y="59.0142" width="150" height="30.2654" isee:locked="true" kind="rectangle"/>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="267" width="25" height="25" isee:locked="true">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="110.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -5878,7 +5872,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="267" width="25" height="25" isee:locked="true">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="110.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -5891,7 +5885,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.3" y="483.5" width="25" height="25" isee:locked="true">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="312.3" y="327.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -5904,7 +5898,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="484" width="25" height="25" isee:locked="true">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="327.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -5917,7 +5911,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="483.5" width="25" height="25" isee:locked="true">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="327.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -5930,95 +5924,89 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<graphics_frame z_index="34" fill="none" x="33.6957" y="268.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="34" fill="none" x="33.7" y="112" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:7" isee:name="Dashboard Input - Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="110" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="140" width="270" height="77.5" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="180" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="217.5" width="270" height="77.5" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<format precision="1" scale_by="1" suffix=" years"/>
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="395" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="432.5" width="270" height="77.5" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="180" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="217.5" width="270" height="77.5" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="395" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="432.5" width="270" height="77.5" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="180" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="217.5" width="270" height="77.5" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="395" width="270" height="80" isee:locked="true" title="Time to implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="432.5" width="270" height="77.5" title="Time to implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="110" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="140" width="270" height="77.5" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="110" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="140" width="270" height="77.5" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="325" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="355" width="270" height="77.5" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="325" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="385" y="355" width="270" height="77.5" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="21" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="325" width="270" height="80" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="715" y="355" width="270" height="77.5" title="Tax" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<isee:shape z_index="33" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="262.601" y="57.5404" width="118.102" height="30" isee:locked="true" kind="rectangle"/>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="264.91" width="310" height="30" isee:locked="true">Coal Extraction Tax</text_box>
-				<graphics_frame z_index="32" fill="none" x="33.6957" y="268.5" width="22" height="22" isee:locked="true">
+				<isee:shape z_index="32" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="262.601" y="57.5404" width="118.102" height="30" kind="rectangle"/>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="108" width="310" height="30">Coal Extraction Tax</text_box>
+				<graphics_frame z_index="34" fill="none" x="33.6957" y="112" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="264.91" width="310" height="30" isee:locked="true">Oil Extraction Tax</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="264.91" width="310" height="30" isee:locked="true">Gas Extraction Tax</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="481.273" width="310" height="30" isee:locked="true">Coal Production Tax</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="481.273" width="310" height="30" isee:locked="true">Oil Production Tax</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="481.273" width="310" height="30" isee:locked="true">Gas Production Tax</text_box>
-				<graphics_frame z_index="32" fill="none" x="363.878" y="268.5" width="22" height="22" isee:locked="true">
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="108" width="310" height="30">Oil Extraction Tax</text_box>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="108" width="310" height="30">Gas Extraction Tax</text_box>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="325" width="310" height="30">Coal Production Tax</text_box>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="325" width="310" height="30">Oil Production Tax</text_box>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="325" width="310" height="30">Gas Production Tax</text_box>
+				<graphics_frame z_index="34" fill="none" x="363.878" y="112" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="694.787" y="268.9" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="34" fill="none" x="694.787" y="112" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="33.7" y="485.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="35" fill="none" x="33.7" y="329" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="363.88" y="485.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="35" fill="none" x="363.88" y="329" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="694.79" y="485.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="35" fill="none" x="694.79" y="329" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.302" y="267" width="25" height="25" isee:locked="true">
+				<button z_index="34" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.302" y="110.5" width="25" height="25">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -6031,7 +6019,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="267" width="25" height="25" isee:locked="true">
+				<button z_index="34" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="110.5" width="25" height="25">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -6044,7 +6032,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="267" width="25" height="25" isee:locked="true">
+				<button z_index="34" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="110.5" width="25" height="25">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -6057,7 +6045,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.3" y="483.5" width="25" height="25" isee:locked="true">
+				<button z_index="36" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.3" y="327.5" width="25" height="25">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -6070,7 +6058,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="483.5" width="25" height="25" isee:locked="true">
+				<button z_index="36" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="327.5" width="25" height="25">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -6083,7 +6071,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="483.5" width="25" height="25" isee:locked="true">
+				<button z_index="36" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="327.5" width="25" height="25">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_first_level">set_placeholder</action>
@@ -6101,67 +6089,67 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="713.409" y="106" width="270.18" height="30" isee:locked="true" title="Customize Non Agricultural Water Use" show_name="true">
+				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="713.577" y="136" width="270.18" height="40" title="Customize Non Agricultural Water Use" show_name="true">
 					<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="431.489" y="106" width="211.387" height="40" isee:locked="true" title="Customize Irrigated Cropland" show_name="true">
+				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="410.302" y="136" width="211.387" height="40" title="Customize Irrigated Cropland" show_name="true">
 					<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<isee:shape z_index="33" background="white" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="423.044" y="57.54" width="97.22" height="30" isee:locked="true" kind="rectangle"/>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="372" y="144" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" title="Irrigation Percent" isee:navigate_to="false" show_name="true">
+				<isee:shape z_index="33" background="white" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="423.044" y="57.54" width="97.22" height="30" kind="rectangle"/>
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="372" y="188" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" title="Irrigation Percent" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.irrigation_fraction_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="372" y="360" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="372" y="390" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.irrigation_fraction_start_year_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="372" y="252" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="372" y="289" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.irrigation_fraction_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="24.44" y="105" width="318" height="390" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="357" y="105" width="318" height="390" isee:locked="true" kind="rectangle"/>
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="24.44" y="105" width="318" height="390" kind="rectangle"/>
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="357" y="105" width="318" height="390" kind="rectangle"/>
 				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="689.667" y="105" width="318" height="390" isee:locked="true" kind="rectangle"/>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="24.4444" y="466.577" width="317.991" height="30" isee:locked="true">Forestation</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="357" y="466.58" width="317.99" height="30" isee:locked="true">Irrigation</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="689.672" y="466.58" width="317.99" height="30" isee:locked="true">Non-Agricultural water use</text_box>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="144" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Non Agricultural Water Use" isee:navigate_to="false" show_name="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="24.4444" y="105" width="317.991" height="30">Forestation</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="357" y="105" width="317.99" height="30">Irrigation</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="689.672" y="105" width="317.99" height="30">Non-Agricultural water use</text_box>
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="188" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Non Agricultural Water Use" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.non_agricultural_water_use_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="706" y="360" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="706" y="390" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.non_agricultural_water_use_start_year_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="252" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="289" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.non_agricultural_water_use_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<graphics_frame z_index="32" fill="none" x="28.6957" y="470.58" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="27.6957" y="109" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="360.918" y="470.577" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="360.918" y="109" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="695.978" y="470.58" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="693.978" y="109" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="42" y="144" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" title="Area to forest per year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="42" y="188" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" title="Area to forest per year" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.forestation_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="42" y="252" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="42" y="289" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.forestation_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="42" y="360" width="290" height="108" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="42" y="390" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.irrigation_fraction_start_year_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="313.152" y="469.08" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="314.152" y="107.5" width="25" height="25" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.forestation_first_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Time_to_implement_first_level_placeholder" isee:placeholder_value="Government_Regulations.forestation_time_to_implement_first_level">set_placeholder</action>
@@ -6174,91 +6162,81 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="109.736" y="106" width="170.02" height="40" isee:locked="true" title="Customize Forestation" show_name="true">
+				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="98.4299" y="136" width="170.02" height="40" title="Customize Forestation" show_name="true">
 					<entity name="Government_Regulations.switch_forestation_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:7" isee:name="Dashboard Input - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<slider z_index="32" color="#0075FF" label_side="left" input_expands="false" input_width="200" x="44" y="111" width="290" height="153" isee:locked="true" title="Minimum percentage of taxes spent by government" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" color="#0075FF" label_side="left" input_expands="false" input_width="200" x="44" y="170" width="290" height="91" isee:locked="true" title="Minimum percentage of taxes spent by government" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.minimum_percentage_of_taxes_spent_by_government_policy"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="375" y="140" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_government_debt_to_GDP_ratio" title="Government Debt to GDP Ratio Target" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="375" y="170" width="290" height="91" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_government_debt_to_GDP_ratio" title="Government Debt to GDP Ratio Target" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.government_debt_to_GDP_ratio_target"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="45" y="326" width="290" height="75" isee:locked="true" title="Central Bank Inflation Target" isee:navigate_to="false" show_name="true">
-					<entity name="Government_Regulations.inflation_goal_policy"/>
-					<reset_to after="never">0</reset_to>
-				</slider>
-				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="45" y="403.91" width="290" height="75" isee:locked="true" title="Central Bank Unemployment Target" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="44" y="431.35" width="290" height="77.619" isee:locked="true" title="Central Bank Unemployment Target" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.unemployment_goal_policy"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<isee:shape z_index="33" background="white" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="572.228" y="57.54" width="98.85" height="30" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" opacity="1" transparent_background="false" corner_radius="11" x="30" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="360" y="264.91" width="310" height="30" isee:locked="true">Debt to GDP ratio</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="30" y="481.27" width="310" height="30" isee:locked="true">Central Banking</text_box>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="30" y="264.91" width="310" height="30" isee:locked="true">Austerity</text_box>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="436.713" y="326.35" width="180" height="30" isee:locked="true" title="Customize Profit Tax Policy" show_name="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="360" y="108" width="310" height="30" isee:locked="true">Debt to GDP ratio</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="30" y="325" width="310" height="30" isee:locked="true">Central Banking</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="30" y="108" width="310" height="30" isee:locked="true">Austerity</text_box>
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="425" y="355" width="180" height="30" isee:locked="true" title="Customize Profit Tax Policy" show_name="true">
 					<entity name="Government_Regulations.switch_profit_tax_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="375" y="355" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_profit_tax_policy" title="Profit Tax Rate" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="375" y="385" width="290" height="91" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_profit_tax_policy" title="Profit Tax Rate" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.profit_tax_policy_input"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="360" y="481.27" width="310" height="30" isee:locked="true">Profit Tax</text_box>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="109" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="705" y="140" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wage_tax_policy" title="Wage Tax Rate" isee:navigate_to="false" show_name="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="360" y="325" width="310" height="30" isee:locked="true">Profit Tax</text_box>
+				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="705" y="170" width="290" height="91" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wage_tax_policy" title="Wage Tax Rate" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.wage_tax_policy_input"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="690" y="264.91" width="310" height="30" isee:locked="true">Wage Tax</text_box>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="325" width="310" height="186" isee:locked="true" kind="rectangle"/>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="763.038" y="326.35" width="182.609" height="30" isee:locked="true" title="Customize Wealth Tax Policy" show_name="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="690" y="108" width="310" height="30" isee:locked="true">Wage Tax</text_box>
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="753.695" y="355" width="182.61" height="30" isee:locked="true" title="Customize Wealth Tax Policy" show_name="true">
 					<entity name="Government_Regulations.switch_wealth_tax_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="705" y="355" width="290" height="125" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wealth_tax_policy" title="Wealth Tax Rate" isee:navigate_to="false" show_name="true">
+				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="705" y="385" width="290" height="91" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wealth_tax_policy" title="Wealth Tax Rate" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.wealth_tax_policy_input"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="690" y="481.27" width="310" height="30" isee:locked="true">Wealth Tax</text_box>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="371.304" y="110.174" width="287.391" height="30" isee:locked="true" title="Customize Government Debt to GDP ratio Policy" show_name="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="690" y="325" width="310" height="30" isee:locked="true">Wealth Tax</text_box>
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="371.304" y="140" width="287.391" height="30" isee:locked="true" title="Customize Government Debt to GDP ratio Policy" show_name="true">
 					<entity name="Government_Regulations.switch_government_debt_to_GDP_ratio"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="775.217" y="110.174" width="174.783" height="30" isee:locked="true" title="Customize Wage Tax Policy" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="757.609" y="140" width="174.783" height="30" isee:locked="true" title="Customize Wage Tax Policy" show_name="true">
 					<entity name="Government_Regulations.switch_wage_tax_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<graphics_frame z_index="32" fill="none" x="363.878" y="268.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="363.878" y="112" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="694.787" y="268.9" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="694.787" y="112" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="33.7" y="485.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="33.7" y="329" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="363.88" y="485.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="363.88" y="329" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="32" fill="none" x="694.79" y="485.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="32" fill="none" x="694.79" y="329" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="33.6957" y="268.5" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="34" fill="none" x="33.6957" y="112" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="267" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_government_debt_to_GDP_ratio">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="110.5" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_government_debt_to_GDP_ratio">
 					<actions>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.government_debt_to_GDP_ratio_target">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_for_government_to_change_the_debt_to_GDP_ratio_target">set_placeholder</action>
@@ -6268,14 +6246,14 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.3" y="483.5" width="25" height="25" isee:locked="true">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.3" y="327.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="18" isee:entity="Interface.Dialogue_Title">control_entity</action>
 						<action target="interface:36">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="267" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wage_tax_policy">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="110.5" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wage_tax_policy">
 					<actions>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.wage_tax_policy_input">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_wage_tax_policy">set_placeholder</action>
@@ -6285,7 +6263,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="483.5" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_profit_tax_policy">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="327.5" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_profit_tax_policy">
 					<actions>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.profit_tax_policy_input">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_profit_tax_policy">set_placeholder</action>
@@ -6295,7 +6273,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
-				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="484" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wealth_tax_policy">
+				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="972.39" y="327.5" width="25" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_wealth_tax_policy">
 					<actions>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Rate"' isee:placeholder_value="Government_Regulations.wealth_tax_policy_input">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_wealth_tax_policy">set_placeholder</action>
@@ -6305,6 +6283,10 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
+				<slider z_index="32" color="#0075FF" num_ticks="2" label_side="left" x="44" y="356.35" width="290" height="75" isee:locked="true" title="Central Bank Inflation Target" isee:navigate_to="false" show_name="true">
+					<entity name="Government_Regulations.inflation_goal_policy"/>
+					<reset_to after="never">0</reset_to>
+				</slider>
 			</view>
 			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>
@@ -6328,101 +6310,101 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</slider>
 				<isee:shape z_index="33" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="708.228" y="57.54" width="126.85" height="30" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="34" background="white" border_width="thin" border_style="none" opacity="1" transparent_background="false" corner_radius="15" x="44.545" y="146.943" width="944.5" height="338" isee:locked="true" kind="rectangle"/>
+				<graphics_frame z_index="36" fill="none" x="56.5571" y="452.167" width="22" height="22">
+					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
+				</graphics_frame>
 			</view>
 			<view isee:template_view="template:6" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<graphics_frame fill="none" x="12.51" y="63.54" width="1006.63" height="482" isee:locked="true">
-					<image width="3483" height="1648" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard Input Menu BG DT 5.png</image>
-				</graphics_frame>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="185.357" y="110" width="164.286" height="25" isee:locked="true" title="Customize Food Demand" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="185.357" y="135" width="164.286" height="25" isee:locked="true" title="Customize Food Demand" show_name="true">
 					<entity name="Behavioral_Choices.switch_food_demand_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="156.31" y="321.905" width="222.381" height="25" isee:locked="true" title="Customize Animal Products Demand" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="156.309" y="346" width="222.38" height="25" title="Customize Animal Products Demand" show_name="true">
 					<entity name="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="674.643" y="110" width="175.714" height="25" isee:locked="true" title="Customize Energy Demand" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="678.268" y="135" width="175.71" height="25" isee:locked="true" title="Customize Energy Demand" show_name="true">
 					<entity name="Behavioral_Choices.switch_energy_demand_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="645.216" y="321.905" width="238.568" height="25" isee:locked="true" title="Customize Environment Consciousness" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="645.216" y="346" width="238.57" height="25" title="Customize Environment Consciousness" show_name="true">
 					<entity name="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<isee:shape z_index="33" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="848.228" y="57.54" width="146.85" height="30" isee:locked="true" kind="rectangle"/>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577.5" y="135" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" min="5" max="10" title="Per Person Energy Demand" isee:navigate_to="false" show_name="true">
+				<isee:shape z_index="33" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="848.228" y="57.54" width="146.85" height="30" kind="rectangle"/>
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="160" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" min="5" max="10" title="Per Person Energy Demand" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.Per_Person_use_of_energy_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="109" width="475" height="195" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="321" width="475" height="195" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="527" y="109" width="475" height="195" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" opacity="0.98" transparent_background="false" corner_radius="11" x="527" y="321" width="475" height="195" isee:locked="true" kind="rectangle"/>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577.5" y="185" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="321" width="475" height="195" kind="rectangle"/>
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="527" y="109" width="475" height="195" kind="rectangle"/>
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" opacity="0.98" transparent_background="false" corner_radius="11" x="527" y="321" width="475" height="195" kind="rectangle"/>
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="207" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.Per_Person_use_of_energy_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="577.5" y="236" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="577" y="254" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.Per_Person_use_of_energy_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="30" y="491" width="475" height="25" isee:locked="true">Animal Products</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="527" y="491" width="475" height="25" isee:locked="true">Environmental Consciousness Policy</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="30" y="286.04" width="475" height="25" isee:locked="true">Food Demand</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="527" y="286.04" width="475" height="25" isee:locked="true">Energy Demand</text_box>
-				<graphics_frame z_index="34" fill="none" x="32" y="288" width="22" height="22" isee:locked="true">
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="30" y="321" width="475" height="25">Animal Products</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="527" y="321" width="475" height="25">Environmental Consciousness</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="30" y="109" width="475" height="25" isee:locked="true">Food Demand</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="527" y="109" width="475" height="25" isee:locked="true">Energy Demand</text_box>
+				<graphics_frame z_index="34" fill="none" x="32" y="110" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="32" y="492.69" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="34" fill="none" x="32" y="322.69" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="529.362" y="288" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="34" fill="none" x="529.362" y="110" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="529.36" y="492.69" width="22" height="22" isee:locked="true">
+				<graphics_frame z_index="34" fill="none" x="529.36" y="322.69" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577.5" y="346.81" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" title="Environment Consciousness" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="371" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" title="Environment Consciousness" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.additional_environment_consciousness_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577.5" y="394.81" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="418" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.additional_environment_consciousness_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577.5" y="442.81" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="465" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.additional_environment_consciousness_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="346.81" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" title="Share of diet from animal products" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="371" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" title="Share of diet from animal products" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.animal_products_fraction_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="394.81" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="418" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.animal_products_fraction_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="441.384" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="465" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.animal_products_fraction_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="135" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" title="Per Person Food Demand (KCal/Day)" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="160" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" title="Per Person Food Demand (KCal/Day)" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.food_demand_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="185" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="207" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.food_demand_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="236" width="370" height="48" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="254" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.food_demand_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 			</view>
-			<view isee:template_view="template:7" isee:name="Six Parm Pop Up" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:8" isee:name="Six Parm Pop Up" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6500,7 +6482,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:7" isee:name="Three Parm Pop Up" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:8" isee:name="Three Parm Pop Up" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6542,7 +6524,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:7" isee:name="Pop Up Central Banking" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:8" isee:name="Pop Up Central Banking" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7098,11 +7080,11 @@ Your decisions will shape the future - so pay attention to how your choices play
 						</actions>
 					</button>
 				</view>
-				<view isee:template_view="template:1" isee:name="Dashboard Input Template" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="template">
+				<view isee:template_view="template:1" isee:name="Dashboard Input Template" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="template">
 					<style>
 						<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 					</style>
-					<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="3" width="1066" height="30" isee:locked="true">POLICY EXPERIMENT OPTIONS</text_box>
+					<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="3" width="1066" height="40">POLICY EXPERIMENT OPTIONS</text_box>
 					<button z_index="31" transparent="true" isee:flat="true" label="" isee:tooltip="" x="102.433" y="58.41" width="138.439" height="30">
 						<actions>
 							<action target="interface:28">navigate</action>
@@ -7163,7 +7145,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<graphics_frame z_index="18" fill="none" x="10.795" y="50.4426" width="1010" height="531" isee:locked="true">
 						<image width="3471" height="1819" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard Input Template.png</image>
 					</graphics_frame>
-					<isee:shape z_index="20" background="#2ECC71" border_color="white" border_width="4.1" opacity="0.7" transparent_background="false" x="489.295" y="516" width="55" height="55" kind="ellipse"/>
+					<isee:shape z_index="20" background="#FF6347" border_color="white" border_width="4.1" opacity="0.7" transparent_background="false" x="489.295" y="516" width="55" height="55" kind="ellipse"/>
 					<text_box z_index="20" text_align="center" vertical_text_align="center" font_color="white" font_size="16pt" appearance="transparent" x="488.795" y="530.689" width="56" height="28.311">RUN</text_box>
 					<text_box z_index="31" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="96.652" y="58.41" width="150" height="30" isee:locked="true">Non Fossil Energy</text_box>
 					<text_box z_index="19" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="246.652" y="58.41" width="150" height="30"> Fossil Energy</text_box>
@@ -7177,6 +7159,17 @@ Your decisions will shape the future - so pay attention to how your choices play
 							<action target="interface:3">navigate</action>
 						</actions>
 					</button>
+				</view>
+				<view isee:template_view="template:6" isee:name="Dashboard Input Template Six Sections" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="template">
+					<style>
+						<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+					</style>
+					<isee:shape z_index="24" background="white" border_width="thin" border_style="none" opacity="1" transparent_background="false" corner_radius="11" x="30" y="109" width="310" height="186" kind="rectangle"/>
+					<isee:shape z_index="25" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="109" width="310" height="186" kind="rectangle"/>
+					<isee:shape z_index="26" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="109" width="310" height="186" kind="rectangle"/>
+					<isee:shape z_index="28" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="325" width="310" height="186" kind="rectangle"/>
+					<isee:shape z_index="28" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="360" y="325" width="310" height="186" kind="rectangle"/>
+					<isee:shape z_index="27" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="690" y="325" width="310" height="186" kind="rectangle"/>
 				</view>
 				<view isee:template_view="template:6" isee:name="Dashboard Pop Up Template" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="template">
 					<style>
