@@ -2744,6 +2744,8 @@
 				<connect2 to="Behavioral_Change_Outputs.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Food_Demand.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect2 to="Food_Demand.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect to="Interface.switch_animal_products_fraction_policy_1" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect2 to="Interface.switch_animal_products_fraction_policy_1" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Interface.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect2 to="Interface.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Animal_Products.switch_aquatic_animal_products_fraction_policy" from="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
@@ -2758,12 +2760,16 @@
 				<connect2 to="Animal_Products_Demand.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 				<connect to="Climate_Risk_Perception.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 				<connect2 to="Climate_Risk_Perception.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
+				<connect to="Interface.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
+				<connect2 to="Interface.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 				<connect to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect2 to="Behavioral_Change_Outputs.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect to="Food_Demand.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect2 to="Food_Demand.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect to="Interface.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect2 to="Interface.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
+				<connect to="Interface.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
+				<connect2 to="Interface.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
 			</module>
 			<module name="Government\nRegulations" isee:label="" url="r../FRIDA_Modules/Government Regulations.itmx">
 				<format scale_by="auto"/>
@@ -3466,14 +3472,20 @@ This is what determines when the model stops calculating</doc>
 				<connect2 to="Interface.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Interface.switch_animal_product_efficiency_policy" from="Government_Regulations.switch_animal_product_efficiency_policy"/>
 				<connect2 to="Interface.switch_animal_product_efficiency_policy" from="Government_Regulations.switch_animal_product_efficiency_policy"/>
+				<connect to="Interface.switch_animal_products_fraction_policy_1" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
+				<connect2 to="Interface.switch_animal_products_fraction_policy_1" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Interface.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect2 to="Interface.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Interface.switch_aquatic_animal_products_fraction_policy" from="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
 				<connect2 to="Interface.switch_aquatic_animal_products_fraction_policy" from="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
 				<connect to="Interface.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
 				<connect2 to="Interface.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
+				<connect to="Interface.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
+				<connect2 to="Interface.switch_environmental_consciousness_policy" from="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 				<connect to="Interface.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect2 to="Interface.switch_food_demand_policy" from="Behavioral_Choices.switch_food_demand_policy"/>
+				<connect to="Interface.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
+				<connect2 to="Interface.switch_food_demand_policy_1" from="Behavioral_Choices.switch_food_demand_policy"/>
 				<connect to="Interface.switch_irrigation_fraction_policy" from="Government_Regulations.switch_irrigation_fraction_policy"/>
 				<connect2 to="Interface.switch_irrigation_fraction_policy" from="Government_Regulations.switch_irrigation_fraction_policy"/>
 				<connect to="Interface.switch_non_agricultural_water_use_policy" from="Government_Regulations.switch_non_agricultural_water_use_policy"/>
@@ -5858,7 +5870,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<graphics_frame z_index="32" fill="none" x="694.79" y="329" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<isee:shape z_index="35" background="white" border_color="#FFFCE0" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="96.652" y="59.0142" width="150" height="30.2654" isee:locked="true" kind="rectangle"/>
+				<isee:shape z_index="35" background="#FF6347" border_color="#F5FFE0" border_width="3.5" opacity="1" transparent_background="true" corner_radius="11" x="96.652" y="58" width="150" height="30" kind="rectangle"/>
 				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="641.48" y="110.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:placeholder="Government_Regulations.First_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_first_level">set_placeholder</action>
@@ -5928,7 +5940,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:7" isee:name="Dashboard Input - Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:7" isee:name="Dashboard Input - Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5981,7 +5993,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<isee:shape z_index="32" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="262.601" y="57.5404" width="118.102" height="30" kind="rectangle"/>
+				<isee:shape z_index="32" border_color="#F5FFE0" border_width="3.5" opacity="1" transparent_background="true" corner_radius="11" x="262.601" y="58" width="118.1" height="30" isee:locked="true" kind="rectangle"/>
 				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="108" width="310" height="30">Coal Extraction Tax</text_box>
 				<graphics_frame z_index="34" fill="none" x="33.6957" y="112" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
@@ -6085,7 +6097,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6097,7 +6109,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<isee:shape z_index="33" background="white" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="423.044" y="57.54" width="97.22" height="30" kind="rectangle"/>
+				<isee:shape z_index="33" background="white" border_color="#F5FFE0" border_width="3.5" opacity="1" transparent_background="true" corner_radius="11" x="423.044" y="58" width="97.22" height="30" isee:locked="true" kind="rectangle"/>
 				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="372" y="188" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_irrigation_fraction_policy" title="Irrigation Percent" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.irrigation_fraction_first_level"/>
 					<reset_to after="never">0</reset_to>
@@ -6183,7 +6195,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.unemployment_goal_policy"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<isee:shape z_index="33" background="white" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="572.228" y="57.54" width="98.85" height="30" isee:locked="true" kind="rectangle"/>
+				<isee:shape z_index="33" background="white" border_color="#F5FFE0" border_width="3.5" opacity="1" transparent_background="true" corner_radius="11" x="572.228" y="58" width="98.85" height="30" kind="rectangle"/>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="360" y="108" width="310" height="30" isee:locked="true">Debt to GDP ratio</text_box>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="30" y="325" width="310" height="30" isee:locked="true">Central Banking</text_box>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="30" y="108" width="310" height="30" isee:locked="true">Austerity</text_box>
@@ -6288,7 +6300,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</slider>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6308,21 +6320,21 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.SLR_adaptation_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<isee:shape z_index="33" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="708.228" y="57.54" width="126.85" height="30" isee:locked="true" kind="rectangle"/>
+				<isee:shape z_index="33" border_color="#F5FFE0" border_width="3.5" opacity="1" transparent_background="true" corner_radius="11" x="708.228" y="58" width="126.85" height="30" kind="rectangle"/>
 				<isee:shape z_index="34" background="white" border_width="thin" border_style="none" opacity="1" transparent_background="false" corner_radius="15" x="44.545" y="146.943" width="944.5" height="338" isee:locked="true" kind="rectangle"/>
 				<graphics_frame z_index="36" fill="none" x="56.5571" y="452.167" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="185.357" y="135" width="164.286" height="25" isee:locked="true" title="Customize Food Demand" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="185.357" y="135" width="164.286" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Food_Demand_and_Animal_Products_Visibility" title="Customize Food Demand" show_name="true">
 					<entity name="Behavioral_Choices.switch_food_demand_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="156.309" y="346" width="222.38" height="25" title="Customize Animal Products Demand" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="156.309" y="346" width="222.38" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Food_Demand_and_Animal_Products_Visibility" title="Customize Animal Products Demand" show_name="true">
 					<entity name="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
@@ -6330,79 +6342,82 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Behavioral_Choices.switch_energy_demand_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="645.216" y="346" width="238.57" height="25" title="Customize Environment Consciousness" show_name="true">
+				<switch z_index="32" label_side="left" isee:appearance="checkbox" x="645.216" y="346" width="238.57" height="25" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Environmental_Consciousness_Visibility" title="Customize Environment Consciousness" show_name="true">
 					<entity name="Behavioral_Choices.switch_environmental_consciousness_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<isee:shape z_index="33" border_color="white" border_width="2.5" opacity="1" transparent_background="true" corner_radius="11" x="848.228" y="57.54" width="146.85" height="30" kind="rectangle"/>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="160" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" min="5" max="10" title="Per Person Energy Demand" isee:navigate_to="false" show_name="true">
+				<isee:shape z_index="33" border_color="#F5FFE0" border_width="3.5" opacity="1" transparent_background="true" corner_radius="11" x="848.228" y="58" width="146.85" height="30" isee:locked="true" kind="rectangle"/>
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="160" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" min="5" max="10" title="Per Person Energy Demand" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.Per_Person_use_of_energy_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="109" width="475" height="195" isee:locked="true" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="321" width="475" height="195" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="527" y="109" width="475" height="195" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" opacity="0.98" transparent_background="false" corner_radius="11" x="527" y="321" width="475" height="195" kind="rectangle"/>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="207" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="30" y="321" width="475" height="195" isee:locked="true" kind="rectangle"/>
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="527" y="109" width="475" height="195" isee:locked="true" kind="rectangle"/>
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" opacity="1" transparent_background="false" corner_radius="11" x="527" y="321" width="475" height="195" isee:locked="true" kind="rectangle"/>
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="207" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.Per_Person_use_of_energy_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="577" y="254" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="577" y="254" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.Per_Person_use_of_energy_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="30" y="321" width="475" height="25">Animal Products</text_box>
-				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="527" y="321" width="475" height="25">Environmental Consciousness</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="30" y="321" width="475" height="25" isee:locked="true">Animal Products</text_box>
+				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="527" y="321" width="475" height="25" isee:locked="true">Environmental Consciousness</text_box>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="30" y="109" width="475" height="25" isee:locked="true">Food Demand</text_box>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="14pt" x="527" y="109" width="475" height="25" isee:locked="true">Energy Demand</text_box>
-				<graphics_frame z_index="34" fill="none" x="32" y="110" width="22" height="22">
+				<graphics_frame z_index="34" fill="none" x="32" y="110" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="32" y="322.69" width="22" height="22">
+				<graphics_frame z_index="34" fill="none" x="32" y="322.69" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="529.362" y="110" width="22" height="22">
+				<graphics_frame z_index="34" fill="none" x="529.362" y="110" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<graphics_frame z_index="34" fill="none" x="529.36" y="322.69" width="22" height="22">
+				<graphics_frame z_index="34" fill="none" x="529.36" y="322.69" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="371" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" title="Environment Consciousness" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="371" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" title="Environment Consciousness" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.additional_environment_consciousness_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="418" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="418" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.additional_environment_consciousness_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="465" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="465" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_environmental_consciousness_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.additional_environment_consciousness_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="371" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" title="Share of diet from animal products" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="371" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" title="Share of diet from animal products" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.animal_products_fraction_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="418" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="418" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.animal_products_fraction_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="465" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="465" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_animal_products_fraction_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.animal_products_fraction_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="160" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" title="Per Person Food Demand (KCal/Day)" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="160" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" title="Per Person Food Demand (KCal/Day)" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.food_demand_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="207" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="207" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.food_demand_policy_time_to_implement"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="254" width="370" height="47" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="85" y="254" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_food_demand_policy" increment="5" title="Start year" isee:navigate_to="false" show_name="true">
 					<entity name="Behavioral_Choices.food_demand_policy_start_year"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
+				<text_box z_index="35" text_align="center" vertical_text_align="center" font_size="18pt" x="67.619" y="134" width="399.762" height="167.905" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_Visibility">These settings are not available when customizing &quot;Environmental Consciousness&quot;.</text_box>
+				<text_box z_index="35" text_align="center" vertical_text_align="center" font_size="18pt" x="67.619" y="348.095" width="399.762" height="167.905" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_Visibility">These settings are not available when customizing &quot;Environmental Consciousness&quot;.</text_box>
+				<text_box z_index="35" text_align="center" vertical_text_align="center" font_size="18pt" x="557.467" y="348.095" width="428.37" height="167.905" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_Visibility_1">These settings are not available when customizing &quot;Food Demand&quot; or &quot;Animal Products&quot;.</text_box>
 			</view>
 			<view isee:template_view="template:8" isee:name="Six Parm Pop Up" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
 				<style>

@@ -471,7 +471,7 @@ additional_environment_consciousness_policy_time_to_implement)</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="2" isee:page_rows="2" isee:scroll_y="333.333" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -510,17 +510,17 @@ additional_environment_consciousness_policy_time_to_implement)</eqn>
 					</graph>
 					<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 				</style>
-				<aux background="lime" x="624.84" y="577.247" name="switch food demand\npolicy"/>
-				<aux background="lime" label_side="bottom" x="96.0307" y="859.747" name="switch animal products\nfraction policy"/>
-				<aux background="lime" x="96.0307" y="575.58" name="switch energy demand policy"/>
-				<aux x="660.777" y="62.3701" name="start year"/>
-				<aux x="313.253" y="1089.99" name="switch aquatic animal products\nfraction policy"/>
-				<aux label_side="bottom" x="160.128" y="1089.99" name="aquatic animal products\nfraction policy"/>
-				<aux background="lime" x="606.84" y="861.413" name="switch environmental\nconsciousness policy"/>
-				<aux x="184.125" y="518.705" name="per person use of\nenergy policy"/>
-				<aux x="128.173" y="388.625" name="Per Person use of energy policy start year"/>
-				<aux x="299.298" y="398.625" name="Per Person use of energy\npolicy time to implement"/>
-				<aux x="355.125" y="478" name="Per Person use of energy\npolicy level"/>
+				<aux background="lime" x="707.75" y="356.247" name="switch food demand\npolicy"/>
+				<aux background="lime" label_side="bottom" x="200.031" y="638.747" name="switch animal products\nfraction policy"/>
+				<aux background="lime" x="200.031" y="354.58" name="switch energy demand policy"/>
+				<aux x="589.777" y="60.3701" name="start year"/>
+				<aux x="647.253" y="794.823" name="switch aquatic animal products\nfraction policy"/>
+				<aux label_side="bottom" x="494.128" y="794.823" name="aquatic animal products\nfraction policy"/>
+				<aux background="lime" x="707.75" y="640.413" name="switch environmental\nconsciousness policy"/>
+				<aux x="288.125" y="297.705" name="per person use of\nenergy policy"/>
+				<aux x="232.173" y="167.625" name="Per Person use of energy policy start year"/>
+				<aux x="403.298" y="177.625" name="Per Person use of energy\npolicy time to implement"/>
+				<aux x="459.125" y="257" name="Per Person use of energy\npolicy level"/>
 				<connector uid="1" angle="293.274">
 					<from>Per_Person_use_of_energy_policy_start_year</from>
 					<to>per_person_use_of_energy_policy</to>
@@ -533,16 +533,16 @@ additional_environment_consciousness_policy_time_to_implement)</eqn>
 					<from>Per_Person_use_of_energy_policy_level</from>
 					<to>per_person_use_of_energy_policy</to>
 				</connector>
-				<aux x="355.125" y="575.58" name="Per Person use of energy\npolicy default value"/>
+				<aux x="459.125" y="354.58" name="Per Person use of energy\npolicy default value"/>
 				<connector uid="4" angle="161.603">
 					<from>Per_Person_use_of_energy_policy_default_value</from>
 					<to>per_person_use_of_energy_policy</to>
 				</connector>
-				<aux label_side="bottom" x="677.125" y="520.372" name="food demand policy"/>
-				<aux x="819.375" y="577.247" name="food demand policy\ndefault value"/>
-				<aux x="819.375" y="479.667" name="food demand policy level"/>
-				<aux x="742.027" y="406.167" name="food demand policy time to implement"/>
-				<aux x="603.75" y="406.167" name="food demand policy\nstart year"/>
+				<aux label_side="bottom" x="781.125" y="299.372" name="food demand policy"/>
+				<aux x="923.375" y="356.247" name="food demand policy\ndefault value"/>
+				<aux x="923.375" y="258.667" name="food demand policy level"/>
+				<aux x="846.027" y="185.167" name="food demand policy time to implement"/>
+				<aux x="707.75" y="185.167" name="food demand policy\nstart year"/>
 				<connector uid="5" angle="302.72">
 					<from>food_demand_policy_start_year</from>
 					<to>food_demand_policy</to>
@@ -559,11 +559,11 @@ additional_environment_consciousness_policy_time_to_implement)</eqn>
 					<from>food_demand_policy_default_value</from>
 					<to>food_demand_policy</to>
 				</connector>
-				<aux label_side="bottom" x="184.125" y="793.482" name="animal products\nfraction policy"/>
-				<aux x="128.173" y="682.792" name="animal products fraction policy start year"/>
-				<aux x="296.798" y="682.792" name="animal products fraction\npolicy time to implement"/>
-				<aux x="352.625" y="762.167" name="animal products fraction\npolicy level"/>
-				<aux x="352.625" y="859.747" name="animal products fraction\npolicy default value"/>
+				<aux label_side="bottom" x="288.125" y="572.482" name="animal products\nfraction policy"/>
+				<aux x="232.173" y="461.792" name="animal products fraction policy start year"/>
+				<aux x="400.798" y="461.792" name="animal products fraction\npolicy time to implement"/>
+				<aux x="456.625" y="541.167" name="animal products fraction\npolicy level"/>
+				<aux x="456.625" y="638.747" name="animal products fraction\npolicy default value"/>
 				<connector uid="9" angle="296.399">
 					<from>animal_products_fraction_policy_start_year</from>
 					<to>animal_products_fraction_policy</to>
@@ -580,11 +580,11 @@ additional_environment_consciousness_policy_time_to_implement)</eqn>
 					<from>animal_products_fraction_policy_default_value</from>
 					<to>animal_products_fraction_policy</to>
 				</connector>
-				<aux label_side="bottom" x="662.673" y="795.149" name="additional environmental\nconsciousness policy"/>
-				<aux x="603.75" y="684.458" name="additional environment consciousness policy start year"/>
-				<aux x="816.194" y="684.458" name="additional environment consciousness\npolicy time to implement"/>
-				<aux x="819.375" y="763.833" name="additional environment consciousness\npolicy level"/>
-				<aux x="819.375" y="861.413" name="additional environment consciousness\npolicy default value"/>
+				<aux label_side="bottom" x="766.673" y="574.149" name="additional environmental\nconsciousness policy"/>
+				<aux x="707.75" y="463.458" name="additional environment consciousness policy start year"/>
+				<aux x="920.194" y="463.458" name="additional environment consciousness\npolicy time to implement"/>
+				<aux x="923.375" y="542.833" name="additional environment consciousness\npolicy level"/>
+				<aux x="923.375" y="640.413" name="additional environment consciousness\npolicy default value"/>
 				<connector uid="13" angle="298.027">
 					<from>additional_environment_consciousness_policy_start_year</from>
 					<to>additional_environmental_consciousness_policy</to>
