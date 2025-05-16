@@ -5,7 +5,7 @@
 		<name>Climate</name>
 		<uuid>6b3172a7-ef66-4feb-8f28-f439698b1c18</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="development" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="3.8.1" isee:build_number="3632" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
@@ -22,7 +22,7 @@
 		</dim>
 		<dim name="Run" size="11"/>
 	</dimensions>
-	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rerun_on_structure_change="false" rifp="true">
+	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_accessible="true" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -33,6 +33,7 @@
 			<isee:ignored_word>INvestment</isee:ignored_word>
 			<isee:ignored_word>Edenhofer</isee:ignored_word>
 			<isee:ignored_word>hydropower</isee:ignored_word>
+			<isee:ignored_word>C3S</isee:ignored_word>
 		</isee:ignored_words>
 	</isee:prefs>
 	<isee:multiplayer_settings include_chat="true" allow_observers="false" advance_time_increment="1" max_advance_time_in_ms="0" model_stops_when_players_drop="false" observer_start_page="home_page" enabled="false"/>
@@ -233,7 +234,7 @@
 	</model_units>
 	<model name="Climate">
 		<variables>
-			<module name="Sea Level" isee:label="" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashboard/FRIDA_Modules/Sea Level.itmx">
+			<module name="Sea Level" isee:label="" url="/Users/bschoenberg/code/WorldTrans/clones/mustafa/WorldTransFRIDA-ILE/FRIDA_Modules/Sea Level.itmx">
 				<format scale_by="auto"/>
 				<connect to="Freshwater.Land_water_storage_from_water_impoundment" from="Sea_Level.Land_water_storage_from_water_impoundment"/>
 				<connect2 to="Freshwater.Land_water_storage_from_water_impoundment" from="Sea_Level.Land_water_storage_from_water_impoundment"/>
@@ -271,7 +272,7 @@
 				<connect2 to="Sea_Level.total_groundwater_anomaly" from="Freshwater.total_groundwater_anomaly"/>
 			</module>
 			<module name="Ocean" isee:label="Ocean
-Carbon" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashboard/FRIDA_Modules/Ocean.itmx">
+Carbon" url="/Users/bschoenberg/code/WorldTrans/clones/mustafa/WorldTransFRIDA-ILE/FRIDA_Modules/Ocean.itmx">
 				<format scale_by="auto"/>
 				<connect to="CO2_Forcing.Air_sea_co2_flux_1" from="Ocean.Air_sea_co2_flux"/>
 				<connect2 to="CO2_Forcing.Air_sea_co2_flux_1" from="Ocean.Air_sea_co2_flux"/>
@@ -583,6 +584,8 @@ Carbon" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashboa
 				<connect2 to="Government.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Grass.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Grass.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
+				<connect to="Interface.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
+				<connect2 to="Interface.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Ocean.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Ocean.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Sea_Level.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
@@ -594,7 +597,7 @@ Carbon" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashboa
 				<connect to="Energy_Balance_Model.Total_Effective_Radiative_Forcing" from="Forcing.Total_Effective_Radiative_Forcing"/>
 				<connect2 to="Energy_Balance_Model.Total_Effective_Radiative_Forcing" from="Forcing.Total_Effective_Radiative_Forcing"/>
 			</module>
-			<module name="Emissions" isee:label="" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashboard/FRIDA_Modules/Emissions.itmx">
+			<module name="Emissions" isee:label="" url="/Users/bschoenberg/code/WorldTrans/clones/mustafa/WorldTransFRIDA-ILE/FRIDA_Modules/Emissions.itmx">
 				<format scale_by="auto"/>
 				<connect to="Ozone_Forcing.Baseline_CO_emissions" from="Emissions.Baseline_CO_Emissions"/>
 				<connect2 to="Ozone_Forcing.Baseline_CO_emissions" from="Emissions.Baseline_CO_Emissions"/>
@@ -742,10 +745,10 @@ Carbon" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashboa
 				<connect2 to="Emissions.UNIT_ktN2O_to_MtN2O_1" from="Climate_Units.UNIT_ktN2O_to_MtN2O"/>
 			</module>
 			<module name="Forcing" isee:label="Radiative
-Forcing" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashboard/FRIDA_Modules/Forcing.itmx">
+Forcing" url="/Users/bschoenberg/code/WorldTrans/clones/mustafa/WorldTransFRIDA-ILE/FRIDA_Modules/Forcing.itmx">
 				<format scale_by="auto"/>
-				<connect to="Planetary_Boundaries.Anthropogenic_Effective_Radiative_Forcing" from="Forcing.Anthropogenic_Effective_Radiative_Forcing"/>
-				<connect2 to="Planetary_Boundaries.Anthropogenic_Effective_Radiative_Forcing" from="Forcing.Anthropogenic_Effective_Radiative_Forcing"/>
+				<connect to="Biosphere_Indicators.Anthropogenic_Effective_Radiative_Forcing" from="Forcing.Anthropogenic_Effective_Radiative_Forcing"/>
+				<connect2 to="Biosphere_Indicators.Anthropogenic_Effective_Radiative_Forcing" from="Forcing.Anthropogenic_Effective_Radiative_Forcing"/>
 				<connect to="Energy_Balance_Model.Total_Effective_Radiative_Forcing" from="Forcing.Total_Effective_Radiative_Forcing"/>
 				<connect2 to="Energy_Balance_Model.Total_Effective_Radiative_Forcing" from="Forcing.Total_Effective_Radiative_Forcing"/>
 				<connect to="Aerosol_Forcing.selected_climate_case" from="Climate_Units.selected_climate_case"/>
@@ -790,6 +793,8 @@ Forcing" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashbo
 				<connect2 to="CH4_Forcing.UNIT_ppm_to_ppb" from="Climate_Units.UNIT_ppm_to_ppb"/>
 				<connect to="CH4_Forcing.VOC_emissions" from="Emissions.VOC_Emissions"/>
 				<connect2 to="CH4_Forcing.VOC_emissions" from="Emissions.VOC_Emissions"/>
+				<connect to="Biosphere_Indicators.Atmospheric_CO2_concentration_1" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
+				<connect2 to="Biosphere_Indicators.Atmospheric_CO2_concentration_1" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
 				<connect to="Crop.Atmospheric_CO2_Concentration_1" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
 				<connect2 to="Crop.Atmospheric_CO2_Concentration_1" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
 				<connect to="Forest.Atmospheric_CO2_Concentration_1" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
@@ -798,8 +803,6 @@ Forcing" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashbo
 				<connect2 to="Grass.Atmospheric_CO2_Concentration" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
 				<connect to="Ocean.Atmospheric_CO2_Concentration" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
 				<connect2 to="Ocean.Atmospheric_CO2_Concentration" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
-				<connect to="Planetary_Boundaries.Atmospheric_CO2_Concentration" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
-				<connect2 to="Planetary_Boundaries.Atmospheric_CO2_Concentration" from="CO2_Forcing.Atmospheric_CO2_Concentration"/>
 				<connect to="CO2_Forcing.Air_sea_co2_flux_1" from="Ocean.Air_sea_co2_flux"/>
 				<connect2 to="CO2_Forcing.Air_sea_co2_flux_1" from="Ocean.Air_sea_co2_flux"/>
 				<connect to="CO2_Forcing.Mass_of_the_Atmosphere" from="Climate_Units.Mass_of_the_Atmosphere"/>
@@ -901,8 +904,8 @@ Forcing" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashbo
 				<connect2 to="Emissions.forest_regrowth_carbon_uptake" from="Terrestrial_Carbon_Balance.forest_regrowth_carbon_uptake"/>
 				<connect to="Emissions.Terrestrial_carbon_balance" from="Terrestrial_Carbon_Balance.Terrestrial_carbon_balance"/>
 				<connect2 to="Emissions.Terrestrial_carbon_balance" from="Terrestrial_Carbon_Balance.Terrestrial_carbon_balance"/>
-				<connect to="Planetary_Boundaries.Terrestrial_net_primary_production" from="Terrestrial_Carbon_Balance.Terrestrial_net_primary_production"/>
-				<connect2 to="Planetary_Boundaries.Terrestrial_net_primary_production" from="Terrestrial_Carbon_Balance.Terrestrial_net_primary_production"/>
+				<connect to="Biosphere_Indicators.Terrestrial_net_primary_production" from="Terrestrial_Carbon_Balance.Terrestrial_net_primary_production"/>
+				<connect2 to="Biosphere_Indicators.Terrestrial_net_primary_production" from="Terrestrial_Carbon_Balance.Terrestrial_net_primary_production"/>
 				<connect to="Terrestrial_Carbon_Balance.animal_grazing" from="Grass.animal_grazing"/>
 				<connect2 to="Terrestrial_Carbon_Balance.animal_grazing" from="Grass.animal_grazing"/>
 				<connect to="Terrestrial_Carbon_Balance.clearing" from="Forest.clearing"/>
@@ -1183,7 +1186,7 @@ Forcing" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashbo
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="2" isee:page_rows="3" zoom="80" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="2" isee:page_rows="3" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1312,37 +1315,37 @@ Forcing" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA Uncertainity Dashbo
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>35</eqn>
+					<eqn>61</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>3</eqn>
+					<eqn>17</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>44</eqn>
+					<eqn>58</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>18</eqn>
+					<eqn>86</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>70</eqn>
+					<eqn>94</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>72</eqn>
+					<eqn>94</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>84</eqn>
+					<eqn>1</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>16</eqn>
+					<eqn>79</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>26</eqn>
+					<eqn>91</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>67</eqn>
+					<eqn>85</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>64</eqn>
+					<eqn>46</eqn>
 				</element>
 				<units>dmnl</units>
 			</aux>
@@ -1468,37 +1471,37 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>5</eqn>
+					<eqn>7</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>10</eqn>
+					<eqn>11</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>8</eqn>
+					<eqn>11</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>2</eqn>
-				</element>
-				<element subscript="5">
-					<eqn>1</eqn>
-				</element>
-				<element subscript="6">
 					<eqn>3</eqn>
 				</element>
+				<element subscript="5">
+					<eqn>4</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>6</eqn>
+				</element>
 				<element subscript="7">
-					<eqn>2</eqn>
+					<eqn>4</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>4</eqn>
+					<eqn>10</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>1</eqn>
+					<eqn>8</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>4</eqn>
+					<eqn>5</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>9</eqn>
+					<eqn>1</eqn>
 				</element>
 				<units>dmnl</units>
 			</aux>
@@ -1507,37 +1510,37 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>8</eqn>
+					<eqn>7</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>6</eqn>
+					<eqn>1</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>4</eqn>
+					<eqn>9</eqn>
 				</element>
 				<element subscript="4">
 					<eqn>8</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>6</eqn>
-				</element>
-				<element subscript="6">
-					<eqn>2</eqn>
-				</element>
-				<element subscript="7">
-					<eqn>9</eqn>
-				</element>
-				<element subscript="8">
-					<eqn>10</eqn>
-				</element>
-				<element subscript="9">
-					<eqn>8</eqn>
-				</element>
-				<element subscript="10">
 					<eqn>1</eqn>
 				</element>
+				<element subscript="6">
+					<eqn>1</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>4</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>9</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>6</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>8</eqn>
+				</element>
 				<element subscript="11">
-					<eqn>2</eqn>
+					<eqn>5</eqn>
 				</element>
 				<units>dmnl</units>
 			</aux>
@@ -1546,37 +1549,37 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>10</eqn>
+					<eqn>5</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>5</eqn>
+					<eqn>9</eqn>
 				</element>
 				<element subscript="3">
 					<eqn>5</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>6</eqn>
-				</element>
-				<element subscript="5">
-					<eqn>7</eqn>
-				</element>
-				<element subscript="6">
-					<eqn>3</eqn>
-				</element>
-				<element subscript="7">
-					<eqn>4</eqn>
-				</element>
-				<element subscript="8">
-					<eqn>10</eqn>
-				</element>
-				<element subscript="9">
-					<eqn>3</eqn>
-				</element>
-				<element subscript="10">
 					<eqn>5</eqn>
 				</element>
-				<element subscript="11">
+				<element subscript="5">
 					<eqn>6</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>2</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>2</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>9</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>6</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>6</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>10</eqn>
 				</element>
 				<units>dmnl</units>
 			</aux>
@@ -1585,37 +1588,37 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>5</eqn>
-				</element>
-				<element subscript="2">
-					<eqn>2</eqn>
-				</element>
-				<element subscript="3">
-					<eqn>11</eqn>
-				</element>
-				<element subscript="4">
 					<eqn>10</eqn>
 				</element>
+				<element subscript="2">
+					<eqn>5</eqn>
+				</element>
+				<element subscript="3">
+					<eqn>5</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>8</eqn>
+				</element>
 				<element subscript="5">
-					<eqn>7</eqn>
+					<eqn>9</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>4</eqn>
+					<eqn>2</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>11</eqn>
+					<eqn>4</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>8</eqn>
+					<eqn>5</eqn>
 				</element>
 				<element subscript="9">
 					<eqn>5</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>9</eqn>
+					<eqn>3</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>5</eqn>
+					<eqn>1</eqn>
 				</element>
 				<units>dmnl</units>
 			</aux>
@@ -1627,34 +1630,34 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 					<eqn>9</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>5</eqn>
-				</element>
-				<element subscript="3">
-					<eqn>3</eqn>
-				</element>
-				<element subscript="4">
-					<eqn>8</eqn>
-				</element>
-				<element subscript="5">
-					<eqn>8</eqn>
-				</element>
-				<element subscript="6">
-					<eqn>6</eqn>
-				</element>
-				<element subscript="7">
-					<eqn>1</eqn>
-				</element>
-				<element subscript="8">
-					<eqn>8</eqn>
-				</element>
-				<element subscript="9">
-					<eqn>3</eqn>
-				</element>
-				<element subscript="10">
 					<eqn>10</eqn>
 				</element>
+				<element subscript="3">
+					<eqn>9</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>7</eqn>
+				</element>
+				<element subscript="5">
+					<eqn>11</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>7</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>2</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>7</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>4</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>7</eqn>
+				</element>
 				<element subscript="11">
-					<eqn>8</eqn>
+					<eqn>11</eqn>
 				</element>
 				<units>dmnl</units>
 			</aux>
@@ -1663,37 +1666,37 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>4</eqn>
+					<eqn>1</eqn>
 				</element>
 				<element subscript="2">
 					<eqn>3</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>9</eqn>
+					<eqn>10</eqn>
 				</element>
 				<element subscript="4">
 					<eqn>3</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>5</eqn>
+					<eqn>2</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>10</eqn>
-				</element>
-				<element subscript="7">
-					<eqn>9</eqn>
-				</element>
-				<element subscript="8">
 					<eqn>7</eqn>
 				</element>
-				<element subscript="9">
-					<eqn>9</eqn>
+				<element subscript="7">
+					<eqn>4</eqn>
 				</element>
-				<element subscript="10">
+				<element subscript="8">
 					<eqn>1</eqn>
 				</element>
-				<element subscript="11">
+				<element subscript="9">
+					<eqn>5</eqn>
+				</element>
+				<element subscript="10">
 					<eqn>6</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>2</eqn>
 				</element>
 				<units>dmnl</units>
 			</aux>
@@ -1703,15 +1706,14 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -1740,7 +1742,7 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -3089,7 +3091,10 @@ This variable is unitless to avoid units issues with parameters in the downstrea
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>(Surface_Temperature-Surface_Temperature_1850_to_1900_offset_relative_to_1750[selected_climate_case[Run]])*UNIT_Celcius_to_Kelvin</eqn>
+				<eqn>IF SWITCH_STA_Override=1 AND TIME &gt; STARTTIME THEN
+STA_Override[Run]
+ELSE
+(Surface_Temperature-Surface_Temperature_1850_to_1900_offset_relative_to_1750[selected_climate_case[Run]])*UNIT_Celcius_to_Kelvin</eqn>
 				<units>deg C</units>
 			</aux>
 			<aux name="Heat Capacity of Thermocline Ocean" access="output">
@@ -5746,21 +5751,33 @@ N = -k1T1 + (1-epsilon)*k3*(T2-T3)</doc>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
+			<aux name="SWITCH STA Override">
+				<eqn>0</eqn>
+				<format precision="1"/>
+				<range min="0" max="1"/>
+				<units>dmnl</units>
+			</aux>
+			<aux name="STA Override">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>0</eqn>
+				<units>deg C</units>
+			</aux>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -5789,7 +5806,7 @@ N = -k1T1 + (1-epsilon)*k3*(T2-T3)</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="284" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="81" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -6082,6 +6099,16 @@ N = -k1T1 + (1-epsilon)*k3*(T2-T3)</doc>
 				<connector uid="54" angle="358.252">
 					<from>selected_extremes_exposure_damages_case</from>
 					<to>Climate_indices_with_record_breaking_exposure_per_person_per_year</to>
+				</connector>
+				<aux x="1148.5" y="140.583" name="SWITCH STA Override"/>
+				<aux x="1148.5" y="200" name="STA Override"/>
+				<connector uid="55" angle="165.379">
+					<from>STA_Override</from>
+					<to>Surface_Temperature_Anomaly</to>
+				</connector>
+				<connector uid="56" angle="190.537">
+					<from>SWITCH_STA_Override</from>
+					<to>Surface_Temperature_Anomaly</to>
 				</connector>
 				<alias color="blue" background="white" font_style="italic" font_weight="bold" uid="23" x="416" y="477.25" width="18" height="18">
 					<shape type="circle" radius="18"/>
@@ -6767,37 +6794,37 @@ Should only ever be varied with Initial Committed Soil Carbon Emissions from Lan
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>0.299967195019531</eqn>
+					<eqn>0.299955152904129</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>0.299969607598648</eqn>
+					<eqn>0.299998228835831</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>0.29998972212204</eqn>
+					<eqn>0.299928910997772</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>0.299966449703674</eqn>
+					<eqn>0.299992675678558</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>0.299919767717743</eqn>
+					<eqn>0.2999999695224</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>0.299969404645538</eqn>
+					<eqn>0.29998992507515</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>0.299973059879532</eqn>
+					<eqn>0.299942829563599</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>0.299924786131668</eqn>
+					<eqn>0.299983198530273</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>0.299942009439087</eqn>
+					<eqn>0.299964231765594</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>0.299958888488159</eqn>
+					<eqn>0.299962070626678</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>0.299963595892029</eqn>
+					<eqn>0.299972467644348</eqn>
 				</element>
 				<range min="0.1" max="0.3"/>
 				<units>GtC/year</units>
@@ -6815,15 +6842,14 @@ Should only ever be varied with Initial Committed Soil Carbon Emissions from Lan
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -6852,7 +6878,7 @@ Should only ever be varied with Initial Committed Soil Carbon Emissions from Lan
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="3" isee:scroll_x="2315" isee:scroll_y="323" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="3" isee:scroll_x="2315" isee:scroll_y="323" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -7235,7 +7261,7 @@ Should only ever be varied with Initial Committed Soil Carbon Emissions from Lan
 					<from>Soil_carbon_adaptation_time_scale</from>
 					<to>Annual_realized_CO2_emissions_from_land_use_transitions</to>
 				</connector>
-				<connector uid="62" angle="26.9219">
+				<connector uid="62" angle="26.922">
 					<from>&quot;Commited_future_soil_carbon_loss_due_to_land-use_transitions&quot;</from>
 					<to>Annual_realized_CO2_emissions_from_land_use_transitions</to>
 				</connector>
@@ -7474,15 +7500,14 @@ FUTURE: peatland carbon sink should maybe depend on global mean temperature and 
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -7511,7 +7536,7 @@ FUTURE: peatland carbon sink should maybe depend on global mean temperature and 
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -7807,15 +7832,14 @@ FUTURE: peatland carbon sink should maybe depend on global mean temperature and 
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -7844,7 +7868,7 @@ FUTURE: peatland carbon sink should maybe depend on global mean temperature and 
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -8124,15 +8148,14 @@ FUTURE: peatland carbon sink should maybe depend on global mean temperature and 
 				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="#3A35FF" thickness="1"/>
-						<isee:series_style color="#DB5823" thickness="1"/>
-						<isee:series_style color="#7523DB" thickness="1"/>
-						<isee:series_style color="#DBD723" thickness="1"/>
-						<isee:series_style color="#02DBB9" thickness="1"/>
-						<isee:series_style color="#868542" thickness="1"/>
-						<isee:series_style color="#6B5045" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
+						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
@@ -8161,7 +8184,7 @@ FUTURE: peatland carbon sink should maybe depend on global mean temperature and 
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
