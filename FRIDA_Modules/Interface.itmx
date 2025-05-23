@@ -825,6 +825,86 @@
 				<eqn>IF switch_food_demand_policy_1 = 1 OR switch_animal_products_fraction_policy_1 = 1 THEN 1 ELSE 0</eqn>
 				<units>dmnl</units>
 			</aux>
+			<aux name="Result Discussion Page Pop Up Button">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Office 1 Button 3">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Office 1 Button 4">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Office 1 Button 5">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nSet Carbon Tax Button Appear">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nSet Nuclear Button Appear">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nSet Solar Button Appear">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nSet Wind Button Appear">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nButton 1">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nButton 2">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nButton 3">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nButton 4">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nButton 5">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Set Carbon Tax Tick">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Set Nuclear Tax Tick">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Set Solar Tax Tick">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Set Wind Tax Tick">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy\nImplementation Page">
+				<eqn>IF Set_Carbon_Tax_Tick = 1 AND Set_Nuclear_Tax_Tick = 1 AND Set_Solar_Tax_Tick = 1 AND Set_Wind_Tax_Tick = 1 THEN 1 ELSE 0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Implementation page Reminder">
+				<eqn>IF &quot;2nd_Policy_Implementation_Page&quot; = 1 THEN 0 ELSE 1</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nButton 6">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -909,7 +989,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="350" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="1180" isee:scroll_y="973" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1395,6 +1475,46 @@
 					<from>switch_animal_products_fraction_policy_1</from>
 					<to>Text_Visibility_1</to>
 				</connector>
+				<aux x="1520" y="1135" name="Result Discussion Page Pop Up Button"/>
+				<aux x="1520" y="1069" name="Office 1 Button 3"/>
+				<aux x="1611.73" y="1069" name="Office 1 Button 4"/>
+				<aux x="1706.5" y="1069" name="Office 1 Button 5"/>
+				<aux x="1470.5" y="1323.75" name="2nd Policy Idea\nSet Carbon Tax Button Appear"/>
+				<aux x="1608.73" y="1323.75" name="2nd Policy Idea\nSet Nuclear Button Appear"/>
+				<aux x="1740.75" y="1323.75" name="2nd Policy Idea\nSet Solar Button Appear"/>
+				<aux x="1857.92" y="1323.75" name="2nd Policy Idea\nSet Wind Button Appear"/>
+				<aux x="1515" y="1208.75" name="2nd Policy Idea\nButton 1"/>
+				<aux x="1608.73" y="1217.5" name="2nd Policy Idea\nButton 2"/>
+				<aux x="1693.5" y="1217.5" name="2nd Policy Idea\nButton 3"/>
+				<aux x="1781.75" y="1217.5" name="2nd Policy Idea\nButton 4"/>
+				<aux x="1862.92" y="1217.5" name="2nd Policy Idea\nButton 5"/>
+				<aux x="1470.5" y="1396.25" name="Set Carbon Tax Tick"/>
+				<aux x="1608.73" y="1401.25" name="Set Nuclear Tax Tick"/>
+				<aux x="1733.73" y="1401.25" name="Set Solar Tax Tick"/>
+				<aux x="1852.48" y="1401.25" name="Set Wind Tax Tick"/>
+				<aux x="1667.5" y="1486.25" name="2nd Policy\nImplementation Page"/>
+				<connector uid="136" angle="320.889">
+					<from>Set_Carbon_Tax_Tick</from>
+					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
+				</connector>
+				<connector uid="137" angle="335.108">
+					<from>Set_Nuclear_Tax_Tick</from>
+					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
+				</connector>
+				<connector uid="138" angle="278.162">
+					<from>Set_Solar_Tax_Tick</from>
+					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
+				</connector>
+				<connector uid="139" angle="265.797">
+					<from>Set_Wind_Tax_Tick</from>
+					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
+				</connector>
+				<aux x="1667.5" y="1563.75" name="2nd Policy Implementation page Reminder"/>
+				<connector uid="140" angle="272.045">
+					<from>&quot;2nd_Policy_Implementation_Page&quot;</from>
+					<to>&quot;2nd_Policy_Implementation_page_Reminder&quot;</to>
+				</connector>
+				<aux x="1956.92" y="1220.5" name="2nd Policy Idea\nButton 6"/>
 				<alias font_style="italic" uid="28" x="1051.04" y="580.667" width="18" height="18">
 					<of>Bulls_Eye_Animation_Height</of>
 				</alias>
