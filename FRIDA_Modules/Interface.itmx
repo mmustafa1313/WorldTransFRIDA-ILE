@@ -825,7 +825,7 @@
 				<eqn>IF switch_food_demand_policy_1 = 1 OR switch_animal_products_fraction_policy_1 = 1 THEN 1 ELSE 0</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="Result Discussion Page Pop Up Button">
+			<aux name="Result Page Pop Up\nButton 6">
 				<eqn>0</eqn>
 				<units>Dimensionless</units>
 			</aux>
@@ -902,6 +902,75 @@
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="2nd Policy Idea\nButton 6">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Result Page Pop Up\nButton 1">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Result Page Pop Up\nButton 2">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Result Page Pop Up\nButton 3">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Result Page Pop Up\nButton 4">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Result Page Pop Up\nButton 5">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Median STA">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>PERCENTILE(Surface_Temperature_Anomaly[*],  50)</eqn>
+				<units>deg C</units>
+			</aux>
+			<aux name="Median GDPpp">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>PERCENTILE(real_GDP_per_person[*],  50) * 1000</eqn>
+				<units>bc$/Mp/year</units>
+			</aux>
+			<aux name="Median Labour Share of GDP">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>PERCENTILE(Labour_Share_of_GDP[*],  50)</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Set Income Tax Tick">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="3rd Policy Idea Set Income Tax Button Appear">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="3rd Policy Idea Set Profit\nTax Button Appear">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="Set Profit Tax Tick">
+				<eqn>0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="3rd Policy\nImplementation Page">
+				<eqn>IF &quot;2nd_Policy_Implementation_Page&quot; = 1 AND Set_Income_Tax_Tick = 1 AND Set_Profit_Tax_Tick = 1 THEN 1 ELSE 0</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="3rd Policy Implementation Page Reminder">
+				<eqn>IF &quot;3rd_Policy_Implementation_Page&quot; = 1 THEN 0 ELSE 1</eqn>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="2nd Policy Idea\nButton 7">
 				<eqn>0</eqn>
 				<units>Dimensionless</units>
 			</aux>
@@ -989,7 +1058,130 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="1180" isee:scroll_y="973" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+					<isee:series_styles>
+						<isee:series_style color="#3A35FF" thickness="1"/>
+						<isee:series_style color="#DB5823" thickness="1"/>
+						<isee:series_style color="#7523DB" thickness="1"/>
+						<isee:series_style color="#DBD723" thickness="1"/>
+						<isee:series_style color="#02DBB9" thickness="1"/>
+						<isee:series_style color="#868542" thickness="1"/>
+						<isee:series_style color="#6B5045" thickness="1"/>
+					</isee:series_styles>
+				</graph>
+				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+				<button color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595"/>
+				<isee:annotation color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595" popup_corner_radius="0" popup_background_color="#FFFECF"/>
+				<slider color="#66CC66" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:stacked_container color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:dual_slider color="#66CC66" background="silver" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:sim_speed_slider color="black" background="white"/>
+				<isee:time_slider color="#E95F74" background="silver"/>
+				<isee:pie_input color="black" background="white" font_size="12pt" legend_position="bottom" isee:transparent="false"/>
+				<knob color="#66CC66" background="#E0E0E0" font_size="12pt" label_side="bottom" wrap_title="true"/>
+				<numeric_input color="black" background="#E0E0E0" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<isee:dropdown_input color="black" background="white" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<switch color="black" background="#E0E0E0" font_size="12pt" label_side="top" wrap_title="true" isee:appearance="switch" isee:on_color="green"/>
+				<options color="black" background="white" appearance="radio-buttons" arrangement="vertical"/>
+				<graphical_input color="black" background="#E0E0E0" font_size="12pt" isee:show_hover_tip="true"/>
+				<group_input color="black" background="#E0E0E0" font_size="12pt"/>
+				<lamp color="black" background="white" font_size="9pt"/>
+				<gauge color="black" background="white" font_size="9pt" needle_color="#F09F72" bar_color="#EEEEEE" bar_progress_color="black" appearance="radial" num_major_ticks="11" num_minor_ticks="11" show_numeric_value="true"/>
+				<isee:spatial_map color="black" background="white" font_size="12pt"/>
+				<isee:animation_object color="black" background="white" font_size="12pt"/>
+				<isee:navigation_widget color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="6" appearance="tabs" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:shape color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid" opacity="1" transparent_background="true" corner_radius="1"/>
+				<isee:selector color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
+				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			</style>
+			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+					<isee:series_styles>
+						<isee:series_style color="#3A35FF" thickness="1"/>
+						<isee:series_style color="#DB5823" thickness="1"/>
+						<isee:series_style color="#7523DB" thickness="1"/>
+						<isee:series_style color="#DBD723" thickness="1"/>
+						<isee:series_style color="#02DBB9" thickness="1"/>
+						<isee:series_style color="#868542" thickness="1"/>
+						<isee:series_style color="#6B5045" thickness="1"/>
+					</isee:series_styles>
+				</graph>
+				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+				<button color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595"/>
+				<isee:annotation color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595" popup_corner_radius="0" popup_background_color="#FFFECF"/>
+				<slider color="#66CC66" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:stacked_container color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:dual_slider color="#66CC66" background="silver" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:sim_speed_slider color="black" background="white"/>
+				<isee:time_slider color="#E95F74" background="silver"/>
+				<isee:pie_input color="black" background="white" font_size="12pt" legend_position="bottom" isee:transparent="false"/>
+				<knob color="#66CC66" background="#E0E0E0" font_size="12pt" label_side="bottom" wrap_title="true"/>
+				<numeric_input color="black" background="#E0E0E0" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<isee:dropdown_input color="black" background="white" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<switch color="black" background="#E0E0E0" font_size="12pt" label_side="top" wrap_title="true" isee:appearance="switch" isee:on_color="green"/>
+				<options color="black" background="white" appearance="radio-buttons" arrangement="vertical"/>
+				<graphical_input color="black" background="#E0E0E0" font_size="12pt" isee:show_hover_tip="true"/>
+				<group_input color="black" background="#E0E0E0" font_size="12pt"/>
+				<lamp color="black" background="white" font_size="9pt"/>
+				<gauge color="black" background="white" font_size="9pt" needle_color="#F09F72" bar_color="#EEEEEE" bar_progress_color="black" appearance="radial" num_major_ticks="11" num_minor_ticks="11" show_numeric_value="true"/>
+				<isee:spatial_map color="black" background="white" font_size="12pt"/>
+				<isee:animation_object color="black" background="white" font_size="12pt"/>
+				<isee:navigation_widget color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="6" appearance="tabs" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:shape color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid" opacity="1" transparent_background="true" corner_radius="1"/>
+				<isee:selector color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
+				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			</style>
+			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+				<graph color="black" background="white" font_size="14pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+					<isee:series_styles>
+						<isee:series_style color="#3A35FF" thickness="1"/>
+						<isee:series_style color="#DB5823" thickness="1"/>
+						<isee:series_style color="#7523DB" thickness="1"/>
+						<isee:series_style color="#DBD723" thickness="1"/>
+						<isee:series_style color="#02DBB9" thickness="1"/>
+						<isee:series_style color="#868542" thickness="1"/>
+						<isee:series_style color="#6B5045" thickness="1"/>
+					</isee:series_styles>
+				</graph>
+				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+				<button color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595"/>
+				<isee:annotation color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595" popup_corner_radius="0" popup_background_color="#FFFECF"/>
+				<slider color="#66CC66" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:stacked_container color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:dual_slider color="#66CC66" background="silver" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:sim_speed_slider color="black" background="white"/>
+				<isee:time_slider color="#E95F74" background="silver"/>
+				<isee:pie_input color="black" background="white" font_size="12pt" legend_position="bottom" isee:transparent="false"/>
+				<knob color="#66CC66" background="#E0E0E0" font_size="12pt" label_side="bottom" wrap_title="true"/>
+				<numeric_input color="black" background="#E0E0E0" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<isee:dropdown_input color="black" background="white" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<switch color="black" background="#E0E0E0" font_size="12pt" label_side="top" wrap_title="true" isee:appearance="switch" isee:on_color="green"/>
+				<options color="black" background="white" appearance="radio-buttons" arrangement="vertical"/>
+				<graphical_input color="black" background="#E0E0E0" font_size="12pt" isee:show_hover_tip="true"/>
+				<group_input color="black" background="#E0E0E0" font_size="12pt"/>
+				<lamp color="black" background="white" font_size="9pt"/>
+				<gauge color="black" background="white" font_size="9pt" needle_color="#F09F72" bar_color="#EEEEEE" bar_progress_color="black" appearance="radial" num_major_ticks="11" num_minor_ticks="11" show_numeric_value="true"/>
+				<isee:spatial_map color="black" background="white" font_size="12pt"/>
+				<isee:animation_object color="black" background="white" font_size="12pt"/>
+				<isee:navigation_widget color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="6" appearance="tabs" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:shape color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid" opacity="1" transparent_background="true" corner_radius="1"/>
+				<isee:selector color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
+				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			</style>
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="1086.25" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1202,10 +1394,10 @@
 				</connector>
 				<isee:custom_shape>
 					<pts>
-						<pt x="2380" y="80"/>
-						<pt x="2757.5" y="100"/>
-						<pt x="2651.25" y="266.25"/>
-						<pt x="2422.5" y="343.75"/>
+						<pt x="2380.63" y="77.209"/>
+						<pt x="2758.13" y="97.209"/>
+						<pt x="2653.13" y="351.25"/>
+						<pt x="2423.13" y="340.959"/>
 					</pts>
 				</isee:custom_shape>
 				<isee:custom_shape background="#FFEAC1">
@@ -1426,7 +1618,7 @@
 					<from>BullsEye_Inequality_Visibility</from>
 					<to>Next_to_Policy_Page_Button_Visibility</to>
 				</connector>
-				<aux x="2015" y="62.3333" name="simulation delay"/>
+				<aux x="2740.25" y="584.833" name="simulation delay"/>
 				<aux x="2785" y="367" name="clock"/>
 				<connector uid="124" angle="29.3779">
 					<from>show_descriptive_text</from>
@@ -1475,46 +1667,89 @@
 					<from>switch_animal_products_fraction_policy_1</from>
 					<to>Text_Visibility_1</to>
 				</connector>
-				<aux x="1520" y="1135" name="Result Discussion Page Pop Up Button"/>
-				<aux x="1520" y="1069" name="Office 1 Button 3"/>
-				<aux x="1611.73" y="1069" name="Office 1 Button 4"/>
-				<aux x="1706.5" y="1069" name="Office 1 Button 5"/>
-				<aux x="1470.5" y="1323.75" name="2nd Policy Idea\nSet Carbon Tax Button Appear"/>
-				<aux x="1608.73" y="1323.75" name="2nd Policy Idea\nSet Nuclear Button Appear"/>
-				<aux x="1740.75" y="1323.75" name="2nd Policy Idea\nSet Solar Button Appear"/>
-				<aux x="1857.92" y="1323.75" name="2nd Policy Idea\nSet Wind Button Appear"/>
-				<aux x="1515" y="1208.75" name="2nd Policy Idea\nButton 1"/>
-				<aux x="1608.73" y="1217.5" name="2nd Policy Idea\nButton 2"/>
-				<aux x="1693.5" y="1217.5" name="2nd Policy Idea\nButton 3"/>
-				<aux x="1781.75" y="1217.5" name="2nd Policy Idea\nButton 4"/>
-				<aux x="1862.92" y="1217.5" name="2nd Policy Idea\nButton 5"/>
-				<aux x="1470.5" y="1396.25" name="Set Carbon Tax Tick"/>
-				<aux x="1608.73" y="1401.25" name="Set Nuclear Tax Tick"/>
-				<aux x="1733.73" y="1401.25" name="Set Solar Tax Tick"/>
-				<aux x="1852.48" y="1401.25" name="Set Wind Tax Tick"/>
-				<aux x="1667.5" y="1486.25" name="2nd Policy\nImplementation Page"/>
-				<connector uid="136" angle="320.889">
+				<aux x="2063.92" y="1136.25" name="Result Page Pop Up\nButton 6"/>
+				<aux x="1497" y="1072.75" name="Office 1 Button 3"/>
+				<aux x="1608.73" y="1072.75" name="Office 1 Button 4"/>
+				<aux x="1715.73" y="1072.75" name="Office 1 Button 5"/>
+				<aux x="1541.75" y="1448.75" name="2nd Policy Idea\nSet Carbon Tax Button Appear"/>
+				<aux x="1679.98" y="1448.75" name="2nd Policy Idea\nSet Nuclear Button Appear"/>
+				<aux x="1812" y="1448.75" name="2nd Policy Idea\nSet Solar Button Appear"/>
+				<aux x="1929.17" y="1448.75" name="2nd Policy Idea\nSet Wind Button Appear"/>
+				<aux x="1479.5" y="1362.5" name="2nd Policy Idea\nButton 1"/>
+				<aux x="1580.54" y="1362.5" name="2nd Policy Idea\nButton 2"/>
+				<aux x="1671" y="1365.5" name="2nd Policy Idea\nButton 3"/>
+				<aux x="1768.15" y="1365.5" name="2nd Policy Idea\nButton 4"/>
+				<aux x="1858.42" y="1365.5" name="2nd Policy Idea\nButton 5"/>
+				<aux x="1540.5" y="1625" name="Set Carbon Tax Tick"/>
+				<aux x="1678.73" y="1630" name="Set Nuclear Tax Tick"/>
+				<aux x="1803.73" y="1630" name="Set Solar Tax Tick"/>
+				<aux x="1922.48" y="1630" name="Set Wind Tax Tick"/>
+				<aux x="1828.75" y="1702.5" name="2nd Policy\nImplementation Page"/>
+				<connector uid="136" angle="330.394">
 					<from>Set_Carbon_Tax_Tick</from>
 					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
 				</connector>
-				<connector uid="137" angle="335.108">
+				<connector uid="137" angle="4.65453">
 					<from>Set_Nuclear_Tax_Tick</from>
 					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
 				</connector>
-				<connector uid="138" angle="278.162">
+				<connector uid="138" angle="335.127">
 					<from>Set_Solar_Tax_Tick</from>
 					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
 				</connector>
-				<connector uid="139" angle="265.797">
+				<connector uid="139" angle="278.84">
 					<from>Set_Wind_Tax_Tick</from>
 					<to>&quot;2nd_Policy_Implementation_Page&quot;</to>
 				</connector>
-				<aux x="1667.5" y="1563.75" name="2nd Policy Implementation page Reminder"/>
-				<connector uid="140" angle="272.045">
+				<aux x="1828.75" y="1778.75" name="2nd Policy Implementation page Reminder"/>
+				<connector uid="140" angle="270">
 					<from>&quot;2nd_Policy_Implementation_Page&quot;</from>
 					<to>&quot;2nd_Policy_Implementation_page_Reminder&quot;</to>
 				</connector>
-				<aux x="1956.92" y="1220.5" name="2nd Policy Idea\nButton 6"/>
+				<aux x="1955" y="1365.5" name="2nd Policy Idea\nButton 6"/>
+				<aux x="1497" y="1136.25" name="Result Page Pop Up\nButton 1"/>
+				<aux x="1606.23" y="1136.25" name="Result Page Pop Up\nButton 2"/>
+				<aux x="1715.73" y="1136.25" name="Result Page Pop Up\nButton 3"/>
+				<aux x="1825.08" y="1136.25" name="Result Page Pop Up\nButton 4"/>
+				<aux x="1945.08" y="1136.25" name="Result Page Pop Up\nButton 5"/>
+				<aux x="1022.5" y="125.309" name="Median STA"/>
+				<connector uid="141" angle="276.184">
+					<from>Surface_Temperature_Anomaly</from>
+					<to>Median_STA</to>
+				</connector>
+				<aux x="1185" y="121.25" name="Median GDPpp"/>
+				<connector uid="142" angle="270">
+					<from>real_GDP_per_person</from>
+					<to>Median_GDPpp</to>
+				</connector>
+				<aux x="1496.25" y="195" name="Median Labour Share of GDP"/>
+				<connector uid="143" angle="274.441">
+					<from>Labour_Share_of_GDP</from>
+					<to>Median_Labour_Share_of_GDP</to>
+				</connector>
+				<aux x="1545.5" y="1715" name="Set Income Tax Tick"/>
+				<aux x="1550" y="1543.75" name="3rd Policy Idea Set Income Tax Button Appear"/>
+				<aux x="1706.5" y="1543.75" name="3rd Policy Idea Set Profit\nTax Button Appear"/>
+				<aux x="1545.5" y="1770" name="Set Profit Tax Tick"/>
+				<aux x="1688.5" y="1720.5" name="3rd Policy\nImplementation Page"/>
+				<connector uid="144" angle="186.116">
+					<from>&quot;2nd_Policy_Implementation_Page&quot;</from>
+					<to>&quot;3rd_Policy_Implementation_Page&quot;</to>
+				</connector>
+				<connector uid="145" angle="4.00019">
+					<from>Set_Income_Tax_Tick</from>
+					<to>&quot;3rd_Policy_Implementation_Page&quot;</to>
+				</connector>
+				<connector uid="146" angle="22.1219">
+					<from>Set_Profit_Tax_Tick</from>
+					<to>&quot;3rd_Policy_Implementation_Page&quot;</to>
+				</connector>
+				<aux x="1688.5" y="1802.5" name="3rd Policy Implementation Page Reminder"/>
+				<connector uid="147" angle="268.277">
+					<from>&quot;3rd_Policy_Implementation_Page&quot;</from>
+					<to>&quot;3rd_Policy_Implementation_Page_Reminder&quot;</to>
+				</connector>
+				<aux x="2060" y="1374" name="2nd Policy Idea\nButton 7"/>
 				<alias font_style="italic" uid="28" x="1051.04" y="580.667" width="18" height="18">
 					<of>Bulls_Eye_Animation_Height</of>
 				</alias>
