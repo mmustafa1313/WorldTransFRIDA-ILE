@@ -4510,7 +4510,7 @@ Consumption Risk}</eqn>
 					<image width="2439" height="1733" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA logo dark type.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4530,7 +4530,12 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 
 1. Surface Temperature Anomaly (STA) – This tells us how much the Earth’s temperature is changing over time.
 2. GDP per Person – This shows the economic health of countries and it&apos;s impacts on people&apos;s lives.
-3. Labour Share of GDP – This examines one portion of the wealth disparity and how it might be reduced.</text_box>
+3. Labour Share of GDP – This examines one portion of the wealth disparity and how it might be reduced.
+
+
+
+
+Click on this icon to               open the Navigation &amp; Terminology Guide, or use the Next Page button &gt; to proceed to the next section of the ILE.</text_box>
 				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="5" width="1066" height="40" isee:locked="true">FRIDA GLOBAL CLIMATE SIMULATOR
 </text_box>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="0" y="35.1027" width="1066" height="37.62" isee:locked="true">Exploring the Co-Evolution of Climate and Humanity</text_box>
@@ -4577,8 +4582,16 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 						<action target="interface:2">navigate</action>
 					</actions>
 				</button>
+				<graphics_frame z_index="16" fill="none" x="162" y="445" width="53" height="33">
+					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/questions.png</image>
+				</graphics_frame>
+				<button z_index="17" transparent="true" label="" isee:tooltip="" x="169" y="446.5" width="39" height="30">
+					<actions>
+						<action target="interface:2">navigate</action>
+					</actions>
+				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4620,22 +4633,22 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 					</actions>
 				</button>
 				<isee:shape background="#F5FFE0" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
-				<graphics_frame fill="none" x="60" y="130" width="55" height="55">
+				<graphics_frame fill="none" x="50" y="230" width="40" height="40">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Home icon.png</image>
 				</graphics_frame>
-				<graphics_frame fill="none" x="60" y="235" width="55" height="55">
+				<graphics_frame fill="none" x="50" y="310" width="40" height="40">
 					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Guided Demonstration Icon.png</image>
 				</graphics_frame>
-				<graphics_frame fill="none" x="65" y="340" width="55" height="55">
+				<graphics_frame fill="none" x="50" y="390" width="40" height="40">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Goal Settings Icon.png</image>
 				</graphics_frame>
-				<graphics_frame fill="none" x="60" y="445" width="55" height="55">
+				<graphics_frame fill="none" x="50" y="470" width="40" height="40">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard Icon.png</image>
 				</graphics_frame>
-				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="130" y="129.5" width="540" height="56">The Home section is your starting point in this ILE. Here, you will get an overview of what’s to come in the simulation.</text_box>
-				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="129" y="225" width="540" height="75">In the Guided Demonstration, you&apos;ll learn how the system dynamics model works and explore how climate and human systems are connected. Follow the steps to understand how variables interact before making your own decisions.</text_box>
-				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="129" y="318" width="540" height="99">In the Goal Settings section, review how key variables have developed over time. Set your targets and target year for these variables, to establish a reference point for your analysis in the dashboard section.</text_box>
-				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="129" y="423" width="540" height="99">In the Dashboard section, you get to interact with the model in real-time. Use this section to adjust key variables, explore different scenarios, and visualize the results of your choices. The Dashboard provides all the tools you need to test your decisions and see how your actions affect the system.</text_box>
+				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="115" y="222" width="550" height="56">The Home section is your starting point in this ILE. Here, you will get an overview of what’s to come in the simulation.</text_box>
+				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="115" y="292.5" width="550" height="75">In the Guided Demonstration, you’ll explore how to use the ILE tool, understand its features, and see how different variables interact within the system. Follow the steps to get familiar with the tool before making your own decisions.</text_box>
+				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="115" y="380" width="550" height="60">In the Goal Settings section, review how key variables have developed over time. Set your targets and target year for these variables, to establish a reference point for your analysis in the dashboard section.</text_box>
+				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="115" y="452.5" width="550" height="75">In the Dashboard section, you get to interact with the model in real-time. Use this section to adjust key variables, explore different scenarios, and visualize the results of your choices. The Dashboard provides all the tools you need to test your decisions and see how your actions affect the system.</text_box>
 				<graphics_frame fill="none" x="817" y="218" width="100" height="100">
 					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/reading-glasses.png</image>
 				</graphics_frame>
@@ -4646,8 +4659,13 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 						<action target="interface:3">navigate</action>
 					</actions>
 				</button>
+				<graphics_frame fill="none" x="50" y="150" width="40" height="40">
+					<image width="303" height="305" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dash.png</image>
+				</graphics_frame>
+				<text_box text_align="center" vertical_text_align="center" font_size="20pt" appearance="transparent" x="20" y="93" width="668" height="58">Navigation Buttons</text_box>
+				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="115" y="142" width="550" height="56">Clicking the three-dash icon in the circular menu will open the Navigation &amp; Terminology Guide.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 1" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 1" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4702,7 +4720,7 @@ Example: If emissions rise in the model, it&apos;s not because we told the model
 					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/feedback (1).png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4760,7 +4778,7 @@ It typically includes:
 					<image width="585" height="427" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Confidence Graph.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 3" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 3" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
