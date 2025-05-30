@@ -4476,7 +4476,7 @@ Consumption Risk}</eqn>
 				<isee:placeholder x="1321.5" y="1393.58" name="Behavioral Placeholder"/>
 				<isee:placeholder x="1321.5" y="1559.72" name="Biosphere Indicators\nPlaceholder"/>
 			</view>
-			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" home_view="true" type="interface">
+			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" home_view="true" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4510,11 +4510,11 @@ Consumption Risk}</eqn>
 					<image width="2439" height="1733" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA logo dark type.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<text_box z_index="-2" background="#FFFCE0" font_size="14pt" padding="20" border_width="thin" border_style="solid" corner_radius="15" x="18.0435" y="92.7227" width="1029.91" height="455.219">Welcome to the FRIDA climate action simulation.
+				<text_box z_index="-2" background="#F5FFE0" font_size="14pt" padding="20" border_width="thin" border_style="solid" corner_radius="15" x="18.045" y="91.7227" width="1029.91" height="455.219">Welcome to the FRIDA climate action simulation.
 
 This is an interactive tool where we can learn more about the relationship between human activities and climate. 
 
@@ -4541,9 +4541,233 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 				</button>
 				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="1032.59" y="566.058" width="18.838" height="25.9222">
 					<actions>
-						<action target="next_page">navigate</action>
+						<action target="interface:6">navigate</action>
 						<action>start</action>
 						<action isee:run_name_to_set="EMB">set_run_name</action>
+					</actions>
+				</button>
+				<graphics_frame fill="none" x="7" y="7" width="80" height="80">
+					<image width="519" height="517" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Final Menu Button 1.png</image>
+				</graphics_frame>
+				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
+					<actions>
+						<action>restore_all</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
+						<action target="interface:25">navigate</action>
+						<action>start</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:24">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
+					<actions>
+						<action target="home_page">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="36.7056" y="13.5297" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:6">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
+					<actions>
+						<action target="interface:2">navigate</action>
+					</actions>
+				</button>
+			</view>
+			<view isee:template_view="template:1" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="24pt" appearance="transparent" x="0" y="5" width="1066" height="56.4762">Navigation &amp; Terminology Guide</text_box>
+				<button z_index="13" transparent="true" corner_radius="12" label="" isee:tooltip="" x="12.4665" y="566.546" width="26.1554" height="24.9464">
+					<actions>
+						<action target="interface:0">navigate</action>
+					</actions>
+				</button>
+				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="1032.59" y="566.058" width="18.838" height="25.9222">
+					<actions>
+						<action target="next_page">navigate</action>
+					</actions>
+				</button>
+				<graphics_frame fill="none" x="7" y="7" width="80" height="80">
+					<image width="519" height="517" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Final Menu Button 1.png</image>
+				</graphics_frame>
+				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
+					<actions>
+						<action>restore_all</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
+						<action target="interface:24">navigate</action>
+						<action>start</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:23">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
+					<actions>
+						<action target="home_page">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="36.7056" y="13.5297" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:2">navigate</action>
+					</actions>
+				</button>
+				<isee:shape background="#F5FFE0" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<graphics_frame fill="none" x="60" y="130" width="55" height="55">
+					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Home icon.png</image>
+				</graphics_frame>
+				<graphics_frame fill="none" x="60" y="235" width="55" height="55">
+					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Guided Demonstration Icon.png</image>
+				</graphics_frame>
+				<graphics_frame fill="none" x="65" y="340" width="55" height="55">
+					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Goal Settings Icon.png</image>
+				</graphics_frame>
+				<graphics_frame fill="none" x="60" y="445" width="55" height="55">
+					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Dashboard Icon.png</image>
+				</graphics_frame>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="130" y="129.5" width="540" height="56">The Home section is your starting point in this ILE. Here, you will get an overview of what’s to come in the simulation.</text_box>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="129" y="225" width="540" height="75">In the Guided Demonstration, you&apos;ll learn how the system dynamics model works and explore how climate and human systems are connected. Follow the steps to understand how variables interact before making your own decisions.</text_box>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="129" y="318" width="540" height="99">In the Goal Settings section, review how key variables have developed over time. Set your targets and target year for these variables, to establish a reference point for your analysis in the dashboard section.</text_box>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="129" y="423" width="540" height="99">In the Dashboard section, you get to interact with the model in real-time. Use this section to adjust key variables, explore different scenarios, and visualize the results of your choices. The Dashboard provides all the tools you need to test your decisions and see how your actions affect the system.</text_box>
+				<graphics_frame fill="none" x="817" y="218" width="100" height="100">
+					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/reading-glasses.png</image>
+				</graphics_frame>
+				<isee:shape z_index="15" border_color="#989898" border_width="0.5" opacity="1" transparent_background="false" x="683.15" y="95" width="14" height="454" kind="vline"/>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="727" y="338.5" width="280" height="58">Click this icon to open the Terminology Guide and learn the meaning of key terms and graphs used in this ILE.</text_box>
+				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="822.59" y="237.058" width="88.82" height="69.9222">
+					<actions>
+						<action target="interface:3">navigate</action>
+					</actions>
+				</button>
+			</view>
+			<view isee:template_view="template:1" isee:name="Terminology Guide 1" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="24pt" appearance="transparent" x="0" y="5" width="1066" height="56.4762">Navigation &amp; Terminology Guide</text_box>
+				<button z_index="13" transparent="true" corner_radius="12" label="" isee:tooltip="" x="12.4665" y="566.546" width="26.1554" height="24.9464">
+					<actions>
+						<action target="interface:0">navigate</action>
+					</actions>
+				</button>
+				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="1032.59" y="566.058" width="18.838" height="25.9222">
+					<actions>
+						<action target="next_page">navigate</action>
+					</actions>
+				</button>
+				<graphics_frame fill="none" x="7" y="7" width="80" height="80">
+					<image width="519" height="517" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Final Menu Button 1.png</image>
+				</graphics_frame>
+				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
+					<actions>
+						<action>restore_all</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
+						<action target="interface:23">navigate</action>
+						<action>start</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:22">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
+					<actions>
+						<action target="home_page">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="36.7056" y="13.5297" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:2">navigate</action>
+					</actions>
+				</button>
+				<isee:shape background="#F5FFE0" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="90" y="180" width="540" height="301">Endogenous Model Behavior refers to how a system&apos;s behavior over time arises from its internal structure—such as feedback loops, delays, and accumulations—rather than from external inputs or random events. In other words, the model explains its own behavior through the interactions of its components.
+
+
+In system dynamics, focusing on endogenous behavior helps users understand why things happen by revealing the causal mechanisms within the system, not just describing outcomes.
+
+
+Example: If emissions rise in the model, it&apos;s not because we told the model to increase them—it&apos;s because internal variables (like population or energy demand) interacted in a way that led to that outcome.</text_box>
+				<isee:shape z_index="15" border_color="#989898" border_width="0.5" opacity="1" transparent_background="false" x="683.15" y="95" width="14" height="454" kind="vline"/>
+				<text_box text_align="center" vertical_text_align="center" font_size="20pt" appearance="transparent" x="20" y="101.5" width="668" height="58">Endogenous Model Behavior (EMB)</text_box>
+				<graphics_frame fill="none" x="776" y="230.5" width="200" height="200">
+					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/feedback (1).png</image>
+				</graphics_frame>
+			</view>
+			<view isee:template_view="template:1" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="24pt" appearance="transparent" x="0" y="5" width="1066" height="56.4762">Navigation &amp; Terminology Guide</text_box>
+				<button z_index="13" transparent="true" corner_radius="12" label="" isee:tooltip="" x="12.4665" y="566.546" width="26.1554" height="24.9464">
+					<actions>
+						<action target="interface:0">navigate</action>
+					</actions>
+				</button>
+				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="1032.59" y="566.058" width="18.838" height="25.9222">
+					<actions>
+						<action target="next_page">navigate</action>
+					</actions>
+				</button>
+				<graphics_frame fill="none" x="7" y="7" width="80" height="80">
+					<image width="519" height="517" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Final Menu Button 1.png</image>
+				</graphics_frame>
+				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
+					<actions>
+						<action>restore_all</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
+						<action target="interface:22">navigate</action>
+						<action>start</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:21">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
+					<actions>
+						<action target="home_page">navigate</action>
+					</actions>
+				</button>
+				<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="36.7056" y="13.5297" width="21.3913" height="14.1311">
+					<actions>
+						<action target="interface:2">navigate</action>
+					</actions>
+				</button>
+				<isee:shape background="#F5FFE0" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="90" y="180" width="540" height="301">A Confidence Graph shows how a variable in a system changes over time across multiple simulation runs or scenarios. It is used to communicate the uncertainty or variability in model outcomes. This type of graph helps us understand not only what might happen, but also how confident we are in those predictions—based on differences in the assumptions or input values used in the simulations.
+
+It typically includes:
+
+- A central line showing the average or median behavior of the variable
+
+- Shaded bands or lines above and below that represent the range or     confidence interval (e.g., 5th to 95th percentile)
+
+- A time axis (horizontal) and a value axis (vertical)
+</text_box>
+				<isee:shape z_index="15" border_color="#989898" border_width="0.5" opacity="1" transparent_background="false" x="683.15" y="95" width="14" height="454" kind="vline"/>
+				<text_box text_align="center" vertical_text_align="center" font_size="20pt" appearance="transparent" x="20" y="101.5" width="668" height="58">Confidence Graph</text_box>
+				<graphics_frame fill="none" x="724.51" y="180.5" width="300" height="300">
+					<image width="585" height="427" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Confidence Graph.png</image>
+				</graphics_frame>
+			</view>
+			<view isee:template_view="template:1" isee:name="Terminology Guide 3" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="24pt" appearance="transparent" x="0" y="5" width="1066" height="56.4762">Navigation &amp; Terminology Guide</text_box>
+				<button z_index="13" transparent="true" corner_radius="12" label="" isee:tooltip="" x="12.4665" y="566.546" width="26.1554" height="24.9464">
+					<actions>
+						<action target="interface:0">navigate</action>
 					</actions>
 				</button>
 				<graphics_frame fill="none" x="7" y="7" width="80" height="80">
@@ -4572,8 +4796,33 @@ You&apos;ll explore how reducing GHG emissions can make the world a better place
 						<action target="interface:2">navigate</action>
 					</actions>
 				</button>
+				<isee:shape background="#F5FFE0" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="90" y="180" width="540" height="327">A Box and Whisker Graph is a statistical chart that displays the distribution of a dataset. It highlights the spread, central tendency, and any outliers present in the data. This type of graph is used to visually summarize variability, making it easier to identify patterns, central values, and unusual observations.
+
+It typically includes:
+
+- Box: Represents the interquartile range (IQR) — the middle 50% of the data (from the 25th to the 75th percentile).
+
+- Line inside the box: Shows the median (the middle value).
+
+- Whiskers: Extend from the box to the minimum and maximum values that are not considered outliers.
+
+- Dots or marks outside whiskers: Represent outliers (extreme values).
+</text_box>
+				<isee:shape z_index="15" border_color="#989898" border_width="0.5" opacity="1" transparent_background="false" x="683.15" y="95" width="14" height="454" kind="vline"/>
+				<text_box text_align="center" vertical_text_align="center" font_size="20pt" appearance="transparent" x="20" y="101.5" width="668" height="58">Box and Whisker Graph</text_box>
+				<graphics_frame fill="none" x="724.51" y="180.5" width="300" height="300">
+					<image width="500" height="500" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Box and Whisker Graph.png</image>
+				</graphics_frame>
+				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="1032.59" y="566.058" width="18.838" height="25.9222">
+					<actions>
+						<action target="interface:6">navigate</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
+					</actions>
+				</button>
 			</view>
-			<view isee:template_view="template:2" isee:name="Storytelling Intro" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="Storytelling Intro" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4616,11 +4865,11 @@ Click the next page button &gt;</text>
 				</isee:annotation>
 				<isee:shape z_index="14" background="#39557D" border_width="thin" border_style="none" transparent_background="false" x="3.1346" y="560.638" width="60.9524" height="36.7619" kind="rectangle"/>
 				<isee:shape z_index="-5" border_color="#F5FFE0" border_width="thick" x="6.01" y="157.703" width="35.98" height="159" kind="vline"/>
-				<graphics_frame fill="none" x="250" y="560" width="566" height="40">
-					<image width="2204" height="137" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar.png</image>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4712,8 +4961,11 @@ Click the next page button &gt;</text>
 				<isee:shape z_index="15" border_color="#989898" border_width="0.5" transparent_background="false" x="703.96" y="336.5" width="10" height="222.5" kind="vline"/>
 				<isee:shape z_index="16" background="#39557D" border_width="thin" border_style="none" transparent_background="false" x="44.3065" y="560.638" width="60.9524" height="36.7619" kind="rectangle"/>
 				<isee:shape z_index="-5" border_color="#F5FFE0" border_width="thick" x="9" y="123.5" width="30" height="117" kind="vline"/>
+				<graphics_frame fill="none" x="249.5" y="559.019" width="566" height="40">
+					<image width="1653" height="74" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 1.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="Office" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="Office" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4769,6 +5021,9 @@ The second goal is to ensure steady economic growth without experiencing major r
 					</popup>
 				</isee:annotation>
 				<isee:shape z_index="-5" border_color="#F5FFE0" border_width="thick" x="9" y="123.5" width="30" height="209" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 2.png</image>
+				</graphics_frame>
 			</view>
 			<view isee:template_view="template:3" isee:name="1st Policy Idea" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
@@ -4791,18 +5046,16 @@ The second goal is to ensure steady economic growth without experiencing major r
 					</popup>
 				</isee:annotation>
 				<isee:annotation background="#FF6347" font_color="#082A5C" border_color="white" border_width="2.5" corner_radius="15" popup_corner_radius="10" popup_background_color="white" popup_font_color="#082A5C" popup_font_size="16pt" launcher_label="4" show_by_default="false" hide_launcher="false" launch_on_hover="false" x="25" y="310">
-					<popup x="51.857" y="274.048" width="401.762" height="77.2228">
-						<text>People argue that, revenue from carbon taxes can be redistributed to lower-income populations, helping reduce the wealth gap.</text>
-					</popup>
-				</isee:annotation>
-				<isee:annotation background="#FF6347" font_color="#082A5C" border_color="white" border_width="2.5" corner_radius="15" popup_corner_radius="10" popup_background_color="white" popup_font_color="#082A5C" popup_font_size="16pt" launcher_label="5" show_by_default="false" hide_launcher="false" launch_on_hover="false" x="25" y="360">
-					<popup x="51.857" y="324.048" width="401.762" height="114.366">
+					<popup x="51.857" y="274.048" width="401.762" height="113.271">
 						<text>While many believe carbon taxes won’t hurt the economy much in the short term, let us check by implementing some carbon taxes.
 
 Click the next page button &gt;</text>
 					</popup>
 				</isee:annotation>
-				<isee:shape border_color="#F5FFE0" border_width="thick" x="9" y="150.55" width="30" height="211" kind="vline"/>
+				<isee:shape border_color="#F5FFE0" border_width="thick" x="9" y="150.55" width="30" height="164" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 3.png</image>
+				</graphics_frame>
 			</view>
 			<view isee:template_view="template:4" isee:name="1st Policy Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
@@ -4839,13 +5092,16 @@ The second goal is to ensure steady economic growth without experiencing major r
 				<graphics_frame fill="none" x="357" y="210" width="154" height="66">
 					<image width="514" height="242" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Policy 1 Button.png</image>
 				</graphics_frame>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 4.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:5" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="85" type="interface">
+			<view isee:template_view="template:5" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="700" y="273.925" width="350" height="140" z_index="15">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<format precision="0.01" scale_by="1"/>
 							<entity name="Energy_Balance_Model.Surface_Temperature_Anomaly[*]"/>
@@ -4861,9 +5117,9 @@ The second goal is to ensure steady economic growth without experiencing major r
 				<graphics_frame z_index="-4" fill="none" x="11.3043" y="93.3333" width="1035.24" height="460" isee:locked="true">
 					<image width="5379" height="2000" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA page 5 transparent background-min.png</image>
 				</graphics_frame>
-				<isee:shape z_index="-3" background="#082A5C" border_width="thin" border_style="none" opacity="0.9" transparent_background="false" x="10.9524" y="91.9048" width="1035.94" height="462.857" isee:locked="true" kind="rectangle"/>
+				<isee:shape z_index="-3" background="#082A5C" border_width="thin" border_style="none" opacity="0.9" transparent_background="false" x="10.9524" y="91.9048" width="1035.94" height="462.857" kind="rectangle"/>
 				<stacked_container x="700" y="416.48" width="350" height="140">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<format precision="1" scale_by="1"/>
 							<entity name="Demographics.real_GDP_per_person[*]"/>
@@ -4878,13 +5134,17 @@ The second goal is to ensure steady economic growth without experiencing major r
 				</stacked_container>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="152.191" y="25.5" width="318" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1">Implementing a $200 Carbon Tax causes an immediate recession, as expensive fossil fuel providers (like tar sands and fracking projects) go out of business.</text_box>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="529.191" y="25.5" width="304" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_2">Both direct (fossil fuel companies) and indirect businesses (support industries) suffer from bankruptcies, causing major financial strain across the economy.</text_box>
-				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="346.191" y="185.5" width="304" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_3">As businesses fail, banks lend more money to cover losses, leading to inflation, reduced government spending, and a weakened economy.</text_box>
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="332.191" y="185.5" width="304" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_3">As businesses fail, banks lend more money to cover losses, leading to inflation, reduced government spending, and a weakened economy.</text_box>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="22.191" y="185.5" width="304" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_4">The strain from bankruptcies leads to layoffs, reducing wages and consumption, which further harms the economy and government tax revenue.</text_box>
-				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="125.191" y="374.5" width="571" height="102.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_5">The combination of inflation, decreased consumption, and reduced government spending triggers a painful recession, slowing down GDP growth. 
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="125.191" y="374.5" width="292" height="102.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_5">The combination of inflation, decreased consumption, and reduced government spending triggers a painful recession, slowing down GDP growth. </text_box>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 5.png</image>
+				</graphics_frame>
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="425.691" y="374.5" width="266.467" height="102.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6">Let&apos;s look at the graphs and numbers.
 
-Let&apos;s look at the graphs and numbers.</text_box>
+Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4964,8 +5224,11 @@ Let&apos;s look at the graphs and numbers.</text_box>
 				<text_box z_index="14" background="#E0F0BC" vertical_text_align="center" font_color="#082A5C" font_size="14pt" padding="10" x="355" y="337.19" width="355" height="48">The GDP per person will reach $${Interface.Median_GDPpp[1]@2100} annually.</text_box>
 				<text_box z_index="14" background="#E0F0BC" vertical_text_align="center" font_color="#082A5C" font_size="14pt" padding="10" x="710" y="337.19" width="356" height="48">${Interface.Median_Labour_Share_of_GDP[1]}% of the GDP is expected to be allocated to labor.</text_box>
 				<isee:shape border_color="#F5FFE0" border_width="thick" x="9" y="123.5" width="30" height="62" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 6.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4998,8 +5261,11 @@ Let&apos;s look at the graphs and numbers.</text_box>
 					</popup>
 				</isee:annotation>
 				<isee:shape border_color="#F5FFE0" border_width="thick" x="9" y="164.5" width="30" height="117" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 7.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="2nd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="2nd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5195,8 +5461,11 @@ Click the next page button &gt;</text_box>
 					</actions>
 				</button>
 				<isee:shape z_index="-5" border_color="#F5FFE0" border_width="thick" x="9" y="123.5" width="30" height="316.777" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 8.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="2nd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="2nd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5237,13 +5506,16 @@ The second goal is to ensure steady economic growth without experiencing major r
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="74" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 9.png</image>
+				</graphics_frame>
 			</view>
 			<view isee:template_view="template:5" isee:name="Result Discussion 2nd Policy" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<stacked_container x="700" y="273.925" width="350" height="140" z_index="15">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="2" num_x_labels="6" num_y_labels="4" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="2" num_x_labels="6" num_y_labels="4" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Energy_Balance_Model.Surface_Temperature_Anomaly[*]"/>
 							<scale min="0" max="6"/>
@@ -5260,7 +5532,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 				</graphics_frame>
 				<isee:shape z_index="-3" background="#082A5C" border_width="thin" border_style="none" opacity="0.9" transparent_background="false" x="10.9524" y="91.9048" width="1051.18" height="462.857" isee:locked="true" kind="rectangle"/>
 				<stacked_container x="700" y="416.48" width="350" height="140">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Demographics.real_GDP_per_person[*]"/>
 							<scale min="0" max="200"/>
@@ -5274,14 +5546,18 @@ The second goal is to ensure steady economic growth without experiencing major r
 				</stacked_container>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="152.191" y="25.5" width="318" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1">The policy dramatically improves the climate situation, with the median outcome in 2100 being 2.16°C [1.61, 2.78]</text_box>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="529.191" y="25.5" width="416" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_2">In the median case, we achieve economic goals, avoiding recessions and surpassing the Current Path GDP per person in 2100/2150, although there is a notable outlier with a major depression lasting 10 years.</text_box>
-				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="346.191" y="185.5" width="304" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_3">There’s a risk that the policy creates excessive demand and investment, leading to asset stranding, inflation and unemployment.</text_box>
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="338.191" y="185.5" width="304" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_3">There’s a risk that the policy creates excessive demand and investment, leading to asset stranding, inflation and unemployment.</text_box>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="14.191" y="185.5" width="312" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_4">The policy does not fully meet our goals on inequality (income distribution and labor share of GDP). Some improvement is seen in the medium term (2050-2100).</text_box>
-				<text_box font_color="#082A5C" font_size="16pt" padding="10" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="184.191" y="377.5" width="493" height="98.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_5">In the long term, the policy&apos;s effect on inequality remains similar to the Current Path, showing limited progress on this issue.
-
-Let&apos;s look at the graphs and numbers.</text_box>
+				<text_box font_color="#082A5C" font_size="16pt" padding="10" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="111.191" y="377.5" width="293" height="98.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_5">In the long term, the policy&apos;s effect on inequality remains similar to the Current Path, showing limited progress on this issue.</text_box>
 				<text_box background="#FFFF7F" font_color="#082A5C" font_size="16pt" padding="10" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="715.51" y="135.5" width="318.98" height="133.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6">These graphs are getting confusing with too many runs. Let&apos;s focus on just the years 2050, 2100, and 2150. We&apos;ll switch from confidence balance graphs to box and whisker plots for better clarity, introducing you to this new graph type.</text_box>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="74" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 10.png</image>
+				</graphics_frame>
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="425.691" y="376.5" width="221.703" height="100.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6">Let&apos;s look at the graphs and numbers.
+
+Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="2nd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="2nd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5298,46 +5574,43 @@ Let&apos;s look at the graphs and numbers.</text_box>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
-				<stacked_container x="0" y="385" width="355" height="175">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<format precision="0.01" scale_by="1"/>
+				<stacked_container x="0" y="385" width="355" height="175" isee:locked="true">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="4" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Energy_Balance_Model.Surface_Temperature_Anomaly[*]"/>
 							<scale min="0" max="6"/>
 						</plot>
-						<isee:confidence_intervals include_mean="false">
-							<isee:confidence_interval>0</isee:confidence_interval>
-							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>1</isee:confidence_interval>
-						</isee:confidence_intervals>
+						<isee:time_points>
+							<isee:time_point>2050</isee:time_point>
+							<isee:time_point>2100</isee:time_point>
+							<isee:time_point>2150</isee:time_point>
+						</isee:time_points>
 					</graph>
 				</stacked_container>
 				<stacked_container x="355" y="385" width="355" height="175">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<format precision="1" scale_by="1"/>
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Demographics.real_GDP_per_person[*]"/>
 							<scale min="0" max="200"/>
 						</plot>
-						<isee:confidence_intervals include_mean="false">
-							<isee:confidence_interval>0</isee:confidence_interval>
-							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>1</isee:confidence_interval>
-						</isee:confidence_intervals>
+						<isee:time_points>
+							<isee:time_point>2050</isee:time_point>
+							<isee:time_point>2100</isee:time_point>
+							<isee:time_point>2150</isee:time_point>
+						</isee:time_points>
 					</graph>
 				</stacked_container>
 				<stacked_container x="710" y="385" width="356" height="175">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="356" height="175" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="Labour Share of GDP" isee:fill_intensity="0.3" from="2025" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<format precision="1" scale_by="1" display_as="percent"/>
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="356" height="175" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="Labour Share of GDP" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Interface.Labour_Share_of_GDP[*]"/>
 							<scale min="25" max="75"/>
 						</plot>
-						<isee:confidence_intervals include_mean="false">
-							<isee:confidence_interval>0</isee:confidence_interval>
-							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>1</isee:confidence_interval>
-						</isee:confidence_intervals>
+						<isee:time_points>
+							<isee:time_point>2050</isee:time_point>
+							<isee:time_point>2100</isee:time_point>
+							<isee:time_point>2150</isee:time_point>
+						</isee:time_points>
 					</graph>
 				</stacked_container>
 				<text_box background="#F5FFE0" font_weight="bold" text_align="center" vertical_text_align="center" font_color="#082A5C" font_size="18pt" border_color="#989898" border_width="0.1" border_style="solid" x="-0.5" y="211.714" width="1066" height="31.1905" isee:locked="true">Median Outcomes in 2100</text_box>
@@ -5352,8 +5625,11 @@ Let&apos;s look at the graphs and numbers.</text_box>
 				<text_box z_index="14" background="#C3D0A3" vertical_text_align="center" font_color="#082A5C" font_size="14pt" padding="10" x="710" y="338.48" width="356" height="48">${Interface.Median_Labour_Share_of_GDP[1]}% of the GDP is expected to be allocated to labor.</text_box>
 				<isee:shape z_index="15" border_color="#989898" border_width="0.5" opacity="1" transparent_background="false" x="350.153" y="242.203" width="10" height="318.615" kind="vline"/>
 				<isee:shape z_index="15" border_color="#989898" border_width="0.5" transparent_background="false" x="703.963" y="241.502" width="10" height="319.083" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 11.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5381,8 +5657,11 @@ Lets find out ...
 Click the next page button &gt;</text>
 					</popup>
 				</isee:annotation>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 12.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5537,6 +5816,7 @@ Click the next page button &gt;</text>
 				</graphics_frame>
 				<button background="#EDFFC8" font_color="#082A5C" border_color="#2A5D3C" border_width="3.5" transparent="true" corner_radius="10" isee:flat="false" label="Set Income Tax" isee:tooltip="" x="905.5" y="110" width="104" height="24" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."3rd_Policy_Idea_Set_Income_Tax_Button_Appear"'>
 					<actions>
+						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity="Government_Regulations.switch_wage_tax_policy">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="11" isee:entity="Government_Regulations.wage_tax_policy_input">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="25" isee:entity="Government_Regulations.time_to_implement_wage_tax_policy">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="2030" isee:entity="Government_Regulations.wage_tax_policy_start_year">control_entity</action>
@@ -5545,6 +5825,7 @@ Click the next page button &gt;</text>
 				</button>
 				<button background="#EDFFC8" font_color="#082A5C" border_color="#2A5D3C" border_width="3.5" transparent="true" corner_radius="10" isee:flat="false" label="Set Profit Tax" isee:tooltip="" x="905.5" y="160" width="104" height="24" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."3rd_Policy_Idea_Set_Profit_Tax_Button_Appear"'>
 					<actions>
+						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity="Government_Regulations.switch_profit_tax_policy">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="42" isee:entity="Government_Regulations.profit_tax_policy_input">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="25" isee:entity="Government_Regulations.time_to_implement_profit_tax_policy">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="2030" isee:entity="Government_Regulations.profit_tax_policy_start_year">control_entity</action>
@@ -5557,8 +5838,11 @@ Click the next page button &gt;</text>
 					</actions>
 				</button>
 				<isee:shape z_index="-5" border_color="#F5FFE0" border_width="thick" x="9" y="123.5" width="30" height="268" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 13.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="3rd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="3rd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5594,6 +5878,9 @@ The second goal is to ensure steady economic growth without experiencing major r
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 14.png</image>
+				</graphics_frame>
 			</view>
 			<view isee:template_view="template:5" isee:name="Result Discussion 3rd Policy" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
@@ -5608,13 +5895,11 @@ The second goal is to ensure steady economic growth without experiencing major r
 				<isee:shape z_index="-3" background="#082A5C" border_width="thin" border_style="none" opacity="0.9" transparent_background="false" x="10.9524" y="91.9048" width="1051.18" height="462.857" isee:locked="true" kind="rectangle"/>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="152.191" y="25.5" width="318" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1">The climate situation remains unchanged relative to our second attempt. The median temperature is 2.16°C in 2100 [1.61, 2.78].</text_box>
 				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="529.191" y="25.5" width="208.096" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_2">The economic situation remains unchanged relative to our second attempt.</text_box>
-				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="338.191" y="185.5" width="312" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_3">Inequality remains a challenge. While wages and the economy have grown, wages have increased more slowly, resulting in a lower labor share of GDP.</text_box>
-				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="14.191" y="185.5" width="291.594" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_4">However, wages have grown more than profits, improving the ratio of income earned from labor compared to capital.</text_box>
-				<text_box font_color="#082A5C" font_size="16pt" padding="10" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="171.191" y="376.5" width="493" height="98.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_5">It’s up to you—does this represent a more equitable world?  Review the results and make your own judgment!
-
-Let&apos;s look at the graphs and numbers.</text_box>
-				<stacked_container x="700" y="273.925" width="350" height="140" z_index="17">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="2" num_x_labels="6" num_y_labels="4" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="398.894" y="185.5" width="213.297" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_3">Inequality continues to be a challenging issue despite progress.</text_box>
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="14.191" y="185.5" width="341.594" height="91.7857" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_4">Wages have increased, and the economy has grown, but wages have not kept pace with economic growth, resulting in a lower labor share of GDP.</text_box>
+				<text_box font_color="#082A5C" font_size="16pt" padding="10" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="110.191" y="376.5" width="300" height="98.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_5">While wages have outpaced profits, the balance between income from labor and capital has improved in favor of labor.</text_box>
+				<stacked_container x="700" y="126.356" width="350" height="140" z_index="17">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="2" num_x_labels="6" num_y_labels="4" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Energy_Balance_Model.Surface_Temperature_Anomaly[*]"/>
 							<scale min="0" max="6"/>
@@ -5626,8 +5911,8 @@ Let&apos;s look at the graphs and numbers.</text_box>
 						</isee:time_points>
 					</graph>
 				</stacked_container>
-				<stacked_container x="700" y="416.48" width="350" height="140" z_index="16">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+				<stacked_container x="700" y="268.356" width="350" height="140" z_index="16">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Demographics.real_GDP_per_person[*]"/>
 							<scale min="0" max="200"/>
@@ -5639,8 +5924,27 @@ Let&apos;s look at the graphs and numbers.</text_box>
 						</isee:time_points>
 					</graph>
 				</stacked_container>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 15.png</image>
+				</graphics_frame>
+				<stacked_container x="700" y="410.48" width="350" height="140" z_index="16">
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="350" height="140" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_1" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="Labour Share of GDP" isee:fill_intensity="0.3" isee:allow_blowup="true" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Interface.Labour_Share_of_GDP[*]"/>
+							<scale min="25" max="75"/>
+						</plot>
+						<isee:time_points>
+							<isee:time_point>2050</isee:time_point>
+							<isee:time_point>2100</isee:time_point>
+							<isee:time_point>2150</isee:time_point>
+						</isee:time_points>
+					</graph>
+				</stacked_container>
+				<text_box font_color="#082A5C" font_size="16pt" padding="8" border_color="#082A5C" border_width="1.5" border_style="solid" corner_radius="10" x="425.691" y="376.5" width="221.703" height="100.786" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Result_Page_Pop_Up_Button_6">Let&apos;s look at the graphs and numbers.
+
+Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="3rd Policy Results" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="3rd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5659,45 +5963,41 @@ Let&apos;s look at the graphs and numbers.</text_box>
 					</actions>
 				</button>
 				<stacked_container x="0" y="385" width="355" height="175" isee:locked="true">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<format precision="0.01" scale_by="1"/>
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title=" Surface Temperature Anomaly (°C)" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="Degree Celsius" left_axis_multi_scale="false" left_axis_auto_scale="false" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Energy_Balance_Model.Surface_Temperature_Anomaly[*]"/>
 							<scale min="0" max="6"/>
 						</plot>
-						<isee:confidence_intervals include_mean="false">
-							<isee:confidence_interval>0</isee:confidence_interval>
-							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>1</isee:confidence_interval>
-						</isee:confidence_intervals>
+						<isee:time_points>
+							<isee:time_point>2050</isee:time_point>
+							<isee:time_point>2100</isee:time_point>
+							<isee:time_point>2150</isee:time_point>
+						</isee:time_points>
 					</graph>
 				</stacked_container>
 				<stacked_container x="355" y="385" width="355" height="175" isee:locked="true">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="5" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" to="2150" from="2025" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#3A35FF" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<format precision="1" scale_by="1"/>
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="355" height="175" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="GDP Per Person (Constant Thousands 2021$)" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="$000 / Person / Year" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Demographics.real_GDP_per_person[*]"/>
-							<scale min="0" max="200"/>
 						</plot>
-						<isee:confidence_intervals include_mean="false">
-							<isee:confidence_interval>0</isee:confidence_interval>
-							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>1</isee:confidence_interval>
-						</isee:confidence_intervals>
+						<isee:time_points>
+							<isee:time_point>2050</isee:time_point>
+							<isee:time_point>2100</isee:time_point>
+							<isee:time_point>2150</isee:time_point>
+						</isee:time_points>
 					</graph>
 				</stacked_container>
 				<stacked_container x="710" y="385" width="356" height="175" isee:locked="true">
-					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="356" height="175" isee:locked="true" comparative="true" type="confidence" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="6" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="Labour Share of GDP" isee:fill_intensity="0.3" from="2025" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
-						<plot color="#CEDB39" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
-							<format precision="1" scale_by="1" display_as="percent"/>
+					<graph background="#F5FFE0" font_color="black" axis_color="#6C85B3" grid_color="#88AEE0" isee:graph_area_color="#1B63CC" legend_position="none" isee:transparent="false" isee:hide_border="true" axis_title_font_color="black" axis_label_font_color="black" axis_label_font_size="10pt" width="356" height="175" isee:locked="true" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="4" num_y_grid_lines="0" num_x_labels="6" num_y_labels="3" title="Labour Share of GDP" isee:fill_intensity="0.3" isee:allow_zero_axis="true" left_axis_title="Percent of GDP" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="fuchsia" isee:keep_zero_visible="false" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Interface.Labour_Share_of_GDP[*]"/>
 							<scale min="25" max="75"/>
 						</plot>
-						<isee:confidence_intervals include_mean="false">
-							<isee:confidence_interval>0</isee:confidence_interval>
-							<isee:confidence_interval>0.5</isee:confidence_interval>
-							<isee:confidence_interval>1</isee:confidence_interval>
-						</isee:confidence_intervals>
+						<isee:time_points>
+							<isee:time_point>2050</isee:time_point>
+							<isee:time_point>2100</isee:time_point>
+							<isee:time_point>2150</isee:time_point>
+						</isee:time_points>
 					</graph>
 				</stacked_container>
 				<text_box background="#F5FFE0" font_weight="bold" text_align="center" vertical_text_align="center" font_color="#082A5C" font_size="18pt" border_color="#989898" border_width="0.1" border_style="solid" x="-0.5" y="164.714" width="1066" height="31.1905" isee:locked="true">Median Outcomes in 2100</text_box>
@@ -5715,8 +6015,11 @@ Let&apos;s look at the graphs and numbers.</text_box>
 				<text_box z_index="14" background="#B3C38A" vertical_text_align="center" font_color="#082A5C" font_size="14pt" padding="10" x="0" y="337.48" width="355" height="48" isee:locked="true">The surface temperature is projected to reach ${Interface.Median_STA[1]@2100}°C.</text_box>
 				<text_box z_index="14" background="#B3C38A" vertical_text_align="center" font_color="#082A5C" font_size="14pt" padding="10" x="355" y="337.48" width="355" height="48" isee:locked="true">The GDP per person will reach $${Interface.Median_GDPpp[1]@2100} annually.</text_box>
 				<text_box z_index="14" background="#B3C38A" vertical_text_align="center" font_color="#082A5C" font_size="14pt" padding="10" x="710" y="337.48" width="356" height="48" isee:locked="true">${Interface.Median_Labour_Share_of_GDP[1]}% of the GDP is expected to be allocated to labor.</text_box>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1651" height="76" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 16.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5734,7 +6037,7 @@ Let&apos;s look at the graphs and numbers.</text_box>
 					</popup>
 				</isee:annotation>
 				<isee:annotation background="#FF6347" font_color="#082A5C" border_color="white" border_width="2.5" corner_radius="15" popup_corner_radius="10" popup_background_color="white" popup_font_color="#082A5C" popup_font_size="16pt" launcher_label="2" show_by_default="false" hide_launcher="false" launch_on_hover="false" x="25" y="219">
-					<popup x="49.3333" y="192.216" width="488.905" height="69.7837">
+					<popup x="49.3333" y="192.216" width="488.905" height="77.7837">
 						<text>You will be heading over to the &quot;Set Your Goal&quot; page where you can define your target values and choose the year you aim to achieve them.</text>
 					</popup>
 				</isee:annotation>
@@ -5748,7 +6051,7 @@ Let&apos;s look at the graphs and numbers.</text_box>
 					</actions>
 				</button>
 				<isee:annotation background="#FF6347" font_color="#082A5C" border_color="white" border_width="2.5" corner_radius="15" popup_corner_radius="10" popup_background_color="white" popup_font_color="#082A5C" popup_font_size="16pt" launcher_label="3" show_by_default="false" hide_launcher="false" launch_on_hover="false" x="25" y="265">
-					<popup x="49.3333" y="228.909" width="488.905" height="71.0912">
+					<popup x="49.3333" y="228.909" width="488.905" height="80.0912">
 						<text>Once you&apos;ve set your goals, you&apos;ll be ready to test different strategies, adjust key variables, and see how your choices shape the world around you.</text>
 					</popup>
 				</isee:annotation>
@@ -5758,8 +6061,11 @@ Let&apos;s look at the graphs and numbers.</text_box>
 					</popup>
 				</isee:annotation>
 				<isee:shape border_color="#F5FFE0" border_width="thick" x="9" y="168.61" width="30" height="147" kind="vline"/>
+				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
+					<image width="1652" height="76" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 17.png</image>
+				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="85" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5986,7 +6292,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<actions>
 						<action>restore_all</action>
 						<action isee:run_name_to_set="EMB">set_run_name</action>
-						<action target="interface:21">navigate</action>
+						<action target="interface:25">navigate</action>
 						<action>start</action>
 					</actions>
 				</button>
@@ -6000,11 +6306,11 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action>restore_all</action>
 						<action>start</action>
 						<action isee:run_name_to_set="EMB">set_run_name</action>
-						<action target="interface:2">navigate</action>
+						<action target="interface:6">navigate</action>
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6029,7 +6335,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="321.06" y="66.63" width="225" height="26">Real GDP Per Person</text_box>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1025" y="100" width="25" height="25">
 					<actions>
-						<action target="interface:22">navigate</action>
+						<action target="interface:26">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6051,7 +6357,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</graphics_frame>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1025" y="100" width="25" height="25">
 					<actions>
-						<action target="interface:21">navigate</action>
+						<action target="interface:25">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6124,7 +6430,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</isee:animation_object>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1025" y="100" width="25" height="25">
 					<actions>
-						<action target="interface:24">navigate</action>
+						<action target="interface:28">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6173,7 +6479,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</isee:animation_object>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1025" y="100" width="25" height="25">
 					<actions>
-						<action target="interface:23">navigate</action>
+						<action target="interface:27">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6210,7 +6516,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</isee:animation_object>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1025" y="100" width="25" height="25">
 					<actions>
-						<action target="interface:26">navigate</action>
+						<action target="interface:30">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6257,7 +6563,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</isee:animation_object>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1025" y="100" width="25" height="25">
 					<actions>
-						<action target="interface:25">navigate</action>
+						<action target="interface:29">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6283,7 +6589,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="112.5" width="14.121" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:28">navigate</action>
+						<action target="interface:32">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6319,7 +6625,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="112.5" width="14.121" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:27">navigate</action>
+						<action target="interface:31">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6344,7 +6650,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="160.5" width="14.121" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:30">navigate</action>
+						<action target="interface:34">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6379,7 +6685,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:29">navigate</action>
+						<action target="interface:33">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6405,7 +6711,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="207.5" width="14.121" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:32">navigate</action>
+						<action target="interface:36">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6440,7 +6746,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:31">navigate</action>
+						<action target="interface:35">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6466,7 +6772,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:34">navigate</action>
+						<action target="interface:38">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6501,7 +6807,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:33">navigate</action>
+						<action target="interface:37">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6527,7 +6833,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="311.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:36">navigate</action>
+						<action target="interface:40">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6562,7 +6868,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:35">navigate</action>
+						<action target="interface:39">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6588,7 +6894,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="378.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:38">navigate</action>
+						<action target="interface:42">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6623,7 +6929,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:37">navigate</action>
+						<action target="interface:41">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6649,7 +6955,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="435.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:40">navigate</action>
+						<action target="interface:44">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6684,7 +6990,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:39">navigate</action>
+						<action target="interface:43">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6708,7 +7014,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<isee:shape border_color="#FFAA00" border_width="thick" x="123" y="493.5" width="14.12" height="30" kind="vline"/>
 				<button transparent="true" label="" isee:tooltip="Display as Box &amp; Whisker Plots" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:42">navigate</action>
+						<action target="interface:46">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/box Light.svg</image>
 				</button>
@@ -6742,7 +7048,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</stacked_container>
 				<button transparent="true" label="" isee:tooltip="Display as confidence graph" x="1011" y="167" width="25" height="25" isee:locked="true">
 					<actions>
-						<action target="interface:41">navigate</action>
+						<action target="interface:45">navigate</action>
 					</actions>
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
@@ -6753,7 +7059,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</style>
 				<button transparent="true" label="" isee:tooltip="" x="0.4231" y="101.461" width="29.1538" height="433.897">
 					<actions>
-						<action target="interface:47">navigate</action>
+						<action target="interface:51">navigate</action>
 					</actions>
 				</button>
 				<graphics_frame fill="none" x="49.8502" y="52.0435" width="1008" height="490.96" isee:locked="true">
@@ -6763,19 +7069,19 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="321.06" y="66.63" width="225" height="26">Real GDP Per Person</text_box>
 				<button transparent="true" label="" isee:tooltip="" x="113.565" y="64.63" width="195.455" height="30">
 					<actions>
-						<action target="interface:21">navigate</action>
+						<action target="interface:25">navigate</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="" x="351.333" y="69.7947" width="164.455" height="20.3611">
 					<actions>
-						<action target="interface:23">navigate</action>
+						<action target="interface:27">navigate</action>
 					</actions>
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="66.63" width="225" height="26">Labour Share of GDP</text_box>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="771.06" y="62.63" width="225" height="26">More Details</text_box>
 				<button transparent="true" label="" isee:tooltip="" x="810.333" y="57.4494" width="140.455" height="36.3611">
 					<actions>
-						<action target="interface:27">navigate</action>
+						<action target="interface:31">navigate</action>
 					</actions>
 				</button>
 				<graphics_frame fill="none" x="-11" y="93.41" width="52" height="450">
@@ -6783,22 +7089,22 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</graphics_frame>
 				<button transparent="true" label="" isee:tooltip="" x="65.333" y="155.449" width="30.455" height="118.361">
 					<actions>
-						<action target="interface:27">navigate</action>
+						<action target="interface:31">navigate</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="" x="65.333" y="357.449" width="30.455" height="128.361">
 					<actions>
-						<action target="interface:43">navigate</action>
+						<action target="interface:47">navigate</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="" x="570.685" y="69.4495" width="193.932" height="20.3611">
 					<actions>
-						<action target="interface:25">navigate</action>
+						<action target="interface:29">navigate</action>
 					</actions>
 				</button>
 				<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="3" width="1066" height="30">DASHBOARD</text_box>
-				<stacked_container x="101.561" y="109.07" width="933.384" height="426.817" isee:appearance="dropdown">
-					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" title="Energy Shares" isee:fill_intensity="1" isee:stacked_area_max="1" from="2020" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+				<stacked_container x="101.561" y="109.07" width="933.384" height="426.817" isee:appearance="dropdown" visible_index="1">
+					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" title="Energy Shares" isee:fill_intensity="0.75" isee:stacked_area_max="1" from="2020" isee:allow_zero_axis="true" left_axis_title="fraction" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="black" title="Coal" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name='energy_supply."Fossil_Energy_Output_Share,_coal"[MEAN]'/>
 						</plot>
@@ -6824,7 +7130,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 							<entity name="energy_supply.Wind_Energy_Output_Share[MEAN]"/>
 						</plot>
 					</graph>
-					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" title="Income Shares" isee:fill_intensity="1" isee:stacked_area_max="1" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+					<graph isee:transparent="true" isee:hide_border="true" width="933.384" height="426.817" type="area" isee:sum_stacked_legend="false" isee:stacked_show_hover_values="false" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="14" num_y_labels="3" title="Income Shares" isee:fill_intensity="0.75" isee:stacked_area_max="1" from="2020" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" title="Bank Profits" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Circular_Flow.share_of_gross_income_from_bank_profits[MEAN]"/>
 						</plot>
@@ -6868,12 +7174,12 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="66.3088" width="21.3913" height="15.3327">
 					<actions>
-						<action target="interface:20">navigate</action>
+						<action target="interface:24">navigate</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
 					<actions>
-						<action target="interface:21">navigate</action>
+						<action target="interface:25">navigate</action>
 					</actions>
 				</button>
 			</view>
@@ -6909,12 +7215,12 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="66.3088" width="21.3913" height="15.3327">
 					<actions>
-						<action target="interface:20">navigate</action>
+						<action target="interface:24">navigate</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
 					<actions>
-						<action target="interface:21">navigate</action>
+						<action target="interface:25">navigate</action>
 					</actions>
 				</button>
 			</view>
@@ -6935,7 +7241,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:11" isee:name="Dashboard Input - Non Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:11" isee:name="Dashboard Input - Non Fossil Energy" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6997,7 +7303,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_on_CO2e_emissions_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_on_CO2e_emissions_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7031,7 +7337,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="2" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7044,7 +7350,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="3" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7057,7 +7363,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_nuclear_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="4" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7070,7 +7376,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="6" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7083,7 +7389,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="5" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7178,7 +7484,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="7" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7191,7 +7497,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="8" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7204,7 +7510,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="9" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7217,7 +7523,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7230,7 +7536,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="11" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7243,7 +7549,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="12" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7321,7 +7627,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder="Government_Regulations.Time_to_implement_second_level_placeholder" isee:placeholder_value="Government_Regulations.forestation_time_to_implement_second_level">set_placeholder</action>
 						<action isee:placeholder="Government_Regulations.Start_Year_Second_Level_Placeholder" isee:placeholder_value="Government_Regulations.forestation_time_to_start_second_level">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="13" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:52">navigate</action>
+						<action target="interface:56">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7405,14 +7711,14 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_for_government_to_change_the_debt_to_GDP_ratio_target">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Start_Year"' isee:placeholder_value="Government_Regulations.debt_to_gdp_level_start_year">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="14" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:53">navigate</action>
+						<action target="interface:57">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
 				<button z_index="29" transparent="true" isee:native_tooltip="false" icon_side="top" label="" isee:tooltip="More Options" x="311.3" y="327.5" width="25" height="25" isee:locked="true">
 					<actions>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="18" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:54">navigate</action>
+						<action target="interface:58">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7422,7 +7728,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_wage_tax_policy">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Start_Year"' isee:placeholder_value="Government_Regulations.wage_tax_policy_start_year">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="15" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:53">navigate</action>
+						<action target="interface:57">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7432,7 +7738,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_profit_tax_policy">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Start_Year"' isee:placeholder_value="Government_Regulations.profit_tax_policy_start_year">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="16" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:53">navigate</action>
+						<action target="interface:57">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7442,7 +7748,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<action isee:placeholder='Government_Regulations."three_parm_-_Implementation_time"' isee:placeholder_value="Government_Regulations.time_to_implement_wealth_tax_policy">set_placeholder</action>
 						<action isee:placeholder='Government_Regulations."three_parm_-_Start_Year"' isee:placeholder_value="Government_Regulations.wealth_tax_policy_start_year">set_placeholder</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="17" isee:entity="Interface.Dialogue_Title">control_entity</action>
-						<action target="interface:53">navigate</action>
+						<action target="interface:57">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
@@ -7798,18 +8104,23 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="14.1949" width="21.3913" height="15.3327">
 						<actions>
-							<action target="interface:20">navigate</action>
+							<action target="interface:24">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="11.4885" y="37.2032" width="16.1739" height="19.5936">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="63.3044" y="39.3336" width="21.3913" height="15.3327">
 						<actions>
 							<action>restore_all</action>
 							<action>start</action>
+							<action target="interface:6">navigate</action>
+						</actions>
+					</button>
+					<button z_index="13" transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
+						<actions>
 							<action target="interface:2">navigate</action>
 						</actions>
 					</button>
@@ -7853,7 +8164,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<style>
 						<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 					</style>
-					<graphics_frame fill="none" x="4.2243" y="122.714" width="757.047" height="408.571">
+					<graphics_frame fill="none" x="-5.7757" y="122.714" width="757.047" height="408.571">
 						<image width="2356" height="1473" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Snake Wave.png</image>
 					</graphics_frame>
 					<graphics_frame z_index="15" fill="none" x="608.238" y="495.5" width="50" height="50">
@@ -7918,7 +8229,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="63.3044" y="39.3336" width="21.3913" height="15.3327">
 						<actions>
-							<action target="interface:2">navigate</action>
+							<action target="interface:6">navigate</action>
 						</actions>
 					</button>
 					<button z_index="13" transparent="true" corner_radius="24" label="" isee:tooltip="" x="7.6087" y="564.019" width="30" height="30">
@@ -7936,7 +8247,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</graphics_frame>
 					<button transparent="true" label="" isee:tooltip="" x="0.4231" y="101.461" width="29.1538" height="433.897">
 						<actions>
-							<action target="interface:46">navigate</action>
+							<action target="interface:50">navigate</action>
 						</actions>
 					</button>
 					<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="5" width="1066" height="40" isee:locked="true">DASHBOARD</text_box>
@@ -7950,12 +8261,12 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="66.3088" width="21.3913" height="15.3327">
 						<actions>
-							<action target="interface:20">navigate</action>
+							<action target="interface:24">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1025" y="135" width="25" height="25" isee:locked="true">
@@ -7982,22 +8293,22 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="113.565" y="52.603" width="195.455" height="42.7444">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="353.333" y="57.5404" width="160.455" height="32.2702">
 						<actions>
-							<action target="interface:23">navigate</action>
+							<action target="interface:27">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="813.333" y="57.5404" width="140.455" height="32.2702">
 						<actions>
-							<action target="interface:27">navigate</action>
+							<action target="interface:31">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="561.594" y="57.5404" width="193.932" height="32.2702">
 						<actions>
-							<action target="interface:25">navigate</action>
+							<action target="interface:29">navigate</action>
 						</actions>
 					</button>
 					<button z_index="13" transparent="true" corner_radius="12" isee:flat="false" isee:highlight_on_hover="false" isee:highlight_color="#F0F0F0" label="" isee:tooltip="" x="5.6763" y="563.11" width="34.6674" height="31.8182">
@@ -8012,7 +8323,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Manage Simulation Runs" x="1025" y="240" width="25" height="25">
 						<actions>
-							<action target="interface:44">navigate</action>
+							<action target="interface:48">navigate</action>
 						</actions>
 						<image width="128" height="128" size_to_parent="true">r../Graphics/folder.png</image>
 					</button>
@@ -8020,6 +8331,11 @@ Your decisions will shape the future - so pay attention to how your choices play
 						<actions>
 							<action>restore_all</action>
 							<action>start</action>
+							<action target="interface:6">navigate</action>
+						</actions>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
+						<actions>
 							<action target="interface:2">navigate</action>
 						</actions>
 					</button>
@@ -8033,7 +8349,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</graphics_frame>
 					<button transparent="true" label="" isee:tooltip="" x="0.4231" y="101.461" width="29.1538" height="433.897">
 						<actions>
-							<action target="interface:46">navigate</action>
+							<action target="interface:50">navigate</action>
 						</actions>
 					</button>
 					<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="5" width="1066" height="40" isee:locked="true">DASHBOARD</text_box>
@@ -8047,12 +8363,12 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
-							<action target="interface:20">navigate</action>
+							<action target="interface:24">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1025" y="135" width="25" height="25" isee:locked="true">
@@ -8079,22 +8395,22 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="113.565" y="52.603" width="195.455" height="42.7444">
 						<actions>
-							<action target="interface:22">navigate</action>
+							<action target="interface:26">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="353.333" y="57.5404" width="160.455" height="32.2702">
 						<actions>
-							<action target="interface:24">navigate</action>
+							<action target="interface:28">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="813.333" y="57.5404" width="140.455" height="32.2702">
 						<actions>
-							<action target="interface:28">navigate</action>
+							<action target="interface:32">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="561.594" y="57.5404" width="193.932" height="32.2702">
 						<actions>
-							<action target="interface:26">navigate</action>
+							<action target="interface:30">navigate</action>
 						</actions>
 					</button>
 					<button z_index="13" transparent="true" corner_radius="12" isee:flat="false" isee:highlight_on_hover="false" isee:highlight_color="#F0F0F0" label="" isee:tooltip="" x="5.6763" y="563.11" width="34.6674" height="31.8182">
@@ -8109,11 +8425,16 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Manage Simulation Runs" x="1025" y="240" width="25" height="25">
 						<actions>
-							<action target="interface:44">navigate</action>
+							<action target="interface:48">navigate</action>
 						</actions>
 						<image width="128" height="128" size_to_parent="true">r../Graphics/folder.png</image>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="12.3143" y="37.2703" width="21.3913" height="15.3327">
+						<actions>
+							<action target="interface:6">navigate</action>
+						</actions>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
 						<actions>
 							<action target="interface:2">navigate</action>
 						</actions>
@@ -8125,7 +8446,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</style>
 					<button transparent="true" label="" isee:tooltip="" x="0" y="101.46" width="29.1538" height="433.897">
 						<actions>
-							<action target="interface:46">navigate</action>
+							<action target="interface:50">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1011" y="197" width="25" height="25" isee:locked="true">
@@ -8158,76 +8479,76 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</graphics_frame>
 					<button transparent="true" label="" isee:tooltip="" x="68.333" y="152.32" width="30.455" height="118.361">
 						<actions>
-							<action target="interface:27">navigate</action>
+							<action target="interface:31">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="65.333" y="357.449" width="30.455" height="128.361">
 						<actions>
-							<action target="interface:43">navigate</action>
+							<action target="interface:47">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="133.333" y="118.32" width="68.2108" height="18.361">
 						<actions>
-							<action target="interface:27">navigate</action>
+							<action target="interface:31">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="166.32" width="76.0914" height="20.5428">
 						<actions>
-							<action target="interface:29">navigate</action>
+							<action target="interface:33">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="214.32" width="102.455" height="18.361">
 						<actions>
-							<action target="interface:31">navigate</action>
+							<action target="interface:35">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="260.32" width="60.6368" height="18.361">
 						<actions>
-							<action target="interface:33">navigate</action>
+							<action target="interface:37">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="313.775" width="84.9414" height="32.9065">
 						<actions>
-							<action target="interface:35">navigate</action>
+							<action target="interface:39">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="141.545" y="376.681" width="76.0914" height="31.0883">
 						<actions>
-							<action target="interface:37">navigate</action>
+							<action target="interface:41">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="443.772" width="76.0914" height="17.1792">
 						<actions>
-							<action target="interface:39">navigate</action>
+							<action target="interface:43">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="141.545" y="489.775" width="76.0914" height="35.0883">
 						<actions>
-							<action target="interface:41">navigate</action>
+							<action target="interface:45">navigate</action>
 						</actions>
 					</button>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="115.771" y="60.5404" width="191.043" height="38.8696">Surface Temperature Anomaly</text_box>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="321.06" y="66.63" width="225" height="26">Real GDP Per Person</text_box>
 					<button transparent="true" label="" isee:tooltip="" x="113.565" y="64.63" width="195.455" height="30">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="351.333" y="69.7947" width="164.455" height="20.3611">
 						<actions>
-							<action target="interface:23">navigate</action>
+							<action target="interface:27">navigate</action>
 						</actions>
 					</button>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="66.63" width="225" height="26">Labour Share of GDP</text_box>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="771.06" y="62.63" width="225" height="26">More Details</text_box>
 					<button transparent="true" label="" isee:tooltip="" x="813.333" y="57.4495" width="140.455" height="36.3611">
 						<actions>
-							<action target="interface:27">navigate</action>
+							<action target="interface:31">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="561.594" y="69.4495" width="193.932" height="20.3611">
 						<actions>
-							<action target="interface:25">navigate</action>
+							<action target="interface:29">navigate</action>
 						</actions>
 					</button>
 					<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="5" width="1066" height="40" isee:locked="true">DASHBOARD</text_box>
@@ -8243,7 +8564,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Manage Simulation Runs" x="1011" y="287" width="25" height="25">
 						<actions>
-							<action target="interface:44">navigate</action>
+							<action target="interface:48">navigate</action>
 						</actions>
 						<image width="128" height="128" size_to_parent="true">r../Graphics/folder.png</image>
 					</button>
@@ -8257,15 +8578,20 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
-							<action target="interface:20">navigate</action>
+							<action target="interface:24">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="12.3143" y="36.7108" width="21.3913" height="15.3327">
+						<actions>
+							<action target="interface:6">navigate</action>
+						</actions>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
 						<actions>
 							<action target="interface:2">navigate</action>
 						</actions>
@@ -8277,7 +8603,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</style>
 					<button transparent="true" label="" isee:tooltip="" x="0" y="101.46" width="29.1538" height="433.897">
 						<actions>
-							<action target="interface:46">navigate</action>
+							<action target="interface:50">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1011" y="197" width="25" height="25" isee:locked="true">
@@ -8310,76 +8636,76 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</graphics_frame>
 					<button transparent="true" label="" isee:tooltip="" x="68.333" y="152.32" width="30.455" height="118.361">
 						<actions>
-							<action target="interface:27">navigate</action>
+							<action target="interface:31">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="65.333" y="357.449" width="30.455" height="128.361">
 						<actions>
-							<action target="interface:43">navigate</action>
+							<action target="interface:47">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="133.333" y="118.32" width="71.5459" height="18.361">
 						<actions>
-							<action target="interface:28">navigate</action>
+							<action target="interface:32">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="166.32" width="74.2732" height="22.361">
 						<actions>
-							<action target="interface:30">navigate</action>
+							<action target="interface:34">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="215.229" width="102.455" height="18.361">
 						<actions>
-							<action target="interface:32">navigate</action>
+							<action target="interface:36">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="260.32" width="63.9719" height="18.361">
 						<actions>
-							<action target="interface:34">navigate</action>
+							<action target="interface:38">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="309.229" width="88.5777" height="33.8155">
 						<actions>
-							<action target="interface:36">navigate</action>
+							<action target="interface:40">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="375.772" width="74.2732" height="35.6337">
 						<actions>
-							<action target="interface:38">navigate</action>
+							<action target="interface:42">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="137.12" y="443.772" width="74.2732" height="16.2701">
 						<actions>
-							<action target="interface:40">navigate</action>
+							<action target="interface:44">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="141.545" y="494.32" width="79.7277" height="32.361">
 						<actions>
-							<action target="interface:42">navigate</action>
+							<action target="interface:46">navigate</action>
 						</actions>
 					</button>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="115.771" y="60.5404" width="191.043" height="38.8696">Surface Temperature Anomaly</text_box>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="321.06" y="66.63" width="225" height="26">Real GDP Per Person</text_box>
 					<button transparent="true" label="" isee:tooltip="" x="113.565" y="64.63" width="195.455" height="30">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="351.333" y="69.7947" width="164.455" height="20.3611">
 						<actions>
-							<action target="interface:23">navigate</action>
+							<action target="interface:27">navigate</action>
 						</actions>
 					</button>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="546.06" y="66.63" width="225" height="26">Labour Share of GDP</text_box>
 					<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="771.06" y="62.63" width="225" height="26">More Details</text_box>
 					<button transparent="true" label="" isee:tooltip="" x="813.333" y="57.4495" width="140.455" height="36.3611">
 						<actions>
-							<action target="interface:27">navigate</action>
+							<action target="interface:31">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="561.594" y="69.4495" width="193.932" height="20.3611">
 						<actions>
-							<action target="interface:25">navigate</action>
+							<action target="interface:29">navigate</action>
 						</actions>
 					</button>
 					<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="5" width="1066" height="40">DASHBOARD</text_box>
@@ -8395,7 +8721,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Manage Simulation Runs" x="1011" y="287" width="25" height="25">
 						<actions>
-							<action target="interface:44">navigate</action>
+							<action target="interface:48">navigate</action>
 						</actions>
 						<image width="128" height="128" size_to_parent="true">r../Graphics/folder.png</image>
 					</button>
@@ -8409,15 +8735,20 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
-							<action target="interface:20">navigate</action>
+							<action target="interface:24">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="12.3143" y="36.7108" width="21.3913" height="15.3327">
+						<actions>
+							<action target="interface:6">navigate</action>
+						</actions>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
 						<actions>
 							<action target="interface:2">navigate</action>
 						</actions>
@@ -8430,27 +8761,27 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="20pt" appearance="transparent" x="0" y="3" width="1066" height="35">POLICY EXPERIMENT OPTIONS</text_box>
 					<button z_index="31" transparent="true" isee:flat="true" label="" isee:tooltip="" x="102.433" y="58.41" width="138.439" height="30">
 						<actions>
-							<action target="interface:46">navigate</action>
+							<action target="interface:50">navigate</action>
 						</actions>
 					</button>
 					<button z_index="19" transparent="true" label="" isee:tooltip="" x="433.347" y="57.5404" width="76.61" height="31.7392">
 						<actions>
-							<action target="interface:48">navigate</action>
+							<action target="interface:52">navigate</action>
 						</actions>
 					</button>
 					<button z_index="19" transparent="true" label="" isee:tooltip="" x="582.413" y="61.41" width="78.479" height="24">
 						<actions>
-							<action target="interface:49">navigate</action>
+							<action target="interface:53">navigate</action>
 						</actions>
 					</button>
 					<button z_index="19" transparent="true" label="" isee:tooltip="" x="853.978" y="61.41" width="135.348" height="24">
 						<actions>
-							<action target="interface:51">navigate</action>
+							<action target="interface:55">navigate</action>
 						</actions>
 					</button>
 					<button z_index="19" transparent="true" label="" isee:tooltip="" x="717.978" y="65.41" width="107.348" height="16">
 						<actions>
-							<action target="interface:50">navigate</action>
+							<action target="interface:54">navigate</action>
 						</actions>
 					</button>
 					<graphics_frame fill="none" x="1013.18" y="93.41" width="52" height="450">
@@ -8463,7 +8794,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<button z_index="20" background="#F5FFE0" font_color="#082A5C" font_size="14pt" border_width="0.1" transparent="true" corner_radius="31" isee:flat="true" label="" isee:tooltip="" x="493.983" y="529.311" width="45.6234" height="28.3771">
 						<actions>
 							<action>start</action>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 							<action>set_run_name</action>
 						</actions>
 					</button>
@@ -8476,12 +8807,12 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<text_box z_index="19" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="16pt" appearance="transparent" x="246.652" y="58.41" width="150" height="30"> Fossil Energy</text_box>
 					<button z_index="31" transparent="true" isee:flat="true" label="" isee:tooltip="" x="264.834" y="58.41" width="113.636" height="30">
 						<actions>
-							<action target="interface:47">navigate</action>
+							<action target="interface:51">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="" x="1022.69" y="92.4445" width="32.9842" height="451.931">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<graphics_frame z_index="-4" fill="none" x="7" y="7" width="80" height="80">
@@ -8492,17 +8823,22 @@ Your decisions will shape the future - so pay attention to how your choices play
 							<action target="home_page">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
+					<button z_index="32" transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
-							<action target="interface:20">navigate</action>
+							<action target="interface:24">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
 						<actions>
-							<action target="interface:21">navigate</action>
+							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="9.3044" y="38" width="21.3913" height="15.3327">
+						<actions>
+							<action target="interface:6">navigate</action>
+						</actions>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
 						<actions>
 							<action target="interface:2">navigate</action>
 						</actions>
