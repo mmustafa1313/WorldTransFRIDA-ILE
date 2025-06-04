@@ -3587,7 +3587,7 @@ Consumption Risk}</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="8" isee:scroll_x="75" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="8" isee:scroll_x="75" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -7414,8 +7414,74 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<graphics_frame z_index="34" fill="none" x="33.7" y="112" width="22" height="22" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="125">
+					<popup hide_when_editing="true" x="349.278" y="58.389" width="423.444" height="269.111">
+						<text>A carbon tax is a fee paid to governments by individuals and businesses for each unit of greenhouse gas emitted from fossil fuels like coal, oil, and gas.
+
+Some policymakers suggest setting the tax equal to the &quot;Social Cost of Carbon,&quot; an estimate of climate damage per ton of emissions. Estimates vary widely: $43 (Obama), $51 (Biden), $3–$5 (Trump), and $190 (EPA, 2022), reflecting differing views on its appropriate level.
+
+Proponents argue a carbon tax incentivizes cleaner energy use and reduces global warming while generating government revenue. Critics claim it could slow economic growth by raising prices on goods and services.
+
+The speed of implementation is also debated, supporters favor quick action to cut emissions, while opponents warn it could cause economic disruption if done too rapidly.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="340">
+					<popup hide_when_editing="true" x="350.278" y="275" width="393.444" height="237.5">
+						<text>A nuclear energy tax/subsidy is a government tax, or incentive (tax breaks or grants) for building nuclear power plants. 
+
+Supporters say nuclear offers reliable, low-carbon energy crucial for climate goals. The U.S. Inflation Reduction Act includes production tax credits for existing and new plants.
+
+Critics point to high costs, long construction times, and radioactive waste risks. Some argue funds would be better spent on renewables and storage.
+
+Debates center on safety, cost-effectiveness, and nuclear’s role in a clean energy mix.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.878" y="123">
+					<popup hide_when_editing="true" x="6.278" y="106" width="346.444" height="223">
+						<text>A hydropower energy tax/subsidy is a government tax, or incentive (tax breaks or grants), given to penalize or support electricity generated from water sources.
+
+Supporters say it boosts clean energy, cuts fossil fuel use, and helps grid stability.
+
+Critics argue it can harm ecosystems, displace communities, and favor an already mature technology over emerging ones like solar.
+
+Debate continues over how much to subsidize and how fast to expand support.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="705.787" y="123">
+					<popup hide_when_editing="true" x="308.278" y="102" width="367.444" height="223">
+						<text>A bioenergy tax/subsidy is a government tax, or incentive (tax breaks or grants) for energy made from organic materials like crops, wood, or waste.
+
+Supporters argue it reduces fossil fuel use, supports rural economies, and uses existing waste streams. The U.S. and EU offer billions in biofuel and biomass incentives presently.
+
+Critics say bioenergy can drive deforestation, compete with food crops, and may not cut emissions as much as claimed.
+
+Debates focus on sustainability, land use impacts, and whether subsidies should shift to cleaner alternatives.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.88" y="340">
+					<popup hide_when_editing="true" x="17.556" y="274.5" width="330.888" height="238.5">
+						<text>A solar energy tax/subsidy is government tax, or incentive (tax breaks or grants) for installing or producing solar power. 
+
+Supporters say it cuts emissions, lowers energy bills, and accelerates the shift to clean energy. The U.S. offers a 30% federal tax credit for residential and commercial solar.
+
+Critics argue subsidies can burden taxpayers, strain grids at high penetration, or favor wealthier households with rooftop access.
+
+Debates focus on grid integration, equity, and how long support should continue as costs fall.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="705.79" y="340">
+					<popup hide_when_editing="true" x="307.278" y="289" width="367.444" height="223">
+						<text>A wind energy tax/subsidy is government tax, or incentive (tax breaks or grants) for installing or producing solar power. 
+
+Backers cite clean energy, declining costs, and rural job growth. In the U.S., the Investment Tax Credit (ITC) can cover up to 30% of project costs for wind (2023).
+
+Critics note land use conflicts, wildlife impacts, and power variability. Some argue funds should go to grid improvements or storage instead.
+
+Debates focus on cost-effectiveness, community acceptance, and integration into the broader energy mix.</text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:11" isee:name="Dashboard Input - Fossil Energy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:11" isee:name="Dashboard Input - Fossil Energy" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7571,8 +7637,74 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/More Details Icon.png</image>
 				</button>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="125">
+					<popup hide_when_editing="true" x="349.278" y="88" width="423.444" height="222.111">
+						<text>A coal extraction technology tax is a fee (or subsidy) imposed on the equipment or processes used to mine coal, aimed at discouraging (or encouraging) fossil fuel production.
+
+Supporters say it reflects coal’s environmental damage and encourages a shift to cleaner energy. It could also raise funds for climate or transition programs.
+
+Critics argue it may hurt mining communities, raise energy prices, and weaken energy security in coal-dependent regions.
+
+Debates center on fairness, regional impacts, and how quickly the coal industry should be phased down.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.878" y="123">
+					<popup hide_when_editing="true" x="6.278" y="106" width="346.444" height="223">
+						<text>An oil extraction technology tax is a fee (or subsidy) imposed on the equipment or processes used to mine oil, aimed at discouraging (or encouraging) fossil fuel production.
+
+Supporters say it reflects oil&apos;s environmental damage and encourages a shift to cleaner energy. It could also raise funds for climate or transition programs.
+
+Critics argue it may hurt mining communities, raise energy prices, and weaken energy security in oil-dependent regions.
+
+Debates center on fairness, regional impacts, and how quickly the oil industry should be phased down.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="705.787" y="123">
+					<popup hide_when_editing="true" x="308.278" y="102" width="367.444" height="223">
+						<text>An gas extraction technology tax is a fee (or subsidy) imposed on the equipment or processes used to mine gas, aimed at discouraging (or encouraging) fossil fuel production.
+
+Supporters say it reflects gas&apos;s environmental damage and encourages a shift to cleaner energy. It could also raise funds for climate or transition programs.
+
+Critics argue it may hurt mining communities, raise energy prices, and weaken energy security in gas-dependent regions.
+
+Debates center on fairness, regional impacts, and how quickly the gas industry should be phased down.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="340">
+					<popup hide_when_editing="true" x="350.278" y="275" width="393.444" height="237.5">
+						<text>A coal energy production tax is a government fee on electricity generated from coal plants, intended to reduce carbon emissions and pollution.
+
+Supporters say it discourages coal use, promotes cleaner energy, and raises revenue for climate initiatives.
+
+Critics warn it could increase power costs, harm coal-dependent jobs, and risk energy reliability.
+
+Debate focuses on tax levels, transition timing, and support for affected communities.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.88" y="340">
+					<popup hide_when_editing="true" x="17.556" y="274.5" width="330.888" height="238.5">
+						<text>A oil energy production tax is a government fee on electricity generated from oil plants, intended to reduce carbon emissions and pollution.
+
+Supporters say it discourages oil use, promotes cleaner energy, and raises revenue for climate initiatives.
+
+Critics warn it could increase power costs, harm oil-dependent jobs, and risk energy reliability.
+
+Debate focuses on tax levels, transition timing, and support for affected communities.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="705.79" y="340">
+					<popup hide_when_editing="true" x="307.278" y="289" width="367.444" height="223">
+						<text>A gas energy production tax is a government fee on electricity generated from gas plants, intended to reduce carbon emissions and pollution.
+
+Supporters say it discourages gas use, promotes cleaner energy, and raises revenue for climate initiatives.
+
+Critics warn it could increase power costs, harm gas-dependent jobs, and risk energy reliability.
+
+Debate focuses on tax levels, transition timing, and support for affected communities.</text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:10" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:10" isee:name="Dashboard Input - Land Use" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7580,7 +7712,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.switch_non_agricultural_water_use_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
-				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="410.302" y="136" width="211.387" height="40" title="Customize Irrigated Cropland" show_name="true">
+				<switch z_index="32" font_size="14pt" label_side="left" isee:appearance="checkbox" x="410.301" y="136" width="211.387" height="40" title="Customize Irrigated Cropland" show_name="true">
 					<entity name="Government_Regulations.switch_irrigation_fraction_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
@@ -7598,12 +7730,13 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</slider>
 				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="24.44" y="105" width="318" height="390" kind="rectangle"/>
-				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="357" y="105" width="318" height="390" kind="rectangle"/>
+				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="357" y="105" width="318" height="390" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="21" background="white" border_width="thin" border_style="none" transparent_background="false" corner_radius="11" x="689.667" y="105" width="318" height="390" isee:locked="true" kind="rectangle"/>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="24.4444" y="105" width="317.991" height="30">Forestation</text_box>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="357" y="105" width="317.99" height="30">Irrigation</text_box>
 				<text_box z_index="29" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" font_size="16pt" x="689.672" y="105" width="317.99" height="30">Non-Agricultural water use</text_box>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="188" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Non Agricultural Water Use" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="188" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Non Agricultural Water Use&lt;br/&gt;(m^3/Mp/Year)" isee:navigate_to="false" show_name="true">
+					<format precision="1" scale_by="1" delimit_000s="true"/>
 					<entity name="Government_Regulations.non_agricultural_water_use_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
@@ -7611,7 +7744,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.non_agricultural_water_use_start_year_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="289" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="706" y="289" width="290" height="101" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_non_agricultural_water_use_policy" title="Time to Implement" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.non_agricultural_water_use_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
@@ -7624,7 +7757,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<graphics_frame z_index="32" fill="none" x="693.978" y="109" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
-				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="42" y="188" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" title="Area to forest per year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="42" y="188" width="290" height="101" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" title="Area to forest per year" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.forestation_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
@@ -7632,7 +7765,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.forestation_time_to_implement_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
-				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="42" y="390" width="290" height="101" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" num_ticks="4" label_side="left" input_expands="false" input_width="200" x="42" y="390" width="290" height="101" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Government_Regulations.switch_forestation_policy" increment="5" title="Start Year" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.irrigation_fraction_start_year_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
@@ -7653,8 +7786,37 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.switch_forestation_policy"/>
 					<reset_to after="never">0</reset_to>
 				</switch>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="38.6957" y="121">
+					<popup hide_when_editing="true" x="349.278" y="88" width="423.444" height="222.111">
+						<text>A forestation policy is a government or organizational strategy aimed at managing, protecting, and expanding forested areas through activities like planting trees (afforestation) and preventing deforestation. 
+
+Supporters argue that such policies combat climate change, preserve biodiversity, and support local economies. 
+
+Critics, however, contend that poorly planned forestation can harm native ecosystems, displace communities, or prioritize commercial interests over environmental health. 
+
+Current debates focus on balancing ecological restoration with social justice, ensuring native species planting, and integrating forestation with broader climate goals.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="371.918" y="121">
+					<popup hide_when_editing="true" x="16.278" y="101" width="328.07" height="295.111">
+						<text>An irrigation policy is a government or organizational strategy focused on managing and distributing water resources to agricultural lands to improve crop production and ensure water efficiency. With this policy you set what percentage of the globe&apos;s cropland is irrigated.
+
+Supporters argue that such policies increase food security, boost agricultural productivity, and support rural livelihoods.
+
+Critics, however, contend that poorly designed irrigation can lead to water wastage, soil degradation, and negatively impact local ecosystems or communities.
+
+Current debates focus on promoting sustainable water use, balancing agricultural needs with environmental protection, and integrating irrigation practices with climate resilience efforts.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="702.978" y="121">
+					<popup hide_when_editing="true" x="352.965" y="102" width="328.07" height="172.111">
+						<text>A non-agricultural water use policy is a government or organizational strategy focused on managing and distributing water resources for domestic and industrial uses. With this policy you set how much freshwater is used for these purposes yearly.
+
+Current debates focus on balancing water allocation between urban growth and ecosystem preservation, improving water-use efficiency, and addressing the impacts of climate change on water availability.</text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:11" isee:name="Dashboard Input - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:11" isee:name="Dashboard Input - Economy" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7774,8 +7936,84 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<entity name="Government_Regulations.inflation_goal_policy"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="125">
+					<popup hide_when_editing="true" x="349.278" y="88" width="423.444" height="222.111">
+						<text>A minimum percentage of taxes spent policy requires governments to allocate a set portion of tax revenues to be spent.  Low values allow governments to easily manage their debts but potentially reduce services for citizens.  High values do the opposite.
+
+Supporters of a high minimum percentage say it ensures consistent funding for important priorities and accountability in public spending.
+
+Critics of a high minimum percentage argue it limits budget flexibility and may not match changing needs or emergencies.
+
+Debates revolve around the right percentage, target areas, and balancing fiscal responsibility with policy goals.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.878" y="123">
+					<popup hide_when_editing="true" x="6.278" y="106" width="346.444" height="223">
+						<text>The debt-to-GDP ratio is a measure comparing the world&apos;s total public debt to its economic output (GDP), showing how much debt exists relative to the economy’s size.
+
+Policymakers use it to assess fiscal health, lower ratios suggest more sustainable debt levels.
+
+Critics warn high ratios can limit government spending, increase borrowing costs, and risk financial instability.
+
+Debates focus on acceptable thresholds, impacts on growth, and how to balance debt with investment needs.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="705.787" y="123">
+					<popup hide_when_editing="true" x="308.278" y="102" width="367.444" height="223">
+						<text>A wage tax is a government tax on employees’ earnings, usually deducted directly from paychecks.
+
+Supporters say it funds public services like healthcare and education and can be structured progressively to reduce inequality.
+
+Critics argue high wage taxes can discourage work, reduce take-home pay, and increase labor costs for employers.
+
+Debates focus on tax rates, fairness, and balancing revenue with economic incentives.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="341.35">
+					<popup hide_when_editing="true" x="350.278" y="134" width="393.444" height="378.5">
+						<text>Central bank inflation target is a goal set by a country’s central bank to keep inflation around a specific rate, often near 2%.
+
+Supporters say it helps maintain price stability, supports economic growth, and anchors expectations.
+
+Critics argue rigid targets can limit policy flexibility, especially during shocks, and may overlook other economic goals.
+
+Debates focus on the ideal inflation rate and how strictly to enforce targets.
+
+*******************************************
+
+Central bank unemployment target is a goal to achieve a low or “natural” rate of unemployment through monetary policy.
+
+Supporters claim it promotes maximum employment and supports economic well-being.
+
+Critics caution that focusing too much on unemployment may fuel inflation or create asset bubbles.
+
+Debates center on balancing unemployment with inflation control and the limits of monetary policy.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.88" y="340">
+					<popup hide_when_editing="true" x="17.556" y="323" width="330.888" height="190">
+						<text>A profit tax is a government levy on the net earnings of businesses.
+
+Supporters say it generates revenue for public services and can promote fair wealth distribution.
+
+Critics argue high rates may discourage investment, reduce competitiveness, and encourage tax avoidance.
+
+Debates center on setting rates that balance revenue needs with economic growth incentives.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="705.79" y="340">
+					<popup hide_when_editing="true" x="307.278" y="289" width="367.444" height="223">
+						<text>A wealth tax is a government charge on the total value of an individual’s assets, like property, investments, and savings.
+
+Supporters say it reduces inequality and raises revenue from the richest individuals.
+
+Critics argue it’s hard to value assets accurately, may drive capital flight, and could discourage investment.
+
+Debates focus on tax thresholds, rates, enforcement challenges, and economic impacts.</text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:10" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:10" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7800,8 +8038,42 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<graphics_frame z_index="36" fill="none" x="56.5571" y="452.167" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
+				<graphics_frame z_index="34" fill="none" x="56.5571" y="159" width="22" height="22">
+					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
+				</graphics_frame>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="67.5571" y="170">
+					<popup hide_when_editing="true" x="90.278" y="84.0595" width="423.444" height="468.701">
+						<text>Do nothing means accepting flooding and damage without intervention.
+
+Supporters say it avoids high costs and lets nature adapt naturally.
+
+Critics warn it risks property loss, ecosystem damage, and community displacement.
+
+Debates focus on risk tolerance and economic trade-offs.
+
+****
+
+Build sea walls involves constructing barriers to block rising waters.
+
+Proponents highlight protection of homes, infrastructure, and economic assets.
+
+Opponents point to high costs, environmental impacts, and limited long-term effectiveness.
+
+Debates center on cost-benefit and sustainability.
+
+*****
+
+Retreat from the coast means relocating people and infrastructure inland.
+
+Supporters say it’s a long-term, sustainable solution to avoid repeated damage.
+
+Critics argue it’s socially disruptive, expensive, and politically difficult.
+
+Debates focus on timing, funding, and community consent.</text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:10" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:10" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7822,7 +8094,8 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<reset_to after="never">0</reset_to>
 				</switch>
 				<isee:shape z_index="33" border_color="#F5FFE0" border_width="3.5" opacity="1" transparent_background="true" corner_radius="11" x="848.228" y="58" width="146.85" height="30" isee:locked="true" kind="rectangle"/>
-				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="160" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" min="5" max="10" title="Per Person Energy Demand" isee:navigate_to="false" show_name="true">
+				<slider z_index="34" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="577" y="160" width="370" height="47" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Behavioral_Choices.switch_energy_demand_policy" min="5" max="10" title="Per Person Per Year Energy Demand" isee:navigate_to="false" show_name="true">
+					<format precision="0.01" scale_by="1" suffix=" MWh"/>
 					<entity name="Behavioral_Choices.Per_Person_use_of_energy_policy_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
@@ -7893,8 +8166,28 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<text_box z_index="35" text_align="center" vertical_text_align="center" font_size="18pt" x="67.619" y="134" width="399.762" height="167.905" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_Visibility">These settings are not available when customizing &quot;Environmental Consciousness&quot;.</text_box>
 				<text_box z_index="35" text_align="center" vertical_text_align="center" font_size="18pt" x="67.619" y="348.095" width="399.762" height="167.905" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_Visibility">These settings are not available when customizing &quot;Environmental Consciousness&quot;.</text_box>
 				<text_box z_index="35" text_align="center" vertical_text_align="center" font_size="18pt" x="557.467" y="348.095" width="428.37" height="167.905" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_Visibility_1">These settings are not available when customizing &quot;Food Demand&quot; or &quot;Animal Products&quot;.</text_box>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="125">
+					<popup hide_when_editing="true" x="509.957" y="108.649" width="344.021" height="195.701">
+						<text>Changes in per person food demand can significantly impact both the climate and the economy. Higher food demand per person especially for animal products increases greenhouse gas emissions, land use, and water consumption, contributing to climate change. Economically, it can raise food prices, strain agricultural systems, and shift market demand toward high-emission food sectors. Conversely, reducing per person demand or shifting toward plant-based diets can lower emissions, reduce environmental pressure, and potentially stabilize food markets, though it may disrupt certain agricultural industries.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="45.6957" y="333.095">
+					<popup hide_when_editing="true" x="487.631" y="346" width="344.021" height="149.351">
+						<text>Changes in demand for animal products have notable effects on the climate. Increased consumption of meat, dairy, and other animal products raises greenhouse gas emissions, especially methane from livestock and contributes to deforestation, water use, and biodiversity loss. Reducing animal product demand, can lower emissions and environmental pressure, while shifting markets toward plant-based alternatives potentially disrupting traditional agricultural economies.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="542.467" y="125">
+					<popup hide_when_editing="true" x="174.606" y="98" width="344.021" height="189.351">
+						<text>Changes in per person energy demand directly influence both climate outcomes and economic activity. Higher energy demand per person typically leads to increased fossil fuel consumption, resulting in greater greenhouse gas emissions and climate change acceleration unless met by clean energy sources. Economically, rising energy demand can drive growth in energy sectors but also increase energy prices and infrastructure costs. Reducing per person energy demand through efficiency or conservation can cut emissions, and ease pressure on energy systems, though it may challenge industries reliant on high energy consumption.</text>
+					</popup>
+				</isee:annotation>
+				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="540.36" y="333.095">
+					<popup hide_when_editing="true" x="172.606" y="316.825" width="344.021" height="135.176">
+						<text>Changes in environmental consciousness, people’s awareness and concern for environmental issues can significantly affect their demand behaviors for food and animal products. Greater environmental consciousness often leads to more sustainable behaviors, such as reduced waste of food, and decreasing the fraction of animal products in their diets which collectively help lower greenhouse gas emissions and environmental degradation.</text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:12" isee:name="Six Parm Pop Up" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:12" isee:name="Six Parm Pop Up" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8898,6 +9191,11 @@ Your decisions will shape the future - so pay attention to how your choices play
 			<isee:stories/>
 		</views>
 	</model>
+	<isee:controls>
+		<isee:control priority="interactive" name="Behavioral_Choices.switch_animal_products_fraction_policy" value="0"/>
+		<isee:control priority="interactive" name="Behavioral_Choices.switch_energy_demand_policy" value="0"/>
+		<isee:control priority="interactive" name="Behavioral_Choices.switch_food_demand_policy" value="0"/>
+	</isee:controls>
 	<macro name="INFLATION_IMPACT_GROWTH_RATE">
 		<eqn>trend in input</eqn>
 		<parm>input</parm>
