@@ -4476,7 +4476,7 @@ Consumption Risk}</eqn>
 				<isee:placeholder x="1321.5" y="1393.58" name="Behavioral Placeholder"/>
 				<isee:placeholder x="1321.5" y="1559.72" name="Biosphere Indicators\nPlaceholder"/>
 			</view>
-			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" home_view="true" type="interface">
+			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="160" home_view="true" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4510,7 +4510,7 @@ Consumption Risk}</eqn>
 					<image width="2439" height="1733" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA logo dark type.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6328,7 +6328,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6587,7 +6587,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="352.364" y="60.5402" width="170.217" height="38.87">Real GDP Per Person</text_box>
 			</view>
-			<view isee:template_view="template:8" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:8" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6648,7 +6648,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:8" isee:name="Other Metrics - Economy" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:8" isee:name="Other Metrics - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7263,7 +7263,7 @@ Your decisions will shape the future - so pay attention to how your choices play
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<slider z_index="28" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="140" width="270" height="77.5" isee:locked="true" title="Tax" isee:navigate_to="false" show_name="true">
+				<slider z_index="28" color="#0075FF" num_ticks="2" label_side="left" input_expands="false" input_width="200" x="48" y="140" width="270" height="77.5" isee:locked="true" title="Tax&lt;br/&gt;($/TonCO2e)" isee:navigate_to="false" show_name="true">
 					<entity name="Government_Regulations.tax_on_CO2e_emissions_first_level"/>
 					<reset_to after="never">0</reset_to>
 				</slider>
@@ -7541,9 +7541,9 @@ Debates focus on cost-effectiveness, community acceptance, and integration into 
 				</graphics_frame>
 				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="108" width="310" height="30">Oil Extraction Tax</text_box>
 				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="108" width="310" height="30">Gas Extraction Tax</text_box>
-				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="325" width="310" height="30">Coal Production Tax</text_box>
-				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="325" width="310" height="30">Oil Production Tax</text_box>
-				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="325" width="310" height="30">Gas Production Tax</text_box>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="30" y="325" width="310" height="30">Coal Energy Production Tax</text_box>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="360" y="325" width="310" height="30">Oil Energy Production Tax</text_box>
+				<text_box z_index="32" background="#ECECEC" font_weight="bold" text_align="center" vertical_text_align="center" x="690" y="325" width="310" height="30">Gas Energy Production Tax</text_box>
 				<graphics_frame z_index="34" fill="none" x="363.878" y="112" width="22" height="22">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/question.png</image>
 				</graphics_frame>
@@ -9191,11 +9191,6 @@ Debates focus on timing, funding, and community consent.</text>
 			<isee:stories/>
 		</views>
 	</model>
-	<isee:controls>
-		<isee:control priority="interactive" name="Behavioral_Choices.switch_animal_products_fraction_policy" value="0"/>
-		<isee:control priority="interactive" name="Behavioral_Choices.switch_energy_demand_policy" value="0"/>
-		<isee:control priority="interactive" name="Behavioral_Choices.switch_food_demand_policy" value="0"/>
-	</isee:controls>
 	<macro name="INFLATION_IMPACT_GROWTH_RATE">
 		<eqn>trend in input</eqn>
 		<parm>input</parm>
