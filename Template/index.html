@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+      Polymer = {
+        lazyRegister: true,
+        useNativeCSSProperties: true
+      };
+    </script>
+    <script src="${DEPENDENCY_PATH}/js/stella-third-party.min.js"></script>
+    <script src="${DEPENDENCY_PATH}/js/stella-core.min.js"></script>
+
+    <!-- This code is responsible for setting up the model -->
+    <!--model_content_begin-->
+    <!--model_content_end-->
+  
+    <link href="${DEPENDENCY_PATH}/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic" rel="dns-prefetch" as="font" crossorigin> 
+    <link rel="stylesheet" type="text/css" href="${DEPENDENCY_PATH}/css/stella-core.css">
+    <script type="text/javascript" src="${DEPENDENCY_PATH}/stella-components.min.js"></script>
+
+    <!--head_content_begin-->
+    <!--head_content_end-->
+    <script src="js/custom.js"></script>
+  </head>
+  
+  <body unresolved>
+    <sim-service id="service"></sim-service>
+    <!--page_content_begin-->
+    <!--page_content_end-->
+  </body>
+
+  <!--post_body_content_begin-->
+  <!--post_body_content_end-->
+    
+  <script type="text/javascript">
+    if (!isee) {
+      alert("Something happened when trying to load this simulation.  Please inform the author of the simulation that they need to re-publish it.\n\nError Detail:\nFailed to load necessary javascript to run this simulation, the isee object does not exist.");
+    }
+  </script>
+</html>

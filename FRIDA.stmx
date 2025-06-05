@@ -78,6 +78,7 @@
 			<isee:ignored_word>hydropower</isee:ignored_word>
 			<isee:ignored_word>C3S</isee:ignored_word>
 		</isee:ignored_words>
+		<interface_template>r../Template</interface_template>
 	</isee:prefs>
 	<isee:multiplayer_settings include_chat="true" allow_observers="false" advance_time_increment="1" max_advance_time_in_ms="0" model_stops_when_players_drop="false" observer_start_page="home_page" enabled="false"/>
 	<isee:time_formats default_format="Builtin">
@@ -4509,7 +4510,7 @@ Consumption Risk}</eqn>
 					<image width="2439" height="1733" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA logo dark type.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4563,7 +4564,12 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
 					<actions>
+						<action>restore_all</action>
 						<action target="interface:24">navigate</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
@@ -4618,7 +4624,12 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
 					<actions>
-						<action target="interface:23">navigate</action>
+						<action>restore_all</action>
+						<action target="interface:24">navigate</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
@@ -4668,7 +4679,7 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="24pt" appearance="transparent" x="0" y="5" width="1066" height="56.4762">Navigation &amp; Terminology Guide</text_box>
+				<text_box z_index="5" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="24pt" appearance="transparent" x="0" y="5" width="1066" height="56.4762" isee:locked="true">Navigation &amp; Terminology Guide</text_box>
 				<button z_index="13" transparent="true" corner_radius="12" label="" isee:tooltip="" x="12.4665" y="566.546" width="26.1554" height="24.9464">
 					<actions>
 						<action target="interface:0">navigate</action>
@@ -4692,7 +4703,12 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
 					<actions>
-						<action target="interface:22">navigate</action>
+						<action>restore_all</action>
+						<action target="interface:24">navigate</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
@@ -4747,7 +4763,12 @@ Example: If emissions rise in the model, it&apos;s not because we told the model
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
 					<actions>
-						<action target="interface:21">navigate</action>
+						<action>restore_all</action>
+						<action target="interface:24">navigate</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
@@ -4800,7 +4821,12 @@ It typically includes:
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
 					<actions>
-						<action target="interface:20">navigate</action>
+						<action>restore_all</action>
+						<action target="interface:24">navigate</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Home" x="62.6087" y="35.1027" width="21.3913" height="24.0284">
@@ -4839,7 +4865,7 @@ It typically includes:
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:2" isee:name="Storytelling Intro" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="Storytelling Intro" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4886,7 +4912,7 @@ Click the next page button &gt;</text>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4982,7 +5008,7 @@ Click the next page button &gt;</text>
 					<image width="1653" height="74" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 1.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="Office" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Office" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5042,7 +5068,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 2.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="1st Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="1st Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5074,7 +5100,7 @@ Click the next page button &gt;</text>
 					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 3.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="1st Policy Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="1st Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5113,7 +5139,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 4.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:5" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:5" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5161,7 +5187,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 
 Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5245,7 +5271,7 @@ Click the next page button &gt;</text_box>
 					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 6.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5282,7 +5308,7 @@ Click the next page button &gt;</text_box>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 7.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="2nd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="2nd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5482,7 +5508,7 @@ Click the next page button &gt;</text_box>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 8.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="2nd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="2nd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5527,7 +5553,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 					<image width="1654" height="74" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 9.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:5" isee:name="Result Discussion 2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:5" isee:name="Result Discussion 2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5574,7 +5600,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 
 Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="2nd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="2nd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5646,7 +5672,7 @@ Click the next page button &gt;</text_box>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 11.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5678,7 +5704,7 @@ Click the next page button &gt;</text>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 12.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5859,7 +5885,7 @@ Click the next page button &gt;</text>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 13.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="3rd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="3rd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5899,7 +5925,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 14.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:5" isee:name="Result Discussion 3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:5" isee:name="Result Discussion 3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5961,7 +5987,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 
 Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="3rd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="3rd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6036,7 +6062,7 @@ Click the next page button &gt;</text_box>
 					<image width="1651" height="76" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 16.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:2" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6082,7 +6108,7 @@ Click the next page button &gt;</text_box>
 					<image width="1652" height="76" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 17.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7193,7 +7219,12 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="66.3088" width="21.3913" height="15.3327">
 					<actions>
+						<action>restore_all</action>
 						<action target="interface:24">navigate</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
@@ -7234,7 +7265,12 @@ Your decisions will shape the future - so pay attention to how your choices play
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="66.3088" width="21.3913" height="15.3327">
 					<actions>
+						<action>restore_all</action>
 						<action target="interface:24">navigate</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+						<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
@@ -8413,7 +8449,12 @@ Debates focus on timing, funding, and community consent.</text>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="14.1949" width="21.3913" height="15.3327">
 						<actions>
+							<action>restore_all</action>
 							<action target="interface:24">navigate</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="11.4885" y="37.2032" width="16.1739" height="19.5936">
@@ -8570,7 +8611,12 @@ Debates focus on timing, funding, and community consent.</text>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="66.3088" width="21.3913" height="15.3327">
 						<actions>
+							<action>restore_all</action>
 							<action target="interface:24">navigate</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
@@ -8672,7 +8718,12 @@ Debates focus on timing, funding, and community consent.</text>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
+							<action>restore_all</action>
 							<action target="interface:24">navigate</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
@@ -8879,7 +8930,12 @@ Debates focus on timing, funding, and community consent.</text>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
+							<action>restore_all</action>
 							<action target="interface:24">navigate</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
@@ -9036,7 +9092,12 @@ Debates focus on timing, funding, and community consent.</text>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
+							<action>restore_all</action>
 							<action target="interface:24">navigate</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
@@ -9135,7 +9196,12 @@ Debates focus on timing, funding, and community consent.</text>
 					</button>
 					<button z_index="32" transparent="true" label="" isee:tooltip="Goal Setting" x="37.3044" y="63.0914" width="21.3913" height="16.2023">
 						<actions>
+							<action>restore_all</action>
 							<action target="interface:24">navigate</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
+							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="10" isee:entity="Interface.simulation_delay">control_entity</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
 						</actions>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Dashboard" x="66.7826" y="37.9468" width="16.1739" height="19.5936">
