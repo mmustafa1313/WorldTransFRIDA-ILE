@@ -3587,7 +3587,7 @@ Consumption Risk}</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="8" isee:scroll_x="75" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="8" isee:scroll_x="75" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4489,7 +4489,6 @@ Consumption Risk}</eqn>
 				<graphics_frame z_index="-12" fill="none" x="433.636" y="200" width="200" height="200" isee:locked="true">
 					<image width="200" height="200" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Rotating Globe.gif</image>
 				</graphics_frame>
-				<text_box z_index="8" background="#082A5C" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="28pt" appearance="transparent" x="0" y="400" width="1066" height="46.4964" isee:locked="true">Guidebook to Humanity’s Development</text_box>
 				<button z_index="7" background="#082A5C" font_color="#F5FFE0" font_size="20pt" border_width="thin" border_style="none" transparent="false" corner_radius="21" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#0C3F86" label="Click to Start" isee:tooltip="" x="441.881" y="539.264" width="183.511" height="45">
 					<actions>
 						<action>restore_all</action>
@@ -4510,7 +4509,7 @@ Consumption Risk}</eqn>
 					<image width="2439" height="1733" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA logo dark type.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" isee:scroll_x="48.5714" zoom="105" type="interface">
+			<view isee:template_view="template:1" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4557,9 +4556,9 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
 					<actions>
 						<action>restore_all</action>
-						<action isee:run_name_to_set="EMB">set_run_name</action>
 						<action target="interface:25">navigate</action>
 						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
@@ -4591,7 +4590,7 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:1" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4612,9 +4611,9 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
 					<actions>
 						<action>restore_all</action>
-						<action isee:run_name_to_set="EMB">set_run_name</action>
 						<action target="interface:24">navigate</action>
 						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
@@ -4665,7 +4664,7 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				<text_box text_align="center" vertical_text_align="center" font_size="20pt" appearance="transparent" x="20" y="93" width="668" height="58">Navigation Buttons</text_box>
 				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="115" y="142" width="550" height="56">Clicking the three-dash icon in the circular menu will open the Navigation &amp; Terminology Guide.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 1" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 1" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4686,9 +4685,9 @@ Click on this icon to               open the Navigation &amp; Terminology Guide,
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
 					<actions>
 						<action>restore_all</action>
-						<action isee:run_name_to_set="EMB">set_run_name</action>
 						<action target="interface:23">navigate</action>
 						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
@@ -4720,7 +4719,7 @@ Example: If emissions rise in the model, it&apos;s not because we told the model
 					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/feedback (1).png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4741,9 +4740,9 @@ Example: If emissions rise in the model, it&apos;s not because we told the model
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
 					<actions>
 						<action>restore_all</action>
-						<action isee:run_name_to_set="EMB">set_run_name</action>
 						<action target="interface:22">navigate</action>
 						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
@@ -4778,7 +4777,7 @@ It typically includes:
 					<image width="585" height="427" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Confidence Graph.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 3" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 3" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4794,9 +4793,9 @@ It typically includes:
 				<button transparent="true" label="" isee:tooltip="Dashboard" x="38.5024" y="63.1311" width="21.7919" height="20.0284">
 					<actions>
 						<action>restore_all</action>
-						<action isee:run_name_to_set="EMB">set_run_name</action>
 						<action target="interface:21">navigate</action>
 						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 				<button transparent="true" label="" isee:tooltip="Goal Setting" x="12.3143" y="40.0514" width="21.3913" height="14.1311">
@@ -4840,7 +4839,7 @@ It typically includes:
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:2" isee:name="Storytelling Intro" background="#082A5C" page_width="1066" page_height="600" zoom="105" type="interface">
+			<view isee:template_view="template:2" isee:name="Storytelling Intro" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7440,7 +7439,7 @@ Debates center on safety, cost-effectiveness, and nuclear’s role in a clean en
 				</isee:annotation>
 				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.878" y="123">
 					<popup hide_when_editing="true" x="6.278" y="106" width="346.444" height="223">
-						<text>A hydropower energy tax/subsidy is a government tax, or incentive (tax breaks or grants), given to penalize or support electricity generated from water sources.
+						<text>A hydropower energy tax/subsidy is a government tax, or incentive (tax breaks or grants), given to penalize or support energy generated from water sources.
 
 Supporters say it boosts clean energy, cuts fossil fuel use, and helps grid stability.
 
@@ -7674,7 +7673,7 @@ Debates center on fairness, regional impacts, and how quickly the gas industry s
 				</isee:annotation>
 				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="47.8068" y="340">
 					<popup hide_when_editing="true" x="350.278" y="275" width="393.444" height="237.5">
-						<text>A coal energy production tax is a government fee on electricity generated from coal plants, intended to reduce carbon emissions and pollution.
+						<text>A coal energy production tax is a government fee on energy generated from coal plants, intended to reduce carbon emissions and pollution.
 
 Supporters say it discourages coal use, promotes cleaner energy, and raises revenue for climate initiatives.
 
@@ -7685,7 +7684,7 @@ Debate focuses on tax levels, transition timing, and support for affected commun
 				</isee:annotation>
 				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="374.88" y="340">
 					<popup hide_when_editing="true" x="17.556" y="274.5" width="330.888" height="238.5">
-						<text>A oil energy production tax is a government fee on electricity generated from oil plants, intended to reduce carbon emissions and pollution.
+						<text>A oil energy production tax is a government fee on energy generated from oil plants, intended to reduce carbon emissions and pollution.
 
 Supporters say it discourages oil use, promotes cleaner energy, and raises revenue for climate initiatives.
 
@@ -7696,7 +7695,7 @@ Debate focuses on tax levels, transition timing, and support for affected commun
 				</isee:annotation>
 				<isee:annotation z_index="36" transparent="true" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="705.79" y="340">
 					<popup hide_when_editing="true" x="307.278" y="289" width="367.444" height="223">
-						<text>A gas energy production tax is a government fee on electricity generated from gas plants, intended to reduce carbon emissions and pollution.
+						<text>A gas energy production tax is a government fee on energy generated from gas plants, intended to reduce carbon emissions and pollution.
 
 Supporters say it discourages gas use, promotes cleaner energy, and raises revenue for climate initiatives.
 
@@ -7818,7 +7817,7 @@ Current debates focus on balancing water allocation between urban growth and eco
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:11" isee:name="Dashboard Input - Economy" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:11" isee:name="Dashboard Input - Economy" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8015,7 +8014,7 @@ Debates focus on tax thresholds, rates, enforcement challenges, and economic imp
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:10" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:10" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8072,7 +8071,7 @@ Debates focus on timing, funding, and community consent.</text>
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:10" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:10" isee:name="Dashboard Inputs - Individual Behavior" background="#082A5C" page_width="1066" page_height="600" zoom="160" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8579,7 +8578,7 @@ Debates focus on timing, funding, and community consent.</text>
 							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1025" y="135" width="25" height="25" isee:locked="true">
+					<button transparent="true" label="" isee:tooltip="Removes all runs except EMB from graphs, restore all policies to default values." x="1025" y="135" width="25" height="25">
 						<actions>
 							<action>restore_all</action>
 							<action>start</action>
@@ -8587,7 +8586,7 @@ Debates focus on timing, funding, and community consent.</text>
 						</actions>
 						<image width="256" height="256" size_to_parent="true">r../Graphics/Restore (2).png</image>
 					</button>
-					<button transparent="true" label="" isee:tooltip="Load saved scenario" x="1025" y="170" width="25" height="25" isee:locked="true">
+					<button transparent="true" label="" isee:tooltip="Load saved scenario" x="1025" y="170" width="25" height="25">
 						<actions>
 							<action>import_data</action>
 							<action>start</action>
@@ -8595,7 +8594,7 @@ Debates focus on timing, funding, and community consent.</text>
 						</actions>
 						<image width="64" height="64" size_to_parent="true">r../Graphics/upload.png</image>
 					</button>
-					<button transparent="true" label="" isee:tooltip="Save scenario" x="1025" y="205" width="25" height="25" isee:locked="true">
+					<button transparent="true" label="" isee:tooltip="Save scenario" x="1025" y="205" width="25" height="25">
 						<actions>
 							<action type="export_parameter_values" orientation="vertical"/>
 						</actions>
@@ -8681,28 +8680,6 @@ Debates focus on timing, funding, and community consent.</text>
 							<action target="interface:25">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1025" y="135" width="25" height="25" isee:locked="true">
-						<actions>
-							<action>restore_all</action>
-							<action>start</action>
-							<action isee:run_name_to_set="EMB">set_run_name</action>
-						</actions>
-						<image width="256" height="256" size_to_parent="true">r../Graphics/Restore (2).png</image>
-					</button>
-					<button transparent="true" label="" isee:tooltip="Load saved scenario" x="1025" y="170" width="25" height="25" isee:locked="true">
-						<actions>
-							<action>import_data</action>
-							<action>start</action>
-							<action>set_run_name</action>
-						</actions>
-						<image width="64" height="64" size_to_parent="true">r../Graphics/upload.png</image>
-					</button>
-					<button transparent="true" label="" isee:tooltip="Save scenario" x="1025" y="205" width="25" height="25" isee:locked="true">
-						<actions>
-							<action type="export_parameter_values" orientation="vertical"/>
-						</actions>
-						<image width="64" height="64" size_to_parent="true">r../Graphics/save.png</image>
-					</button>
 					<button transparent="true" label="" isee:tooltip="" x="113.565" y="52.603" width="195.455" height="42.7444">
 						<actions>
 							<action target="interface:26">navigate</action>
@@ -8733,12 +8710,6 @@ Debates focus on timing, funding, and community consent.</text>
 							<action target="next_page">navigate</action>
 						</actions>
 					</button>
-					<button transparent="true" label="" isee:tooltip="Manage Simulation Runs" x="1025" y="240" width="25" height="25">
-						<actions>
-							<action target="interface:48">navigate</action>
-						</actions>
-						<image width="128" height="128" size_to_parent="true">r../Graphics/folder.png</image>
-					</button>
 					<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="12.3143" y="37.2703" width="21.3913" height="15.3327">
 						<actions>
 							<action target="interface:6">navigate</action>
@@ -8749,6 +8720,34 @@ Debates focus on timing, funding, and community consent.</text>
 							<action target="interface:2">navigate</action>
 						</actions>
 					</button>
+					<button transparent="true" label="" isee:tooltip="Removes all runs except EMB from graphs, restore all policies to default values." x="1025" y="135" width="25" height="25">
+						<actions>
+							<action>restore_all</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
+						</actions>
+						<image width="256" height="256" size_to_parent="true">r../Graphics/Restore (2).png</image>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Load saved scenario" x="1025" y="170" width="25" height="25">
+						<actions>
+							<action>import_data</action>
+							<action>start</action>
+							<action>set_run_name</action>
+						</actions>
+						<image width="64" height="64" size_to_parent="true">r../Graphics/upload.png</image>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Save scenario" x="1025" y="205" width="25" height="25">
+						<actions>
+							<action type="export_parameter_values" orientation="vertical"/>
+						</actions>
+						<image width="64" height="64" size_to_parent="true">r../Graphics/save.png</image>
+					</button>
+					<button transparent="true" label="" isee:tooltip="Manage Simulation Runs" x="1025" y="240" width="25" height="25">
+						<actions>
+							<action target="interface:48">navigate</action>
+						</actions>
+						<image width="128" height="128" size_to_parent="true">r../Graphics/folder.png</image>
+					</button>
 				</view>
 				<view isee:template_view="template:1" isee:name="Dashboard Other Metrics" background="#082A5C" page_width="1066" page_height="600" type="template">
 					<style>
@@ -8758,14 +8757,6 @@ Debates focus on timing, funding, and community consent.</text>
 						<actions>
 							<action target="interface:50">navigate</action>
 						</actions>
-					</button>
-					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1011" y="197" width="25" height="25" isee:locked="true">
-						<actions>
-							<action>restore_all</action>
-							<action>start</action>
-							<action isee:run_name_to_set="EMB">set_run_name</action>
-						</actions>
-						<image width="256" height="256" size_to_parent="true">r../Graphics/Restore (2).png</image>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Load saved scenario" x="1011" y="227" width="25" height="25" isee:locked="true">
 						<actions>
@@ -8906,6 +8897,14 @@ Debates focus on timing, funding, and community consent.</text>
 							<action target="interface:2">navigate</action>
 						</actions>
 					</button>
+					<button transparent="true" label="" isee:tooltip="Removes all runs except EMB from graphs, restore all policies to default values." x="1011" y="197" width="25" height="25">
+						<actions>
+							<action>restore_all</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
+						</actions>
+						<image width="256" height="256" size_to_parent="true">r../Graphics/Restore (2).png</image>
+					</button>
 				</view>
 				<view isee:template_view="template:1" isee:name="Dashboard Other Metrics B&amp;W" background="#082A5C" page_width="1066" page_height="600" type="template">
 					<style>
@@ -8915,14 +8914,6 @@ Debates focus on timing, funding, and community consent.</text>
 						<actions>
 							<action target="interface:50">navigate</action>
 						</actions>
-					</button>
-					<button transparent="true" label="" isee:tooltip="Restore all inputs" x="1011" y="197" width="25" height="25" isee:locked="true">
-						<actions>
-							<action>restore_all</action>
-							<action>start</action>
-							<action isee:run_name_to_set="EMB">set_run_name</action>
-						</actions>
-						<image width="256" height="256" size_to_parent="true">r../Graphics/Restore (2).png</image>
 					</button>
 					<button transparent="true" label="" isee:tooltip="Load saved scenario" x="1011" y="227" width="25" height="25" isee:locked="true">
 						<actions>
@@ -9062,6 +9053,14 @@ Debates focus on timing, funding, and community consent.</text>
 						<actions>
 							<action target="interface:2">navigate</action>
 						</actions>
+					</button>
+					<button transparent="true" label="" isee:tooltip="RRemoves all runs except EMB from graphs, restore all policies to default values." x="1011" y="197" width="25" height="25">
+						<actions>
+							<action>restore_all</action>
+							<action>start</action>
+							<action isee:run_name_to_set="EMB">set_run_name</action>
+						</actions>
+						<image width="256" height="256" size_to_parent="true">r../Graphics/Restore (2).png</image>
 					</button>
 				</view>
 				<view isee:template_view="template:1" isee:name="Dashboard Input Template" background="#082A5C" page_width="1066" page_height="600" type="template">
