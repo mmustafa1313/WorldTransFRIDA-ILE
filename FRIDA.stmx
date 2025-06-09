@@ -4608,7 +4608,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4698,7 +4698,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 1" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 1" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4758,7 +4758,7 @@ Example: If emissions rise in the model, it&apos;s not because we told the model
 					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/feedback (1).png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:1" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4935,7 +4935,7 @@ Click the next page button &gt;</text>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6131,7 +6131,7 @@ Click the next page button &gt;</text_box>
 					<image width="1652" height="76" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 17.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6302,7 +6302,7 @@ By 2050, the world is at a critical crossroads between economic growth and clima
 Despite increased global GDP through technology and sustainable industries, surface temperatures have risen over 2°C, above pre-industrial levels, surpassing earlier warnings.  
 
 Climate change is now a daily reality, displacing millions in vulnerable regions and intensifying extreme weather. Balancing prosperity with environmental survival is a significant challenge in this era.</text_box>
-				<text_box z_index="34" background="#082A5C" font_color="#F5FFE0" font_size="14pt" padding="20" x="2" y="95" width="320" height="450" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_2150_Appearance">By 2150, the world faces significant economic and environmental challenges, with GDP no longer a reliable indicator due to financial crises, resource shortages, and power shifts. Climate change intensifies, with surface temperatures rising to 2.6°C. 
+				<text_box z_index="34" background="#082A5C" font_color="#F5FFE0" font_size="14pt" padding="20" x="2" y="95" width="320" height="450" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Text_2150_Appearance">By 2150, the world faces significant economic and environmental challenges, with GDP no longer a reliable indicator due to financial crises, resource shortages, and power shifts. Climate change intensifies, with surface temperatures rising to 3.6°C. 
 
 Chaotic energy transitions, delayed infrastructure, and supply disruptions cause economic crashes, while food and water scarcity make basic needs unaffordable. Extreme weather conditions, including heatwaves and wildfires, reinforce global inequality and instability.</text_box>
 				<text_box z_index="-10" background="#082A5C" font_color="#F5FFE0" font_size="14pt" padding="20" x="2" y="95" width="320" height="450" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Goal_Setting_Message_Appearance">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -6456,7 +6456,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					</isee:animation_location_transforms>
 				</isee:animation_object>
 			</view>
-			<view isee:template_view="template:6" isee:name="Dashboard GDP" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:6" isee:name="Dashboard GDP" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8420,7 +8420,7 @@ Debates focus on timing, funding, and community consent.</text>
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:1" isee:name="Credits" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:1" isee:name="Credits" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8483,12 +8483,12 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				<text_box z_index="-2" background="white" text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="22pt" appearance="transparent" x="3" y="5" width="1066" height="49">CREDITS</text_box>
 				<isee:shape z_index="16" background="#39557D" border_width="thin" border_style="none" transparent_background="false" x="1018" y="561.538" width="42" height="40" kind="rectangle"/>
 				<isee:shape background="#082A5C" border_width="thin" border_style="none" transparent_background="false" x="976" y="9" width="83" height="48.4762" kind="rectangle"/>
-				<graphics_frame fill="none" x="828.755" y="238" width="100" height="100">
+				<graphics_frame fill="none" x="770.755" y="251" width="100" height="100">
 					<image width="2439" height="1733" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA logo dark type.png</image>
 				</graphics_frame>
-				<button transparent="true" label="" isee:tooltip="" x="835.755" y="255" width="94" height="66">
+				<button transparent="true" label="" isee:tooltip="" x="773.755" y="242" width="206.49" height="102">
 					<actions>
-						<action url="https://worldtrans-horizon.eu/frida/">link</action>
+						<action url="https://github.com/metno/WorldTransFRIDA">link</action>
 					</actions>
 				</button>
 				<button z_index="17" transparent="true" label="" isee:tooltip="" x="12.02" y="566.538" width="21.98" height="24.962">
@@ -8496,6 +8496,17 @@ li.checked::marker { content: &quot;\2612&quot;; }
 						<action target="home_page">navigate</action>
 					</actions>
 				</button>
+				<graphics_frame fill="none" x="874.755" y="243" width="100" height="100">
+					<image width="240" height="240" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/github-mark.png</image>
+				</graphics_frame>
+				<text_box appearance="transparent" x="792.5" y="369" width="180.51" height="29">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/metno/WorldTransFRIDA&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:700; text-decoration: underline; color:#0000ff;&quot;&gt;FRIDA Source Code&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
 			</view>
 			<isee:templates>
 				<view isee:name="All Page Background" background="#082A5C" page_width="1066" page_height="600" type="template">
@@ -8528,6 +8539,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					</button>
 					<button transparent="true" label="" isee:tooltip="Goal Setting" x="36.3044" y="14.1949" width="21.3913" height="15.3327">
 						<actions>
+							<action>stop</action>
 							<action>restore_all</action>
 							<action target="interface:24">navigate</action>
 							<action isee:reset_after="end_of_sim" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.show_descriptive_text">control_entity</action>
