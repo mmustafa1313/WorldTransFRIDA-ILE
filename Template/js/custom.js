@@ -6,9 +6,9 @@
 		"Interface.Set STA Target Value": null,
 		"Interface.Set STA Target Year": null,
 		"Interface.Set GDPpp Target Value": null,
-		"Interface.Set GDPpp Target Value": null,
+		"Interface.Set GDPpp Target Year": null,
 		"Interface.Set Inequality Target Value": null,
-		"Interface.Set Inequality Target Value": null
+		"Interface.Set Inequality Target Year": null
 	};
 
 	function setVarsToKeep() {
