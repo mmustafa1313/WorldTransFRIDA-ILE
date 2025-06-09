@@ -5031,7 +5031,7 @@ Click the next page button &gt;</text>
 					<image width="1653" height="74" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 1.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="Office" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="Office" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5091,7 +5091,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 2.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="1st Policy Idea" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:3" isee:name="1st Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5123,7 +5123,7 @@ Click the next page button &gt;</text>
 					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 3.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="1st Policy Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="1st Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5134,10 +5134,11 @@ Click the next page button &gt;</text>
 and see the results...</text>
 					</popup>
 				</isee:annotation>
-				<button background="#D4E157" font_color="#082A5C" font_size="14pt" border_color="#8EAC00" border_width="5" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="371" y="218.868" width="126" height="39.1315">
+				<button background="#D4E157" font_color="#082A5C" font_size="14pt" border_color="#8EAC00" border_width="5" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="382.286" y="218.868" width="103.428" height="39.1315">
 					<actions>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="200" isee:entity="Government_Regulations.tax_on_CO2e_emissions_first_level">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="5" isee:entity="Government_Regulations.tax_on_CO2e_emissions_time_to_implement_first_level">control_entity</action>
+						<action isee:reset_after="never" isee:controller_value="1" isee:entity='Interface."1st_Policy_Office_Page"'>control_entity</action>
 						<action>run_to_end</action>
 						<action target="next_page">navigate</action>
 					</actions>
@@ -5147,11 +5148,8 @@ and see the results...</text>
 				<text_box background="#D5E5A4" vertical_text_align="center" font_color="#082A5C" font_size="14pt" padding="10" border_color="#D5E5A4" border_width="thin" border_style="solid" corner_radius="10" x="560" y="188" width="480" height="60" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Office_1_Button_4">
 The second goal is to ensure steady economic growth without experiencing major recessions or depressions.</text_box>
 				<isee:shape background="#F5FFE0" border_color="#9EAA85" opacity="0.94" transparent_background="false" corner_radius="10" x="550" y="108" width="500" height="220" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Office_1_Button_3" kind="rectangle"/>
-				<button z_index="14" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="true" label="" isee:tooltip="" x="1023.15" y="564.277" width="37.7143" height="29.4849">
+				<button z_index="14" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="true" label="" isee:tooltip="" x="1027" y="564.277" width="37.7143" height="29.4849" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."1st_Policy_Office_Page"'>
 					<actions>
-						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="200" isee:entity="Government_Regulations.tax_on_CO2e_emissions_first_level">control_entity</action>
-						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="5" isee:entity="Government_Regulations.tax_on_CO2e_emissions_time_to_implement_first_level">control_entity</action>
-						<action>run_to_end</action>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
@@ -5161,8 +5159,13 @@ The second goal is to ensure steady economic growth without experiencing major r
 				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 4.png</image>
 				</graphics_frame>
+				<isee:annotation z_index="22" border_width="0" border_style="none" transparent="true" isee:flat="false" popup_corner_radius="10" popup_background_color="#F5FFE0" popup_font_weight="bold" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="1027" y="563.584" width="33.288" height="30.8708" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."1st_Policy_Office_page_reminder"'>
+					<popup x="843.128" y="508.345" width="214.374" height="46.1878">
+						<text>Click on the implement button on the monitor. </text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:5" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:5" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5210,7 +5213,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 
 Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5294,7 +5297,7 @@ Click the next page button &gt;</text_box>
 					<image width="1653" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 6.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5331,7 +5334,7 @@ Click the next page button &gt;</text_box>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 7.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="2nd Policy Idea" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:3" isee:name="2nd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5531,7 +5534,7 @@ Click the next page button &gt;</text_box>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 8.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="2nd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="2nd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5543,6 +5546,7 @@ Click the next page button &gt;</text_box>
 				<button background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="true" label="" isee:tooltip="" x="386.357" y="220" width="95.286" height="38">
 					<actions>
 						<action>run_to_end</action>
+						<action isee:reset_after="never" isee:controller_value="1" isee:entity='Interface."2nd_Policy_Office_Page"'>control_entity</action>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
@@ -5566,17 +5570,21 @@ The second goal is to ensure steady economic growth without experiencing major r
 				<graphics_frame fill="none" x="357" y="210" width="154" height="66">
 					<image width="514" height="243" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Policy 2 Button.png</image>
 				</graphics_frame>
-				<button background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="true" label="" isee:tooltip="" x="1027" y="568.019" width="30.02" height="22">
+				<button z_index="23" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="true" label="" isee:tooltip="" x="1027" y="568.019" width="30.02" height="22" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."2nd_Policy_Office_Page"'>
 					<actions>
-						<action>run_to_end</action>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
 				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
 					<image width="1654" height="74" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 9.png</image>
 				</graphics_frame>
+				<isee:annotation z_index="22" border_width="0" border_style="none" transparent="true" isee:flat="false" popup_corner_radius="10" popup_background_color="#F5FFE0" popup_font_weight="bold" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="1027" y="563.584" width="33.288" height="30.8708" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."2nd_Policy_Office_Page_reminder"'>
+					<popup x="843.128" y="508.345" width="214.374" height="46.1878">
+						<text>Click on the implement button on the monitor. </text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:5" isee:name="Result Discussion 2nd Policy" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:5" isee:name="Result Discussion 2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5623,7 +5631,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 
 Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="2nd Policy Results" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="2nd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5695,7 +5703,7 @@ Click the next page button &gt;</text_box>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 11.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="3rd Policy" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5727,7 +5735,7 @@ Click the next page button &gt;</text>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 12.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:3" isee:name="3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:3" isee:name="3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5908,13 +5916,14 @@ Click the next page button &gt;</text>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 13.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="3rd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:4" isee:name="3rd Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<button background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="389" y="219.572" width="90" height="38.4283">
 					<actions>
 						<action>run_to_end</action>
+						<action isee:reset_after="never" isee:controller_value="1" isee:entity='Interface."3rd_Policy_Office_Page"'>control_entity</action>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
@@ -5938,17 +5947,21 @@ The second goal is to ensure steady economic growth without experiencing major r
 				<graphics_frame fill="none" x="357" y="210" width="154" height="66" isee:locked="true">
 					<image width="514" height="243" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Policy 3 Button.png</image>
 				</graphics_frame>
-				<button background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="1027" y="565.786" width="30.02" height="28.4283">
+				<button z_index="23" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="1027" y="565.786" width="30.02" height="28.4283" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."3rd_Policy_Office_Page"'>
 					<actions>
-						<action>run_to_end</action>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
 				<graphics_frame fill="none" x="250" y="559.019" width="566" height="40">
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 14.png</image>
 				</graphics_frame>
+				<isee:annotation z_index="22" border_width="0" border_style="none" transparent="true" isee:flat="false" popup_corner_radius="10" popup_background_color="#F5FFE0" popup_font_weight="bold" popup_text_align="center" popup_font_color="#082A5C" launcher_label="" show_by_default="false" hide_launcher="false" launch_on_hover="true" x="1025.37" y="564.565" width="33.288" height="30.8708" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity='Interface."3rd_Policy_Office_Page_Reminder"'>
+					<popup x="843.128" y="508.345" width="214.374" height="46.1878">
+						<text>Click on the implement button on the monitor. </text>
+					</popup>
+				</isee:annotation>
 			</view>
-			<view isee:template_view="template:5" isee:name="Result Discussion 3rd Policy" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:5" isee:name="Result Discussion 3rd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6010,7 +6023,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 
 Click the next page button &gt;</text_box>
 			</view>
-			<view isee:template_view="template:2" isee:name="3rd Policy Results" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="3rd Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6085,7 +6098,7 @@ Click the next page button &gt;</text_box>
 					<image width="1651" height="76" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar 16.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" type="interface">
+			<view isee:template_view="template:2" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
