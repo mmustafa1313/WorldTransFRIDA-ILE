@@ -4477,7 +4477,7 @@ Consumption Risk}</eqn>
 				<isee:placeholder x="1321.5" y="1393.58" name="Behavioral Placeholder"/>
 				<isee:placeholder x="1321.5" y="1559.72" name="Biosphere Indicators\nPlaceholder"/>
 			</view>
-			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" home_view="true" type="interface">
+			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="170" home_view="true" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4589,11 +4589,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
 						<action target="home_page">navigate</action>
 					</actions>
 				</button>
-				<button transparent="true" label="" isee:tooltip="Guided Demonstration" x="36.7056" y="13.5297" width="21.3913" height="14.1311">
-					<actions>
-						<action target="interface:6">navigate</action>
-					</actions>
-				</button>
 				<button transparent="true" label="" isee:tooltip="Navigation &amp; Terminology Guide" x="37.5001" y="37.9999" width="19" height="18">
 					<actions>
 						<action target="interface:2">navigate</action>
@@ -4605,6 +4600,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				<button z_index="17" transparent="true" label="" isee:tooltip="" x="163" y="441.5" width="39" height="30">
 					<actions>
 						<action target="interface:2">navigate</action>
+					</actions>
+				</button>
+				<button z_index="15" transparent="true" corner_radius="12" label="" isee:tooltip="" x="37.5811" y="10.8973" width="18.838" height="20.2054">
+					<actions>
+						<action target="interface:6">navigate</action>
+						<action>start</action>
+						<action isee:run_name_to_set="EMB">set_run_name</action>
 					</actions>
 				</button>
 			</view>
@@ -4935,7 +4937,7 @@ Click the next page button &gt;</text>
 					<image width="1654" height="73" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Progress Bar.png</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" zoom="170" type="interface">
+			<view isee:template_view="template:2" isee:name="Result Page EMB" background="#082A5C" page_width="1066" page_height="600" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5138,7 +5140,7 @@ and see the results...</text>
 					<actions>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="200" isee:entity="Government_Regulations.tax_on_CO2e_emissions_first_level">control_entity</action>
 						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="5" isee:entity="Government_Regulations.tax_on_CO2e_emissions_time_to_implement_first_level">control_entity</action>
-						<action isee:reset_after="never" isee:controller_value="1" isee:entity='Interface."1st_Policy_Office_Page"'>control_entity</action>
+						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity='Interface."1st_Policy_Office_Page"'>control_entity</action>
 						<action>run_to_end</action>
 						<action target="next_page">navigate</action>
 					</actions>
@@ -5546,7 +5548,7 @@ Click the next page button &gt;</text_box>
 				<button background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="true" label="" isee:tooltip="" x="386.357" y="220" width="95.286" height="38">
 					<actions>
 						<action>run_to_end</action>
-						<action isee:reset_after="never" isee:controller_value="1" isee:entity='Interface."2nd_Policy_Office_Page"'>control_entity</action>
+						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity='Interface."2nd_Policy_Office_Page"'>control_entity</action>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
@@ -5923,7 +5925,7 @@ Click the next page button &gt;</text>
 				<button background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="389" y="219.572" width="90" height="38.4283">
 					<actions>
 						<action>run_to_end</action>
-						<action isee:reset_after="never" isee:controller_value="1" isee:entity='Interface."3rd_Policy_Office_Page"'>control_entity</action>
+						<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity='Interface."3rd_Policy_Office_Page"'>control_entity</action>
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
