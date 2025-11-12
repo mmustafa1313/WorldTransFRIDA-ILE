@@ -5,8 +5,11 @@
 		<name>Land Use and Agriculture</name>
 		<uuid>fe807591-4e3d-4e2c-b464-70ec4fb12094</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="3632" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.1.1" isee:build_number="3772" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
+	<ai_information>
+		<status verified="false"/>
+	</ai_information>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
 		<stop>2100</stop>
@@ -16,7 +19,7 @@
 		<dim name="CropImpactsCase" size="11"/>
 		<dim name="Run" size="11"/>
 	</dimensions>
-	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_accessible="true" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
+	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="true" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_accessible="true" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -28,7 +31,9 @@
 			<isee:ignored_word>Edenhofer</isee:ignored_word>
 			<isee:ignored_word>hydropower</isee:ignored_word>
 			<isee:ignored_word>C3S</isee:ignored_word>
+			<isee:ignored_word>CLD</isee:ignored_word>
 		</isee:ignored_words>
+		<interface_template>D:/FRIDA/WorldTransFRIDA-ILE/Template</interface_template>
 	</isee:prefs>
 	<isee:multiplayer_settings include_chat="true" allow_observers="false" advance_time_increment="1" max_advance_time_in_ms="0" model_stops_when_players_drop="false" observer_start_page="home_page" enabled="false"/>
 	<isee:time_formats default_format="Builtin">
@@ -929,7 +934,7 @@ This isn&apos;t in the uncertainty analysis b/c it needs to be integrated with t
 				<connect to="Forest.young_forest_share" from="Land_Use.young_forest_share"/>
 				<connect2 to="Forest.young_forest_share" from="Land_Use.young_forest_share"/>
 			</module>
-			<module name="Biosphere\nIndicators" isee:label="" url="/Users/bschoenberg/code/WorldTrans/clones/mustafa/WorldTransFRIDA-ILE/FRIDA_Modules/Biosphere Indicators.itmx">
+			<module name="Biosphere\nIndicators" isee:label="" url="D:/FRIDA/WorldTransFRIDA-ILE/FRIDA_Modules/Biosphere Indicators.itmx">
 				<doc>This module contains quantifications of planetary boundaries (PBs). The PB framework emphasises the many different components of the Earth system that are strongly influenced by human activities. To quantify each PB, one or more control variables are selected, for which a safe operating space, a zone of increasing risk and a high risk zone are defined, delimited by the boundary value (transition from safe operating space to zone of increasing risk) and the high risk value (transition from zone of increasing risk to high risk zone), as defined in the module. Each PB is quantified in a separate sector within the module. For more details, consult the documentation of variables within the module.
 
 Reference: Eriksson, A. (n.d.). Using the FRIDA systems dynamics model to simulate planetary boundary interactions. In Prep.
@@ -1013,7 +1018,7 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="12.51pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1094,10 +1099,10 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 					<to>Albedo</to>
 				</connector>
 				<module x="128.17" y="308.917" name="Animal Products"/>
-				<module x="280.17" y="440.5" name="Food Demand"/>
+				<module x="280.17" y="438.5" name="Food Demand"/>
 				<stock font_style="italic" font_weight="bold" x="1475.5" y="206.913" name="Mature Forest"/>
 				<stock font_style="italic" font_weight="bold" x="1313.75" y="330.25" name="Recovering Forest"/>
-				<module x="205.17" y="151.917" name="Land Use"/>
+				<module x="205.17" y="148.917" name="Land Use"/>
 				<stock font_style="italic" font_weight="bold" x="1367.92" y="220.663" name="Grassland"/>
 				<connector uid="12" angle="352.209">
 					<from>Grassland</from>
@@ -1106,24 +1111,24 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 				<module x="389.75" y="533.5" name="Land Nutrients"/>
 				<module label_side="top" x="407.17" y="203.917" name="Freshwater"/>
 				<stock font_style="italic" font_weight="bold" x="1601.75" y="236.5" name="Cropland"/>
-				<connector uid="13" isee:thickness="2" angle="212.292">
+				<connector uid="13" isee:thickness="2" angle="212.718">
 					<from>Land_Use</from>
 					<to>Animal_Products</to>
 				</connector>
-				<connector uid="14" isee:thickness="2" angle="45.456">
+				<connector uid="14" isee:thickness="2" angle="45.8823">
 					<from>Animal_Products</from>
 					<to>Land_Use</to>
 				</connector>
-				<connector uid="15" isee:thickness="2" angle="291.814">
+				<connector uid="15" isee:thickness="2" angle="292.248">
 					<from>Animal_Products</from>
 					<to>Food_Demand</to>
 				</connector>
-				<connector uid="16" isee:thickness="2" angle="113.255">
+				<connector uid="16" isee:thickness="2" angle="113.689">
 					<from>Food_Demand</from>
 					<to>Animal_Products</to>
 				</connector>
 				<module x="398.92" y="308.917" name="Crop"/>
-				<connector uid="18" isee:thickness="2" angle="103.569">
+				<connector uid="18" isee:thickness="2" angle="103.038">
 					<from>Crop</from>
 					<to>Land_Use</to>
 				</connector>
@@ -1131,7 +1136,7 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 					<from>Land_Nutrients</from>
 					<to>Crop</to>
 				</connector>
-				<connector uid="21" isee:thickness="2" angle="28.216">
+				<connector uid="21" isee:thickness="2" angle="27.7792">
 					<from>Food_Demand</from>
 					<to>Crop</to>
 				</connector>
@@ -1139,7 +1144,7 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 					<from>Freshwater</from>
 					<to>Crop</to>
 				</connector>
-				<connector uid="30" isee:thickness="2" angle="300.97" isee:autocreated="true">
+				<connector uid="30" isee:thickness="2" angle="300.439" isee:autocreated="true">
 					<from>Land_Use</from>
 					<to>Crop</to>
 				</connector>
@@ -1151,15 +1156,15 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 					<from>Crop</from>
 					<to>Land_Nutrients</to>
 				</connector>
-				<connector uid="49" isee:thickness="2" angle="9.68454" isee:autocreated="true">
+				<connector uid="49" isee:thickness="2" angle="8.8894" isee:autocreated="true">
 					<from>Land_Use</from>
 					<to>Freshwater</to>
 				</connector>
-				<connector uid="51" isee:thickness="2" angle="298.877" isee:autocreated="true">
+				<connector uid="51" isee:thickness="2" angle="298.829" isee:autocreated="true">
 					<from>Land_Use</from>
 					<to>Food_Demand</to>
 				</connector>
-				<connector uid="70" isee:thickness="2" angle="205.12" isee:autocreated="true">
+				<connector uid="70" isee:thickness="2" angle="204.683" isee:autocreated="true">
 					<from>Crop</from>
 					<to>Food_Demand</to>
 				</connector>
@@ -1186,11 +1191,11 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 					<from>Crop</from>
 					<to>Soil</to>
 				</connector>
-				<connector uid="77" isee:thickness="2" angle="25.0893" isee:autocreated="true">
+				<connector uid="77" isee:thickness="2" angle="24.6111" isee:autocreated="true">
 					<from>Land_Use</from>
 					<to>Soil</to>
 				</connector>
-				<connector uid="78" isee:thickness="2" angle="349.038" isee:autocreated="true">
+				<connector uid="78" isee:thickness="2" angle="348.644" isee:autocreated="true">
 					<from>Food_Demand</from>
 					<to>Grass</to>
 				</connector>
@@ -1198,7 +1203,7 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 					<from>Crop</from>
 					<to>Grass</to>
 				</connector>
-				<connector uid="80" isee:thickness="2" angle="44.3259" isee:autocreated="true">
+				<connector uid="80" isee:thickness="2" angle="43.668" isee:autocreated="true">
 					<from>Land_Use</from>
 					<to>Forest</to>
 				</connector>
@@ -1211,7 +1216,7 @@ Corresponding author: Axel Eriksson, ax3635er-s@student.lu.se or j.axel.e.erikss
 					<from>Grass</from>
 					<to>Biosphere_Indicators</to>
 				</connector>
-				<connector uid="83" color="#DBDBDB" font_color="#DBDBDB" isee:thickness="2" angle="50.7413" isee:autocreated="true">
+				<connector uid="83" color="#DBDBDB" font_color="#DBDBDB" isee:thickness="2" angle="50.3796" isee:autocreated="true">
 					<from>Land_Use</from>
 					<to>Biosphere_Indicators</to>
 				</connector>
@@ -1780,11 +1785,11 @@ Not in sensi analysis because this is so far outside the range of where calibrat
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -1814,7 +1819,7 @@ Not in sensi analysis because this is so far outside the range of where calibrat
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="643.571" isee:scroll_y="326.429" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="2" isee:page_rows="2" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -3015,11 +3020,11 @@ harvest_index_for_food_crops * (1 - Fraction_of_crop_production_for_energy - Fra
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -3049,7 +3054,7 @@ harvest_index_for_food_crops * (1 - Fraction_of_crop_production_for_energy - Fra
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="5" isee:page_rows="6" isee:scroll_x="946" isee:scroll_y="954" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="6" isee:scroll_x="946" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4218,11 +4223,11 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -4252,7 +4257,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="2" isee:page_rows="3" isee:scroll_x="15" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="2" isee:page_rows="3" isee:scroll_x="15" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -5403,11 +5408,11 @@ Limits for extreme conditions in no feedback cases</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -5437,7 +5442,7 @@ Limits for extreme conditions in no feedback cases</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="13" isee:scroll_y="82" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="3" isee:page_rows="3" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -6876,11 +6881,11 @@ ELSE
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -7681,11 +7686,11 @@ Limits for extreme conditions in no feedback cases</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -8346,11 +8351,11 @@ An external reference point - this can be converted to the initial value for fer
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -9654,11 +9659,11 @@ Used for policy implementation only.</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -9688,7 +9693,7 @@ Used for policy implementation only.</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="3" isee:page_rows="2" isee:scroll_x="810" isee:scroll_y="342" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="3" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -10662,11 +10667,11 @@ Used for policy implementation only.</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -11163,11 +11168,11 @@ Used for policy implementation only.</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -11820,11 +11825,11 @@ Jannes - degraded land productivity reduction is just a factor to use grassland 
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -12718,11 +12723,11 @@ https://doi.org/10.1126/science.1201609</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -13702,11 +13707,11 @@ https://doi.org/10.1126/science.1201609</doc>
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -14702,11 +14707,11 @@ Schaphoff, S., von Bloh, W., Rammig, A., Thonicke, K., Biemans, H., Forkel, M., 
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
@@ -14984,11 +14989,11 @@ litter_to_soil_carbon_mature_forest + litter_to_soil_carbon_young_forest + grass
 				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
 				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
 					<isee:series_styles>
-						<isee:series_style color="fuchsia" thickness="1"/>
-						<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-						<isee:series_style color="#39FF14" thickness="1" pen_style="dotted"/>
-						<isee:series_style color="yellow" thickness="1" pen_style="dashed"/>
-						<isee:series_style color="#FF5F00" thickness="1"/>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
 						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
 					</isee:series_styles>
 				</graph>
