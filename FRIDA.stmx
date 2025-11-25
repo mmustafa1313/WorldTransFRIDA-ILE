@@ -3556,6 +3556,9 @@ Consumption Risk}</eqn>
 			<module name="CLD Policy 2" isee:label="">
 				<format scale_by="auto"/>
 			</module>
+			<module name="CLD Policy 1 V2" isee:label="">
+				<format scale_by="auto"/>
+			</module>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -4488,6 +4491,7 @@ Consumption Risk}</eqn>
 				<isee:placeholder x="1321.5" y="1559.72" name="Biosphere Indicators\nPlaceholder"/>
 				<module x="818" y="403.25" name="CLD Policy 1"/>
 				<module x="925" y="403.25" name="CLD Policy 2"/>
+				<module x="818" y="482.25" name="CLD Policy 1 V2"/>
 			</view>
 			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="115" home_view="true" type="interface">
 				<style>
@@ -4523,7 +4527,7 @@ Consumption Risk}</eqn>
 				</graphics_frame>
 				<button z_index="17" transparent="true" label="" isee:tooltip="" x="993.542" y="549.283" width="61.4445" height="24.962">
 					<actions>
-						<action target="interface:64">navigate</action>
+						<action target="interface:80">navigate</action>
 					</actions>
 				</button>
 				<isee:shape border_color="white" opacity="0.35" transparent_background="false" x="0" y="518" width="1066" height="10" kind="hline"/>
@@ -4532,7 +4536,7 @@ Consumption Risk}</eqn>
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<text_box z_index="-2" background="#F6FFE0" font_size="14pt" padding="20" border_color="white" border_width="2" border_style="solid" corner_radius="13" x="18.045" y="90.8531" width="1029.91" height="455.219" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-2" background="#F5FFE0" font_size="14pt" padding="20" border_color="white" border_width="2" border_style="solid" corner_radius="13" x="18.045" y="90.8531" width="1029.91" height="455.219" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -4948,7 +4952,7 @@ The second goal is to ensure steady economic growth without experiencing major r
 				<isee:shape z_index="15" background="#29446B" border_color="white" border_width="0.1" opacity="0.3" transparent_background="false" corner_radius="15" x="554" y="90" width="522" height="256" isee:locked="true" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Office_1_Button_3" kind="rectangle"/>
 				<isee:shape z_index="-16" background="black" border_color="white" border_width="thin" border_style="none" opacity="0.15" transparent_background="false" corner_radius="10" x="570.5" y="340.63" width="501" height="10" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Office_1_Button_3" kind="rectangle"/>
 			</view>
-			<view isee:template_view="template:6" isee:name="1st Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="1st Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4983,7 +4987,7 @@ Click the next page button &gt;</text>
 				<isee:shape z_index="-11" background="#29446B" border_color="white" border_width="0.1" opacity="0.3" transparent_background="false" corner_radius="15" x="-12" y="95" width="539" height="205" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="-13" background="black" border_color="white" border_width="thin" border_style="none" opacity="0.15" transparent_background="false" corner_radius="10" x="-0.5" y="294.63" width="511" height="10" kind="rectangle"/>
 			</view>
-			<view isee:template_view="template:7" isee:name="1st Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:7" isee:name="1st Policy Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5037,7 +5041,7 @@ kindly wait...</text_box>
 
 and observe the results...</text_box>
 			</view>
-			<view isee:template_view="template:8" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:8" isee:name="Result Discussion 1st Attempt" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5088,7 +5092,7 @@ Click the next page button &gt;</text_box>
 					<image width="610" height="720" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Flashing Finger Pointer.gif</image>
 				</graphics_frame>
 			</view>
-			<view isee:template_view="template:4" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="1st Policy Results" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5172,7 +5176,7 @@ Click the next page button &gt;</text_box>
 				<isee:shape z_index="-11" background="#29446B" border_color="white" border_width="0.1" opacity="0.3" transparent_background="false" corner_radius="15" x="-12" y="95" width="791" height="119" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="15" border_color="#989898" border_width="0.5" transparent_background="false" x="0" y="281.941" width="1066" height="14.4395" isee:locked="true" kind="hline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="2nd Policy" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5969,7 +5973,7 @@ Click the next page button &gt;</text_box>
 				</graphics_frame>
 				<isee:shape z_index="15" border_color="#989898" border_width="0.5" transparent_background="false" x="0" y="187.941" width="1066" height="14.4395" isee:locked="true" kind="hline"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:4" isee:name="Storytelling Final Page" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6050,7 +6054,7 @@ Click the next page button &gt;</text_box>
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+			<view isee:template_view="template:1" isee:name="Model Behavior and Goal Setting" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6297,12 +6301,12 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				</graphics_frame>
 				<button transparent="true" isee:native_tooltip="false" isee:highlight_on_hover="true" isee:highlight_color="#36557C" label="" isee:tooltip="Causal Pathways" x="184.5" y="15" width="21.5" height="21.5" isee:locked="true">
 					<actions>
-						<action target="interface:60">navigate</action>
+						<action target="interface:59">navigate</action>
 					</actions>
 					<image width="128" height="128" size_to_parent="true">r../Graphics/loop-arrow 2.png</image>
 				</button>
 			</view>
-			<view isee:template_view="template:9" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:9" isee:name="Dashboard STA" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6476,7 +6480,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					<image width="45" height="45" size_to_parent="true">r../Graphics/confidence Light.svg</image>
 				</button>
 			</view>
-			<view isee:template_view="template:9" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:9" isee:name="Dashboard Inequality" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6561,7 +6565,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				</button>
 				<text_box text_align="center" vertical_text_align="center" font_color="#F5FFE0" font_size="14pt" appearance="transparent" x="352.364" y="60.5402" width="170.217" height="38.87">Real GDP Per Person</text_box>
 			</view>
-			<view isee:template_view="template:11" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:11" isee:name="Other Metrics Climate" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -7998,7 +8002,7 @@ Debates focus on tax thresholds, rates, enforcement challenges, and economic imp
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:13" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:13" isee:name="Dashboard Inputs - SLR" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8367,79 +8371,83 @@ Debates focus on timing, funding, and community consent.</text>
 					</popup>
 				</isee:annotation>
 			</view>
-			<view isee:template_view="template:3" isee:name="Causal Pathways Menu" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
-				<style/>
+			<view isee:template_view="template:3" isee:name="Causal Pathways Menu" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
 				<isee:shape z_index="24" background="#90A4AE" opacity="0.3" transparent_background="false" corner_radius="11" x="378" y="100" width="302" height="200" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="25" background="#90A4AE" border_width="thin" border_style="none" opacity="0.3" transparent_background="false" corner_radius="11" x="50" y="100" width="302" height="200" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="26" background="#90A4AE" border_width="thin" border_style="none" opacity="0.3" transparent_background="false" corner_radius="11" x="714" y="100" width="302" height="200" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="28" background="#90A4AE" border_width="thin" border_style="none" opacity="0.3" transparent_background="false" corner_radius="11" x="50" y="330" width="302" height="200" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="28" background="#90A4AE" border_width="thin" border_style="none" opacity="0.3" transparent_background="false" corner_radius="11" x="382" y="330" width="302" height="200" isee:locked="true" kind="rectangle"/>
 				<isee:shape z_index="27" background="#90A4AE" border_width="thin" border_style="none" opacity="0.3" transparent_background="false" corner_radius="11" x="714" y="330" width="302" height="200" isee:locked="true" kind="rectangle"/>
-				<button z_index="30" background="#7A8B94" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Energy Transition 
+				<button z_index="30" background="#90A4AE" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Energy Transition 
 &amp;  Economic Ripple Effects" isee:tooltip="" x="52" y="102" width="298" height="196">
 					<actions>
 						<action target="interface:60">navigate</action>
 					</actions>
 				</button>
-				<button z_index="30" background="#7A8B94" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Afforestation, Diet Shifts &amp; Climate Dynamics (CLD Confirmation pending)" isee:tooltip="" x="380" y="102" width="298" height="196">
+				<button z_index="30" background="#90A4AE" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Energy Transition 
+&amp;  Economic Ripple Effects - V2" isee:tooltip="" x="380" y="102" width="298" height="196">
+					<actions>
+						<action target="interface:64">navigate</action>
+					</actions>
+				</button>
+				<button z_index="30" background="#90A4AE" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Next CLD Interpretation" isee:tooltip="" x="52" y="332" width="298" height="196">
 					<actions>
 						<action>unknown</action>
 					</actions>
 				</button>
-				<button z_index="30" background="#7A8B94" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Next CLD Interpretation" isee:tooltip="" x="52" y="332" width="298" height="196">
+				<button z_index="30" background="#90A4AE" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Next CLD Interpretation" isee:tooltip="" x="384" y="332" width="298" height="196">
 					<actions>
 						<action>unknown</action>
 					</actions>
 				</button>
-				<button z_index="30" background="#7A8B94" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Next CLD Interpretation" isee:tooltip="" x="384" y="332" width="298" height="196">
+				<button z_index="30" background="#90A4AE" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Next CLD Interpretation" isee:tooltip="" x="716" y="332" width="298" height="196">
 					<actions>
 						<action>unknown</action>
 					</actions>
 				</button>
-				<button z_index="30" background="#7A8B94" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Next CLD Interpretation" isee:tooltip="" x="716" y="332" width="298" height="196">
+				<button z_index="30" background="#90A4AE" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Afforestation, Diet Shifts &amp; Climate Dynamics (CLD Confirmation pending)" isee:tooltip="" x="716" y="102" width="298" height="196">
 					<actions>
 						<action>unknown</action>
 					</actions>
 				</button>
-				<button z_index="30" background="#7A8B94" font_size="22pt" corner_radius="11" isee:highlight_on_hover="true" isee:highlight_color="#D3F0FF" label="Next CLD Interpretation" isee:tooltip="" x="716" y="102" width="298" height="196">
-					<actions>
-						<action>unknown</action>
-					</actions>
-				</button>
+				<text_box z_index="-6" background="white" text_align="center" vertical_text_align="center" font_color="white" font_size="20pt" appearance="transparent" x="0" y="3" width="1066" height="40">Causal Pathways Explorer</text_box>
+				<text_box z_index="-6" background="white" text_align="center" vertical_text_align="center" font_color="white" font_size="16pt" appearance="transparent" x="0" y="50" width="1066" height="40">Choose a pathway to understand how different feedback structures shape system behavior</text_box>
 			</view>
-			<view isee:template_view="template:3" isee:name="CLD 1A Narrative" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="CLD 1 V1-A Narrative" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<isee:model_view z_index="26" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="true" include_documentation="true">
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1"/>
 					<isee:visible_list>
-						<item uid="CLD_Policy_1.20"/>
-						<item uid="CLD_Policy_1.1"/>
-						<item uid="CLD_Policy_1.35"/>
+						<item uid="CLD_Policy_1.33"/>
 						<item uid="CLD_Policy_1.19"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1.20"/>
 						<entity name="carbon_tax"/>
 						<entity name="speed_of_energy_transition"/>
-						<entity name='"temperature_(STA)"'/>
-						<item uid="CLD_Policy_1.33"/>
-						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1.35"/>
+						<item uid="CLD_Policy_1.1"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<item uid="CLD_Policy_1.1"/>
-						<item uid="CLD_Policy_1.20"/>
-						<item uid="CLD_Policy_1.19"/>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<entity name="speed_of_energy_transition"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<entity name="carbon_tax"/>
 						<entity name='"temperature_(STA)"'/>
+						<entity name="carbon_tax"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1.20"/>
 						<item uid="CLD_Policy_1.33"/>
-						<item uid="CLD_Policy_1.3"/>
+						<item uid="CLD_Policy_1.19"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1.1"/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
-				<text_box background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8449,7 +8457,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
-				<text_box font_size="10pt" padding="10" appearance="transparent" x="26.087" y="91.5217" width="372.174" height="425.652">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-7" font_size="10pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8463,18 +8471,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;As the transition gathers pace, fossil-fuel companies face lower profitability. Some of their assets lose value, and parts of the industry become stranded. These stranded assets lead to bankruptcies, showing the financial cost of moving away from carbon-intensive energy.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;The system adjusts to new incentives as carbon use is discouraged and clean innovation expands. This shift reduces emissions and slows the rise in global temperature. In FRIDA, this structure represents the beginning of a larger chain of feedback where economic policy shapes technological change and sets the stage for financial and social responses that follow.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
-				<button z_index="25" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="1022.65" y="564.805" width="30.02" height="28.4283">
-					<actions>
-						<action target="interface:61">navigate</action>
-					</actions>
-				</button>
 				<isee:shape z_index="24" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="3.3913" y="561.821" width="74.7826" height="35" kind="rectangle"/>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="532.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
 			</view>
-			<view isee:template_view="template:3" isee:name="CLD 1B - Narrative" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="CLD 1 V1-B - Narrative" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<text_box background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-6" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8485,7 +8489,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50" isee:locked="true">Story 1B – Financial and Economic Ripple Effects</text_box>
-				<text_box font_size="10pt" padding="10" appearance="transparent" x="20" y="75" width="440" height="470">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-5" font_size="10pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8501,68 +8505,60 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;When investment expands faster than overall economic growth, the surge in financial activity creates demand pressures that exceed supply capacity. Prices and wages rise, leading to inflation. At the same time, if economic growth weakens, even modest investment can appear excessive, intensifying inflationary trends.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;These dynamics together describe how financial stability, investment, and employment interact within the FRIDA system — forming the economic backbone that links the transition to broader social and fiscal outcomes.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
-				<button z_index="23" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="1027" y="565.786" width="30.02" height="28.4283">
-					<actions>
-						<action target="interface:62">navigate</action>
-					</actions>
-				</button>
-				<button z_index="23" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="8" y="564.805" width="30.02" height="28.4283">
-					<actions>
-						<action target="interface:60">navigate</action>
-					</actions>
-				</button>
-				<isee:model_view x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="true" include_documentation="true">
+				<isee:model_view x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1"/>
 					<isee:visible_list>
-						<item uid="CLD_Policy_1.34"/>
-						<item uid="CLD_Policy_1.26"/>
-						<item uid="CLD_Policy_1.19"/>
-						<entity name="government_revenue"/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1.18"/>
-						<entity name="carbon_tax"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1.32"/>
-						<entity name="speed_of_energy_transition"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1.33"/>
+						<item uid="CLD_Policy_1.17"/>
+						<item uid="CLD_Policy_1.18"/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
 						<entity name="inflation"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1.1"/>
-						<item uid="CLD_Policy_1.20"/>
-						<item uid="CLD_Policy_1.17"/>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<item uid="CLD_Policy_1.9"/>
-						<item uid="CLD_Policy_1.33"/>
+						<item uid="CLD_Policy_1.26"/>
 						<item uid="CLD_Policy_1.21"/>
+						<entity name="unemployment"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1.9"/>
+						<item uid="CLD_Policy_1.20"/>
+						<entity name="investment"/>
+						<entity name="carbon_tax"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1.19"/>
+						<item uid="CLD_Policy_1.32"/>
 						<entity name="bank_bailouts"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1.34"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1.26"/>
-						<entity name="government_revenue"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1.18"/>
-						<item uid="CLD_Policy_1.21"/>
-						<entity name="bank_bailouts"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1.17"/>
-						<item uid="CLD_Policy_1.9"/>
-						<item uid="CLD_Policy_1.32"/>
-						<item uid="CLD_Policy_1.34"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name="inflation"/>
+						<item uid="CLD_Policy_1.18"/>
+						<item uid="CLD_Policy_1.26"/>
+						<entity name="investment"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1.9"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1.21"/>
+						<item uid="CLD_Policy_1.32"/>
+						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1.17"/>
+						<item uid="CLD_Policy_1.34"/>
+						<entity name="government_revenue"/>
 					</isee:highlight_list>
 				</isee:model_view>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="532.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
 			</view>
-			<view isee:template_view="template:3" isee:name="CLD 1C - Narrative" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="CLD 1C - Narrative" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50" isee:locked="true">Story 1C – Fiscal Response and Inequality Dynamics
 </text_box>
-				<text_box background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-6" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8572,7 +8568,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
-				<text_box font_size="10pt" padding="10" appearance="transparent" x="20" y="75" width="440" height="470">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-5" font_size="10pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="445">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8592,93 +8588,82 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;When the tax burden shifts toward wages rather than profits, inequality increases. Workers face higher deductions from their income, while businesses retain more profits, widening the divide between labor and capital income.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;Together, these relationships describe how fiscal policies and economic performance shape the distribution of income in FRIDA — linking public finance, employment, and equity within the broader system of transition.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
-				<button z_index="23" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="1027" y="565.786" width="30.02" height="28.4283">
-					<actions>
-						<action target="interface:63">navigate</action>
-					</actions>
-				</button>
-				<button z_index="23" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="8" y="564.805" width="30.02" height="28.4283">
-					<actions>
-						<action target="interface:61">navigate</action>
-					</actions>
-				</button>
-				<isee:model_view x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="true" include_documentation="true">
+				<isee:model_view x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1"/>
 					<isee:visible_list>
-						<item uid="CLD_Policy_1.5"/>
-						<item uid="CLD_Policy_1.22"/>
-						<item uid="CLD_Policy_1.17"/>
-						<entity name="ratio_of_wage_taxes_to_profit_taxes"/>
-						<item uid="CLD_Policy_1.34"/>
-						<item uid="CLD_Policy_1.3"/>
-						<entity name="transfer_payments"/>
-						<item uid="CLD_Policy_1.19"/>
 						<entity name="wage_tax_rate"/>
-						<entity name="government_revenue"/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1.27"/>
-						<entity name="speed_of_energy_transition"/>
-						<item uid="CLD_Policy_1.18"/>
-						<entity name="carbon_tax"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<entity name="inflation"/>
-						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1.4"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1.25"/>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<item uid="CLD_Policy_1.29"/>
-						<item uid="CLD_Policy_1.9"/>
-						<item uid="CLD_Policy_1.11"/>
-						<item uid="CLD_Policy_1.26"/>
-						<entity name="inequality"/>
-						<item uid="CLD_Policy_1.31"/>
-						<item uid="CLD_Policy_1.21"/>
 						<item uid="CLD_Policy_1.33"/>
+						<item uid="CLD_Policy_1.26"/>
+						<item uid="CLD_Policy_1.28"/>
 						<entity name="profit_tax_rate"/>
 						<entity name='"temperature_(STA)"'/>
-						<item uid="CLD_Policy_1.30"/>
-						<entity name="bank_bailouts"/>
-						<item uid="CLD_Policy_1.24"/>
-						<item uid="CLD_Policy_1.28"/>
-						<entity name="unemployment"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="ratio_of_wage_taxes_to_profit_taxes"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1.31"/>
 						<item uid="CLD_Policy_1.1"/>
+						<item uid="CLD_Policy_1.11"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1.22"/>
+						<item uid="CLD_Policy_1.21"/>
 						<item uid="CLD_Policy_1.20"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1.25"/>
+						<entity name="bank_bailouts"/>
+						<entity name="inequality"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1.18"/>
+						<item uid="CLD_Policy_1.24"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1.9"/>
+						<entity name="unemployment"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1.17"/>
+						<item uid="CLD_Policy_1.30"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1.19"/>
+						<item uid="CLD_Policy_1.4"/>
+						<item uid="CLD_Policy_1.5"/>
+						<entity name="transfer_payments"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1.27"/>
+						<item uid="CLD_Policy_1.34"/>
+						<item uid="CLD_Policy_1.29"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<entity name="carbon_tax"/>
-						<item uid="CLD_Policy_1.5"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1.27"/>
-						<item uid="CLD_Policy_1.22"/>
-						<entity name="government_revenue"/>
-						<entity name="wage_tax_rate"/>
-						<item uid="CLD_Policy_1.4"/>
-						<item uid="CLD_Policy_1.9"/>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<item uid="CLD_Policy_1.29"/>
-						<entity name="ratio_of_wage_taxes_to_profit_taxes"/>
-						<item uid="CLD_Policy_1.25"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1.28"/>
+						<item uid="CLD_Policy_1.25"/>
+						<entity name="profit_tax_rate"/>
+						<entity name="ratio_of_wage_taxes_to_profit_taxes"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1.4"/>
+						<entity name="wage_tax_rate"/>
 						<item uid="CLD_Policy_1.11"/>
 						<item uid="CLD_Policy_1.31"/>
-						<entity name="inequality"/>
-						<item uid="CLD_Policy_1.3"/>
-						<entity name="transfer_payments"/>
-						<entity name="bank_bailouts"/>
-						<item uid="CLD_Policy_1.24"/>
-						<entity name="profit_tax_rate"/>
+						<item uid="CLD_Policy_1.22"/>
 						<item uid="CLD_Policy_1.30"/>
+						<entity name="bank_bailouts"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1.27"/>
+						<item uid="CLD_Policy_1.5"/>
+						<entity name="transfer_payments"/>
+						<item uid="CLD_Policy_1.29"/>
+						<item uid="CLD_Policy_1.24"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<entity name="inequality"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1.9"/>
+						<entity name="carbon_tax"/>
 					</isee:highlight_list>
 				</isee:model_view>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
 			</view>
 			<view isee:template_view="template:3" isee:name="CLD 1D - Narrative" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50" isee:locked="true">Story 1D – Policy, Revenue, and Distributional Outcomes</text_box>
-				<text_box background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-6" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8688,7 +8673,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
-				<text_box font_size="10pt" padding="10" appearance="transparent" x="20" y="75" width="440" height="470">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-5" font_size="10pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="445" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -8708,30 +8693,948 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;However, when wage taxes rise faster than profit taxes, inequality increases. Workers carry a heavier tax burden while firms retain a larger share of income, widening the gap between labor and capital earnings.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:8pt;&quot;&gt;Together, these processes describe how fiscal policy links climate action to social outcomes. Stronger revenues enable redistribution that promotes fairness, while weak public finances or unbalanced taxation can amplify inequality—closing the loop that connects policy, economy, and society within FRIDA’s structure.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
-				<button z_index="23" background="white" font_size="18pt" border_width="2" transparent="true" corner_radius="40" isee:flat="false" label="" isee:tooltip="" x="8" y="564.805" width="30.02" height="28.4283">
-					<actions>
-						<action target="interface:62">navigate</action>
-					</actions>
-				</button>
-				<isee:model_view x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" show_ltm_table="true" include_documentation="true">
+				<isee:model_view x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1"/>
 					<isee:highlight_list>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1.7"/>
-						<item uid="CLD_Policy_1.2"/>
-						<entity name="government_revenue"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1.6"/>
-						<item uid="CLD_Policy_1.12"/>
+						<entity name="inflation"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name='"temperature_(STA)"'/>
 						<item uid="CLD_Policy_1.10"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<entity name="inflation"/>
+						<item uid="CLD_Policy_1.6"/>
+						<item uid="CLD_Policy_1.2"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1.12"/>
+						<item uid="CLD_Policy_1.7"/>
+						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1.16"/>
+						<entity name="bankruptcies_stranded_assets"/>
 					</isee:highlight_list>
 				</isee:model_view>
+				<isee:shape z_index="16" background="#2C4973" border_width="thin" border_style="none" transparent_background="false" x="1016.09" y="562.087" width="46.9565" height="35" block_mouse="true" kind="rectangle"/>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
 			</view>
-			<view isee:template_view="template:1" isee:name="Credits" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:3" isee:name="CLD 1 V2-Structure 1" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+					</isee:visible_list>
+					<isee:highlight_list/>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Growth–Revenue Reinforcing Loop 
+
+When the economy grows, people earn more and businesses generate more activity. This increases the amount of tax collected by the government. With more revenue available, the government can invest in services, infrastructure, and stability, which supports additional economic growth. The cycle continues to reinforce itself as long as growth remains strong.</text_box>
+				<isee:shape z_index="24" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="3.3913" y="561.821" width="74.7826" height="35" block_mouse="true" kind="rectangle"/>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2-Structure 2" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Investment–Growth Reinforcing Loop
+
+When investment increases, companies build new facilities, adopt new technologies, and expand production. These improvements raise economic growth. A stronger economy boosts confidence, which encourages even more investment. This creates a reinforcing cycle that strengthens economic performance.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2-Structure 3" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Growth–Employment Reinforcing Loop
+
+A growing economy attracts new investment. Additional investment creates new jobs and reduces unemployment. As more people gain stable income, overall demand in the economy increases. This rise in demand pushes economic growth even higher, reinforcing the cycle.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2-Structure 4" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="unemployment"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="government_revenue"/>
+						<entity name="unemployment"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Growth–Employment–Revenue Reinforcing Loop
+
+When economic growth encourages more investment, employment rises and fewer people are out of work. With more individuals earning income and more businesses performing well, the government collects more tax revenue. This additional revenue can be used to support public investments that strengthen the economy further. The loop connects growth, employment, and government finances in a reinforcing cycle.</text_box>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="unemployment"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Growth–Employment–Revenue Reinforcing Loop
+
+When economic growth encourages more investment, employment rises and fewer people are out of work. With more individuals earning income and more businesses performing well, the government collects more tax revenue. This additional revenue can be used to support public investments that strengthen the economy further. The loop connects growth, employment, and government finances in a reinforcing cycle.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2-Structure 5" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="inflation"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="inflation"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.18"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Relative Investment–Inflation Reinforcing Loop
+
+When economic growth slows but investment continues to rise, the economy becomes stretched. Too much investment relative to overall output raises production costs and creates inflationary pressure. Higher inflation weakens economic activity even more. This reinforces the downward trend in growth and makes recovery harder.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2-Structure 6" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name="investment"/>
+						<entity name="inflation"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="unemployment"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<entity name="inflation"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name="investment"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Inflation Balancing Loop
+
+When the economy grows quickly, investment rises at an accelerated pace. If investment grows faster than the rest of the economy, inflation begins to increase. Higher inflation reduces purchasing power and slows economic activity. This natural slowdown brings growth back toward a more stable level, balancing the system.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2-Structure 7" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="unemployment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="inflation"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">Climate Damage Balancing Loop
+
+Higher economic output leads to greater energy use and more emissions. As emissions rise, global temperature increases. A hotter climate disrupts economic activity through physical damages, lower productivity, and higher costs. These climate impacts slow the economy, creating a balancing relationship between economic growth and climate stress.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Guide to Policy Effect" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name="investment"/>
+						<entity name="inflation"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+					</isee:visible_list>
+					<isee:highlight_list/>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Policies Influence the Feedback Structure
+
+The feedback loops you just explored show how growth, investment, unemployment, inflation, and climate interact on their own.
+
+Policy levers do not change the structure itself. Instead, they push on specific links inside the loops.
+
+In the following pages, the impact of each policy on the system is outlined.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Policy Effect 1" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name="speed_of_energy_transition"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Carbon Tax Pushes the System
+
+A carbon tax encourages cleaner forms of energy by making fossil fuels more expensive. This pushes the energy system to transition faster. As cleaner energy replaces fossil fuels, emissions fall and the rise in surface temperature slows. Carbon tax does not change the feedback structure itself, but it pushes on this key point where human policy influences physical climate outcomes.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Narrative 2" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<entity name="government_revenue"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="speed_of_energy_transition"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.42"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.42"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Carbon Tax Strengthens Government Revenue
+
+A carbon tax creates a new revenue stream for the government. When the tax is applied to fossil fuels, the government collects more income that can be used for public investment, infrastructure, and climate initiatives. Higher government revenue supports economic stability and growth. This is where the carbon tax interacts with the economic structure: by strengthening government finances, it reinforces the system’s ability to invest and respond to shocks.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Policy Effect 3" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.42"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<entity name="speed_of_energy_transition"/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.33"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Renewable Energy Subsidies Push the System
+
+Subsidies for solar, wind, and nuclear energy reduce the cost of clean technologies. This accelerates the shift away from fossil fuel use, increasing the speed of the energy transition. A faster transition reduces emissions and slows future temperature rise. These subsidies act on the same structural leverage point as a carbon tax—by pushing the energy system toward cleaner technologies.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Policy Effect 4" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<entity name="unemployment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.42"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<entity name="investment"/>
+						<entity name="unemployment"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How the Energy Transition Creates Stranded Assets
+
+When the energy system shifts quickly toward renewables, fossil-intensive industries can lose value rapidly. Power plants, mines, and related infrastructure become “stranded assets.” Companies holding these assets face losses and in some cases bankruptcy. These bankruptcies reduce investment and increase unemployment, putting pressure on the economic side of the system.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Policy Effect 5" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="bank_bailouts"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<entity name="unemployment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.26"/>
+						<item uid="CLD_Policy_1_V2.42"/>
+						<item uid="CLD_Policy_1_V2.21"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<entity name="bankruptcies_stranded_assets"/>
+						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.21"/>
+						<item uid="CLD_Policy_1_V2.26"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Bank Bailouts Influence Investment
+
+When bankruptcies threaten the stability of the financial system, governments may intervene with bank bailouts. These bailouts help banks recover losses and resume lending. When banks start lending again, investment increases. This restores some of the economic activity that was disrupted by the stranded assets created during the energy transition.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Policy Effect 6" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.26"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="unemployment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.42"/>
+						<item uid="CLD_Policy_1_V2.21"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="unemployment"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Bankruptcy and Investment Affect Employment
+
+Investment reduces unemployment by creating jobs. Bankruptcies, on the other hand, raise unemployment as firms close or scale down. These two forces pull employment in opposite directions. When the energy transition creates stranded assets, unemployment rises unless investment rebounds strongly.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Narrative 14" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="bank_bailouts"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<entity name="unemployment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.26"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.42"/>
+						<item uid="CLD_Policy_1_V2.21"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Employment Shapes Government Revenue
+
+When more people are employed, they pay income taxes and spend more, which boosts business activity and government revenue. When unemployment rises, tax collections fall and public budgets weaken. Economic growth has the same effect: a stronger economy raises revenue, while slow growth reduces it. These pressures shape how well governments can respond to economic or climate challenges.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+			</view>
+			<view isee:template_view="template:3" isee:name="CLD 1 V2 - Narrative 15" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
+				<style>
+					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				</style>
+				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
+					<model name="CLD_Policy_1_V2"/>
+					<isee:visible_list>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.26"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<entity name="government_revenue"/>
+						<entity name="unemployment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.42"/>
+						<item uid="CLD_Policy_1_V2.21"/>
+					</isee:visible_list>
+					<isee:highlight_list>
+						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+					</isee:highlight_list>
+				</isee:model_view>
+				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
+				<text_box z_index="-8" background="white" padding="15" x="10" y="70" width="460" height="480" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</text_box>
+				<text_box z_index="-7" font_size="16pt" padding="10" appearance="transparent" x="25" y="90" width="425" height="425">How Temperature Pushes the Economy
+
+Higher surface temperature increases climate-related damages such as heat stress, reduced labor productivity, extreme weather disruptions, and losses to infrastructure. These impacts slow economic growth. Temperature is the point where physical climate conditions feed back into the economic system, placing a natural limit on how fast the economy can grow.</text_box>
+				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="531.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
+				<isee:shape z_index="16" background="#2C4973" border_width="thin" border_style="none" transparent_background="false" x="1016.09" y="561.087" width="46.9565" height="36" block_mouse="true" kind="rectangle"/>
+			</view>
+			<view isee:template_view="template:1" isee:name="Credits" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8930,6 +9833,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
 							<action target="interface:59">navigate</action>
 						</actions>
 						<image width="128" height="128" size_to_parent="true">r../Graphics/loop-arrow 2.png</image>
+					</button>
+					<button z_index="14" border_width="thin" border_style="none" transparent="true" label="" isee:tooltip="" x="7.13043" y="564.019" width="31.7591" height="30">
+						<actions>
+							<action target="previous_page">navigate</action>
+						</actions>
+					</button>
+					<button z_index="15" border_width="thin" border_style="none" transparent="true" label="" isee:tooltip="" x="1026.13" y="564.019" width="31.7591" height="30">
+						<actions>
+							<action target="next_page">navigate</action>
+						</actions>
 					</button>
 				</view>
 				<view isee:template_view="template:1" isee:name="Guided Demonstration Template" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="template">
@@ -9958,7 +10871,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="#E8E6E1" page_width="1090" page_height="761" isee:page_cols="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -9996,7 +10909,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					</graph>
 					<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 				</style>
-				<aux font_weight="bold" font_size="12pt" x="656.607" y="215.286" width="115" height="26" name="temperature (STA)">
+				<aux font_weight="bold" font_size="12pt" x="640.607" y="193.286" width="115" height="26" name="temperature (STA)">
 					<shape type="name_only"/>
 				</aux>
 				<aux font_weight="bold" font_size="12pt" x="461.286" y="245.143" width="110" height="42" name="economic growth\n(GDP per capita)">
@@ -10005,10 +10918,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				<aux font_weight="bold" font_size="12pt" x="354.357" y="467.143" width="65" height="26" name="inequality">
 					<shape type="name_only"/>
 				</aux>
-				<aux font_weight="bold" font_size="12pt" x="52.8571" y="283.286" width="72" height="26" name="carbon tax">
+				<aux color="lime" font_weight="bold" font_color="lime" font_size="16pt" x="44.3571" y="84.7857" width="93" height="29" name="carbon tax">
 					<shape type="name_only"/>
 				</aux>
-				<connector uid="1" color="red" font_color="red" isee:thickness="1" polarity="+" isee:polarity_placement="outside" angle="77.0541">
+				<connector uid="1" color="red" font_color="red" isee:thickness="1" polarity="+" isee:polarity_placement="outside" angle="0">
 					<isee:documentation>Carbon tax ↑ → Speed of energy transition ↑
 When the carbon tax increases (↑), fossil energy becomes more expensive. This pushes firms and households to shift toward cleaner technologies, speeding up the energy transition (↑).
 
@@ -10018,7 +10931,7 @@ When the carbon tax is lower (↓), fossil fuels remain cheaper. There is less i
 					<from>carbon_tax</from>
 					<to>speed_of_energy_transition</to>
 				</connector>
-				<connector uid="2" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="224.297">
+				<connector uid="2" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="231.685">
 					<isee:documentation>Temperature (STA) ↑ → Economic growth (GDP per capita) ↓
 
 When surface temperature anomaly increases (↑), the economy faces multiple climate-related stresses such as heatwaves, reduced labor productivity, crop losses, infrastructure damage, and higher health costs. These impacts slow down economic activity and reduce output per person, causing economic growth (GDP per capita) to decrease (↓).
@@ -10033,20 +10946,10 @@ When temperature anomaly decreases (↓), climate-related disruptions are smalle
 				<aux font_weight="bold" font_size="12pt" x="491.143" y="415.857" width="128" height="26" name="government revenue">
 					<shape type="name_only"/>
 				</aux>
-				<connector uid="3" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="258.013">
-					<isee:documentation>Carbon tax ↑ → Government revenue ↑
-When the carbon tax increases (↑), the government collects more revenue from taxed emissions, so government revenue rises (↑).
-
-Carbon tax ↓ → Government revenue ↓
-With a lower carbon tax (↓), emissions generate less tax income, reducing government revenue (↓).</isee:documentation>
-					<isee:label>Carbon tax → Government revenue</isee:label>
-					<from>carbon_tax</from>
-					<to>government_revenue</to>
-				</connector>
-				<aux font_weight="bold" font_size="12pt" x="274.5" y="526.572" width="116" height="26" name="transfer payments">
+				<aux font_weight="bold" font_size="12pt" x="254.357" y="523.429" width="116" height="26" name="transfer payments">
 					<shape type="name_only"/>
 				</aux>
-				<connector uid="4" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="226.586">
+				<connector uid="4" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="224.043">
 					<isee:documentation>Government revenue ↑ → Transfer payments ↑
 When government revenue increases (↑), the state has more fiscal space to fund social programs such as income support, pensions, and unemployment benefits. This enables higher transfer payments (↑).
 
@@ -10056,7 +10959,7 @@ When government revenue decreases (↓), the government has fewer resources avai
 					<from>government_revenue</from>
 					<to>transfer_payments</to>
 				</connector>
-				<connector uid="5" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="47.5523">
+				<connector uid="5" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="37.0717">
 					<isee:documentation>Transfer payments ↑ → Inequality ↓
 
 When transfer payments increase (↑), governments provide more financial support to lower-income households. This reduces income gaps and lowers inequality (↓).
@@ -10104,7 +11007,7 @@ When bankruptcies decrease (↓), fewer firms collapse and jobs are preserved, s
 					<from>bankruptcies_stranded_assets</from>
 					<to>unemployment</to>
 				</connector>
-				<connector uid="9" color="blue" font_color="blue" polarity="-" isee:polarity_placement="inside" angle="325.187">
+				<connector uid="9" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="325.187">
 					<isee:documentation>Unemployment ↑ → Government revenue ↓
 When unemployment rises (↑), fewer people earn taxable income. This reduces tax receipts and lowers government revenue (↓).
 
@@ -10136,7 +11039,7 @@ When economic growth slows (↓), incomes and profits fall. With less taxable ac
 					<from>&quot;economic_growth_(GDP_per_capita)&quot;</from>
 					<to>government_revenue</to>
 				</connector>
-				<connector uid="12" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="32.3509">
+				<connector uid="12" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="39.7392">
 					<isee:documentation>Economic growth ↑ → Temperature ↑
 When GDP per capita increases (↑), economic activity expands—more production, more transportation, and higher energy use. If this growth relies on fossil fuels, CO₂ and other greenhouse gas emissions increase, leading to a rise in surface temperature anomaly (↑).
 
@@ -10221,7 +11124,7 @@ When investment grows more slowly than the overall economy (↓), resource deman
 				<aux font_weight="bold" font_size="12pt" x="195.357" y="78.2857" width="107" height="42" name="speed of\nenergy transition">
 					<shape type="name_only"/>
 				</aux>
-				<connector uid="19" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="27.048">
+				<connector uid="19" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="29.1483">
 					<isee:documentation>Speed of energy transition ↑ → Surface temperature (STA) ↓
 
 When the speed of the energy transition increases (↑), societies shift more rapidly from fossil fuels to clean energy sources like solar, wind, and nuclear. This reduces CO₂ and methane emissions, slowing the accumulation of greenhouse gases in the atmosphere. As a result, surface temperature rises more slowly or even declines relative to the baseline (STA ↓).
@@ -10233,7 +11136,7 @@ A slower energy transition (↓) means fossil fuel use remains high for longer, 
 					<from>speed_of_energy_transition</from>
 					<to>&quot;temperature_(STA)&quot;</to>
 				</connector>
-				<connector uid="20" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="243.929">
+				<connector uid="20" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="250.821">
 					<isee:documentation>Speed of energy transition ↑ → Bankruptcies from stranded assets ↑
 A faster energy transition (↑) reduces the value of fossil-fuel assets more quickly. As these assets lose profitability, companies holding them face financial losses, leading to more bankruptcies from stranded assets (↑).
 
@@ -10256,7 +11159,7 @@ When bankruptcies decline (↓), banks remain stable and require less emergency 
 					<from>bankruptcies_stranded_assets</from>
 					<to>bank_bailouts</to>
 				</connector>
-				<connector uid="22" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="301.82">
+				<connector uid="22" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="292.494">
 					<isee:documentation>Bank bailouts ↑ → Transfer payments ↓
 
 When bank bailouts increase (↑), large amounts of government funds are diverted toward stabilizing the financial sector. This reduces the fiscal space available for direct social support programs. As a result, transfer payments for households and communities tend to decrease (↓).
@@ -10268,10 +11171,10 @@ When fewer bailout funds are required (↓), governments retain more fiscal reso
 					<from>bank_bailouts</from>
 					<to>transfer_payments</to>
 				</connector>
-				<aux font_weight="bold" font_size="12pt" x="108.571" y="412.286" width="116" height="42" name="solar wind nuclear\nsubsides">
+				<aux color="lime" font_weight="bold" font_color="lime" font_size="14pt" x="20.6071" y="320.715" width="140.5" height="46" name="solar wind nuclear\nsubsides">
 					<shape type="name_only"/>
 				</aux>
-				<connector uid="23" color="#3A35FF" font_color="#3A35FF" polarity="-" isee:polarity_placement="outside" angle="66.7597">
+				<connector uid="23" color="#3A35FF" font_color="#3A35FF" polarity="-" isee:polarity_placement="outside" angle="0">
 					<isee:documentation>Solar–wind–nuclear subsidies ↑ → Bankruptcies from stranded assets ↓
 When subsidies for solar, wind, and nuclear energy increase (↑), clean technologies become more competitive and scale up faster. This reduces reliance on fossil-fuel assets, slowing their decline and lowering the number of stranded fossil-fuel investments. As a result, bankruptcies from stranded assets decrease (↓).
 
@@ -10281,7 +11184,7 @@ When renewable subsidies fall (↓), the shift away from fossil fuels slows. Fos
 					<from>solar_wind_nuclear_subsides</from>
 					<to>bankruptcies_stranded_assets</to>
 				</connector>
-				<connector uid="24" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="299.148">
+				<connector uid="24" color="blue" font_color="blue" polarity="-" isee:polarity_placement="outside" angle="318.975">
 					<isee:documentation>Solar–wind–nuclear subsidies ↑ → Transfer payments ↓
 When governments allocate more money to renewable energy subsidies (↑), a larger share of the budget is directed toward supporting clean-energy deployment. This leaves fewer funds available for direct household transfer programs, causing transfer payments to decrease (↓).
 
@@ -10312,10 +11215,10 @@ When bailouts decrease (↓), struggling banks remain constrained. With less liq
 					<from>bank_bailouts</from>
 					<to>investment</to>
 				</connector>
-				<aux font_weight="bold" font_size="12pt" x="658.036" y="512.286" width="89" height="26" name="wage tax rate">
+				<aux color="lime" font_weight="bold" font_color="lime" font_size="14pt" x="645.357" y="492.143" width="105.5" height="28" name="wage tax rate">
 					<shape type="name_only"/>
 				</aux>
-				<aux font_weight="bold" font_size="12pt" x="658.536" y="415.857" width="88" height="26" name="profit tax rate">
+				<aux color="lime" font_weight="bold" font_color="lime" font_size="14pt" x="649.286" y="414.857" width="106.5" height="28" name="profit tax rate">
 					<shape type="name_only"/>
 				</aux>
 				<connector uid="27" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="180">
@@ -10329,7 +11232,7 @@ Lowering the profit tax rate reduces how much revenue the government collects fr
 					<from>profit_tax_rate</from>
 					<to>government_revenue</to>
 				</connector>
-				<connector uid="28" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="146.806">
+				<connector uid="28" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="151.604">
 					<isee:documentation>Wage tax rate ↑ → Government revenue ↑
 
 When the wage tax rate increases (↑), workers pay more tax on each unit of income, so total government revenue increases (↑).
@@ -10343,7 +11246,7 @@ Lower wage tax rates reduce the tax collected from workers, decreasing governmen
 				<aux font_weight="bold" font_size="12pt" x="514.107" y="549.429" width="90" height="58" name="ratio of wage\ntaxes to profit\ntaxes">
 					<shape type="name_only"/>
 				</aux>
-				<connector uid="29" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="200.331">
+				<connector uid="29" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="207.476">
 					<isee:documentation>Wage tax rate ↑ → Ratio of wage taxes to profit taxes ↑
 When the wage tax rate increases (↑), taxes collected from workers rise relative to taxes collected from businesses. This raises the ratio of wage taxes to profit taxes (↑).
 
@@ -10388,7 +11291,7 @@ When investment falls (↓), firms reduce hiring or cut jobs due to fewer projec
 					<from>investment</from>
 					<to>unemployment</to>
 				</connector>
-				<connector uid="33" color="red" font_color="red" polarity="+" isee:polarity_placement="outside" angle="110.701">
+				<connector uid="33" color="red" font_color="red" polarity="+" isee:polarity_placement="inside" angle="57.1212">
 					<isee:documentation>Solar–wind–nuclear subsidies ↑ → Speed of energy transition ↑
 When subsidies for solar, wind, and nuclear energy increase (↑), clean technologies become cheaper and more competitive. This accelerates the shift toward low-carbon energy systems (↑).
 
@@ -10410,7 +11313,7 @@ When economic growth slows down (GDP per capita ↓), even a modest level of inv
 					<from>&quot;economic_growth_(GDP_per_capita)&quot;</from>
 					<to>investment_growth_relative_to_overall_economic_growth</to>
 				</connector>
-				<isee:loop_indicator text="R1" orientation="counter_clockwise" uid="35" x="881.714" y="63" width="30" height="30">
+				<isee:loop_indicator text="R1" orientation="counter_clockwise" uid="35" x="947.714" y="67" width="30" height="30">
 					<documentation>When the economy grows, government revenue increases because more income and profits are taxed. Higher revenue allows greater public investment and services that further support economic growth.</documentation>
 					<name>Growth–Revenue Reinforcing Loop</name>
 					<isee:entities>
@@ -10420,7 +11323,7 @@ When economic growth slows down (GDP per capita ↓), even a modest level of inv
 						<entity name="government_revenue"/>
 					</isee:entities>
 				</isee:loop_indicator>
-				<isee:loop_indicator text="R2" orientation="counter_clockwise" uid="36" x="881.714" y="134.286" width="30" height="30">
+				<isee:loop_indicator text="R2" orientation="counter_clockwise" uid="36" x="947.714" y="138.286" width="30" height="30">
 					<documentation>Economic growth boosts confidence and profitability, encouraging businesses to invest more. Increased investment expands productive capacity and further accelerates economic growth.</documentation>
 					<name>Growth–Investment
 Reinforcing Loop</name>
@@ -10431,7 +11334,7 @@ Reinforcing Loop</name>
 						<entity name="investment"/>
 					</isee:entities>
 				</isee:loop_indicator>
-				<isee:loop_indicator text="B1" orientation="clockwise" uid="37" x="1098.71" y="67.8567" width="30" height="30">
+				<isee:loop_indicator text="B1" orientation="clockwise" uid="37" x="1164.71" y="71.8567" width="30" height="30">
 					<documentation>When economic growth increases, investment expands and eventually generates higher inflation. Rising inflation slows economic performance, pushing growth back toward balance.</documentation>
 					<name>Inflation Balancer Loop</name>
 					<isee:entities>
@@ -10445,7 +11348,7 @@ Reinforcing Loop</name>
 						<entity name="inflation"/>
 					</isee:entities>
 				</isee:loop_indicator>
-				<isee:loop_indicator text="R3" orientation="counter_clockwise" uid="38" x="881.714" y="232.143" width="30" height="30">
+				<isee:loop_indicator text="R3" orientation="counter_clockwise" uid="38" x="947.714" y="236.143" width="30" height="30">
 					<documentation>As the economy grows, investment rises and unemployment falls because firms hire more workers. Lower unemployment raises economic activity and supports continued growth.</documentation>
 					<name>Growth–Employment Reinforcing Loop</name>
 					<isee:entities>
@@ -10457,7 +11360,7 @@ Reinforcing Loop</name>
 						<entity name="unemployment"/>
 					</isee:entities>
 				</isee:loop_indicator>
-				<isee:loop_indicator text="B2" orientation="clockwise" uid="39" x="1098.71" y="146.286" width="30" height="30">
+				<isee:loop_indicator text="B2" orientation="clockwise" uid="39" x="1164.71" y="150.286" width="30" height="30">
 					<documentation>Economic growth raises emissions that increase temperature. Higher temperature damages the economy, limiting future growth.</documentation>
 					<name>Climate Damage Balancing Loop</name>
 					<isee:entities>
@@ -10467,7 +11370,7 @@ Reinforcing Loop</name>
 						<entity name='"temperature_(STA)"'/>
 					</isee:entities>
 				</isee:loop_indicator>
-				<isee:loop_indicator text="R4" orientation="counter_clockwise" uid="40" x="881.714" y="311" width="30" height="30">
+				<isee:loop_indicator text="R4" orientation="counter_clockwise" uid="40" x="947.714" y="315" width="30" height="30">
 					<documentation>Higher economic growth increases investment and reduces unemployment, which boosts government tax revenue. More government revenue enables additional spending that further supports economic growth.</documentation>
 					<name>Growth–Employment–Revenue Reinforcing Loop</name>
 					<isee:entities>
@@ -10481,7 +11384,7 @@ Reinforcing Loop</name>
 						<entity name="government_revenue"/>
 					</isee:entities>
 				</isee:loop_indicator>
-				<isee:loop_indicator text="R5" orientation="clockwise" uid="41" x="881.714" y="399.715" width="30" height="30">
+				<isee:loop_indicator text="R5" orientation="clockwise" uid="41" x="947.714" y="403.715" width="30" height="30">
 					<documentation>Lower economic growth raises relative investment pressure, increasing inflation. Higher inflation then pushes growth back up in a reinforcing direction because inflation reduces the denominator in GDP-per-capita comparisons.</documentation>
 					<name>Relative Investment–Inflation Reinforcing Loop</name>
 					<isee:entities>
@@ -10493,6 +11396,535 @@ Reinforcing Loop</name>
 						<entity name="inflation"/>
 					</isee:entities>
 				</isee:loop_indicator>
+				<connector uid="42" polarity="+" isee:polarity_placement="inside" angle="206.618">
+					<from>
+						<alias uid="43"/>
+					</from>
+					<to>government_revenue</to>
+				</connector>
+				<alias color="lime" font_style="italic" font_weight="bold" font_color="lime" font_size="16pt" uid="43" x="647.536" y="345" width="92" height="29">
+					<shape type="name_only"/>
+					<of>carbon_tax</of>
+				</alias>
+			</view>
+		</views>
+	</model>
+	<model name="CLD_Policy_1_V2">
+		<variables>
+			<aux name="temperature (STA)">
+				<eqn>NAN(&quot;economic_growth_(GDP_per_capita)&quot;,speed_of_energy_transition)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="economic growth\n(GDP per capita)">
+				<eqn>NAN(&quot;temperature_(STA)&quot;,bankruptcies_stranded_assets,government_revenue,unemployment,investment,inflation)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="carbon tax">
+				<eqn>NAN</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="government revenue">
+				<eqn>NAN(carbon_tax,unemployment,&quot;economic_growth_(GDP_per_capita)&quot;)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="bankruptcies\nstranded assets">
+				<eqn>NAN(speed_of_energy_transition,solar_wind_nuclear_subsides)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="unemployment">
+				<eqn>NAN(bankruptcies_stranded_assets,investment)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="investment">
+				<eqn>NAN(bankruptcies_stranded_assets,&quot;economic_growth_(GDP_per_capita)&quot;,bank_bailouts)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="inflation">
+				<eqn>NAN(investment_growth_relative_to_overall_economic_growth)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="investment growth\nrelative to overall\neconomic growth">
+				<eqn>NAN(investment,&quot;economic_growth_(GDP_per_capita)&quot;)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="speed of\nenergy transition">
+				<eqn>NAN(carbon_tax,solar_wind_nuclear_subsides)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="bank bailouts">
+				<eqn>NAN(bankruptcies_stranded_assets)</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+			<aux name="solar wind nuclear\nsubsides">
+				<eqn>NAN</eqn>
+				<isee:delay_aux/>
+				<units>Dimensionless</units>
+			</aux>
+		</variables>
+		<views>
+			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+				<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+				<graph color="black" background="white" font_color="white" font_size="14pt" axis_color="white" grid_color="white" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="white" axis_title_font_family="Arial" axis_title_font_size="14pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="white" axis_label_font_family="Arial" axis_label_font_size="12pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+					<isee:series_styles>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
+					</isee:series_styles>
+				</graph>
+				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+				<button color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595"/>
+				<isee:annotation color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595" popup_corner_radius="0" popup_background_color="#FFFECF"/>
+				<slider color="#0075FF" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:stacked_container color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:dual_slider color="#66CC66" background="silver" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<isee:sim_speed_slider color="black" background="white"/>
+				<isee:time_slider color="#E95F74" background="silver"/>
+				<isee:pie_input color="black" background="white" font_size="12pt" legend_position="bottom" isee:transparent="false"/>
+				<knob color="#66CC66" background="#E0E0E0" font_size="12pt" label_side="bottom" wrap_title="true"/>
+				<numeric_input color="black" background="#E0E0E0" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<isee:dropdown_input color="black" background="white" font_size="12pt" label_side="left" wrap_title="true" input_expands="false" input_width="100"/>
+				<switch color="black" background="#E0E0E0" font_size="12pt" label_side="top" wrap_title="true" isee:appearance="switch" isee:on_color="green"/>
+				<options color="black" background="white" appearance="radio-buttons" arrangement="vertical"/>
+				<graphical_input color="black" background="#E0E0E0" font_size="12pt" isee:show_hover_tip="true"/>
+				<group_input color="black" background="#E0E0E0" font_size="12pt"/>
+				<lamp color="black" background="white" font_size="9pt"/>
+				<gauge color="black" background="white" font_size="9pt" needle_color="#F09F72" bar_color="#EEEEEE" bar_progress_color="black" appearance="radial" num_major_ticks="11" num_minor_ticks="11" show_numeric_value="true"/>
+				<isee:spatial_map color="black" background="white" font_size="12pt"/>
+				<isee:animation_object color="black" background="white" font_size="12pt"/>
+				<isee:navigation_widget color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="6" appearance="tabs" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
+				<isee:shape color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid" opacity="1" transparent_background="true" corner_radius="1"/>
+				<isee:selector color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
+				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			</style>
+			<view isee:show_pages="false" background="#E0E0E0" page_width="1090" page_height="761" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
+					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+						<shape type="rectangle" width="45" height="35"/>
+					</stock>
+					<flow color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+						<shape type="circle" radius="18"/>
+					</flow>
+					<isee:placeholder color="#228B22" background="white" font_color="#228B22" font_size="11pt" label_side="bottom"/>
+					<module color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
+						<shape type="rectangle" width="67" height="55"/>
+					</module>
+					<aux color="blue" background="white" font_color="blue" font_size="11pt" label_side="bottom">
+						<shape type="circle" radius="18"/>
+					</aux>
+					<group color="red" background="white" font_color="red" font_size="11pt"/>
+					<connector color="#FF007F" background="white" font_color="#FF007F" font_size="9pt" isee:thickness="1"/>
+					<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+					<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
+					<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
+					<graph color="black" background="white" font_size="12pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="12pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="9pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
+						<isee:series_styles>
+							<isee:series_style color="blue" thickness="1"/>
+							<isee:series_style color="red" thickness="1"/>
+							<isee:series_style color="#008F44" thickness="1"/>
+							<isee:series_style color="#FF7F00" thickness="1"/>
+							<isee:series_style color="#7F00FF" thickness="1"/>
+							<isee:series_style color="#0CA0FF" thickness="1"/>
+							<isee:series_style color="lime" thickness="1"/>
+							<isee:series_style color="#FF007F" thickness="1"/>
+							<isee:series_style color="aqua" thickness="1"/>
+							<isee:series_style color="#F586FF" thickness="1"/>
+							<isee:series_style color="black" thickness="1"/>
+							<isee:series_style color="#C8C8C8" thickness="1"/>
+						</isee:series_styles>
+					</graph>
+					<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+				</style>
+				<aux font_weight="bold" font_size="12pt" x="22.786" y="334.286" width="115" height="26" name="temperature (STA)">
+					<shape type="name_only"/>
+				</aux>
+				<aux font_weight="bold" font_size="12pt" x="213.857" y="251.286" width="110" height="42" name="economic growth\n(GDP per capita)">
+					<shape type="name_only"/>
+				</aux>
+				<aux color="#00AA00" background="black" font_weight="bold" font_color="#00AA00" font_size="16pt" x="433.286" y="553.786" width="93" height="29" name="carbon tax">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="1" color="red" font_color="red" isee:thickness="1" polarity="+" isee:polarity_placement="outside" angle="88.8462">
+					<isee:documentation>Carbon tax ↑ → Speed of energy transition ↑
+When the carbon tax increases (↑), fossil energy becomes more expensive. This pushes firms and households to shift toward cleaner technologies, speeding up the energy transition (↑).
+
+Carbon tax ↓ → Speed of energy transition ↓
+When the carbon tax is lower (↓), fossil fuels remain cheaper. There is less incentive to invest in renewables, slowing down the speed of the energy transition (↓).</isee:documentation>
+					<isee:label>Carbon tax → Speed of energy transition</isee:label>
+					<from>carbon_tax</from>
+					<to>speed_of_energy_transition</to>
+				</connector>
+				<connector uid="2" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="inside" angle="9.74086">
+					<isee:documentation>Temperature (STA) ↑ → Economic growth (GDP per capita) ↓
+
+When surface temperature anomaly increases (↑), the economy faces multiple climate-related stresses such as heatwaves, reduced labor productivity, crop losses, infrastructure damage, and higher health costs. These impacts slow down economic activity and reduce output per person, causing economic growth (GDP per capita) to decrease (↓).
+
+Temperature (STA) ↓ → Economic growth (GDP per capita) ↑
+
+When temperature anomaly decreases (↓), climate-related disruptions are smaller. Fewer heat-related losses and more stable environmental conditions allow businesses, agriculture, and labor markets to function more efficiently, supporting higher GDP per capita (↑).</isee:documentation>
+					<isee:label>Temperature (STA) → Economic growth (GDP per capita)</isee:label>
+					<from>&quot;temperature_(STA)&quot;</from>
+					<to>&quot;economic_growth_(GDP_per_capita)&quot;</to>
+				</connector>
+				<aux font_weight="bold" font_size="12pt" x="90.857" y="161" width="128" height="26" name="government revenue">
+					<shape type="name_only"/>
+				</aux>
+				<aux font_weight="bold" font_size="12pt" x="669.571" y="231" width="104" height="42" name="bankruptcies\nstranded assets">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="6" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="inside" angle="143.274">
+					<isee:documentation>Bankruptcies from stranded assets ↑ → Economic growth (GDP per capita) ↓
+When bankruptcies from stranded assets increase (↑), businesses lose value, financial institutions face losses, and investment confidence drops. This slows business activity and reduces production, causing economic growth (GDP per capita) to decrease (↓).
+
+Bankruptcies from stranded assets ↓ → Economic growth (GDP per capita) ↑
+When bankruptcies decline (↓), financial stability improves and firms remain productive. This supports higher investment and economic activity, increasing GDP per capita (↑).</isee:documentation>
+					<isee:label>Bankruptcies from stranded assets → Economic growth (GDP per capita)</isee:label>
+					<from>bankruptcies_stranded_assets</from>
+					<to>&quot;economic_growth_(GDP_per_capita)&quot;</to>
+				</connector>
+				<connector uid="7" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="inside" angle="288.941">
+					<isee:documentation>Government revenue ↑ → Economic growth ↑
+When government revenue increases (↑), more funds are available for public investment, which stimulates business activity, boosts productivity, and supports stronger economic growth (↑).
+
+Government revenue ↓ → Economic growth ↓
+When government revenue decreases (↓), the state has fewer resources to invest in public services, infrastructure, innovation, and social programs. Reduced public investment weakens overall economic activity, leading to slower economic growth (↓).</isee:documentation>
+					<isee:label>Government revenue → Economic growth (GDP per capita)</isee:label>
+					<from>government_revenue</from>
+					<to>&quot;economic_growth_(GDP_per_capita)&quot;</to>
+				</connector>
+				<aux font_weight="bold" font_size="12pt" x="342.857" y="54.8567" width="95" height="26" name="unemployment">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="8" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="119.978">
+					<isee:documentation>Bankruptcies from stranded assets ↑ → Unemployment ↑
+When bankruptcies from stranded fossil-fuel assets increase (↑), firms close or downsize, and supply chains are disrupted. As these businesses fail, workers lose their jobs, causing unemployment to rise (↑).
+
+Bankruptcies from stranded assets ↓ → Unemployment ↓
+When bankruptcies decrease (↓), fewer firms collapse and jobs are preserved, so unemployment falls (↓).</isee:documentation>
+					<isee:label>Bankruptcies from stranded assets → Unemployment </isee:label>
+					<from>bankruptcies_stranded_assets</from>
+					<to>unemployment</to>
+				</connector>
+				<connector uid="9" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="outside" angle="185.634">
+					<isee:documentation>Unemployment ↑ → Government revenue ↓
+When unemployment rises (↑), fewer people earn taxable income. This reduces tax receipts and lowers government revenue (↓).
+
+Unemployment ↓ → Government revenue ↑
+When unemployment decreases (↓), more people are working and earning wages. This increases income-tax and payroll-tax collections, raising government revenue (↑).
+
+</isee:documentation>
+					<isee:label>Unemployment → Government revenue</isee:label>
+					<from>unemployment</from>
+					<to>government_revenue</to>
+				</connector>
+				<connector uid="10" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="outside" angle="228.053">
+					<isee:documentation>Unemployment ↑ → Economic growth (GDP per capita) ↓
+When unemployment increases (↑), fewer people are producing goods and services. Lower production reduces total output in the economy, causing economic growth (GDP per capita) to decrease (↓).
+
+Unemployment ↓ → Economic growth (GDP per capita) ↑
+When unemployment falls (↓), more people are employed and producing. Higher production boosts total output, increasing economic growth (GDP per capita) (↑).</isee:documentation>
+					<isee:label>Unemployment → Economic growth (GDP per capita) </isee:label>
+					<from>unemployment</from>
+					<to>&quot;economic_growth_(GDP_per_capita)&quot;</to>
+				</connector>
+				<connector uid="11" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="112.983">
+					<isee:documentation>Economic growth ↑ → Government revenue ↑
+When GDP per capita increases (↑), businesses earn more and workers receive higher incomes. This raises both profit taxes and wage taxes, resulting in higher overall government revenue (↑).
+
+Economic growth ↓ → Government revenue ↓
+When economic growth slows (↓), incomes and profits fall. With less taxable activity, the government collects fewer taxes, reducing government revenue (↓).</isee:documentation>
+					<isee:label>Economic growth (GDP per capita) → Government revenue</isee:label>
+					<from>&quot;economic_growth_(GDP_per_capita)&quot;</from>
+					<to>government_revenue</to>
+				</connector>
+				<connector uid="12" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="183.695">
+					<isee:documentation>Economic growth ↑ → Temperature ↑
+When GDP per capita increases (↑), economic activity expands—more production, more transportation, and higher energy use. If this growth relies on fossil fuels, CO₂ and other greenhouse gas emissions increase, leading to a rise in surface temperature anomaly (↑).
+
+Economic growth ↓ → Temperature ↓
+When the economy slows (↓), energy use and emissions fall. With fewer emissions entering the atmosphere, the pressure that drives temperature increase weakens, reducing the rate of temperature rise (↓).
+</isee:documentation>
+					<isee:label>Economic growth (GDP per capita)  → Temperature (STA) </isee:label>
+					<from>&quot;economic_growth_(GDP_per_capita)&quot;</from>
+					<to>&quot;temperature_(STA)&quot;</to>
+				</connector>
+				<aux font_weight="bold" font_size="12pt" x="447.357" y="325.715" width="74" height="26" name="investment">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="14" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="inside" angle="138.189">
+					<isee:documentation>Investment ↑ → Economic growth ↑
+When investment increases (↑), more capital is created—such as infrastructure, machinery, and technology—which boosts productivity and expands economic output. This leads to higher GDP per capita (↑).
+
+Investment ↓ → Economic growth ↓
+When investment falls (↓), fewer productive assets are built, slowing improvements in capacity and productivity. As a result, GDP per capita grows more slowly or may decline (↓).</isee:documentation>
+					<isee:label>Investment → Economic growth (GDP per capita)</isee:label>
+					<from>investment</from>
+					<to>&quot;economic_growth_(GDP_per_capita)&quot;</to>
+				</connector>
+				<connector uid="15" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="323.367">
+					<isee:documentation>Economic growth ↑ → Investment ↑
+When GDP per capita increases (↑), businesses earn more, households have higher incomes, and overall economic confidence rises. With more profits and savings available, both firms and consumers invest more (↑).
+
+Economic growth ↓ → Investment ↓
+When the economy slows (↓), profits shrink and uncertainty rises. Firms delay or cut back on new projects, and households reduce savings and spending, leading to lower investment (↓).</isee:documentation>
+					<isee:label>Economic growth (GDP per capita) → Investment </isee:label>
+					<from>&quot;economic_growth_(GDP_per_capita)&quot;</from>
+					<to>investment</to>
+				</connector>
+				<aux font_weight="bold" font_size="12pt" x="218.857" y="348.286" width="56" height="26" name="inflation">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="16" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="inside" angle="103.119">
+					<isee:documentation>Inflation ↑ → Economic growth (GDP per capita) ↓
+
+When inflation increases (↑), the cost of goods, services, wages, and inputs rises across the economy. Higher inflation reduces purchasing power, increases uncertainty for businesses, and discourages investment. As a result, economic growth slows down (GDP per capita ↓).
+
+Inflation ↓ → Economic growth (GDP per capita) ↑
+
+When inflation falls (↓), costs stabilize and purchasing power improves. Businesses face less uncertainty and invest more confidently. This supports higher economic growth (GDP per capita ↑).</isee:documentation>
+					<isee:label>Inflation → Economic growth (GDP per capita) </isee:label>
+					<from>inflation</from>
+					<to>&quot;economic_growth_(GDP_per_capita)&quot;</to>
+				</connector>
+				<aux font_weight="bold" font_size="12pt" x="255.857" y="432.143" width="117" height="58" name="investment growth\nrelative to overall\neconomic growth">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="17" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="246.463">
+					<isee:documentation>Investment ↑ → Investment growth relative to overall economic growth ↑
+When investment increases (↑), financial activity expands faster than the rest of the economy. This raises the ratio of investment growth compared to overall economic growth (↑).
+
+Investment ↓ → Investment growth relative to overall economic growth ↓
+When investment decreases (↓), financial activity grows more slowly than the broader economy, reducing the relative investment growth rate (↓).</isee:documentation>
+					<isee:label>Investment ↑ → Investment growth relative to overall economic growth ↑</isee:label>
+					<from>investment</from>
+					<to>investment_growth_relative_to_overall_economic_growth</to>
+				</connector>
+				<connector uid="18" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="142.414">
+					<isee:documentation>Investment growth relative to overall economic growth ↑ → Inflation ↑
+When investment grows faster than the overall economy (↑), demand for inputs, labor, and capital rises faster than supply can adjust, creating price pressures. This imbalance pushes inflation upward (↑).
+
+Investment growth relative to overall economic growth ↓ → Inflation ↓
+When investment grows more slowly than the overall economy (↓), resource demand eases and supply keeps up more easily, reducing upward pressure on prices and lowering inflation (↓).</isee:documentation>
+					<isee:label>Investment growth relative to overall economic growth ↑ → Inflation ↑ </isee:label>
+					<from>investment_growth_relative_to_overall_economic_growth</from>
+					<to>inflation</to>
+				</connector>
+				<aux font_weight="bold" font_size="12pt" x="427.857" y="469.286" width="107" height="42" name="speed of\nenergy transition">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="19" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="outside" angle="193.785">
+					<isee:documentation>Speed of energy transition ↑ → Surface temperature (STA) ↓
+
+When the speed of the energy transition increases (↑), societies shift more rapidly from fossil fuels to clean energy sources like solar, wind, and nuclear. This reduces CO₂ and methane emissions, slowing the accumulation of greenhouse gases in the atmosphere. As a result, surface temperature rises more slowly or even declines relative to the baseline (STA ↓).
+
+Speed of energy transition ↓ → Surface temperature (STA) ↑
+
+A slower energy transition (↓) means fossil fuel use remains high for longer, leading to higher greenhouse gas emissions. This accelerates warming, causing surface temperature to increase faster (STA ↑).</isee:documentation>
+					<isee:label>Speed of energy transition → Surface temperature (STA)</isee:label>
+					<from>speed_of_energy_transition</from>
+					<to>&quot;temperature_(STA)&quot;</to>
+				</connector>
+				<connector uid="20" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="inside" angle="23.7686">
+					<isee:documentation>Speed of energy transition ↑ → Bankruptcies from stranded assets ↑
+A faster energy transition (↑) reduces the value of fossil-fuel assets more quickly. As these assets lose profitability, companies holding them face financial losses, leading to more bankruptcies from stranded assets (↑).
+
+Speed of energy transition ↓ → Bankruptcies from stranded assets ↓
+When the energy transition slows (↓), fossil-fuel assets decline more gradually, allowing companies more time to adjust. This results in fewer stranded assets and fewer bankruptcies (↓).</isee:documentation>
+					<isee:label>Speed of energy transition → Bankruptcies from stranded assets</isee:label>
+					<from>speed_of_energy_transition</from>
+					<to>bankruptcies_stranded_assets</to>
+				</connector>
+				<aux font_weight="bold" font_size="12pt" x="526.286" y="225.286" width="87" height="26" name="bank bailouts">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="21" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="152.145">
+					<isee:documentation>Bankruptcies from stranded assets ↑ → Bank bailouts ↑
+When bankruptcies from stranded fossil-fuel assets increase (↑), banks face rising losses and financial instability. To prevent systemic collapse, governments step in with bank bailouts, causing bailouts to increase (↑).
+
+Bankruptcies from stranded assets ↓ → Bank bailouts ↓
+When bankruptcies decline (↓), banks remain stable and require less emergency support, so bailouts decrease (↓).</isee:documentation>
+					<isee:label>Bankruptcies from stranded assets → Bank bailouts </isee:label>
+					<from>bankruptcies_stranded_assets</from>
+					<to>bank_bailouts</to>
+				</connector>
+				<aux color="#00AA00" background="black" font_weight="bold" font_color="#00AA00" font_size="16pt" x="640.571" y="466.286" width="152" height="48" name="solar wind nuclear\nsubsides">
+					<shape type="name_only"/>
+				</aux>
+				<connector uid="23" color="#3A35FF" font_color="#3A35FF" isee:thickness="0.5" polarity="-" isee:polarity_placement="outside" angle="88.7979">
+					<isee:documentation>Solar–wind–nuclear subsidies ↑ → Bankruptcies from stranded assets ↓
+When subsidies for solar, wind, and nuclear energy increase (↑), clean technologies become more competitive and scale up faster. This reduces reliance on fossil-fuel assets, slowing their decline and lowering the number of stranded fossil-fuel investments. As a result, bankruptcies from stranded assets decrease (↓).
+
+Solar–wind–nuclear subsidies ↓ → Bankruptcies from stranded assets ↑
+When renewable subsidies fall (↓), the shift away from fossil fuels slows. Fossil-fuel assets remain exposed to long-term transition risks, increasing the likelihood that they lose value and become stranded, which raises bankruptcies (↑).</isee:documentation>
+					<isee:label>Solar–wind–nuclear subsidies → Bankruptcies from stranded assets</isee:label>
+					<from>solar_wind_nuclear_subsides</from>
+					<to>bankruptcies_stranded_assets</to>
+				</connector>
+				<connector uid="26" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="inside" angle="218.257">
+					<isee:documentation>Bank bailouts ↑ → Investment ↑
+When bank bailouts increase (↑), governments inject money to stabilize the financial sector. Banks recover liquidity and confidence, allowing them to increase lending and stimulate investment (↑).
+
+Bank bailouts ↓ → Investment ↓
+When bailouts decrease (↓), struggling banks remain constrained. With less liquidity and higher risk, they reduce lending, which lowers investment (↓).
+</isee:documentation>
+					<isee:label>Bank bailouts → Investment</isee:label>
+					<from>bank_bailouts</from>
+					<to>investment</to>
+				</connector>
+				<connector uid="32" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="outside" angle="88.083">
+					<isee:documentation>Investment ↑ → Unemployment ↓
+When investment increases (↑), businesses expand operations, start new projects, and hire more workers. This creates more job opportunities, causing unemployment to decrease (↓).
+
+Investment ↓ → Unemployment ↑
+When investment falls (↓), firms reduce hiring or cut jobs due to fewer projects and lower production. This pushes unemployment up (↑).</isee:documentation>
+					<isee:label>Investment → Unemployment </isee:label>
+					<from>investment</from>
+					<to>unemployment</to>
+				</connector>
+				<connector uid="33" color="red" font_color="red" isee:thickness="0.5" polarity="+" isee:polarity_placement="inside" angle="180">
+					<isee:documentation>Solar–wind–nuclear subsidies ↑ → Speed of energy transition ↑
+When subsidies for solar, wind, and nuclear energy increase (↑), clean technologies become cheaper and more competitive. This accelerates the shift toward low-carbon energy systems (↑).
+
+Solar–wind–nuclear subsidies ↓ → Speed of energy transition ↓
+When these subsidies are reduced (↓), renewable and nuclear options become relatively more expensive. This slows down the adoption of clean energy and reduces the speed of the transition (↓).</isee:documentation>
+					<isee:label>Solar wind nuclear subsidies → Speed of energy transition</isee:label>
+					<from>solar_wind_nuclear_subsides</from>
+					<to>speed_of_energy_transition</to>
+				</connector>
+				<connector uid="34" color="blue" font_color="blue" isee:thickness="0.5" polarity="-" isee:polarity_placement="outside" angle="305.529">
+					<isee:documentation>Economic growth (GDP per capita) ↑ → Investment growth relative to overall economic growth ↓
+When the economy grows faster (↑), the same level of investment becomes smaller relative to the expanding economic output, so the investment-growth ratio decreases (↓).
+
+Economic growth (GDP per capita) ↓ → Investment growth relative to overall economic growth ↑
+When economic growth slows down (GDP per capita ↓), even a modest level of investment can appear large relative to the weakened economy. So investment growth relative to economic growth increases (↑) because the denominator (overall economic growth) is shrinking.
+
+</isee:documentation>
+					<isee:label>Economic growth (GDP per capita) → Investment growth relative to overall economic growth</isee:label>
+					<from>&quot;economic_growth_(GDP_per_capita)&quot;</from>
+					<to>investment_growth_relative_to_overall_economic_growth</to>
+				</connector>
+				<isee:loop_indicator text="R1" orientation="counter_clockwise" uid="35" x="950" y="50" width="30" height="30">
+					<documentation>When the economy grows, government revenue increases because more income and profits are taxed. Higher revenue allows greater public investment and services that further support economic growth.</documentation>
+					<name>Growth–Revenue 
+Reinforcing Loop</name>
+					<isee:entities>
+						<item uid="11"/>
+						<item uid="7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="government_revenue"/>
+					</isee:entities>
+				</isee:loop_indicator>
+				<isee:loop_indicator color="lime" text="R2" orientation="counter_clockwise" uid="36" x="950" y="130" width="30" height="30">
+					<documentation>Economic growth boosts confidence and profitability, encouraging businesses to invest more. Increased investment expands productive capacity and further accelerates economic growth.</documentation>
+					<name>Growth–Investment
+Reinforcing Loop</name>
+					<isee:entities>
+						<item uid="14"/>
+						<item uid="15"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment"/>
+					</isee:entities>
+				</isee:loop_indicator>
+				<isee:loop_indicator text="B1" orientation="clockwise" uid="37" x="1167.71" y="71.8567" width="30" height="30">
+					<documentation>When economic growth increases, investment expands and eventually generates higher inflation. Rising inflation slows economic performance, pushing growth back toward balance.</documentation>
+					<name>Inflation Balancer Loop</name>
+					<isee:entities>
+						<item uid="15"/>
+						<item uid="17"/>
+						<item uid="18"/>
+						<item uid="16"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="inflation"/>
+					</isee:entities>
+				</isee:loop_indicator>
+				<isee:loop_indicator text="R3" orientation="counter_clockwise" uid="38" x="950.714" y="210" width="30" height="30">
+					<documentation>As the economy grows, investment rises and unemployment falls because firms hire more workers. Lower unemployment raises economic activity and supports continued growth.</documentation>
+					<name>Growth–Employment
+Reinforcing Loop</name>
+					<isee:entities>
+						<item uid="15"/>
+						<item uid="32"/>
+						<item uid="10"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment"/>
+						<entity name="unemployment"/>
+					</isee:entities>
+				</isee:loop_indicator>
+				<isee:loop_indicator color="lime" text="B2" orientation="clockwise" uid="39" x="1167.71" y="150.286" width="30" height="30">
+					<documentation>Economic growth raises emissions that increase temperature. Higher temperature damages the economy, limiting future growth.</documentation>
+					<name>Climate Damage Balancing Loop</name>
+					<isee:entities>
+						<item uid="12"/>
+						<item uid="2"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name='"temperature_(STA)"'/>
+					</isee:entities>
+				</isee:loop_indicator>
+				<isee:loop_indicator text="R4" orientation="counter_clockwise" uid="40" x="950.714" y="315" width="30" height="30">
+					<documentation>Higher economic growth increases investment and reduces unemployment, which boosts government tax revenue. More government revenue enables additional spending that further supports economic growth.</documentation>
+					<name>Growth–Employment–Revenue
+Reinforcing Loop</name>
+					<isee:entities>
+						<item uid="15"/>
+						<item uid="32"/>
+						<item uid="9"/>
+						<item uid="7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment"/>
+						<entity name="unemployment"/>
+						<entity name="government_revenue"/>
+					</isee:entities>
+				</isee:loop_indicator>
+				<isee:loop_indicator text="R5" orientation="clockwise" uid="41" x="950.714" y="403.715" width="30" height="30">
+					<documentation>Lower economic growth raises relative investment pressure, increasing inflation. Higher inflation then pushes growth back up in a reinforcing direction because inflation reduces the denominator in GDP-per-capita comparisons.</documentation>
+					<name>Relative Investment–Inflation
+Reinforcing Loop</name>
+					<isee:entities>
+						<item uid="34"/>
+						<item uid="18"/>
+						<item uid="16"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="inflation"/>
+					</isee:entities>
+				</isee:loop_indicator>
+				<connector uid="42" isee:thickness="0.5" polarity="+" isee:polarity_placement="inside" angle="270">
+					<from>
+						<alias uid="43"/>
+					</from>
+					<to>government_revenue</to>
+				</connector>
+				<connector uid="44" isee:thickness="0.5" polarity="+" isee:polarity_placement="outside" angle="230.022">
+					<isee:documentation>Bankruptcies from stranded assets ↑ → Investment ↑
+When bankruptcies from stranded assets increase (↑), banks’ balance sheets weaken. To restore their asset–liability ratio and stabilize their financial position, banks often increase lending and seek new investment opportunities (↑).
+
+Bankruptcies from stranded assets ↓ → Investment ↓
+When bankruptcies decrease (↓), banks face less pressure to re-balance their portfolios. They lend more cautiously, leading to lower investment growth (↓).</isee:documentation>
+					<from>bankruptcies_stranded_assets</from>
+					<to>investment</to>
+				</connector>
+				<alias color="#00AA00" background="black" font_style="italic" font_weight="bold" font_color="#00AA00" font_size="16pt" uid="43" x="108.857" y="66.786" width="92" height="29">
+					<shape type="name_only"/>
+					<of>carbon_tax</of>
+				</alias>
 			</view>
 		</views>
 	</model>
