@@ -5,7 +5,7 @@
 		<name>Interface</name>
 		<uuid>92c8f8e1-bbc1-4e0d-8bca-ccf2371059ae</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="4.1.1" isee:build_number="3772" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.1.2" isee:build_number="3804" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<ai_information>
 		<status verified="false"/>
@@ -19,6 +19,20 @@
 		<dim name="Run" size="11"/>
 	</dimensions>
 	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="true" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_accessible="true" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
+		<isee:tag_styles>
+			<isee:tag_style tag="Assumption"/>
+			<isee:tag_style tag="Calibrated Output"/>
+			<isee:tag_style tag="Climate Impact Parameter"/>
+			<isee:tag_style tag="Explanatory Variable"/>
+			<isee:tag_style tag="External Parameter"/>
+			<isee:tag_style tag="Interface"/>
+			<isee:tag_style tag="Internal Calibration Parameter"/>
+			<isee:tag_style tag="No Sensi"/>
+			<isee:tag_style tag="Output"/>
+			<isee:tag_style tag="Parameter"/>
+			<isee:tag_style tag="Policy"/>
+			<isee:tag_style tag="Unit"/>
+		</isee:tag_styles>
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -501,11 +515,11 @@
 				<units>Dimensionless</units>
 			</aux>
 			<aux name="Bulls Eye\nAnimation Width">
-				<eqn>477</eqn>
+				<eqn>484.5</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="Bulls Eye\nAnimation Height">
-				<eqn>101.5</eqn>
+				<eqn>102.75</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="STA Bulls Eye X Axis">
@@ -678,7 +692,7 @@
 				<units>px</units>
 			</aux>
 			<aux name="Bulls Eye\nDashboard Animation Height">
-				<eqn>382</eqn>
+				<eqn>386</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="STA Dashboard\nBulls Eye X Axis">
@@ -686,7 +700,7 @@
 				<units>px</units>
 			</aux>
 			<aux name="Bulls Eye\nDashboard Animation Width">
-				<eqn>773.5</eqn>
+				<eqn>865</eqn>
 				<units>px</units>
 			</aux>
 			<aux name="Time Minimum">
@@ -1088,7 +1102,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="1308" isee:scroll_y="1130" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="4" isee:page_rows="5" isee:scroll_x="294" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1331,7 +1345,7 @@
 					<from>Goal_Setting_Boxes_Curtain_Disappear</from>
 					<to>Goal_Setting_Message_Appearance</to>
 				</connector>
-				<aux x="946.01" y="678.25" name="Test Year"/>
+				<aux x="865.725" y="485.429" name="Test Year"/>
 				<aux x="1633.98" y="635.25" name="Test Y Axis value"/>
 				<connector uid="44" angle="219.006">
 					<from>Set_STA_Target_Value</from>
