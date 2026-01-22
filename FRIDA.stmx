@@ -4515,7 +4515,7 @@ Consumption Risk}</eqn>
 				<module x="818" y="482.25" name="CLD Policy 1 V2"/>
 				<isee:placeholder x="1324" y="1563.47" name="Sea Level Rise Placeholder"/>
 			</view>
-			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="110" home_view="true" type="interface">
+			<view isee:name="Landing Page" background="#082A5C" page_width="1066" page_height="600" zoom="180" home_view="true" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4554,11 +4554,11 @@ Consumption Risk}</eqn>
 				</button>
 				<isee:shape border_color="white" opacity="0.35" transparent_background="false" x="0" y="518" width="1066" height="10" kind="hline"/>
 			</view>
-			<view isee:template_view="template:2" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:2" isee:name="Intro Page" background="#082A5C" page_width="1066" page_height="600" zoom="115" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
-				<text_box z_index="-2" background="white" font_size="14pt" padding="20" border_width="0.5" border_style="solid" corner_radius="13" x="18.045" y="90.8531" width="1029.91" height="455.219" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+				<text_box z_index="-2" background="white" font_size="14pt" padding="20" border_width="0.5" corner_radius="13" x="18.045" y="90.8531" width="1029.91" height="455.219" isee:locked="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
@@ -4613,7 +4613,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					<image width="512" height="512" size_to_parent="true">r../Graphics/questions.png</image>
 				</button>
 			</view>
-			<view isee:template_view="template:2" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:2" isee:name="Navigation &amp; Terminology Guide" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -4623,7 +4623,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 						<action target="interface:1">navigate</action>
 					</actions>
 				</button>
-				<isee:shape background="white" border_width="0.5" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<isee:shape background="white" border_width="0.5" border_style="none" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
 				<graphics_frame fill="none" x="50" y="180" width="40" height="40" isee:locked="true">
 					<image width="256" height="256" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Home icon.png</image>
 				</graphics_frame>
@@ -4681,7 +4681,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
-				<isee:shape background="white" border_width="0.5" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<isee:shape background="white" border_width="0.5" border_style="none" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
 				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="90" y="180" width="540" height="301">Endogenous Model Behavior refers to how a system&apos;s behavior over time arises from its internal structure—such as feedback loops, delays, and accumulations—rather than from external inputs or random events. In other words, the model explains its own behavior through the interactions of its components.
 
 
@@ -4694,6 +4694,20 @@ Example: If emissions rise in the model, it&apos;s not because we told the model
 				<graphics_frame fill="none" x="776" y="230.5" width="200" height="200">
 					<image width="512" height="512" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/feedback (1).png</image>
 				</graphics_frame>
+				<button z_index="47" background="#C5DDE9" font_weight="bold" font_color="#082A5C" font_size="10pt" border_color="#F5FFE0" transparent="false" corner_radius="10" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#90A4AE" label="Return to Dashboard" isee:tooltip="" x="458" y="563.201" width="150" height="33.6364" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation">
+					<actions>
+						<action target="interface:27">navigate</action>
+					</actions>
+				</button>
+				<isee:navigation_widget border_width="thin" border_style="none" item_spacing="1" orientation="horizontal" x="50.4136" y="64" width="884.545" height="30">
+					<isee:navigation_item label="Endogenous Model Behavior" target="interface:3"/>
+					<isee:navigation_item label="Confidence Graph" target="interface:4"/>
+					<isee:navigation_item label="Box and Whisker Graph" target="interface:5"/>
+					<isee:navigation_item label="Gross Domestic Product" target="interface:6"/>
+					<isee:navigation_item label="Uncertainty Ensemble and Representative Runs" target="interface:7"/>
+				</isee:navigation_widget>
+				<isee:shape z_index="48" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="2.81818" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
+				<isee:shape z_index="49" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="1022.46" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
 			</view>
 			<view isee:template_view="template:2" isee:name="Terminology Guide 2" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
@@ -4725,7 +4739,21 @@ It typically includes:
 				<graphics_frame z_index="16" fill="none" x="724.51" y="180.5" width="300" height="300">
 					<image width="585" height="427" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Confidence Graph.png</image>
 				</graphics_frame>
-				<isee:shape background="white" border_width="0.5" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<isee:shape background="white" border_width="0.5" border_style="none" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<button z_index="47" background="#C5DDE9" font_weight="bold" font_color="#082A5C" font_size="10pt" border_color="#F5FFE0" transparent="false" corner_radius="10" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#90A4AE" label="Return to Dashboard" isee:tooltip="" x="458" y="563.201" width="150" height="33.6364" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation">
+					<actions>
+						<action target="interface:27">navigate</action>
+					</actions>
+				</button>
+				<isee:navigation_widget border_width="thin" border_style="none" item_spacing="1" orientation="horizontal" x="50.4136" y="64" width="884.545" height="30">
+					<isee:navigation_item label="Endogenous Model Behavior" target="interface:3"/>
+					<isee:navigation_item label="Confidence Graph" target="interface:4"/>
+					<isee:navigation_item label="Box and Whisker Graph" target="interface:5"/>
+					<isee:navigation_item label="Gross Domestic Product" target="interface:6"/>
+					<isee:navigation_item label="Uncertainty Ensemble and Representative Runs" target="interface:7"/>
+				</isee:navigation_widget>
+				<isee:shape z_index="48" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="2.81818" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
+				<isee:shape z_index="49" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="1022.46" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
 			</view>
 			<view isee:template_view="template:2" isee:name="Terminology Guide 3" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
@@ -4737,7 +4765,7 @@ It typically includes:
 						<action target="previous_page">navigate</action>
 					</actions>
 				</button>
-				<isee:shape background="white" border_width="0.5" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<isee:shape background="white" border_width="0.5" border_style="none" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
 				<text_box vertical_text_align="center" font_size="16pt" appearance="transparent" x="90" y="180" width="540" height="327">A Box and Whisker Graph is a statistical chart that displays the distribution of a dataset. It highlights the spread, central tendency, and any outliers present in the data. This type of graph is used to visually summarize variability, making it easier to identify patterns, central values, and unusual observations.
 
 It typically includes:
@@ -4760,6 +4788,20 @@ It typically includes:
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
+				<button z_index="47" background="#C5DDE9" font_weight="bold" font_color="#082A5C" font_size="10pt" border_color="#F5FFE0" transparent="false" corner_radius="10" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#90A4AE" label="Return to Dashboard" isee:tooltip="" x="458" y="563.201" width="150" height="33.6364" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation">
+					<actions>
+						<action target="interface:27">navigate</action>
+					</actions>
+				</button>
+				<isee:navigation_widget border_width="thin" border_style="none" item_spacing="1" orientation="horizontal" x="50.4136" y="64" width="884.545" height="30">
+					<isee:navigation_item label="Endogenous Model Behavior" target="interface:3"/>
+					<isee:navigation_item label="Confidence Graph" target="interface:4"/>
+					<isee:navigation_item label="Box and Whisker Graph" target="interface:5"/>
+					<isee:navigation_item label="Gross Domestic Product" target="interface:6"/>
+					<isee:navigation_item label="Uncertainty Ensemble and Representative Runs" target="interface:7"/>
+				</isee:navigation_widget>
+				<isee:shape z_index="48" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="2.81818" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
+				<isee:shape z_index="49" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="1022.46" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
 			</view>
 			<view isee:template_view="template:2" isee:name="Terminology Guide 4" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
@@ -4771,7 +4813,7 @@ It typically includes:
 						<action target="previous_page">navigate</action>
 					</actions>
 				</button>
-				<isee:shape background="white" border_width="0.5" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<isee:shape background="white" border_width="0.5" border_style="none" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
 				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="90" y="180" width="540" height="327">Gross Domestic Product (GDP) is an economic measure that represents the total value of all goods and services produced within a country over a specific period. It reflects the overall size, activity, and health of an economy. GDP is used to track economic growth, compare countries, and evaluate how policies or external events influence economic performance.
 
 It typically includes:
@@ -4794,6 +4836,20 @@ Net Exports: The value of a country’s exports minus its imports. Positive net 
 						<action target="next_page">navigate</action>
 					</actions>
 				</button>
+				<button z_index="47" background="#C5DDE9" font_weight="bold" font_color="#082A5C" font_size="10pt" border_color="#F5FFE0" transparent="false" corner_radius="10" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#90A4AE" label="Return to Dashboard" isee:tooltip="" x="458" y="563.201" width="150" height="33.6364" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation">
+					<actions>
+						<action target="interface:27">navigate</action>
+					</actions>
+				</button>
+				<isee:navigation_widget border_width="thin" border_style="none" item_spacing="1" orientation="horizontal" x="50.4136" y="64" width="884.545" height="30">
+					<isee:navigation_item label="Endogenous Model Behavior" target="interface:3"/>
+					<isee:navigation_item label="Confidence Graph" target="interface:4"/>
+					<isee:navigation_item label="Box and Whisker Graph" target="interface:5"/>
+					<isee:navigation_item label="Gross Domestic Product" target="interface:6"/>
+					<isee:navigation_item label="Uncertainty Ensemble and Representative Runs" target="interface:7"/>
+				</isee:navigation_widget>
+				<isee:shape z_index="48" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="2.81818" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
+				<isee:shape z_index="49" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="1022.46" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
 			</view>
 			<view isee:template_view="template:2" isee:name="Terminology Guide 5" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
@@ -4805,7 +4861,7 @@ Net Exports: The value of a country’s exports minus its imports. Positive net 
 						<action target="previous_page">navigate</action>
 					</actions>
 				</button>
-				<isee:shape background="white" border_color="#989898" border_width="0.5" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
+				<isee:shape background="white" border_color="#989898" border_width="0.5" border_style="none" transparent_background="false" corner_radius="15" x="20" y="94" width="1026" height="456" isee:locked="true" kind="rectangle"/>
 				<text_box vertical_text_align="center" font_size="14pt" appearance="transparent" x="40.51" y="200" width="303.64" height="244.087">In FRIDA, uncertainty is explored by running the model many times with different assumptions. Each run represents one possible future given uncertainty in key inputs. Together, these runs form an ensemble.
 
 The full ensemble used in the underlying model contains 100,000 runs. This large number helps capture a wide range of possible system behaviors.</text_box>
@@ -4833,8 +4889,22 @@ Together, these 11 runs capture the full uncertainty range of the model.</text_b
 						<action target="interface:8">navigate</action>
 					</actions>
 				</button>
+				<button z_index="47" background="#C5DDE9" font_weight="bold" font_color="#082A5C" font_size="10pt" border_color="#F5FFE0" transparent="false" corner_radius="10" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#90A4AE" label="Return to Dashboard" isee:tooltip="" x="458" y="563.201" width="150" height="33.6364" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation">
+					<actions>
+						<action target="interface:27">navigate</action>
+					</actions>
+				</button>
+				<isee:navigation_widget border_width="thin" border_style="none" item_spacing="1" orientation="horizontal" x="50.4136" y="64" width="884.545" height="30">
+					<isee:navigation_item label="Endogenous Model Behavior" target="interface:3"/>
+					<isee:navigation_item label="Confidence Graph" target="interface:4"/>
+					<isee:navigation_item label="Box and Whisker Graph" target="interface:5"/>
+					<isee:navigation_item label="Gross Domestic Product" target="interface:6"/>
+					<isee:navigation_item label="Uncertainty Ensemble and Representative Runs" target="interface:7"/>
+				</isee:navigation_widget>
+				<isee:shape z_index="48" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="2.81818" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
+				<isee:shape z_index="49" background="#2D4A74" border_width="thin" border_style="none" transparent_background="false" x="1022.46" y="561.019" width="39.0909" height="36" isee:conditional_immediately_update_on_user_input="true" isee:conditional_use_active_value="true" isee:conditional_entity="Interface.Return_to_Dashboard_Button_from_Navigation" block_mouse="true" kind="rectangle"/>
 			</view>
-			<view isee:template_view="template:4" isee:name="1. Guided Demonstration Intro" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:4" isee:name="1. Guided Demonstration Intro" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -5645,7 +5715,7 @@ Click the next page button &gt;</text>
 				</isee:annotation>
 				<isee:shape border_color="#C5DDE9" border_width="thick" x="1035" y="125" width="10" height="70" isee:locked="true" kind="vline"/>
 			</view>
-			<view isee:template_view="template:6" isee:name="14. 3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
+			<view isee:template_view="template:6" isee:name="14. 3rd Policy Idea" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6229,7 +6299,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					<image width="128" height="128" size_to_parent="true">r../Graphics/loop-arrow 2.png</image>
 				</button>
 			</view>
-			<view isee:template_view="template:10" isee:name="1.1.1 Dashboard STA Confidence" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:10" isee:name="1.1.1 Dashboard STA Confidence" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -6343,7 +6413,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					</actions>
 				</button>
 			</view>
-			<view isee:template_view="template:10" isee:name="1.2.1 Dashboard GDP Confidence" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="interface">
+			<view isee:template_view="template:10" isee:name="1.2.1 Dashboard GDP Confidence" background="#082A5C" page_width="1066" page_height="600" zoom="180" type="interface">
 				<style>
 					<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				</style>
@@ -8737,24 +8807,24 @@ Debates focus on timing, funding, and community consent.</text>
 					<model name="CLD_Policy_1"/>
 					<isee:visible_list>
 						<entity name='"temperature_(STA)"'/>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<item uid="CLD_Policy_1.19"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1.35"/>
 						<entity name="carbon_tax"/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1.19"/>
 						<item uid="CLD_Policy_1.1"/>
+						<entity name="bankruptcies_stranded_assets"/>
 						<item uid="CLD_Policy_1.33"/>
+						<item uid="CLD_Policy_1.35"/>
 						<item uid="CLD_Policy_1.20"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<entity name='"temperature_(STA)"'/>
-						<item uid="CLD_Policy_1.19"/>
-						<entity name="bankruptcies_stranded_assets"/>
 						<entity name="carbon_tax"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<entity name="speed_of_energy_transition"/>
+						<entity name="bankruptcies_stranded_assets"/>
 						<item uid="CLD_Policy_1.33"/>
+						<item uid="CLD_Policy_1.19"/>
 						<item uid="CLD_Policy_1.1"/>
 						<item uid="CLD_Policy_1.20"/>
 					</isee:highlight_list>
@@ -8821,46 +8891,46 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				<isee:model_view x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1"/>
 					<isee:visible_list>
-						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1.21"/>
+						<item uid="CLD_Policy_1.32"/>
+						<item uid="CLD_Policy_1.33"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1.19"/>
-						<entity name="solar_wind_nuclear_subsides"/>
+						<entity name="carbon_tax"/>
 						<entity name="government_revenue"/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1.34"/>
 						<entity name='"temperature_(STA)"'/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1.26"/>
-						<entity name="carbon_tax"/>
-						<entity name="speed_of_energy_transition"/>
-						<item uid="CLD_Policy_1.1"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1.33"/>
-						<item uid="CLD_Policy_1.32"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1.21"/>
+						<item uid="CLD_Policy_1.34"/>
+						<entity name="investment"/>
 						<entity name="inflation"/>
+						<item uid="CLD_Policy_1.26"/>
+						<entity name="unemployment"/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<item uid="CLD_Policy_1.9"/>
+						<entity name="speed_of_energy_transition"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1.18"/>
+						<item uid="CLD_Policy_1.19"/>
+						<item uid="CLD_Policy_1.1"/>
+						<entity name="bank_bailouts"/>
 						<item uid="CLD_Policy_1.17"/>
 						<item uid="CLD_Policy_1.20"/>
-						<item uid="CLD_Policy_1.18"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1.32"/>
-						<entity name="bank_bailouts"/>
-						<item uid="CLD_Policy_1.34"/>
-						<entity name="government_revenue"/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1.9"/>
 						<item uid="CLD_Policy_1.18"/>
-						<item uid="CLD_Policy_1.17"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<entity name="unemployment"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1.26"/>
 						<item uid="CLD_Policy_1.21"/>
+						<item uid="CLD_Policy_1.32"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1.9"/>
+						<entity name="unemployment"/>
+						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1.17"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1.34"/>
+						<entity name="investment"/>
 						<entity name="inflation"/>
+						<item uid="CLD_Policy_1.26"/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box background="#D6D6D6" text_align="center" vertical_text_align="center" font_size="14pt" x="480" y="532.3" width="576" height="18.87">Hover over the start or end of any arrow to view the explanation for that causal link.</text_box>
@@ -8904,68 +8974,68 @@ li.checked::marker { content: &quot;\2612&quot;; }
 				<isee:model_view x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1"/>
 					<isee:visible_list>
-						<entity name="investment"/>
-						<entity name="solar_wind_nuclear_subsides"/>
 						<item uid="CLD_Policy_1.30"/>
+						<entity name="transfer_payments"/>
 						<item uid="CLD_Policy_1.24"/>
+						<item uid="CLD_Policy_1.11"/>
 						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1.18"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="bankruptcies_stranded_assets"/>
 						<item uid="CLD_Policy_1.28"/>
+						<item uid="CLD_Policy_1.33"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
 						<item uid="CLD_Policy_1.5"/>
-						<item uid="CLD_Policy_1.19"/>
-						<item uid="CLD_Policy_1.11"/>
-						<entity name="profit_tax_rate"/>
-						<item uid="CLD_Policy_1.26"/>
-						<entity name="transfer_payments"/>
-						<item uid="CLD_Policy_1.34"/>
-						<item uid="CLD_Policy_1.27"/>
-						<item uid="CLD_Policy_1.33"/>
-						<entity name="ratio_of_wage_taxes_to_profit_taxes"/>
-						<entity name="inequality"/>
-						<item uid="CLD_Policy_1.25"/>
-						<entity name="wage_tax_rate"/>
-						<entity name="speed_of_energy_transition"/>
-						<entity name="carbon_tax"/>
-						<item uid="CLD_Policy_1.17"/>
-						<item uid="CLD_Policy_1.9"/>
-						<item uid="CLD_Policy_1.20"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<entity name="bank_bailouts"/>
-						<item uid="CLD_Policy_1.4"/>
-						<item uid="CLD_Policy_1.31"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<entity name='"temperature_(STA)"'/>
-						<item uid="CLD_Policy_1.22"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1.1"/>
+						<item uid="CLD_Policy_1.19"/>
+						<item uid="CLD_Policy_1.4"/>
+						<item uid="CLD_Policy_1.9"/>
+						<entity name="speed_of_energy_transition"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1.26"/>
 						<item uid="CLD_Policy_1.21"/>
-						<entity name="inflation"/>
+						<entity name="ratio_of_wage_taxes_to_profit_taxes"/>
+						<item uid="CLD_Policy_1.18"/>
+						<entity name="wage_tax_rate"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1.25"/>
 						<item uid="CLD_Policy_1.29"/>
+						<entity name="bank_bailouts"/>
+						<entity name="profit_tax_rate"/>
+						<item uid="CLD_Policy_1.17"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1.31"/>
+						<item uid="CLD_Policy_1.27"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1.34"/>
+						<entity name="inequality"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1.22"/>
+						<item uid="CLD_Policy_1.20"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1.28"/>
 						<item uid="CLD_Policy_1.30"/>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1.31"/>
 						<entity name="transfer_payments"/>
-						<item uid="CLD_Policy_1.11"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1.5"/>
+						<entity name="government_revenue"/>
+						<entity name="carbon_tax"/>
 						<item uid="CLD_Policy_1.25"/>
 						<entity name="wage_tax_rate"/>
 						<entity name="inequality"/>
 						<entity name="ratio_of_wage_taxes_to_profit_taxes"/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<item uid="CLD_Policy_1.27"/>
-						<item uid="CLD_Policy_1.29"/>
-						<item uid="CLD_Policy_1.9"/>
-						<entity name="carbon_tax"/>
-						<item uid="CLD_Policy_1.5"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1.24"/>
+						<item uid="CLD_Policy_1.31"/>
 						<item uid="CLD_Policy_1.4"/>
+						<item uid="CLD_Policy_1.9"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1.24"/>
+						<item uid="CLD_Policy_1.11"/>
+						<item uid="CLD_Policy_1.29"/>
 						<entity name="bank_bailouts"/>
 						<entity name="profit_tax_rate"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1.22"/>
 					</isee:highlight_list>
 				</isee:model_view>
@@ -9013,12 +9083,12 @@ li.checked::marker { content: &quot;\2612&quot;; }
 						<item uid="CLD_Policy_1.2"/>
 						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1.10"/>
+						<entity name='"temperature_(STA)"'/>
 						<item uid="CLD_Policy_1.7"/>
 						<item uid="CLD_Policy_1.16"/>
 						<item uid="CLD_Policy_1.6"/>
 						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1.12"/>
-						<entity name='"temperature_(STA)"'/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name="inflation"/>
 					</isee:highlight_list>
@@ -9034,8 +9104,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.7"/>
 						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.7"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 					</isee:visible_list>
 					<isee:highlight_list/>
@@ -9064,18 +9134,18 @@ When the economy grows, people earn more and businesses generate more activity. 
 				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
+						<item uid="CLD_Policy_1_V2.14"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.7"/>
-						<entity name="government_revenue"/>
 						<entity name="investment"/>
 						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.11"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1_V2.15"/>
 						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.15"/>
 						<entity name="investment"/>
 					</isee:highlight_list>
 				</isee:model_view>
@@ -9102,21 +9172,21 @@ When investment increases, companies build new facilities, adopt new technologie
 				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1_V2.11"/>
 						<item uid="CLD_Policy_1_V2.14"/>
 						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="unemployment"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.7"/>
 						<entity name="investment"/>
 						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.11"/>
 						<entity name="government_revenue"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1_V2.10"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="unemployment"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.15"/>
 						<entity name="investment"/>
@@ -9145,27 +9215,27 @@ A growing economy attracts new investment. Additional investment creates new job
 				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
-						<item uid="CLD_Policy_1_V2.11"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1_V2.10"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.9"/>
 						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="investment"/>
+						<entity name="unemployment"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.7"/>
 						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.9"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.7"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.9"/>
-						<item uid="CLD_Policy_1_V2.15"/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
@@ -9185,26 +9255,26 @@ When economic growth encourages more investment, employment rises and fewer peop
 				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" isee:locked="true" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
-						<item uid="CLD_Policy_1_V2.11"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="unemployment"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="investment"/>
-						<item uid="CLD_Policy_1_V2.10"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.14"/>
 						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.10"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.15"/>
 						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="government_revenue"/>
-						<entity name="investment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.7"/>
 						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.15"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 					</isee:highlight_list>
 				</isee:model_view>
@@ -9232,19 +9302,19 @@ When economic growth encourages more investment, employment rises and fewer peop
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.32"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.32"/>
-						<item uid="CLD_Policy_1_V2.9"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.11"/>
-						<entity name="inflation"/>
 						<item uid="CLD_Policy_1_V2.7"/>
-						<entity name="investment_growth_relative_to_overall_economic_growth"/>
 						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<entity name="inflation"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.15"/>
 						<item uid="CLD_Policy_1_V2.18"/>
-						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.10"/>
 						<item uid="CLD_Policy_1_V2.16"/>
 					</isee:visible_list>
@@ -9280,33 +9350,33 @@ When economic growth slows but investment continues to rise, the economy becomes
 				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
-						<item uid="CLD_Policy_1_V2.9"/>
-						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name="unemployment"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.34"/>
-						<item uid="CLD_Policy_1_V2.18"/>
-						<entity name="investment"/>
-						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.14"/>
 						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="unemployment"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<entity name="inflation"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
 						<item uid="CLD_Policy_1_V2.16"/>
 						<item uid="CLD_Policy_1_V2.10"/>
 						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.17"/>
 						<item uid="CLD_Policy_1_V2.11"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1_V2.16"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.17"/>
+						<entity name="investment"/>
 						<entity name="inflation"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.17"/>
 						<item uid="CLD_Policy_1_V2.18"/>
-						<entity name="investment"/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
@@ -9332,32 +9402,32 @@ When the economy grows quickly, investment rises at an accelerated pace. If inve
 				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.2"/>
 						<item uid="CLD_Policy_1_V2.34"/>
-						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.2"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.14"/>
 						<item uid="CLD_Policy_1_V2.16"/>
 						<item uid="CLD_Policy_1_V2.10"/>
 						<entity name="inflation"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1_V2.12"/>
-						<item uid="CLD_Policy_1_V2.18"/>
+						<entity name='"temperature_(STA)"'/>
 						<entity name="investment"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="unemployment"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
 						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.12"/>
 						<item uid="CLD_Policy_1_V2.11"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1_V2.2"/>
 						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
@@ -9384,25 +9454,25 @@ Higher economic output leads to greater energy use and more emissions. As emissi
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.14"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<item uid="CLD_Policy_1_V2.34"/>
 						<item uid="CLD_Policy_1_V2.2"/>
-						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.16"/>
 						<item uid="CLD_Policy_1_V2.10"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.17"/>
-						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="inflation"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.18"/>
-						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="unemployment"/>
 						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.15"/>
 					</isee:visible_list>
 					<isee:highlight_list/>
 				</isee:model_view>
@@ -9434,35 +9504,35 @@ In the following pages, the impact of each policy on the system is outlined.</te
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<entity name="speed_of_energy_transition"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.2"/>
-						<entity name="inflation"/>
-						<entity name="carbon_tax"/>
-						<item uid="CLD_Policy_1_V2.32"/>
-						<item uid="CLD_Policy_1_V2.34"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<entity name='"temperature_(STA)"'/>
-						<item uid="CLD_Policy_1_V2.9"/>
-						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.11"/>
-						<item uid="CLD_Policy_1_V2.17"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.16"/>
-						<item uid="CLD_Policy_1_V2.10"/>
-						<item uid="CLD_Policy_1_V2.1"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.19"/>
-						<item uid="CLD_Policy_1_V2.18"/>
 						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<entity name="inflation"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="unemployment"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.18"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1_V2.19"/>
-						<item uid="CLD_Policy_1_V2.1"/>
 						<entity name="speed_of_energy_transition"/>
 						<entity name='"temperature_(STA)"'/>
+						<item uid="CLD_Policy_1_V2.1"/>
 						<entity name="carbon_tax"/>
 					</isee:highlight_list>
 				</isee:model_view>
@@ -9489,39 +9559,39 @@ A carbon tax encourages cleaner forms of energy by making fossil fuels more expe
 				<isee:model_view z_index="-5" x="480" y="70" width="576" height="480" zoom="0.7" center_x="411.429" center_y="342.857" locked_view="true" use_visible_list="true" show_ltm_table="false" include_documentation="true">
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
-						<item uid="CLD_Policy_1_V2.43"/>
 						<entity name="speed_of_energy_transition"/>
+						<entity name="investment"/>
 						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.2"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.34"/>
 						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.34"/>
 						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="inflation"/>
-						<entity name="carbon_tax"/>
-						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.11"/>
-						<item uid="CLD_Policy_1_V2.17"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.18"/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1_V2.12"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.19"/>
-						<item uid="CLD_Policy_1_V2.10"/>
 						<item uid="CLD_Policy_1_V2.16"/>
-						<item uid="CLD_Policy_1_V2.42"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.15"/>
 						<item uid="CLD_Policy_1_V2.1"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.42"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<item uid="CLD_Policy_1_V2.7"/>
 						<item uid="CLD_Policy_1_V2.43"/>
+						<item uid="CLD_Policy_1_V2.7"/>
 						<item uid="CLD_Policy_1_V2.42"/>
-						<entity name="government_revenue"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.11"/>
 					</isee:highlight_list>
 				</isee:model_view>
@@ -9549,38 +9619,38 @@ A carbon tax creates a new revenue stream for the government. When the tax is ap
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<item uid="CLD_Policy_1_V2.2"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.33"/>
-						<item uid="CLD_Policy_1_V2.34"/>
-						<item uid="CLD_Policy_1_V2.43"/>
-						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<entity name="speed_of_energy_transition"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name="unemployment"/>
-						<entity name="carbon_tax"/>
-						<entity name="inflation"/>
-						<item uid="CLD_Policy_1_V2.1"/>
-						<item uid="CLD_Policy_1_V2.11"/>
-						<item uid="CLD_Policy_1_V2.17"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.34"/>
 						<item uid="CLD_Policy_1_V2.9"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1_V2.10"/>
-						<item uid="CLD_Policy_1_V2.42"/>
-						<item uid="CLD_Policy_1_V2.16"/>
-						<item uid="CLD_Policy_1_V2.19"/>
-						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<entity name='"temperature_(STA)"'/>
+						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<entity name="inflation"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<entity name="investment_growth_relative_to_overall_economic_growth"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.42"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.43"/>
 						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.15"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<entity name="speed_of_energy_transition"/>
 						<entity name='"temperature_(STA)"'/>
 						<entity name="solar_wind_nuclear_subsides"/>
+						<entity name="speed_of_energy_transition"/>
 						<item uid="CLD_Policy_1_V2.19"/>
 						<item uid="CLD_Policy_1_V2.33"/>
 					</isee:highlight_list>
@@ -9609,50 +9679,50 @@ Subsidies for solar, wind, and nuclear energy reduce the cost of clean technolog
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<item uid="CLD_Policy_1_V2.42"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.43"/>
 						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.7"/>
 						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.2"/>
-						<item uid="CLD_Policy_1_V2.33"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="inflation"/>
-						<entity name="carbon_tax"/>
-						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.23"/>
 						<item uid="CLD_Policy_1_V2.20"/>
 						<entity name="solar_wind_nuclear_subsides"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.8"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1_V2.9"/>
+						<item uid="CLD_Policy_1_V2.34"/>
 						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1_V2.19"/>
-						<item uid="CLD_Policy_1_V2.12"/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1_V2.18"/>
-						<item uid="CLD_Policy_1_V2.23"/>
 						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.33"/>
 						<item uid="CLD_Policy_1_V2.11"/>
-						<item uid="CLD_Policy_1_V2.10"/>
-						<item uid="CLD_Policy_1_V2.16"/>
-						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.15"/>
 						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<item uid="CLD_Policy_1_V2.19"/>
+						<item uid="CLD_Policy_1_V2.10"/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name="investment"/>
 					</isee:visible_list>
 					<isee:highlight_list>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.33"/>
-						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.8"/>
 						<item uid="CLD_Policy_1_V2.20"/>
 						<item uid="CLD_Policy_1_V2.23"/>
-						<entity name="investment"/>
-						<entity name="solar_wind_nuclear_subsides"/>
 						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1_V2.8"/>
+						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name="investment"/>
 						<entity name="speed_of_energy_transition"/>
+						<entity name="solar_wind_nuclear_subsides"/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
@@ -9679,50 +9749,50 @@ When the energy system shifts quickly toward renewables, fossil-intensive indust
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<item uid="CLD_Policy_1_V2.42"/>
-						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<item uid="CLD_Policy_1_V2.26"/>
 						<entity name='"temperature_(STA)"'/>
-						<item uid="CLD_Policy_1_V2.43"/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.21"/>
 						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.18"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.43"/>
 						<entity name="government_revenue"/>
+						<item uid="CLD_Policy_1_V2.9"/>
 						<item uid="CLD_Policy_1_V2.2"/>
-						<item uid="CLD_Policy_1_V2.33"/>
-						<item uid="CLD_Policy_1_V2.20"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.8"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.34"/>
 						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1_V2.32"/>
 						<entity name="solar_wind_nuclear_subsides"/>
-						<item uid="CLD_Policy_1_V2.9"/>
-						<item uid="CLD_Policy_1_V2.18"/>
-						<entity name="investment"/>
-						<item uid="CLD_Policy_1_V2.12"/>
-						<item uid="CLD_Policy_1_V2.23"/>
-						<item uid="CLD_Policy_1_V2.26"/>
 						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<item uid="CLD_Policy_1_V2.20"/>
 						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.33"/>
 						<item uid="CLD_Policy_1_V2.11"/>
-						<item uid="CLD_Policy_1_V2.17"/>
 						<item uid="CLD_Policy_1_V2.16"/>
-						<item uid="CLD_Policy_1_V2.10"/>
 						<item uid="CLD_Policy_1_V2.44"/>
+						<entity name="investment"/>
+						<item uid="CLD_Policy_1_V2.10"/>
 						<item uid="CLD_Policy_1_V2.19"/>
-						<item uid="CLD_Policy_1_V2.21"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.7"/>
-						<item uid="CLD_Policy_1_V2.8"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
 						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.1"/>
 						<entity name="inflation"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.21"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<item uid="CLD_Policy_1_V2.21"/>
+						<entity name="investment"/>
 						<entity name="bankruptcies_stranded_assets"/>
 						<item uid="CLD_Policy_1_V2.26"/>
 						<entity name="bank_bailouts"/>
-						<entity name="investment"/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
@@ -9749,46 +9819,46 @@ When bankruptcies threaten the stability of the financial system, governments ma
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1_V2.18"/>
-						<item uid="CLD_Policy_1_V2.20"/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<item uid="CLD_Policy_1_V2.43"/>
 						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name="speed_of_energy_transition"/>
-						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.2"/>
-						<item uid="CLD_Policy_1_V2.33"/>
-						<item uid="CLD_Policy_1_V2.34"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.9"/>
-						<entity name="solar_wind_nuclear_subsides"/>
 						<item uid="CLD_Policy_1_V2.21"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.19"/>
-						<item uid="CLD_Policy_1_V2.23"/>
-						<item uid="CLD_Policy_1_V2.26"/>
-						<item uid="CLD_Policy_1_V2.12"/>
-						<entity name="investment"/>
-						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.18"/>
 						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.26"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="government_revenue"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<entity name="bank_bailouts"/>
 						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.33"/>
 						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.19"/>
 						<item uid="CLD_Policy_1_V2.10"/>
 						<item uid="CLD_Policy_1_V2.16"/>
 						<item uid="CLD_Policy_1_V2.44"/>
-						<item uid="CLD_Policy_1_V2.42"/>
-						<item uid="CLD_Policy_1_V2.1"/>
+						<entity name="investment"/>
 						<item uid="CLD_Policy_1_V2.8"/>
 						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.42"/>
 						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="inflation"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1_V2.8"/>
-						<entity name="investment"/>
 						<entity name="unemployment"/>
+						<entity name="investment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
 						<entity name="bankruptcies_stranded_assets"/>
 					</isee:highlight_list>
@@ -9817,49 +9887,49 @@ Investment reduces unemployment by creating jobs. Bankruptcies, on the other han
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<item uid="CLD_Policy_1_V2.2"/>
-						<entity name="government_revenue"/>
-						<entity name="carbon_tax"/>
-						<item uid="CLD_Policy_1_V2.33"/>
-						<item uid="CLD_Policy_1_V2.43"/>
-						<item uid="CLD_Policy_1_V2.34"/>
-						<item uid="CLD_Policy_1_V2.20"/>
-						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
-						<entity name="speed_of_energy_transition"/>
 						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.21"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="government_revenue"/>
 						<item uid="CLD_Policy_1_V2.9"/>
-						<entity name="solar_wind_nuclear_subsides"/>
-						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.16"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<entity name="bankruptcies_stranded_assets"/>
 						<item uid="CLD_Policy_1_V2.26"/>
-						<item uid="CLD_Policy_1_V2.23"/>
-						<item uid="CLD_Policy_1_V2.11"/>
-						<item uid="CLD_Policy_1_V2.17"/>
-						<item uid="CLD_Policy_1_V2.14"/>
-						<item uid="CLD_Policy_1_V2.18"/>
+						<entity name='"temperature_(STA)"'/>
 						<item uid="CLD_Policy_1_V2.12"/>
-						<entity name="investment"/>
+						<entity name="speed_of_energy_transition"/>
+						<item uid="CLD_Policy_1_V2.21"/>
+						<entity name="solar_wind_nuclear_subsides"/>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.33"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.43"/>
+						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.18"/>
 						<item uid="CLD_Policy_1_V2.19"/>
 						<item uid="CLD_Policy_1_V2.10"/>
-						<item uid="CLD_Policy_1_V2.16"/>
 						<item uid="CLD_Policy_1_V2.44"/>
-						<item uid="CLD_Policy_1_V2.42"/>
-						<item uid="CLD_Policy_1_V2.1"/>
+						<entity name="investment"/>
+						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.8"/>
+						<item uid="CLD_Policy_1_V2.42"/>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
 						<entity name="inflation"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<entity name="investment"/>
 						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.7"/>
 						<item uid="CLD_Policy_1_V2.9"/>
-						<entity name="unemployment"/>
 						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name="unemployment"/>
 						<entity name='"economic_growth_(GDP_per_capita)"'/>
 					</isee:highlight_list>
 				</isee:model_view>
@@ -9887,47 +9957,47 @@ When more people are employed, they pay income taxes and spend more, which boost
 					<model name="CLD_Policy_1_V2"/>
 					<isee:visible_list>
 						<entity name="investment_growth_relative_to_overall_economic_growth"/>
-						<item uid="CLD_Policy_1_V2.18"/>
-						<item uid="CLD_Policy_1_V2.20"/>
+						<entity name="solar_wind_nuclear_subsides"/>
 						<item uid="CLD_Policy_1_V2.43"/>
 						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<entity name="speed_of_energy_transition"/>
-						<item uid="CLD_Policy_1_V2.32"/>
-						<entity name="government_revenue"/>
-						<item uid="CLD_Policy_1_V2.2"/>
-						<item uid="CLD_Policy_1_V2.33"/>
-						<item uid="CLD_Policy_1_V2.34"/>
-						<entity name="bankruptcies_stranded_assets"/>
-						<item uid="CLD_Policy_1_V2.15"/>
-						<item uid="CLD_Policy_1_V2.9"/>
-						<entity name="solar_wind_nuclear_subsides"/>
 						<item uid="CLD_Policy_1_V2.21"/>
-						<entity name="unemployment"/>
-						<item uid="CLD_Policy_1_V2.19"/>
-						<item uid="CLD_Policy_1_V2.23"/>
-						<item uid="CLD_Policy_1_V2.26"/>
-						<item uid="CLD_Policy_1_V2.12"/>
-						<entity name="investment"/>
-						<entity name="bank_bailouts"/>
+						<item uid="CLD_Policy_1_V2.18"/>
 						<item uid="CLD_Policy_1_V2.17"/>
+						<item uid="CLD_Policy_1_V2.32"/>
+						<item uid="CLD_Policy_1_V2.26"/>
+						<item uid="CLD_Policy_1_V2.2"/>
+						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name="government_revenue"/>
+						<entity name="bankruptcies_stranded_assets"/>
+						<item uid="CLD_Policy_1_V2.34"/>
+						<item uid="CLD_Policy_1_V2.20"/>
+						<item uid="CLD_Policy_1_V2.23"/>
+						<entity name="bank_bailouts"/>
 						<item uid="CLD_Policy_1_V2.11"/>
+						<item uid="CLD_Policy_1_V2.33"/>
 						<item uid="CLD_Policy_1_V2.14"/>
+						<item uid="CLD_Policy_1_V2.19"/>
 						<item uid="CLD_Policy_1_V2.10"/>
 						<item uid="CLD_Policy_1_V2.16"/>
 						<item uid="CLD_Policy_1_V2.44"/>
-						<item uid="CLD_Policy_1_V2.42"/>
-						<item uid="CLD_Policy_1_V2.1"/>
+						<entity name="investment"/>
 						<item uid="CLD_Policy_1_V2.8"/>
 						<item uid="CLD_Policy_1_V2.7"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
+						<entity name="unemployment"/>
+						<item uid="CLD_Policy_1_V2.42"/>
 						<entity name="carbon_tax"/>
+						<item uid="CLD_Policy_1_V2.15"/>
+						<item uid="CLD_Policy_1_V2.1"/>
+						<item uid="CLD_Policy_1_V2.9"/>
 						<entity name="inflation"/>
 					</isee:visible_list>
 					<isee:highlight_list>
 						<item uid="CLD_Policy_1_V2.2"/>
 						<entity name='"temperature_(STA)"'/>
-						<entity name='"economic_growth_(GDP_per_capita)"'/>
 						<item uid="CLD_Policy_1_V2.12"/>
+						<entity name='"economic_growth_(GDP_per_capita)"'/>
 					</isee:highlight_list>
 				</isee:model_view>
 				<text_box z_index="-4" text_align="center" vertical_text_align="center" font_color="white" font_size="18pt" appearance="transparent" x="0" y="0" width="1066" height="50">Story 1A – Climate Policy &amp; Energy Transition</text_box>
@@ -10141,7 +10211,7 @@ Click the next page button &gt;</text>
 					<style>
 						<isee:stacked_container item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 					</style>
-					<isee:shape z_index="-3" background="white" border_color="#F5FFE0" border_width="thin" border_style="none" opacity="0.15" transparent_background="false" corner_radius="1" x="0" y="560" width="1066" height="40" isee:locked="true" kind="rectangle"/>
+					<isee:shape z_index="-3" background="white" border_color="#F5FFE0" border_width="thin" border_style="none" opacity="0.15" transparent_background="false" corner_radius="1" x="0" y="560" width="1066" height="40" kind="rectangle"/>
 					<graphics_frame z_index="12" fill="none" x="1024.51" y="561.519" width="35" height="35">
 						<image width="75" height="75" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/Right Arrow.png</image>
 					</graphics_frame>
@@ -10151,8 +10221,6 @@ Click the next page button &gt;</text>
 					<graphics_frame fill="none" x="988.476" y="3.71429" width="71.4286" height="59.0476">
 						<image width="2520" height="1781" size_to_parent="true" isee:transparency="0" isee:fixed_aspect_ratio="true">r../Graphics/FRIDA logo white type.png</image>
 					</graphics_frame>
-					<isee:shape z_index="-3" background="white" border_color="#F5FFE0" border_width="thin" border_style="none" opacity="0.02" transparent_background="false" corner_radius="1" x="0" y="561" width="1066" height="10" kind="rectangle"/>
-					<isee:shape z_index="-3" background="black" border_color="#F5FFE0" border_width="thin" border_style="none" opacity="0.04" transparent_background="false" corner_radius="1" x="0" y="588" width="1066" height="10" isee:locked="true" kind="rectangle"/>
 					<isee:shape border_color="white" border_width="0.1" opacity="0.3" transparent_background="false" x="0" y="548" width="1066" height="24" isee:locked="true" kind="hline"/>
 				</view>
 				<view isee:template_view="template:1" isee:name="Home Page Template" background="#082A5C" page_width="1066" page_height="600" zoom="110" type="template">
@@ -10640,7 +10708,8 @@ Click the next page button &gt;</text>
 					<text_box z_index="41" text_align="center" vertical_text_align="center" font_color="white" font_size="8pt" appearance="transparent" x="985" y="405" width="60" height="10">Guide</text_box>
 					<button z_index="42" background="#EAF2D8" border_color="white" border_width="4" border_style="none" transparent="true" corner_radius="0" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#607D8B" label="" isee:tooltip="Terminology Guide" x="1003" y="378" width="24" height="24">
 						<actions>
-							<action target="interface:2">navigate</action>
+							<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.Return_to_Dashboard_Button_from_Navigation">control_entity</action>
+							<action target="interface:3">navigate</action>
 						</actions>
 						<image width="256" height="256" size_to_parent="true">r../Graphics/Guide Icon White.png</image>
 					</button>
@@ -10765,7 +10834,8 @@ Click the next page button &gt;</text>
 					<text_box z_index="41" text_align="center" vertical_text_align="center" font_color="white" font_size="8pt" appearance="transparent" x="985" y="405" width="60" height="10">Guide</text_box>
 					<button z_index="42" background="#EAF2D8" border_color="white" border_width="4" border_style="none" transparent="true" corner_radius="0" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#607D8B" label="" isee:tooltip="Terminology Guide" x="1003" y="378" width="24" height="24">
 						<actions>
-							<action target="interface:2">navigate</action>
+							<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.Return_to_Dashboard_Button_from_Navigation">control_entity</action>
+							<action target="interface:3">navigate</action>
 						</actions>
 						<image width="256" height="256" size_to_parent="true">r../Graphics/Guide Icon White.png</image>
 					</button>
@@ -10890,7 +10960,8 @@ Click the next page button &gt;</text>
 					<text_box z_index="41" text_align="center" vertical_text_align="center" font_color="white" font_size="8pt" appearance="transparent" x="985" y="405" width="60" height="10">Guide</text_box>
 					<button z_index="42" background="#EAF2D8" border_color="white" border_width="4" border_style="none" transparent="true" corner_radius="0" isee:flat="false" isee:highlight_on_hover="true" isee:highlight_color="#607D8B" label="" isee:tooltip="Terminology Guide" x="1003" y="378" width="24" height="24">
 						<actions>
-							<action target="interface:2">navigate</action>
+							<action isee:reset_after="never" isee:reset_value="0" isee:controller_value="1" isee:entity="Interface.Return_to_Dashboard_Button_from_Navigation">control_entity</action>
+							<action target="interface:3">navigate</action>
 						</actions>
 						<image width="256" height="256" size_to_parent="true">r../Graphics/Guide Icon White.png</image>
 					</button>
