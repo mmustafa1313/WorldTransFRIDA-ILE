@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xmile version="1.0" xmlns="http://docs.oasis-open.org/xmile/ns/XMILE/v1.0" xmlns:isee="http://iseesystems.com/XMILE">
+<xmile version="1.2" xmlns="http://docs.oasis-open.org/xmile/ns/XMILE/v1.0" xmlns:isee="http://iseesystems.com/XMILE">
 	<header>
-		<smile version="1.0" namespace="std, isee" uses_arrays="1"/>
+		<options namespace="std, isee">
+			<uses_arrays maximum_dimensions="1"/>
+		</options>
 		<name>Sea Level</name>
-		<uuid>656dacef-005e-41a3-aedc-d19f6fd6e9f6</uuid>
+		<uuid>ec2ca43a-3729-4cbf-9d7d-ec55d3cd7d18</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="3632" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.5" isee:build_number="4098" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
+	<ai_information>
+		<status verified="false"/>
+	</ai_information>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
 		<stop>2100</stop>
@@ -16,7 +21,22 @@
 		<dim name="ClimateCase" size="100"/>
 		<dim name="Run" size="11"/>
 	</dimensions>
-	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_accessible="true" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
+	<isee:prefs saved_runs="10" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
+		<isee:tag_styles>
+			<isee:tag_style tag="Assumption"/>
+			<isee:tag_style tag="Calibrated Output"/>
+			<isee:tag_style tag="Climate Impact Parameter"/>
+			<isee:tag_style tag="Discrete Outflow"/>
+			<isee:tag_style tag="Explanatory Variable"/>
+			<isee:tag_style tag="External Parameter"/>
+			<isee:tag_style tag="Interface"/>
+			<isee:tag_style tag="Internal Calibration Parameter"/>
+			<isee:tag_style tag="No Sensi"/>
+			<isee:tag_style tag="Output"/>
+			<isee:tag_style tag="Parameter"/>
+			<isee:tag_style tag="Policy"/>
+			<isee:tag_style tag="Unit"/>
+		</isee:tag_styles>
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -27,7 +47,6 @@
 			<isee:ignored_word>INvestment</isee:ignored_word>
 			<isee:ignored_word>Edenhofer</isee:ignored_word>
 			<isee:ignored_word>hydropower</isee:ignored_word>
-			<isee:ignored_word>C3S</isee:ignored_word>
 		</isee:ignored_words>
 	</isee:prefs>
 	<isee:multiplayer_settings include_chat="true" allow_observers="false" advance_time_increment="1" max_advance_time_in_ms="0" model_stops_when_players_drop="false" observer_start_page="home_page" enabled="false"/>
@@ -244,7 +263,7 @@ For a python version of the code and all references see: https://github.com/lnnr
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0</eqn>
+				<eqn>initial_sea_level_anomaly_from_GrIS_SMB[selected_climate_case]</eqn>
 				<inflow>yearly_SLR_from_GrIS_SMB</inflow>
 				<units>metre</units>
 			</stock>
@@ -270,7 +289,7 @@ Wong, T. E., Bakker, A. M. R., Ruckert, K., Applegate, P., Slangen, A. B. A., an
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>AntIS_max_contribution_to_sea_level_anomaly * (1.0 - AntIS_Volume/AntIS_initial_volume) + initial_sea_level_anomaly_from_AntIS</eqn>
+				<eqn>AntIS_max_contribution_to_sea_level_anomaly * (1.0 - AntIS_Volume/Initial_AntIS_Volume[selected_climate_case_2]) + initial_sea_level_anomaly_from_AntIS[selected_climate_case_2]</eqn>
 				<units>metre</units>
 			</aux>
 			<stock name="Sea level anomaly from mountain glaciers" access="output" isee:autocreated="true">
@@ -286,7 +305,7 @@ Wigley and Raper (2005): &quot;Extended scenarios for glacier melt due to anthro
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>initial_sea_level_anomaly_from_MG</eqn>
+				<eqn>initial_sea_level_anomaly_from_mountain_glaciers[selected_climate_case]</eqn>
 				<inflow>yearly_SLR_from_mountain_glaciers</inflow>
 				<units>metre</units>
 			</stock>
@@ -344,7 +363,7 @@ Wigley and Raper (2005): &quot;Extended scenarios for glacier melt due to anthro
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>initial_thermosteric_sea_level_anomaly</eqn>
+				<eqn>initial_sea_level_anomaly_from_thermal_expansion[selected_climate_case]</eqn>
 				<inflow>yearly_thermosteric_sea_level_rise</inflow>
 				<units>metre</units>
 			</stock>
@@ -409,7 +428,7 @@ Nauels et al. (2017): &quot;Synthesizing long-term sea level rise projections â€
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>initial_sea_level_anomaly_from_GrIS+Sea_level_anomaly_from_GrIS_SMB+Sea_level_anomaly_from_GrIS_DIS</eqn>
+				<eqn>Sea_level_anomaly_from_GrIS_SMB+Sea_level_anomaly_from_GrIS_DIS</eqn>
 				<units>metre</units>
 			</aux>
 			<aux name="nu GrIS SMB">
@@ -443,7 +462,7 @@ Nauels et al. (2017): &quot;Synthesizing long-term sea level rise projections â€
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0</eqn>
+				<eqn>initial_sea_level_anomaly_from_GrIS_DIS[selected_climate_case]</eqn>
 				<inflow>yearly_SLR_from_GrIS_DIS</inflow>
 				<units>metre</units>
 			</stock>
@@ -549,8 +568,6 @@ Nauels et al. (2017): &quot;Synthesizing long-term sea level rise projections â€
 				<units>Celsius</units>
 			</aux>
 			<aux name="AntOcean T\nconversion param a">
-				<doc>${Assumption}
-</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -564,8 +581,6 @@ Nauels et al. (2017): &quot;Synthesizing long-term sea level rise projections â€
 				<units>Celsius</units>
 			</aux>
 			<aux name="AntIS param h0">
-				<doc>${Assumption}
-</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -776,7 +791,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>AntIS_initial_volume</eqn>
+				<eqn>Initial_AntIS_Volume[selected_climate_case]</eqn>
 				<inflow>yearly_change_in_AntIS_Volume</inflow>
 				<units>metre^3</units>
 			</stock>
@@ -784,7 +799,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>reference_AntIS_radius</eqn>
+				<eqn>Initial_AntIS_Radius[selected_climate_case]</eqn>
 				<inflow>yearly_change_in_AntIS_Radius</inflow>
 				<units>metre</units>
 			</stock>
@@ -808,10 +823,312 @@ ELSE
 				<eqn>1</eqn>
 				<units>1/year</units>
 			</aux>
-			<aux name="AntIS initial volume">
-				<doc>${External Parameter,No Sensi}
+			<aux name="Initial AntIS Volume">
+				<doc>${No Sensi,External Parameter}
 </doc>
-				<eqn>24791700000000000</eqn>
+				<dimensions>
+					<dim name="ClimateCase"/>
+				</dimensions>
+				<element subscript="1">
+					<eqn>24812843742200000</eqn>
+				</element>
+				<element subscript="2">
+					<eqn>24805538493800000</eqn>
+				</element>
+				<element subscript="3">
+					<eqn>24806792505700000</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>24807349182000000</eqn>
+				</element>
+				<element subscript="5">
+					<eqn>24812766112600000</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>24817302921500000</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>24818321913600000</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>24806905029800000</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>24815319536400000</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>24814900499600000</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>24813182266400000</eqn>
+				</element>
+				<element subscript="12">
+					<eqn>24813216746900000</eqn>
+				</element>
+				<element subscript="13">
+					<eqn>24808189794000000</eqn>
+				</element>
+				<element subscript="14">
+					<eqn>24810355839500000</eqn>
+				</element>
+				<element subscript="15">
+					<eqn>24812622337600000</eqn>
+				</element>
+				<element subscript="16">
+					<eqn>24806415185400000</eqn>
+				</element>
+				<element subscript="17">
+					<eqn>24814562982000000</eqn>
+				</element>
+				<element subscript="18">
+					<eqn>24809155811300000</eqn>
+				</element>
+				<element subscript="19">
+					<eqn>24812247062300000</eqn>
+				</element>
+				<element subscript="20">
+					<eqn>24806155586700000</eqn>
+				</element>
+				<element subscript="21">
+					<eqn>24815674696200000</eqn>
+				</element>
+				<element subscript="22">
+					<eqn>24805400019800000</eqn>
+				</element>
+				<element subscript="23">
+					<eqn>24810628661400000</eqn>
+				</element>
+				<element subscript="24">
+					<eqn>24809771723700000</eqn>
+				</element>
+				<element subscript="25">
+					<eqn>24818349446500000</eqn>
+				</element>
+				<element subscript="26">
+					<eqn>24815897977000000</eqn>
+				</element>
+				<element subscript="27">
+					<eqn>24813411468200000</eqn>
+				</element>
+				<element subscript="28">
+					<eqn>24811953267800000</eqn>
+				</element>
+				<element subscript="29">
+					<eqn>24805930409400000</eqn>
+				</element>
+				<element subscript="30">
+					<eqn>24808415992500000</eqn>
+				</element>
+				<element subscript="31">
+					<eqn>24817978291700000</eqn>
+				</element>
+				<element subscript="32">
+					<eqn>24803195636800000</eqn>
+				</element>
+				<element subscript="33">
+					<eqn>24807910895900000</eqn>
+				</element>
+				<element subscript="34">
+					<eqn>24811683836900000</eqn>
+				</element>
+				<element subscript="35">
+					<eqn>24804879918300000</eqn>
+				</element>
+				<element subscript="36">
+					<eqn>24814375531500000</eqn>
+				</element>
+				<element subscript="37">
+					<eqn>24811368225500000</eqn>
+				</element>
+				<element subscript="38">
+					<eqn>24808048581700000</eqn>
+				</element>
+				<element subscript="39">
+					<eqn>24812035314700000</eqn>
+				</element>
+				<element subscript="40">
+					<eqn>24813196816000000</eqn>
+				</element>
+				<element subscript="41">
+					<eqn>24809816624900000</eqn>
+				</element>
+				<element subscript="42">
+					<eqn>24808411581300000</eqn>
+				</element>
+				<element subscript="43">
+					<eqn>24806542849900000</eqn>
+				</element>
+				<element subscript="44">
+					<eqn>24806014263100000</eqn>
+				</element>
+				<element subscript="45">
+					<eqn>24809746683900000</eqn>
+				</element>
+				<element subscript="46">
+					<eqn>24812724058500000</eqn>
+				</element>
+				<element subscript="47">
+					<eqn>24814133903000000</eqn>
+				</element>
+				<element subscript="48">
+					<eqn>24813801420900000</eqn>
+				</element>
+				<element subscript="49">
+					<eqn>24812873794000000</eqn>
+				</element>
+				<element subscript="50">
+					<eqn>24808193731900000</eqn>
+				</element>
+				<element subscript="51">
+					<eqn>24819388124500000</eqn>
+				</element>
+				<element subscript="52">
+					<eqn>24816109921400000</eqn>
+				</element>
+				<element subscript="53">
+					<eqn>24813421584100000</eqn>
+				</element>
+				<element subscript="54">
+					<eqn>24817202280400000</eqn>
+				</element>
+				<element subscript="55">
+					<eqn>24815479579100000</eqn>
+				</element>
+				<element subscript="56">
+					<eqn>24808341685300000</eqn>
+				</element>
+				<element subscript="57">
+					<eqn>24803464783100000</eqn>
+				</element>
+				<element subscript="58">
+					<eqn>24807327992300000</eqn>
+				</element>
+				<element subscript="59">
+					<eqn>24806447473900000</eqn>
+				</element>
+				<element subscript="60">
+					<eqn>24815102798600000</eqn>
+				</element>
+				<element subscript="61">
+					<eqn>24811222978200000</eqn>
+				</element>
+				<element subscript="62">
+					<eqn>24810564058400000</eqn>
+				</element>
+				<element subscript="63">
+					<eqn>24811781409700000</eqn>
+				</element>
+				<element subscript="64">
+					<eqn>24815796244600000</eqn>
+				</element>
+				<element subscript="65">
+					<eqn>24806724423600000</eqn>
+				</element>
+				<element subscript="66">
+					<eqn>24813549611300000</eqn>
+				</element>
+				<element subscript="67">
+					<eqn>24806857528000000</eqn>
+				</element>
+				<element subscript="68">
+					<eqn>24817573117500000</eqn>
+				</element>
+				<element subscript="69">
+					<eqn>24814667509100000</eqn>
+				</element>
+				<element subscript="70">
+					<eqn>24812323737000000</eqn>
+				</element>
+				<element subscript="71">
+					<eqn>24805376143900000</eqn>
+				</element>
+				<element subscript="72">
+					<eqn>24803668504900000</eqn>
+				</element>
+				<element subscript="73">
+					<eqn>24817045289600000</eqn>
+				</element>
+				<element subscript="74">
+					<eqn>24802619149400000</eqn>
+				</element>
+				<element subscript="75">
+					<eqn>24806102702200000</eqn>
+				</element>
+				<element subscript="76">
+					<eqn>24808252386500000</eqn>
+				</element>
+				<element subscript="77">
+					<eqn>24812542874200000</eqn>
+				</element>
+				<element subscript="78">
+					<eqn>24812500515400000</eqn>
+				</element>
+				<element subscript="79">
+					<eqn>24817582553400000</eqn>
+				</element>
+				<element subscript="80">
+					<eqn>24806551193700000</eqn>
+				</element>
+				<element subscript="81">
+					<eqn>24811108513500000</eqn>
+				</element>
+				<element subscript="82">
+					<eqn>24815752396500000</eqn>
+				</element>
+				<element subscript="83">
+					<eqn>24815294669700000</eqn>
+				</element>
+				<element subscript="84">
+					<eqn>24813482663500000</eqn>
+				</element>
+				<element subscript="85">
+					<eqn>24814325434900000</eqn>
+				</element>
+				<element subscript="86">
+					<eqn>24804985967100000</eqn>
+				</element>
+				<element subscript="87">
+					<eqn>24816501876400000</eqn>
+				</element>
+				<element subscript="88">
+					<eqn>24818631116100000</eqn>
+				</element>
+				<element subscript="89">
+					<eqn>24804910289400000</eqn>
+				</element>
+				<element subscript="90">
+					<eqn>24817466450900000</eqn>
+				</element>
+				<element subscript="91">
+					<eqn>24805286279600000</eqn>
+				</element>
+				<element subscript="92">
+					<eqn>24817949880800000</eqn>
+				</element>
+				<element subscript="93">
+					<eqn>24814975008000000</eqn>
+				</element>
+				<element subscript="94">
+					<eqn>24807011379400000</eqn>
+				</element>
+				<element subscript="95">
+					<eqn>24803102234200000</eqn>
+				</element>
+				<element subscript="96">
+					<eqn>24807320184600000</eqn>
+				</element>
+				<element subscript="97">
+					<eqn>24806081191400000</eqn>
+				</element>
+				<element subscript="98">
+					<eqn>24806847981700000</eqn>
+				</element>
+				<element subscript="99">
+					<eqn>24815162674000000</eqn>
+				</element>
+				<element subscript="100">
+					<eqn>24803815346700000</eqn>
+				</element>
 				<units>metre^3</units>
 			</aux>
 			<aux name="AntIS max\ncontribution to sea level anomaly">
@@ -839,44 +1156,937 @@ ELSE
 				<eqn>1</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="initial sea level anomaly from GrIS">
-				<doc>${External Parameter,No Sensi}
+			<aux name="initial sea level\nanomaly from GrIS SMB">
+				<doc>${No Sensi,External Parameter}
 </doc>
 				<dimensions>
-					<dim name="Run"/>
+					<dim name="ClimateCase"/>
 				</dimensions>
-				<eqn>-0.0028</eqn>
-				<range min="-0.01" max="0"/>
+				<element subscript="1">
+					<eqn>-0.0002051379821766</eqn>
+				</element>
+				<element subscript="2">
+					<eqn>-0.000410868071607</eqn>
+				</element>
+				<element subscript="3">
+					<eqn>-0.000314664401138</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>-0.000288337872852</eqn>
+				</element>
+				<element subscript="5">
+					<eqn>-0.000276762646077</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>-0.0000354697986867</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>-0.0000767615326645</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>-0.000292059620222</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>-0.0000539443621185</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>-0.0002169679406347</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>-0.0000365560822784</eqn>
+				</element>
+				<element subscript="12">
+					<eqn>-0.0000866571359956</eqn>
+				</element>
+				<element subscript="13">
+					<eqn>-0.000394476576954</eqn>
+				</element>
+				<element subscript="14">
+					<eqn>-0.000284254437279</eqn>
+				</element>
+				<element subscript="15">
+					<eqn>-0.000212749941705</eqn>
+				</element>
+				<element subscript="16">
+					<eqn>-0.000537230774032</eqn>
+				</element>
+				<element subscript="17">
+					<eqn>-0.0000687664137545</eqn>
+				</element>
+				<element subscript="18">
+					<eqn>-0.000230416124103</eqn>
+				</element>
+				<element subscript="19">
+					<eqn>-0.0001438573539762</eqn>
+				</element>
+				<element subscript="20">
+					<eqn>-0.000430573549564</eqn>
+				</element>
+				<element subscript="21">
+					<eqn>-0.0000762768410919</eqn>
+				</element>
+				<element subscript="22">
+					<eqn>-0.000500906229483</eqn>
+				</element>
+				<element subscript="23">
+					<eqn>-0.0001034128590694</eqn>
+				</element>
+				<element subscript="24">
+					<eqn>-0.00044552677266</eqn>
+				</element>
+				<element subscript="25">
+					<eqn>-0.0000115932780224</eqn>
+				</element>
+				<element subscript="26">
+					<eqn>-0.0000160833214299</eqn>
+				</element>
+				<element subscript="27">
+					<eqn>-0.0001165279438861</eqn>
+				</element>
+				<element subscript="28">
+					<eqn>-0.000079222959641</eqn>
+				</element>
+				<element subscript="29">
+					<eqn>-0.000288537144394</eqn>
+				</element>
+				<element subscript="30">
+					<eqn>-0.000354996749029</eqn>
+				</element>
+				<element subscript="31">
+					<eqn>-0.0000043825021405</eqn>
+				</element>
+				<element subscript="32">
+					<eqn>-0.000849186261114</eqn>
+				</element>
+				<element subscript="33">
+					<eqn>-0.000251525965342</eqn>
+				</element>
+				<element subscript="34">
+					<eqn>-0.000256266747072</eqn>
+				</element>
+				<element subscript="35">
+					<eqn>-0.00050816263959</eqn>
+				</element>
+				<element subscript="36">
+					<eqn>-0.0001532143405254</eqn>
+				</element>
+				<element subscript="37">
+					<eqn>-0.000280407311303</eqn>
+				</element>
+				<element subscript="38">
+					<eqn>-0.000097482526829</eqn>
+				</element>
+				<element subscript="39">
+					<eqn>-0.000276078763292</eqn>
+				</element>
+				<element subscript="40">
+					<eqn>-0.0001452254581882</eqn>
+				</element>
+				<element subscript="41">
+					<eqn>-0.000348910171665</eqn>
+				</element>
+				<element subscript="42">
+					<eqn>-0.000360234336838</eqn>
+				</element>
+				<element subscript="43">
+					<eqn>-0.000346829714017</eqn>
+				</element>
+				<element subscript="44">
+					<eqn>-0.000600803751981</eqn>
+				</element>
+				<element subscript="45">
+					<eqn>-0.000243643550945</eqn>
+				</element>
+				<element subscript="46">
+					<eqn>-0.0000638442649391</eqn>
+				</element>
+				<element subscript="47">
+					<eqn>-0.0001962372920566</eqn>
+				</element>
+				<element subscript="48">
+					<eqn>-0.0001659105582674</eqn>
+				</element>
+				<element subscript="49">
+					<eqn>-0.0002082482799678</eqn>
+				</element>
+				<element subscript="50">
+					<eqn>-0.000432874176144</eqn>
+				</element>
+				<element subscript="51">
+					<eqn>-0.0000064731309431</eqn>
+				</element>
+				<element subscript="52">
+					<eqn>-0.000048091035202</eqn>
+				</element>
+				<element subscript="53">
+					<eqn>-0.0001444621407982</eqn>
+				</element>
+				<element subscript="54">
+					<eqn>-0.0001359099600917</eqn>
+				</element>
+				<element subscript="55">
+					<eqn>-0.0000061803673822</eqn>
+				</element>
+				<element subscript="56">
+					<eqn>-0.000184496994954</eqn>
+				</element>
+				<element subscript="57">
+					<eqn>-0.000913631700649</eqn>
+				</element>
+				<element subscript="58">
+					<eqn>-0.000740267248802</eqn>
+				</element>
+				<element subscript="59">
+					<eqn>-0.000323733336866</eqn>
+				</element>
+				<element subscript="60">
+					<eqn>-0.0000915616124406</eqn>
+				</element>
+				<element subscript="61">
+					<eqn>-0.000146588015759</eqn>
+				</element>
+				<element subscript="62">
+					<eqn>-0.000433050793405</eqn>
+				</element>
+				<element subscript="63">
+					<eqn>-0.000280423141902</eqn>
+				</element>
+				<element subscript="64">
+					<eqn>-0.0000188451915521</eqn>
+				</element>
+				<element subscript="65">
+					<eqn>-0.000509004148495</eqn>
+				</element>
+				<element subscript="66">
+					<eqn>-0.000135237045303</eqn>
+				</element>
+				<element subscript="67">
+					<eqn>-0.00037279700929</eqn>
+				</element>
+				<element subscript="68">
+					<eqn>-0.0000010625332344</eqn>
+				</element>
+				<element subscript="69">
+					<eqn>-0.0002058255603561</eqn>
+				</element>
+				<element subscript="70">
+					<eqn>-0.000254369329449</eqn>
+				</element>
+				<element subscript="71">
+					<eqn>-0.000470435987342</eqn>
+				</element>
+				<element subscript="72">
+					<eqn>-0.000659158338795</eqn>
+				</element>
+				<element subscript="73">
+					<eqn>-0.0000308042448321</eqn>
+				</element>
+				<element subscript="74">
+					<eqn>-0.00117043819426</eqn>
+				</element>
+				<element subscript="75">
+					<eqn>-0.000529135273427</eqn>
+				</element>
+				<element subscript="76">
+					<eqn>-0.000447462032031</eqn>
+				</element>
+				<element subscript="77">
+					<eqn>-0.0001113486918371</eqn>
+				</element>
+				<element subscript="78">
+					<eqn>-0.0001361675997786</eqn>
+				</element>
+				<element subscript="79">
+					<eqn>-0.0000214331274755</eqn>
+				</element>
+				<element subscript="80">
+					<eqn>-0.000309296742943</eqn>
+				</element>
+				<element subscript="81">
+					<eqn>-0.000558413701139</eqn>
+				</element>
+				<element subscript="82">
+					<eqn>-1.51528705e-7</eqn>
+				</element>
+				<element subscript="83">
+					<eqn>-0.0000943966320914</eqn>
+				</element>
+				<element subscript="84">
+					<eqn>-0.0000978123034918</eqn>
+				</element>
+				<element subscript="85">
+					<eqn>-0.0000523676798409</eqn>
+				</element>
+				<element subscript="86">
+					<eqn>-0.00095633240097</eqn>
+				</element>
+				<element subscript="87">
+					<eqn>-0.0001117135265775</eqn>
+				</element>
+				<element subscript="88">
+					<eqn>-0.0000727956337781</eqn>
+				</element>
+				<element subscript="89">
+					<eqn>-0.000487769385391</eqn>
+				</element>
+				<element subscript="90">
+					<eqn>-0.0000865310444401</eqn>
+				</element>
+				<element subscript="91">
+					<eqn>-0.000426011456059</eqn>
+				</element>
+				<element subscript="92">
+					<eqn>-0.0000150804848936</eqn>
+				</element>
+				<element subscript="93">
+					<eqn>-0.0002874643823579</eqn>
+				</element>
+				<element subscript="94">
+					<eqn>-0.000415746011543</eqn>
+				</element>
+				<element subscript="95">
+					<eqn>-0.000694592856092</eqn>
+				</element>
+				<element subscript="96">
+					<eqn>-0.000336755920172</eqn>
+				</element>
+				<element subscript="97">
+					<eqn>-0.000432011396309</eqn>
+				</element>
+				<element subscript="98">
+					<eqn>-0.000956160344907</eqn>
+				</element>
+				<element subscript="99">
+					<eqn>-0.0000941077773173</eqn>
+				</element>
+				<element subscript="100">
+					<eqn>-0.000644141050865</eqn>
+				</element>
 				<units>metre</units>
 			</aux>
 			<aux name="initial sea level anomaly from AntIS">
-				<doc>${External Parameter,No Sensi}
+				<doc>${No Sensi,External Parameter}
 </doc>
 				<dimensions>
-					<dim name="Run"/>
+					<dim name="ClimateCase"/>
 				</dimensions>
 				<eqn>-0.00182</eqn>
-				<range min="-0.005" max="0.01"/>
 				<units>metre</units>
 			</aux>
-			<aux name="initial sea level anomaly from MG">
-				<doc>${External Parameter,No Sensi}
+			<aux name="initial sea level\nanomaly from mountain glaciers">
+				<doc>${No Sensi,External Parameter}
 </doc>
 				<dimensions>
-					<dim name="Run"/>
+					<dim name="ClimateCase"/>
 				</dimensions>
-				<eqn>-0.0035</eqn>
-				<range min="-0.005" max="-0.001"/>
+				<element subscript="1">
+					<eqn>-0.00188632230727</eqn>
+				</element>
+				<element subscript="2">
+					<eqn>-0.00314768236716</eqn>
+				</element>
+				<element subscript="3">
+					<eqn>-0.00259157771938</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>-0.00242272292901</eqn>
+				</element>
+				<element subscript="5">
+					<eqn>-0.00235756214837</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>-0.000458025967609</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>-0.000872550671601</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>-0.00244623816423</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>-0.000673174698635</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>-0.00191009619863</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>-0.000470103200211</eqn>
+				</element>
+				<element subscript="12">
+					<eqn>-0.00096537132913</eqn>
+				</element>
+				<element subscript="13">
+					<eqn>-0.00306051091204</eqn>
+				</element>
+				<element subscript="14">
+					<eqn>-0.00239687440556</eqn>
+				</element>
+				<element subscript="15">
+					<eqn>-0.00193852307347</eqn>
+				</element>
+				<element subscript="16">
+					<eqn>-0.00384437382929</eqn>
+				</element>
+				<element subscript="17">
+					<eqn>-0.000824227310577</eqn>
+				</element>
+				<element subscript="18">
+					<eqn>-0.00203836759548</eqn>
+				</element>
+				<element subscript="19">
+					<eqn>-0.001433858133674</eqn>
+				</element>
+				<element subscript="20">
+					<eqn>-0.00326328139923</eqn>
+				</element>
+				<element subscript="21">
+					<eqn>-0.00086775215832</eqn>
+				</element>
+				<element subscript="22">
+					<eqn>-0.0036313983489</eqn>
+				</element>
+				<element subscript="23">
+					<eqn>-0.00108233509396</eqn>
+				</element>
+				<element subscript="24">
+					<eqn>-0.00335453206236</eqn>
+				</element>
+				<element subscript="25">
+					<eqn>-0.00017023160168</eqn>
+				</element>
+				<element subscript="26">
+					<eqn>-0.000233106417037</eqn>
+				</element>
+				<element subscript="27">
+					<eqn>-0.001232383474793</eqn>
+				</element>
+				<element subscript="28">
+					<eqn>-0.000909096575815</eqn>
+				</element>
+				<element subscript="29">
+					<eqn>-0.00242063631999</eqn>
+				</element>
+				<element subscript="30">
+					<eqn>-0.0028277922776</eqn>
+				</element>
+				<element subscript="31">
+					<eqn>-0.000080586705352</eqn>
+				</element>
+				<element subscript="32">
+					<eqn>-0.00531973214078</eqn>
+				</element>
+				<element subscript="33">
+					<eqn>-0.00217647941444</eqn>
+				</element>
+				<element subscript="34">
+					<eqn>-0.00223106978212</eqn>
+				</element>
+				<element subscript="35">
+					<eqn>-0.00366546572315</eqn>
+				</element>
+				<element subscript="36">
+					<eqn>-0.001513410277438</eqn>
+				</element>
+				<element subscript="37">
+					<eqn>-0.00234710434061</eqn>
+				</element>
+				<element subscript="38">
+					<eqn>-0.00105081781781</eqn>
+				</element>
+				<element subscript="39">
+					<eqn>-0.00235356391736</eqn>
+				</element>
+				<element subscript="40">
+					<eqn>-0.001450576202855</eqn>
+				</element>
+				<element subscript="41">
+					<eqn>-0.00279545506968</eqn>
+				</element>
+				<element subscript="42">
+					<eqn>-0.00286160689881</eqn>
+				</element>
+				<element subscript="43">
+					<eqn>-0.00277160913274</eqn>
+				</element>
+				<element subscript="44">
+					<eqn>-0.0041672192252</eqn>
+				</element>
+				<element subscript="45">
+					<eqn>-0.00214093668955</eqn>
+				</element>
+				<element subscript="46">
+					<eqn>-0.000752674447221</eqn>
+				</element>
+				<element subscript="47">
+					<eqn>-0.00182425819572</eqn>
+				</element>
+				<element subscript="48">
+					<eqn>-0.00160039809124</eqn>
+				</element>
+				<element subscript="49">
+					<eqn>-0.00190375388927</eqn>
+				</element>
+				<element subscript="50">
+					<eqn>-0.00327607526717</eqn>
+				</element>
+				<element subscript="51">
+					<eqn>-0.0001099193630147</eqn>
+				</element>
+				<element subscript="52">
+					<eqn>-0.000612092363282</eqn>
+				</element>
+				<element subscript="53">
+					<eqn>-0.001433646520956</eqn>
+				</element>
+				<element subscript="54">
+					<eqn>-0.001375983708909</eqn>
+				</element>
+				<element subscript="55">
+					<eqn>-0.000102968764987</eqn>
+				</element>
+				<element subscript="56">
+					<eqn>-0.001725426479</eqn>
+				</element>
+				<element subscript="57">
+					<eqn>-0.00562497871692</eqn>
+				</element>
+				<element subscript="58">
+					<eqn>-0.00484740020334</eqn>
+				</element>
+				<element subscript="59">
+					<eqn>-0.00263688559472</eqn>
+				</element>
+				<element subscript="60">
+					<eqn>-0.001001616853755</eqn>
+				</element>
+				<element subscript="61">
+					<eqn>-0.00144943083007</eqn>
+				</element>
+				<element subscript="62">
+					<eqn>-0.00329136721003</eqn>
+				</element>
+				<element subscript="63">
+					<eqn>-0.00237432564481</eqn>
+				</element>
+				<element subscript="64">
+					<eqn>-0.000282342517659</eqn>
+				</element>
+				<element subscript="65">
+					<eqn>-0.0036853262698</eqn>
+				</element>
+				<element subscript="66">
+					<eqn>-0.001374103321412</eqn>
+				</element>
+				<element subscript="67">
+					<eqn>-0.00292909050663</eqn>
+				</element>
+				<element subscript="68">
+					<eqn>-0.000024819302673</eqn>
+				</element>
+				<element subscript="69">
+					<eqn>-0.001887888790592</eqn>
+				</element>
+				<element subscript="70">
+					<eqn>-0.00221239197545</eqn>
+				</element>
+				<element subscript="71">
+					<eqn>-0.00345120876809</eqn>
+				</element>
+				<element subscript="72">
+					<eqn>-0.00443536696764</eqn>
+				</element>
+				<element subscript="73">
+					<eqn>-0.000420218783559</eqn>
+				</element>
+				<element subscript="74">
+					<eqn>-0.00672708418628</eqn>
+				</element>
+				<element subscript="75">
+					<eqn>-0.00379542737785</eqn>
+				</element>
+				<element subscript="76">
+					<eqn>-0.00336609234237</eqn>
+				</element>
+				<element subscript="77">
+					<eqn>-0.001176976477939</eqn>
+				</element>
+				<element subscript="78">
+					<eqn>-0.00137962092377</eqn>
+				</element>
+				<element subscript="79">
+					<eqn>-0.00028685314469</eqn>
+				</element>
+				<element subscript="80">
+					<eqn>-0.00254056293858</eqn>
+				</element>
+				<element subscript="81">
+					<eqn>-0.00396866763378</eqn>
+				</element>
+				<element subscript="82">
+					<eqn>-0.00000509051212400002</eqn>
+				</element>
+				<element subscript="83">
+					<eqn>-0.001033920964039</eqn>
+				</element>
+				<element subscript="84">
+					<eqn>-0.00108507541578</eqn>
+				</element>
+				<element subscript="85">
+					<eqn>-0.000649620337922</eqn>
+				</element>
+				<element subscript="86">
+					<eqn>-0.0058004616868</eqn>
+				</element>
+				<element subscript="87">
+					<eqn>-0.001187010649283</eqn>
+				</element>
+				<element subscript="88">
+					<eqn>-0.000831582598542</eqn>
+				</element>
+				<element subscript="89">
+					<eqn>-0.00356588859035</eqn>
+				</element>
+				<element subscript="90">
+					<eqn>-0.000967403728269</eqn>
+				</element>
+				<element subscript="91">
+					<eqn>-0.00322714420752</eqn>
+				</element>
+				<element subscript="92">
+					<eqn>-0.000215389221032</eqn>
+				</element>
+				<element subscript="93">
+					<eqn>-0.002428930220546</eqn>
+				</element>
+				<element subscript="94">
+					<eqn>-0.00317878327405</eqn>
+				</element>
+				<element subscript="95">
+					<eqn>-0.00459537555123</eqn>
+				</element>
+				<element subscript="96">
+					<eqn>-0.00270960812213</eqn>
+				</element>
+				<element subscript="97">
+					<eqn>-0.00326075388076</eqn>
+				</element>
+				<element subscript="98">
+					<eqn>-0.00585066214954</eqn>
+				</element>
+				<element subscript="99">
+					<eqn>-0.001041761128239</eqn>
+				</element>
+				<element subscript="100">
+					<eqn>-0.00436076758541</eqn>
+				</element>
 				<units>metre</units>
 			</aux>
-			<aux name="initial thermosteric sea level anomaly">
-				<doc>${External Parameter,No Sensi}
+			<aux name="initial sea level anomaly from thermal expansion">
+				<doc>${No Sensi,External Parameter}
 </doc>
 				<dimensions>
-					<dim name="Run"/>
+					<dim name="ClimateCase"/>
 				</dimensions>
-				<eqn>-0.008</eqn>
-				<range min="-0.015" max="-0.005"/>
+				<element subscript="1">
+					<eqn>-0.00836977387169</eqn>
+				</element>
+				<element subscript="2">
+					<eqn>-0.0079801969035</eqn>
+				</element>
+				<element subscript="3">
+					<eqn>-0.0095157993638</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>-0.0069475410677</eqn>
+				</element>
+				<element subscript="5">
+					<eqn>-0.0091974476224</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>-0.0040797405288</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>-0.0090785962162</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>-0.0095881647224</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>-0.00492853330574</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>-0.00762707308595</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>-0.00349898695764</eqn>
+				</element>
+				<element subscript="12">
+					<eqn>-0.00651037826989</eqn>
+				</element>
+				<element subscript="13">
+					<eqn>-0.0088509419112</eqn>
+				</element>
+				<element subscript="14">
+					<eqn>-0.00774148791124</eqn>
+				</element>
+				<element subscript="15">
+					<eqn>-0.0105098103931</eqn>
+				</element>
+				<element subscript="16">
+					<eqn>-0.0087931923835</eqn>
+				</element>
+				<element subscript="17">
+					<eqn>-0.0038121684074718</eqn>
+				</element>
+				<element subscript="18">
+					<eqn>-0.00306877602977</eqn>
+				</element>
+				<element subscript="19">
+					<eqn>-0.00690686230868</eqn>
+				</element>
+				<element subscript="20">
+					<eqn>-0.0095423261275</eqn>
+				</element>
+				<element subscript="21">
+					<eqn>-0.00507778442313</eqn>
+				</element>
+				<element subscript="22">
+					<eqn>-0.0091814029275</eqn>
+				</element>
+				<element subscript="23">
+					<eqn>-0.00218907800164</eqn>
+				</element>
+				<element subscript="24">
+					<eqn>-0.0086607439524</eqn>
+				</element>
+				<element subscript="25">
+					<eqn>-0.00546679805507</eqn>
+				</element>
+				<element subscript="26">
+					<eqn>-0.00402804347941</eqn>
+				</element>
+				<element subscript="27">
+					<eqn>-0.00561800437621</eqn>
+				</element>
+				<element subscript="28">
+					<eqn>-0.002517481119239</eqn>
+				</element>
+				<element subscript="29">
+					<eqn>-0.006344579875</eqn>
+				</element>
+				<element subscript="30">
+					<eqn>-0.0085923655995</eqn>
+				</element>
+				<element subscript="31">
+					<eqn>-0.00314710793824</eqn>
+				</element>
+				<element subscript="32">
+					<eqn>-0.0117069448685</eqn>
+				</element>
+				<element subscript="33">
+					<eqn>-0.0073242064836</eqn>
+				</element>
+				<element subscript="34">
+					<eqn>-0.00759666519341</eqn>
+				</element>
+				<element subscript="35">
+					<eqn>-0.0144217294475</eqn>
+				</element>
+				<element subscript="36">
+					<eqn>-0.00913015594965</eqn>
+				</element>
+				<element subscript="37">
+					<eqn>-0.004679941964381</eqn>
+				</element>
+				<element subscript="38">
+					<eqn>-0.00495507138478</eqn>
+				</element>
+				<element subscript="39">
+					<eqn>-0.0083153954539</eqn>
+				</element>
+				<element subscript="40">
+					<eqn>-0.00715977239193</eqn>
+				</element>
+				<element subscript="41">
+					<eqn>-0.0096161351772</eqn>
+				</element>
+				<element subscript="42">
+					<eqn>-0.0105820673576</eqn>
+				</element>
+				<element subscript="43">
+					<eqn>-0.0068036304731</eqn>
+				</element>
+				<element subscript="44">
+					<eqn>-0.0127125325191</eqn>
+				</element>
+				<element subscript="45">
+					<eqn>-0.0094561624174</eqn>
+				</element>
+				<element subscript="46">
+					<eqn>-0.00413822344024</eqn>
+				</element>
+				<element subscript="47">
+					<eqn>-0.00913870825557</eqn>
+				</element>
+				<element subscript="48">
+					<eqn>-0.0076005298964</eqn>
+				</element>
+				<element subscript="49">
+					<eqn>-0.00948239514588</eqn>
+				</element>
+				<element subscript="50">
+					<eqn>-0.0105859577494</eqn>
+				</element>
+				<element subscript="51">
+					<eqn>-0.00702786009875</eqn>
+				</element>
+				<element subscript="52">
+					<eqn>-0.00493697975543</eqn>
+				</element>
+				<element subscript="53">
+					<eqn>-0.00736258467481</eqn>
+				</element>
+				<element subscript="54">
+					<eqn>-0.011844919789352</eqn>
+				</element>
+				<element subscript="55">
+					<eqn>-0.0026055160798</eqn>
+				</element>
+				<element subscript="56">
+					<eqn>-0.00635654922765</eqn>
+				</element>
+				<element subscript="57">
+					<eqn>-0.0117668005377</eqn>
+				</element>
+				<element subscript="58">
+					<eqn>-0.0092228980554</eqn>
+				</element>
+				<element subscript="59">
+					<eqn>-0.006962926578</eqn>
+				</element>
+				<element subscript="60">
+					<eqn>-0.003897359369416</eqn>
+				</element>
+				<element subscript="61">
+					<eqn>-0.00537467698146</eqn>
+				</element>
+				<element subscript="62">
+					<eqn>-0.0118340260882</eqn>
+				</element>
+				<element subscript="63">
+					<eqn>-0.00728012966156</eqn>
+				</element>
+				<element subscript="64">
+					<eqn>-0.00367704377633</eqn>
+				</element>
+				<element subscript="65">
+					<eqn>-0.0114606826426</eqn>
+				</element>
+				<element subscript="66">
+					<eqn>-0.00775765049981</eqn>
+				</element>
+				<element subscript="67">
+					<eqn>-0.0100501425459</eqn>
+				</element>
+				<element subscript="68">
+					<eqn>-0.00197479059494</eqn>
+				</element>
+				<element subscript="69">
+					<eqn>-0.00714659342611</eqn>
+				</element>
+				<element subscript="70">
+					<eqn>-0.00806654192252</eqn>
+				</element>
+				<element subscript="71">
+					<eqn>-0.0077331256921</eqn>
+				</element>
+				<element subscript="72">
+					<eqn>-0.0111960499392</eqn>
+				</element>
+				<element subscript="73">
+					<eqn>-0.005024153705</eqn>
+				</element>
+				<element subscript="74">
+					<eqn>-0.0105903043413</eqn>
+				</element>
+				<element subscript="75">
+					<eqn>-0.0085363885153</eqn>
+				</element>
+				<element subscript="76">
+					<eqn>-0.0089247310218</eqn>
+				</element>
+				<element subscript="77">
+					<eqn>-0.00757693584118</eqn>
+				</element>
+				<element subscript="78">
+					<eqn>-0.00732944382195</eqn>
+				</element>
+				<element subscript="79">
+					<eqn>-0.004551402145</eqn>
+				</element>
+				<element subscript="80">
+					<eqn>-0.006292295588</eqn>
+				</element>
+				<element subscript="81">
+					<eqn>-0.0106731729385</eqn>
+				</element>
+				<element subscript="82">
+					<eqn>-0.001189502147</eqn>
+				</element>
+				<element subscript="83">
+					<eqn>-0.006343022119688</eqn>
+				</element>
+				<element subscript="84">
+					<eqn>-0.00785719962619</eqn>
+				</element>
+				<element subscript="85">
+					<eqn>-0.00574203186167</eqn>
+				</element>
+				<element subscript="86">
+					<eqn>-0.0117383667981</eqn>
+				</element>
+				<element subscript="87">
+					<eqn>-0.00879837337469</eqn>
+				</element>
+				<element subscript="88">
+					<eqn>-0.01037945085971</eqn>
+				</element>
+				<element subscript="89">
+					<eqn>-0.009282115651</eqn>
+				</element>
+				<element subscript="90">
+					<eqn>-0.00635518186057</eqn>
+				</element>
+				<element subscript="91">
+					<eqn>-0.0116296296591</eqn>
+				</element>
+				<element subscript="92">
+					<eqn>-0.0044072865603</eqn>
+				</element>
+				<element subscript="93">
+					<eqn>-0.01221714658863</eqn>
+				</element>
+				<element subscript="94">
+					<eqn>-0.0089034963255</eqn>
+				</element>
+				<element subscript="95">
+					<eqn>-0.00997220664</eqn>
+				</element>
+				<element subscript="96">
+					<eqn>-0.0058355300011</eqn>
+				</element>
+				<element subscript="97">
+					<eqn>-0.0118097014666</eqn>
+				</element>
+				<element subscript="98">
+					<eqn>-0.0127780602667</eqn>
+				</element>
+				<element subscript="99">
+					<eqn>-0.004678021392987</eqn>
+				</element>
+				<element subscript="100">
+					<eqn>-0.007887443412</eqn>
+				</element>
 				<units>metre</units>
 			</aux>
 			<aux name="MG temperature\nnonlinearity">
@@ -897,7 +2107,7 @@ ELSE
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>IF Antarctic_air_temperature &gt; MICI_AntIS_critical_Tant THEN
-Include_MICI_behaviour * MICI_AntIS_disintegration * AntIS_initial_volume / AntIS_max_contribution_to_sea_level_anomaly ELSE 0</eqn>
+Include_MICI_behaviour * MICI_AntIS_disintegration * Initial_AntIS_Volume[selected_climate_case_2] / AntIS_max_contribution_to_sea_level_anomaly ELSE 0</eqn>
 				<units>metre^3/year</units>
 			</aux>
 			<aux name="MICI AntIS\ndisintegration">
@@ -975,37 +2185,37 @@ Include_MICI_behaviour * MICI_AntIS_disintegration * AntIS_initial_volume / AntI
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>0.445575884994857 {0, 1}</eqn>
+					<eqn>0.460833519220091 {0, 1}</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>0.468355284495235</eqn>
+					<eqn>0.450313688378583</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>0.534660083801202</eqn>
+					<eqn>0.536271070875203</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>0.472430646569593</eqn>
+					<eqn>0.544307537009173</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>0.477654493823439</eqn>
+					<eqn>0.510523792814558</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>0.547647386381847</eqn>
+					<eqn>0.497003163585223</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>0.445961250775879</eqn>
+					<eqn>0.538378048143023</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>0.491535274103786</eqn>
+					<eqn>0.477866833755272</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>0.465191479009072</eqn>
+					<eqn>0.450079931968652</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>0.562185667291049</eqn>
+					<eqn>0.462278846988614</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>0.52097531673293</eqn>
+					<eqn>0.449995145745389</eqn>
 				</element>
 				<range min="0" max="1"/>
 				<units>1</units>
@@ -1017,37 +2227,37 @@ Include_MICI_behaviour * MICI_AntIS_disintegration * AntIS_initial_volume / AntI
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>0.886482238769531 {0, 1}</eqn>
+					<eqn>0.143951416015625 {0, 1}</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>0.582130432128906</eqn>
+					<eqn>0.5572509765625</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>0.311721801757812</eqn>
+					<eqn>0.262222290039062</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>0.992813110351562</eqn>
+					<eqn>0.310943603515625</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>0.011077880859375</eqn>
+					<eqn>0.181602478027344</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>0.259223937988281</eqn>
+					<eqn>0.309677124023438</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>0.54388427734375</eqn>
+					<eqn>0.930503845214844</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>0.35498046875</eqn>
+					<eqn>0.530487060546875</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>0.479080200195312</eqn>
+					<eqn>0.196922302246094</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>0.0207061767578125</eqn>
+					<eqn>0.850250244140625</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>0.914337158203125</eqn>
+					<eqn>0.0814361572265625</eqn>
 				</element>
 				<range min="0" max="1"/>
 				<units>1</units>
@@ -1059,37 +2269,37 @@ Include_MICI_behaviour * MICI_AntIS_disintegration * AntIS_initial_volume / AntI
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>0.0556106567382812 {0, 1}</eqn>
+					<eqn>0.086639404296875 {0, 1}</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>0.720069885253906</eqn>
+					<eqn>0.8162841796875</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>0.833419799804688</eqn>
+					<eqn>0.0920562744140625</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>0.522445678710938</eqn>
+					<eqn>0.493865966796875</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>0.044097900390625</eqn>
+					<eqn>0.764274597167969</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>0.303718566894531</eqn>
+					<eqn>0.710861206054688</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>0.68817138671875</eqn>
+					<eqn>0.372062683105469</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>0.55810546875</eqn>
+					<eqn>0.568634033203125</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>0.321823120117188</eqn>
+					<eqn>0.363700866699219</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>0.702560424804688</eqn>
+					<eqn>0.846649169921875</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>0.947479248046875</eqn>
+					<eqn>0.751358032226562</eqn>
 				</element>
 				<range min="0" max="1"/>
 				<units>1</units>
@@ -1101,37 +2311,37 @@ Include_MICI_behaviour * MICI_AntIS_disintegration * AntIS_initial_volume / AntI
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>0.486976623535156 {0, 1}</eqn>
+					<eqn>0.191436767578125 {0, 1}</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>0.0214920043945312</eqn>
+					<eqn>0.1888427734375</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>0.827224731445312</eqn>
+					<eqn>0.383682250976562</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>0.868423461914062</eqn>
+					<eqn>0.823272705078125</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>0.218902587890625</eqn>
+					<eqn>0.663352966308594</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>0.556495666503906</eqn>
+					<eqn>0.636581420898438</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>0.58612060546875</eqn>
+					<eqn>0.806297302246094</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>0.42919921875</eqn>
+					<eqn>0.740570068359375</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>0.283889770507812</eqn>
+					<eqn>0.915122985839844</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>0.149490356445312</eqn>
+					<eqn>0.471466064453125</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>0.877899169921875</eqn>
+					<eqn>0.450942993164062</eqn>
 				</element>
 				<range min="0" max="1"/>
 				<units>1</units>
@@ -1340,7 +2550,7 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.00532349732035439</eqn>
+				<eqn>-0.00495350873016582</eqn>
 				<range min="-0.1" max="0.1"/>
 				<units>metre</units>
 			</aux>
@@ -1358,37 +2568,37 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<dim name="Run"/>
 				</dimensions>
 				<element subscript="1">
-					<eqn>2606286196.99379</eqn>
+					<eqn>2943219154.35223</eqn>
 				</element>
 				<element subscript="2">
-					<eqn>2745919768.258</eqn>
+					<eqn>2935623908.47611</eqn>
 				</element>
 				<element subscript="3">
-					<eqn>3061734278.92223</eqn>
+					<eqn>2841952735.44959</eqn>
 				</element>
 				<element subscript="4">
-					<eqn>3356108498.31107</eqn>
+					<eqn>3240428107.18713</eqn>
 				</element>
 				<element subscript="5">
-					<eqn>3347682027.37359</eqn>
+					<eqn>2722496866.2907</eqn>
 				</element>
 				<element subscript="6">
-					<eqn>3066553222.66132</eqn>
+					<eqn>2937771310.8617</eqn>
 				</element>
 				<element subscript="7">
-					<eqn>3041514311.6621</eqn>
+					<eqn>3309721502.88563</eqn>
 				</element>
 				<element subscript="8">
-					<eqn>3473562457.91109</eqn>
+					<eqn>2684811541.17416</eqn>
 				</element>
 				<element subscript="9">
-					<eqn>3496561557.23516</eqn>
+					<eqn>3065277294.38232</eqn>
 				</element>
 				<element subscript="10">
-					<eqn>3424304123.57254</eqn>
+					<eqn>2980624153.54159</eqn>
 				</element>
 				<element subscript="11">
-					<eqn>3502244526.00695</eqn>
+					<eqn>2742516368.8263</eqn>
 				</element>
 				<range min="2000000000" max="5000000000"/>
 				<units>m^3/GW</units>
@@ -1413,6 +2623,636 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 				</dimensions>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>deg C</units>
+			</aux>
+			<aux name="initial sea level\nanomaly from GrIS DIS">
+				<doc>${No Sensi,External Parameter}
+</doc>
+				<dimensions>
+					<dim name="ClimateCase"/>
+				</dimensions>
+				<element subscript="1">
+					<eqn>-0.0017500784687</eqn>
+				</element>
+				<element subscript="2">
+					<eqn>-0.0018523013188</eqn>
+				</element>
+				<element subscript="3">
+					<eqn>-0.0018075098568</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>-0.0017940295146</eqn>
+				</element>
+				<element subscript="5">
+					<eqn>-0.0017905677426</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>-0.0016072656319</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>-0.0016561849401</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>-0.0017960250721</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>-0.0016338866593</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>-0.0017521084136</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>-0.0016062463999</eqn>
+				</element>
+				<element subscript="12">
+					<eqn>-0.0016642294977</eqn>
+				</element>
+				<element subscript="13">
+					<eqn>-0.0018451767307</eqn>
+				</element>
+				<element subscript="14">
+					<eqn>-0.0017920428572</eqn>
+				</element>
+				<element subscript="15">
+					<eqn>-0.0017545535324</eqn>
+				</element>
+				<element subscript="16">
+					<eqn>-0.001905119835</eqn>
+				</element>
+				<element subscript="17">
+					<eqn>-0.0016498998943</eqn>
+				</element>
+				<element subscript="18">
+					<eqn>-0.0017631776615</eqn>
+				</element>
+				<element subscript="19">
+					<eqn>-0.0017096700839</eqn>
+				</element>
+				<element subscript="20">
+					<eqn>-0.0018613873202</eqn>
+				</element>
+				<element subscript="21">
+					<eqn>-0.0016539392361</eqn>
+				</element>
+				<element subscript="22">
+					<eqn>-0.0018900572278</eqn>
+				</element>
+				<element subscript="23">
+					<eqn>-0.0016749885106</eqn>
+				</element>
+				<element subscript="24">
+					<eqn>-0.0018674642241</eqn>
+				</element>
+				<element subscript="25">
+					<eqn>-0.0015505530514</eqn>
+				</element>
+				<element subscript="26">
+					<eqn>-0.0015690801499</eqn>
+				</element>
+				<element subscript="27">
+					<eqn>-0.0016909623228</eqn>
+				</element>
+				<element subscript="28">
+					<eqn>-0.0016587485461</eqn>
+				</element>
+				<element subscript="29">
+					<eqn>-0.0017938117914</eqn>
+				</element>
+				<element subscript="30">
+					<eqn>-0.0018268317943</eqn>
+				</element>
+				<element subscript="31">
+					<eqn>-0.0015297594469</eqn>
+				</element>
+				<element subscript="32">
+					<eqn>-0.0020161071959</eqn>
+				</element>
+				<element subscript="33">
+					<eqn>-0.0017745751109</eqn>
+				</element>
+				<element subscript="34">
+					<eqn>-0.001779199141</eqn>
+				</element>
+				<element subscript="35">
+					<eqn>-0.0018924483819</eqn>
+				</element>
+				<element subscript="36">
+					<eqn>-0.0017171426808</eqn>
+				</element>
+				<element subscript="37">
+					<eqn>-0.0017890670268</eqn>
+				</element>
+				<element subscript="38">
+					<eqn>-0.0016720613244</eqn>
+				</element>
+				<element subscript="39">
+					<eqn>-0.0017885684892</eqn>
+				</element>
+				<element subscript="40">
+					<eqn>-0.0017109962211</eqn>
+				</element>
+				<element subscript="41">
+					<eqn>-0.0018250606542</eqn>
+				</element>
+				<element subscript="42">
+					<eqn>-0.0018301185863</eqn>
+				</element>
+				<element subscript="43">
+					<eqn>-0.0018225575824</eqn>
+				</element>
+				<element subscript="44">
+					<eqn>-0.0019295748667</eqn>
+				</element>
+				<element subscript="45">
+					<eqn>-0.0017707774389</eqn>
+				</element>
+				<element subscript="46">
+					<eqn>-0.0016407673894</eqn>
+				</element>
+				<element subscript="47">
+					<eqn>-0.0017447173757</eqn>
+				</element>
+				<element subscript="48">
+					<eqn>-0.001726584092</eqn>
+				</element>
+				<element subscript="49">
+					<eqn>-0.0017511830957</eqn>
+				</element>
+				<element subscript="50">
+					<eqn>-0.00186243957</eqn>
+				</element>
+				<element subscript="51">
+					<eqn>-0.0015401235614</eqn>
+				</element>
+				<element subscript="52">
+					<eqn>-0.0016264706579</eqn>
+				</element>
+				<element subscript="53">
+					<eqn>-0.0017099482128</eqn>
+				</element>
+				<element subscript="54">
+					<eqn>-0.0017054299285</eqn>
+				</element>
+				<element subscript="55">
+					<eqn>-0.0015286993761</eqn>
+				</element>
+				<element subscript="56">
+					<eqn>-0.0017353027734</eqn>
+				</element>
+				<element subscript="57">
+					<eqn>-0.0020373291642</eqn>
+				</element>
+				<element subscript="58">
+					<eqn>-0.0019800784361</eqn>
+				</element>
+				<element subscript="59">
+					<eqn>-0.0018122725918</eqn>
+				</element>
+				<element subscript="60">
+					<eqn>-0.0016683701409</eqn>
+				</element>
+				<element subscript="61">
+					<eqn>-0.0017108227051</eqn>
+				</element>
+				<element subscript="62">
+					<eqn>-0.0018626285779</eqn>
+				</element>
+				<element subscript="63">
+					<eqn>-0.0017905012852</eqn>
+				</element>
+				<element subscript="64">
+					<eqn>-0.0015827472219</eqn>
+				</element>
+				<element subscript="65">
+					<eqn>-0.0018937274104</eqn>
+				</element>
+				<element subscript="66">
+					<eqn>-0.0017046087724</eqn>
+				</element>
+				<element subscript="67">
+					<eqn>-0.0018349623412</eqn>
+				</element>
+				<element subscript="68">
+					<eqn>-0.0014994382202</eqn>
+				</element>
+				<element subscript="69">
+					<eqn>-0.001750961727</eqn>
+				</element>
+				<element subscript="70">
+					<eqn>-0.0017781293743</eqn>
+				</element>
+				<element subscript="71">
+					<eqn>-0.0018768376618</eqn>
+				</element>
+				<element subscript="72">
+					<eqn>-0.0019499813483</eqn>
+				</element>
+				<element subscript="73">
+					<eqn>-0.001602414583</eqn>
+				</element>
+				<element subscript="74">
+					<eqn>-0.0021165388622</eqn>
+				</element>
+				<element subscript="75">
+					<eqn>-0.0019014273626</eqn>
+				</element>
+				<element subscript="76">
+					<eqn>-0.0018687596399</eqn>
+				</element>
+				<element subscript="77">
+					<eqn>-0.0016856671091</eqn>
+				</element>
+				<element subscript="78">
+					<eqn>-0.0017049797051</eqn>
+				</element>
+				<element subscript="79">
+					<eqn>-0.0015722552595</eqn>
+				</element>
+				<element subscript="80">
+					<eqn>-0.0018033769395</eqn>
+				</element>
+				<element subscript="81">
+					<eqn>-0.0019131503403</eqn>
+				</element>
+				<element subscript="82">
+					<eqn>-0.0014786596698</eqn>
+				</element>
+				<element subscript="83">
+					<eqn>-0.0016710052177</eqn>
+				</element>
+				<element subscript="84">
+					<eqn>-0.0016773900771</eqn>
+				</element>
+				<element subscript="85">
+					<eqn>-0.0016298368319</eqn>
+				</element>
+				<element subscript="86">
+					<eqn>-0.0020516241401</eqn>
+				</element>
+				<element subscript="87">
+					<eqn>-0.0016877657175</eqn>
+				</element>
+				<element subscript="88">
+					<eqn>-0.0016513200889</eqn>
+				</element>
+				<element subscript="89">
+					<eqn>-0.0018842571284</eqn>
+				</element>
+				<element subscript="90">
+					<eqn>-0.0016648783789</eqn>
+				</element>
+				<element subscript="91">
+					<eqn>-0.0018584897278</eqn>
+				</element>
+				<element subscript="92">
+					<eqn>-0.0015604970286</eqn>
+				</element>
+				<element subscript="93">
+					<eqn>-0.0017960039041</eqn>
+				</element>
+				<element subscript="94">
+					<eqn>-0.0018543667111</eqn>
+				</element>
+				<element subscript="95">
+					<eqn>-0.0019626674174</eqn>
+				</element>
+				<element subscript="96">
+					<eqn>-0.0018175080295</eqn>
+				</element>
+				<element subscript="97">
+					<eqn>-0.001860914017</eqn>
+				</element>
+				<element subscript="98">
+					<eqn>-0.0020526499712</eqn>
+				</element>
+				<element subscript="99">
+					<eqn>-0.0016729350912</eqn>
+				</element>
+				<element subscript="100">
+					<eqn>-0.0019447458784</eqn>
+				</element>
+				<units>metre</units>
+			</aux>
+			<aux name="Initial AntIS Radius">
+				<doc>${No Sensi,External Parameter}
+</doc>
+				<dimensions>
+					<dim name="ClimateCase"/>
+				</dimensions>
+				<element subscript="1">
+					<eqn>1864682.91974</eqn>
+				</element>
+				<element subscript="2">
+					<eqn>1864447.00337</eqn>
+				</element>
+				<element subscript="3">
+					<eqn>1864487.50318</eqn>
+				</element>
+				<element subscript="4">
+					<eqn>1864505.48136</eqn>
+				</element>
+				<element subscript="5">
+					<eqn>1864680.41296</eqn>
+				</element>
+				<element subscript="6">
+					<eqn>1864826.90666</eqn>
+				</element>
+				<element subscript="7">
+					<eqn>1864859.80798</eqn>
+				</element>
+				<element subscript="8">
+					<eqn>1864491.13723</eqn>
+				</element>
+				<element subscript="9">
+					<eqn>1864762.86486</eqn>
+				</element>
+				<element subscript="10">
+					<eqn>1864749.33417</eqn>
+				</element>
+				<element subscript="11">
+					<eqn>1864693.85118</eqn>
+				</element>
+				<element subscript="12">
+					<eqn>1864694.9646</eqn>
+				</element>
+				<element subscript="13">
+					<eqn>1864532.62899</eqn>
+				</element>
+				<element subscript="14">
+					<eqn>1864602.57935</eqn>
+				</element>
+				<element subscript="15">
+					<eqn>1864675.77023</eqn>
+				</element>
+				<element subscript="16">
+					<eqn>1864475.31729</eqn>
+				</element>
+				<element subscript="17">
+					<eqn>1864738.43564</eqn>
+				</element>
+				<element subscript="18">
+					<eqn>1864563.826</eqn>
+				</element>
+				<element subscript="19">
+					<eqn>1864663.6519</eqn>
+				</element>
+				<element subscript="20">
+					<eqn>1864466.93326</eqn>
+				</element>
+				<element subscript="21">
+					<eqn>1864774.33286</eqn>
+				</element>
+				<element subscript="22">
+					<eqn>1864442.53112</eqn>
+				</element>
+				<element subscript="23">
+					<eqn>1864611.38963</eqn>
+				</element>
+				<element subscript="24">
+					<eqn>1864583.71621</eqn>
+				</element>
+				<element subscript="25">
+					<eqn>1864860.69696</eqn>
+				</element>
+				<element subscript="26">
+					<eqn>1864781.54249</eqn>
+				</element>
+				<element subscript="27">
+					<eqn>1864701.25239</eqn>
+				</element>
+				<element subscript="28">
+					<eqn>1864654.16466</eqn>
+				</element>
+				<element subscript="29">
+					<eqn>1864459.66087</eqn>
+				</element>
+				<element subscript="30">
+					<eqn>1864539.93401</eqn>
+				</element>
+				<element subscript="31">
+					<eqn>1864848.71316</eqn>
+				</element>
+				<element subscript="32">
+					<eqn>1864371.33506</eqn>
+				</element>
+				<element subscript="33">
+					<eqn>1864523.62201</eqn>
+				</element>
+				<element subscript="34">
+					<eqn>1864645.46413</eqn>
+				</element>
+				<element subscript="35">
+					<eqn>1864425.73345</eqn>
+				</element>
+				<element subscript="36">
+					<eqn>1864732.38278</eqn>
+				</element>
+				<element subscript="37">
+					<eqn>1864635.27226</eqn>
+				</element>
+				<element subscript="38">
+					<eqn>1864528.06856</eqn>
+				</element>
+				<element subscript="39">
+					<eqn>1864656.81413</eqn>
+				</element>
+				<element subscript="40">
+					<eqn>1864694.321</eqn>
+				</element>
+				<element subscript="41">
+					<eqn>1864585.16624</eqn>
+				</element>
+				<element subscript="42">
+					<eqn>1864539.79155</eqn>
+				</element>
+				<element subscript="43">
+					<eqn>1864479.44034</eqn>
+				</element>
+				<element subscript="44">
+					<eqn>1864462.36903</eqn>
+				</element>
+				<element subscript="45">
+					<eqn>1864582.90758</eqn>
+				</element>
+				<element subscript="46">
+					<eqn>1864679.05497</eqn>
+				</element>
+				<element subscript="47">
+					<eqn>1864724.58046</eqn>
+				</element>
+				<element subscript="48">
+					<eqn>1864713.84436</eqn>
+				</element>
+				<element subscript="49">
+					<eqn>1864683.89016</eqn>
+				</element>
+				<element subscript="50">
+					<eqn>1864532.75617</eqn>
+				</element>
+				<element subscript="51">
+					<eqn>1864894.23314</eqn>
+				</element>
+				<element subscript="52">
+					<eqn>1864788.38604</eqn>
+				</element>
+				<element subscript="53">
+					<eqn>1864701.57904</eqn>
+				</element>
+				<element subscript="54">
+					<eqn>1864823.65711</eqn>
+				</element>
+				<element subscript="55">
+					<eqn>1864768.0326</eqn>
+				</element>
+				<element subscript="56">
+					<eqn>1864537.53428</eqn>
+				</element>
+				<element subscript="57">
+					<eqn>1864380.028</eqn>
+				</element>
+				<element subscript="58">
+					<eqn>1864504.79703</eqn>
+				</element>
+				<element subscript="59">
+					<eqn>1864476.36008</eqn>
+				</element>
+				<element subscript="60">
+					<eqn>1864755.86641</eqn>
+				</element>
+				<element subscript="61">
+					<eqn>1864630.58184</eqn>
+				</element>
+				<element subscript="62">
+					<eqn>1864609.3034</eqn>
+				</element>
+				<element subscript="63">
+					<eqn>1864648.61498</eqn>
+				</element>
+				<element subscript="64">
+					<eqn>1864778.2576</eqn>
+				</element>
+				<element subscript="65">
+					<eqn>1864485.30442</eqn>
+				</element>
+				<element subscript="66">
+					<eqn>1864705.71318</eqn>
+				</element>
+				<element subscript="67">
+					<eqn>1864489.60313</eqn>
+				</element>
+				<element subscript="68">
+					<eqn>1864835.63085</eqn>
+				</element>
+				<element subscript="69">
+					<eqn>1864741.81085</eqn>
+				</element>
+				<element subscript="70">
+					<eqn>1864666.12787</eqn>
+				</element>
+				<element subscript="71">
+					<eqn>1864441.76</eqn>
+				</element>
+				<element subscript="72">
+					<eqn>1864386.60781</eqn>
+				</element>
+				<element subscript="73">
+					<eqn>1864818.5881</eqn>
+				</element>
+				<element subscript="74">
+					<eqn>1864352.71541</eqn>
+				</element>
+				<element subscript="75">
+					<eqn>1864465.22529</eqn>
+				</element>
+				<element subscript="76">
+					<eqn>1864534.6504</eqn>
+				</element>
+				<element subscript="77">
+					<eqn>1864673.20421</eqn>
+				</element>
+				<element subscript="78">
+					<eqn>1864671.83637</eqn>
+				</element>
+				<element subscript="79">
+					<eqn>1864835.93552</eqn>
+				</element>
+				<element subscript="80">
+					<eqn>1864479.70981</eqn>
+				</element>
+				<element subscript="81">
+					<eqn>1864626.88546</eqn>
+				</element>
+				<element subscript="82">
+					<eqn>1864776.84177</eqn>
+				</element>
+				<element subscript="83">
+					<eqn>1864762.06191</eqn>
+				</element>
+				<element subscript="84">
+					<eqn>1864703.55136</eqn>
+				</element>
+				<element subscript="85">
+					<eqn>1864730.76514</eqn>
+				</element>
+				<element subscript="86">
+					<eqn>1864429.15851</eqn>
+				</element>
+				<element subscript="87">
+					<eqn>1864801.04193</eqn>
+				</element>
+				<element subscript="88">
+					<eqn>1864869.7914</eqn>
+				</element>
+				<element subscript="89">
+					<eqn>1864426.71434</eqn>
+				</element>
+				<element subscript="90">
+					<eqn>1864832.18677</eqn>
+				</element>
+				<element subscript="91">
+					<eqn>1864438.85768</eqn>
+				</element>
+				<element subscript="92">
+					<eqn>1864847.79583</eqn>
+				</element>
+				<element subscript="93">
+					<eqn>1864751.74005</eqn>
+				</element>
+				<element subscript="94">
+					<eqn>1864494.57186</eqn>
+				</element>
+				<element subscript="95">
+					<eqn>1864368.31832</eqn>
+				</element>
+				<element subscript="96">
+					<eqn>1864504.54488</eqn>
+				</element>
+				<element subscript="97">
+					<eqn>1864464.53057</eqn>
+				</element>
+				<element subscript="98">
+					<eqn>1864489.29482</eqn>
+				</element>
+				<element subscript="99">
+					<eqn>1864757.79979</eqn>
+				</element>
+				<element subscript="100">
+					<eqn>1864391.35048</eqn>
+				</element>
+				<units>metre</units>
+			</aux>
+			<aux name="selected climate case 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="selected climate case 2" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
 			</aux>
 		</variables>
 		<views>
@@ -1461,66 +3301,31 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1091" page_height="761" isee:page_cols="7" isee:page_rows="4" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
-				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
-					<stock color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
-						<shape type="rectangle" width="45" height="35"/>
-					</stock>
-					<flow color="blue" background="white" font_color="blue" font_size="9pt" label_side="bottom">
-						<shape type="circle" radius="18"/>
-					</flow>
-					<isee:placeholder color="#228B22" background="white" font_color="#228B22" font_size="9pt" label_side="bottom"/>
-					<module color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
-						<shape type="rectangle" width="55" height="45"/>
-					</module>
-					<aux color="blue" background="white" font_color="blue" font_size="9pt" label_side="bottom">
-						<shape type="circle" radius="18"/>
-					</aux>
-					<group color="red" background="white" font_color="red" font_size="9pt"/>
-					<connector color="#FF007F" background="white" font_color="#FF007F" font_size="9pt" isee:thickness="1"/>
-					<text_box color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
-					<isee:loop_indicator color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt"/>
-					<numeric_display color="white" background="white" font_size="12pt" border_width="thin" border_style="solid" isee:transparent="false" isee:show_divider="true" isee:show_bounding_box="true" label_side="left"/>
-					<graph color="black" background="white" font_size="12pt" axis_color="#666666" grid_color="#C8C8C8" isee:graph_area_color="white" legend_position="bottom" isee:transparent="false" isee:hide_border="false" axis_title_font_style="normal" axis_title_font_weight="normal" axis_title_text_decoration="none" axis_title_text_align="center" axis_title_vertical_text_align="center" axis_title_font_color="black" axis_title_font_family="Arial" axis_title_font_size="12pt" axis_title_text_padding="2" axis_title_text_border_color="black" axis_title_text_border_width="thin" axis_title_text_border_style="none" axis_label_font_style="normal" axis_label_font_weight="normal" axis_label_text_decoration="none" axis_label_text_align="center" axis_label_vertical_text_align="center" axis_label_font_color="black" axis_label_font_family="Arial" axis_label_font_size="9pt" axis_label_text_padding="2" axis_label_text_border_color="black" axis_label_text_border_width="thin" axis_label_text_border_style="none">
-						<isee:series_styles>
-							<isee:series_style color="blue" thickness="1"/>
-							<isee:series_style color="red" thickness="1" pen_style="dot_dashed"/>
-							<isee:series_style color="fuchsia" thickness="1" pen_style="dotted"/>
-							<isee:series_style color="#008F44" thickness="1" pen_style="dashed"/>
-							<isee:series_style color="#FF7F00" thickness="1"/>
-							<isee:series_style color="#7F00FF" thickness="1" pen_style="dot_dashed"/>
-							<isee:series_style color="#0CA0FF" thickness="1" pen_style="dotted"/>
-							<isee:series_style color="lime" thickness="1" pen_style="dashed"/>
-							<isee:series_style color="#FF007F" thickness="1"/>
-							<isee:series_style color="aqua" thickness="1" pen_style="dot_dashed"/>
-							<isee:series_style color="#F586FF" thickness="1" pen_style="dotted"/>
-							<isee:series_style color="black" thickness="1" pen_style="dashed"/>
-							<isee:series_style color="#C8C8C8" thickness="1"/>
-						</isee:series_styles>
-					</graph>
-					<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="summed" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
+			<view isee:show_pages="false" background="white" page_width="808" page_height="561" isee:page_cols="7" isee:page_rows="4" isee:scroll_y="964.167" zoom="120" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+				<style>
+					<table interval="1" report_balances="beginning" report_flows="summed"/>
 				</style>
-				<aux label_side="center" x="512.494" y="542.167" width="65.9167" height="65.9167" name="Total global\nsea level\nanomaly"/>
-				<stock label_side="top" x="870.84" y="208.071" name="Sea level anomaly from GrIS SMB"/>
-				<flow x="1023.73" y="208.071" name="yearly SLR from\nGrIS SMB">
+				<aux label_side="center" x="519.161" y="668.834" width="65.9167" height="65.9167" name="Total global\nsea level\nanomaly"/>
+				<stock label_side="top" x="885.84" y="301.404" name="Sea level anomaly from GrIS SMB"/>
+				<flow x="1038.73" y="301.404" name="yearly SLR from\nGrIS SMB">
 					<pts>
-						<pt x="1166.12" y="208.071"/>
-						<pt x="893.34" y="208.071"/>
+						<pt x="1181.12" y="301.404"/>
+						<pt x="908.34" y="301.404"/>
 					</pts>
 				</flow>
-				<aux label_side="top" x="722.283" y="686.065" width="27.2857" height="27.2857" name="Sea level anomaly from\nAntarctic Ice Sheet"/>
+				<aux label_side="top" x="728.95" y="812.732" width="27.2857" height="27.2857" name="Sea level anomaly from\nAntarctic Ice Sheet"/>
 				<connector uid="127" angle="146.812">
 					<from>Sea_level_anomaly_from_Antarctic_Ice_Sheet</from>
 					<to>Total_global_sea_level_anomaly</to>
 				</connector>
-				<stock label_side="bottom" x="288.425" y="913.474" name="Sea level anomaly from mountain glaciers"/>
-				<flow x="179.338" y="919" name="yearly SLR from mountain glaciers">
+				<stock label_side="bottom" x="295.092" y="1040.14" name="Sea level anomaly from mountain glaciers"/>
+				<flow x="186.004" y="1045.67" name="yearly SLR from mountain glaciers">
 					<pts>
-						<pt x="80.75" y="919"/>
-						<pt x="265.925" y="919"/>
+						<pt x="87.4167" y="1045.67"/>
+						<pt x="272.592" y="1045.67"/>
 					</pts>
 				</flow>
-				<aux label_side="bottom" x="596.786" y="479.944" name="T anomaly for SLR"/>
+				<aux label_side="bottom" x="603.453" y="606.611" name="T anomaly for SLR"/>
 				<connector uid="128" angle="153.199">
 					<from>Sea_level_anomaly_from_mountain_glaciers</from>
 					<to>yearly_SLR_from_mountain_glaciers</to>
@@ -1529,9 +3334,9 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>Sea_level_anomaly_from_mountain_glaciers</from>
 					<to>Total_global_sea_level_anomaly</to>
 				</connector>
-				<aux color="blue" label_side="left" x="114.479" y="1012.25" name="MG Tdep rate min"/>
-				<aux label_side="right" label_angle="45" x="179.338" y="836.736" name="MG max sea level anomaly"/>
-				<aux color="blue" label_side="left" label_angle="135" x="120.313" y="868.321" name="MG volume\nnonlinearity"/>
+				<aux color="blue" label_side="left" x="121.146" y="1138.92" name="MG Tdep rate min"/>
+				<aux label_side="right" label_angle="45" x="186.005" y="963.403" name="MG max sea level anomaly"/>
+				<aux color="blue" label_side="left" label_angle="135" x="126.98" y="994.988" name="MG volume\nnonlinearity"/>
 				<connector uid="131" angle="286.661">
 					<from>MG_max_sea_level_anomaly</from>
 					<to>yearly_SLR_from_mountain_glaciers</to>
@@ -1540,15 +3345,15 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>MG_volume_nonlinearity</from>
 					<to>yearly_SLR_from_mountain_glaciers</to>
 				</connector>
-				<flow x="194.987" y="583.334" name="yearly thermosteric\nsea level rise">
+				<flow x="201.653" y="710.001" name="yearly thermosteric\nsea level rise">
 					<pts>
-						<pt x="60.8333" y="583.334"/>
-						<pt x="317.14" y="583.334"/>
+						<pt x="67.5" y="710.001"/>
+						<pt x="323.807" y="710.001"/>
 					</pts>
 				</flow>
-				<stock label_side="top" x="339.64" y="583.084" name="Sea level anomaly from thermal expansion"/>
-				<aux color="blue" label_side="bottom" x="90.0277" y="656.375" name="energy input to SLR\nconversion factor min"/>
-				<aux label_side="left" label_angle="135" x="213.398" y="383.141" name="net downward\nradiative flux"/>
+				<stock label_side="top" x="346.307" y="709.751" name="Sea level anomaly from thermal expansion"/>
+				<aux color="blue" label_side="bottom" x="96.6944" y="783.042" name="energy input to SLR\nconversion factor min"/>
+				<aux label_side="left" label_angle="135" x="220.065" y="509.808" name="net downward\nradiative flux"/>
 				<connector uid="133" angle="34.834">
 					<from>energy_input_to_SLR_conversion_factor_min</from>
 					<to>energy_input_to_SLR_conversion_factor</to>
@@ -1557,13 +3362,13 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>Sea_level_anomaly_from_thermal_expansion</from>
 					<to>Total_global_sea_level_anomaly</to>
 				</connector>
-				<aux label_side="left" x="121.146" y="444.361" name="UNIT seconds per year"/>
-				<aux label_side="bottom" x="231.398" y="491.584" name="yearly ocean\nenergy input"/>
+				<aux label_side="left" x="127.813" y="571.028" name="UNIT seconds per year"/>
+				<aux label_side="bottom" x="238.065" y="618.251" name="yearly ocean\nenergy input"/>
 				<connector uid="143" angle="248.354">
 					<from>yearly_ocean_energy_input</from>
 					<to>yearly_thermosteric_sea_level_rise</to>
 				</connector>
-				<aux label_side="left" x="121.146" y="469.917" name="earth surface area"/>
+				<aux label_side="left" x="127.813" y="596.584" name="earth surface area"/>
 				<connector uid="144" angle="336.814">
 					<from>UNIT_seconds_per_year</from>
 					<to>yearly_ocean_energy_input</to>
@@ -1576,12 +3381,12 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>net_downward_radiative_flux</from>
 					<to>yearly_ocean_energy_input</to>
 				</connector>
-				<aux label_side="left" x="121.146" y="392.488" name="UNIT Watt to Joule"/>
+				<aux label_side="left" x="127.813" y="519.155" name="UNIT Watt to Joule"/>
 				<connector uid="147" angle="318.05">
 					<from>UNIT_Watt_to_Joule</from>
 					<to>yearly_ocean_energy_input</to>
 				</connector>
-				<aux label_side="left" x="121.146" y="417.516" name="UNIT Joule to YJ"/>
+				<aux label_side="left" x="127.813" y="544.183" name="UNIT Joule to YJ"/>
 				<connector uid="148" angle="326.107">
 					<from>UNIT_Joule_to_YJ</from>
 					<to>yearly_ocean_energy_input</to>
@@ -1592,8 +3397,8 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>yearly_SLR_from_mountain_glaciers</to>
 				</connector>
-				<aux label_side="left" label_angle="135" x="767.667" y="266.514" name="Sea level anomaly from\nGreenland Ice Sheet"/>
-				<connector uid="152" angle="209.529">
+				<aux label_side="left" label_angle="135" x="774.334" y="393.181" name="Sea level anomaly from\nGreenland Ice Sheet"/>
+				<connector uid="152" angle="219.456">
 					<from>Sea_level_anomaly_from_GrIS_SMB</from>
 					<to>Sea_level_anomaly_from_Greenland_Ice_Sheet</to>
 				</connector>
@@ -1601,9 +3406,9 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>Sea_level_anomaly_from_Greenland_Ice_Sheet</from>
 					<to>Total_global_sea_level_anomaly</to>
 				</connector>
-				<aux color="blue" label_side="left" x="1000.44" y="116.278" name="nu GrIS SMB"/>
-				<aux color="blue" label_side="right" x="1068.06" y="142.714" name="phi GrIS SMB"/>
-				<aux label_side="left" x="967.11" y="151.778" name="maximum GrIS sea level contribution"/>
+				<aux color="blue" label_side="left" x="1015.44" y="209.611" name="nu GrIS SMB"/>
+				<aux color="blue" label_side="right" x="1083.06" y="236.047" name="phi GrIS SMB"/>
+				<aux label_side="left" x="982.11" y="245.111" name="maximum GrIS sea level contribution"/>
 				<connector uid="154" angle="28.3428">
 					<from>Sea_level_anomaly_from_GrIS_SMB</from>
 					<to>yearly_SLR_from_GrIS_SMB</to>
@@ -1620,32 +3425,32 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>phi_GrIS_SMB</from>
 					<to>yearly_SLR_from_GrIS_SMB</to>
 				</connector>
-				<connector uid="158" angle="135.197">
+				<connector uid="158" angle="116.962">
 					<from>
 						<alias uid="159"/>
 					</from>
 					<to>yearly_SLR_from_GrIS_SMB</to>
 				</connector>
-				<aux label_side="right" x="1073.78" y="177.127" name="UNIT Kelvin"/>
+				<aux label_side="right" x="1088.78" y="270.46" name="UNIT Kelvin"/>
 				<connector uid="162" angle="155.235">
 					<from>UNIT_Kelvin</from>
 					<to>yearly_SLR_from_GrIS_SMB</to>
 				</connector>
-				<stock label_side="top" x="870.84" y="328.111" name="Sea level anomaly from GrIS DIS"/>
-				<aux color="blue" label_side="top" x="1238" y="310.111" name="GrIS outlet max"/>
-				<aux color="blue" label_side="right" x="1002.01" y="407.446" name="rho GrIS SID"/>
-				<aux color="blue" label_side="right" x="967.11" y="273.472" name="epsilon GrIS SID"/>
-				<aux label_side="bottom" x="1960" y="740.16" name="density water"/>
-				<aux x="1960" y="792.268" name="density ice"/>
-				<aux x="1960" y="843.018" name="density rock"/>
-				<aux label_side="right" label_angle="45" x="1604.95" y="887.66" name="T freezing seawater"/>
-				<aux label_side="left" x="1389.02" y="832.095" name="reference AntIS radius"/>
-				<aux label_side="left" x="1389.02" y="857.285" name="modern AntOcean\nsubsurface T"/>
-				<aux x="1877.05" y="790.476" name="AntIS epsilon1"/>
-				<aux x="1877.05" y="843.018" name="AntIS epsilon2"/>
-				<aux color="blue" label_side="right" x="1664.37" y="1205.25" name="T to TAnt c1"/>
-				<aux color="blue" label_side="right" x="1664.37" y="1167.44" name="T to TAnt c2"/>
-				<aux label_side="top" x="1601.85" y="1131.68" name="Antarctic air temperature"/>
+				<stock label_side="top" x="877.507" y="454.778" name="Sea level anomaly from GrIS DIS"/>
+				<aux color="blue" label_side="top" x="1244.67" y="436.778" name="GrIS outlet max"/>
+				<aux color="blue" label_side="right" x="1008.68" y="534.113" name="rho GrIS SID"/>
+				<aux color="blue" label_side="right" x="973.777" y="400.139" name="epsilon GrIS SID"/>
+				<aux label_side="bottom" x="1966.67" y="866.827" name="density water"/>
+				<aux x="1966.67" y="918.935" name="density ice"/>
+				<aux x="1966.67" y="969.685" name="density rock"/>
+				<aux label_side="right" label_angle="45" x="1611.62" y="1014.33" name="T freezing seawater"/>
+				<aux label_side="left" x="1395.69" y="958.762" name="reference AntIS radius"/>
+				<aux label_side="left" x="1395.69" y="983.952" name="modern AntOcean\nsubsurface T"/>
+				<aux x="1883.72" y="917.143" name="AntIS epsilon1"/>
+				<aux x="1883.72" y="969.685" name="AntIS epsilon2"/>
+				<aux color="blue" label_side="right" x="1671.04" y="1331.92" name="T to TAnt c1"/>
+				<aux color="blue" label_side="right" x="1671.04" y="1294.11" name="T to TAnt c2"/>
+				<aux label_side="top" x="1608.52" y="1258.35" name="Antarctic air temperature"/>
 				<connector uid="171" angle="130.359">
 					<from>T_to_TAnt_c1</from>
 					<to>Antarctic_air_temperature</to>
@@ -1660,13 +3465,13 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>Antarctic_air_temperature</to>
 				</connector>
-				<aux label_side="left" label_angle="225" x="1723.43" y="945.625" name="Antarctic subsurface\nocean temperature"/>
+				<aux label_side="left" label_angle="225" x="1730.1" y="1072.29" name="Antarctic subsurface\nocean temperature"/>
 				<connector uid="175" angle="333.93">
 					<from>T_freezing_seawater</from>
 					<to>Antarctic_subsurface_ocean_temperature</to>
 				</connector>
-				<aux color="blue" label_side="left" label_angle="135" x="1778.35" y="933.601" name="AntOcean T\nconversion param a"/>
-				<aux color="blue" label_side="left" x="1714.48" y="1000.63" name="AntOcean T conversion param b"/>
+				<aux color="blue" label_side="left" label_angle="135" x="1785.02" y="1060.27" name="AntOcean T\nconversion param a"/>
+				<aux color="blue" label_side="left" x="1721.15" y="1127.3" name="AntOcean T conversion param b"/>
 				<connector uid="176" angle="192.349">
 					<from>AntOcean_T_conversion_param_a</from>
 					<to>Antarctic_subsurface_ocean_temperature</to>
@@ -1701,18 +3506,18 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>density_ice</from>
 					<to>AntIS_epsilon2</to>
 				</connector>
-				<aux color="blue" label_side="top" x="1401.23" y="1401.56" name="AntIS param h0"/>
-				<aux color="blue" label_side="right" x="1744.23" y="742.416" name="AntIS param mu"/>
-				<aux color="blue" x="1121.35" y="1393.87" name="AntIS param nu"/>
-				<aux color="blue" x="1336.4" y="1413.68" width="13.8333" height="13.8333" name="AntIS param P0"/>
-				<aux color="blue" label_side="right" x="1477.23" y="796.166" name="AntIS param gamma"/>
-				<aux color="blue" label_side="right" x="1477.23" y="828.762" name="AntIS param alpha"/>
-				<aux color="blue" label_side="bottom" x="1256.65" y="1404.68" name="AntIS param kappa"/>
-				<aux color="blue" label_side="right" x="1476.42" y="857.285" name="AntIS param f0"/>
-				<aux color="blue" label_side="right" x="1401.23" y="1347.75" name="AntIS param c"/>
-				<aux color="blue" label_side="right" x="1744.23" y="805.279" name="AntIS param b0"/>
-				<aux color="blue" label_side="right" x="1744.23" y="772.75" name="AntIS param slope"/>
-				<aux label_side="right" label_angle="45" x="1291.65" y="1295.25" name="AntIS hr"/>
+				<aux color="blue" label_side="top" x="1407.9" y="1528.23" name="AntIS param h0"/>
+				<aux color="blue" label_side="right" x="1750.9" y="869.083" name="AntIS param mu"/>
+				<aux color="blue" x="1128.02" y="1520.54" name="AntIS param nu"/>
+				<aux color="blue" x="1343.07" y="1540.35" width="13.8333" height="13.8333" name="AntIS param P0"/>
+				<aux color="blue" label_side="right" x="1483.9" y="922.833" name="AntIS param gamma"/>
+				<aux color="blue" label_side="right" x="1483.9" y="955.429" name="AntIS param alpha"/>
+				<aux color="blue" label_side="bottom" x="1263.32" y="1531.35" name="AntIS param kappa"/>
+				<aux color="blue" label_side="right" x="1483.09" y="983.952" name="AntIS param f0"/>
+				<aux color="blue" label_side="right" x="1407.9" y="1474.42" name="AntIS param c"/>
+				<aux color="blue" label_side="right" x="1750.9" y="931.946" name="AntIS param b0"/>
+				<aux color="blue" label_side="right" x="1750.9" y="899.417" name="AntIS param slope"/>
+				<aux label_side="right" label_angle="45" x="1298.32" y="1421.92" name="AntIS hr"/>
 				<connector uid="185" angle="240.679">
 					<from>Antarctic_air_temperature</from>
 					<to>AntIS_hr</to>
@@ -1725,14 +3530,14 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_param_h0</from>
 					<to>AntIS_hr</to>
 				</connector>
-				<aux label_side="bottom" x="1020.52" y="1268.6" name="AntIS rc"/>
+				<aux label_side="bottom" x="1027.19" y="1395.27" name="AntIS rc"/>
 				<connector uid="188" angle="296.776">
 					<from>
 						<alias uid="547"/>
 					</from>
 					<to>AntIS_rc</to>
 				</connector>
-				<aux label_side="left" x="1247.82" y="1323.13" name="AntIS P"/>
+				<aux label_side="left" x="1254.49" y="1449.8" name="AntIS P"/>
 				<connector uid="189" angle="243.733">
 					<from>Antarctic_air_temperature</from>
 					<to>AntIS_P</to>
@@ -1745,7 +3550,7 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_param_kappa</from>
 					<to>AntIS_P</to>
 				</connector>
-				<aux label_side="right" label_angle="315" x="1190" y="1365.75" name="AntIS beta"/>
+				<aux label_side="right" label_angle="315" x="1196.67" y="1492.42" name="AntIS beta"/>
 				<connector uid="192" angle="216.396">
 					<from>AntIS_P</from>
 					<to>AntIS_beta</to>
@@ -1754,12 +3559,12 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_param_nu</from>
 					<to>AntIS_beta</to>
 				</connector>
-				<aux label_side="left" label_angle="135" x="797.797" y="1273.96" name="AntIS rR"/>
+				<aux label_side="left" label_angle="135" x="804.464" y="1400.63" name="AntIS rR"/>
 				<connector uid="194" angle="194.89">
 					<from>AntIS_hr</from>
 					<to>AntIS_rR</to>
 				</connector>
-				<aux label_side="left" label_angle="135" x="949.387" y="1012.25" name="AntIS Btot"/>
+				<aux label_side="left" label_angle="135" x="956.054" y="1138.92" name="AntIS Btot"/>
 				<connector uid="195" angle="133.83">
 					<from>AntIS_P</from>
 					<to>AntIS_Btot</to>
@@ -1776,11 +3581,11 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_rR</from>
 					<to>AntIS_Btot</to>
 				</connector>
-				<aux label_side="right" label_angle="45" x="1279.7" y="1030.25" name="AntIS fac"/>
-				<aux label_side="right" x="1114.61" y="1012.25" name="AntIS F"/>
-				<aux label_side="left" label_angle="135" x="741.774" y="1012.25" name="AntIS ISO"/>
-				<aux label_side="right" x="1419.23" y="1130.92" name="AntIS fac1"/>
-				<aux label_side="left" label_angle="135" x="1279.7" y="1130.92" name="AntIS fac2"/>
+				<aux label_side="right" label_angle="45" x="1286.37" y="1156.92" name="AntIS fac"/>
+				<aux label_side="right" x="1121.28" y="1138.92" name="AntIS F"/>
+				<aux label_side="left" label_angle="135" x="748.441" y="1138.92" name="AntIS ISO"/>
+				<aux label_side="right" x="1425.9" y="1257.59" name="AntIS fac1"/>
+				<aux label_side="left" label_angle="135" x="1286.37" y="1257.59" name="AntIS fac2"/>
 				<connector uid="199" angle="180">
 					<from>AntIS_fac1</from>
 					<to>AntIS_fac2</to>
@@ -1805,8 +3610,8 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_rc</from>
 					<to>AntIS_F</to>
 				</connector>
-				<aux label_side="left" x="923.377" y="1268.6" name="AntIS Hw"/>
-				<aux label_side="left" x="1425.42" y="893.285" name="AntIS speed"/>
+				<aux label_side="left" x="930.044" y="1395.27" name="AntIS Hw"/>
+				<aux label_side="left" x="1432.09" y="1019.95" name="AntIS speed"/>
 				<connector uid="205" angle="211.275">
 					<from>AntIS_param_gamma</from>
 					<to>AntIS_speed</to>
@@ -1839,7 +3644,7 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_Hw</from>
 					<to>AntIS_speed</to>
 				</connector>
-				<aux x="1877.05" y="739.503" name="AntIS delta"/>
+				<aux x="1883.72" y="866.17" name="AntIS delta"/>
 				<connector uid="213" angle="179.546">
 					<from>density_water</from>
 					<to>AntIS_delta</to>
@@ -1856,7 +3661,7 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_speed</from>
 					<to>AntIS_F</to>
 				</connector>
-				<aux label_side="right" x="680.524" y="1273.96" name="AntIS cISO"/>
+				<aux label_side="right" x="687.191" y="1400.63" name="AntIS cISO"/>
 				<connector uid="217" angle="144.772">
 					<from>AntIS_rc</from>
 					<to>AntIS_cISO</to>
@@ -1865,19 +3670,19 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>AntIS_cISO</from>
 					<to>AntIS_ISO</to>
 				</connector>
-				<aux label_side="right" label_angle="45" x="789.964" y="1143.04" name="AntIS dSL"/>
-				<stock x="949.387" y="841.821" name="AntIS Volume"/>
-				<stock x="1036.56" y="841.821" name="AntIS Radius"/>
-				<flow label_side="top" x="1132.62" y="842.583" name="yearly change in\nAntIS Radius">
+				<aux label_side="right" label_angle="45" x="796.631" y="1269.71" name="AntIS dSL"/>
+				<stock x="956.054" y="968.488" name="AntIS Volume"/>
+				<stock x="1043.23" y="968.488" name="AntIS Radius"/>
+				<flow label_side="top" x="1139.28" y="969.25" name="yearly change in\nAntIS Radius">
 					<pts>
-						<pt x="1218.17" y="842.583"/>
-						<pt x="1059.06" y="842.583"/>
+						<pt x="1224.84" y="969.25"/>
+						<pt x="1065.73" y="969.25"/>
 					</pts>
 				</flow>
-				<flow label_side="top" x="860.956" y="842.297" name="yearly change in\nAntIS Volume">
+				<flow label_side="top" x="867.622" y="968.964" name="yearly change in\nAntIS Volume">
 					<pts>
-						<pt x="783.024" y="842.297"/>
-						<pt x="926.887" y="842.297"/>
+						<pt x="789.691" y="968.964"/>
+						<pt x="933.554" y="968.964"/>
 					</pts>
 				</flow>
 				<connector uid="219" angle="110.226">
@@ -1984,7 +3789,7 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>AntIS_Btot</to>
 				</connector>
-				<text_box uid="247" x="1753.23" y="711.271" width="367.5" height="17.875">Widely used calibration parameters and constants for AntIS SLR</text_box>
+				<text_box uid="247" x="1759.9" y="837.938" width="367.5" height="17.875">Widely used calibration parameters and constants for AntIS SLR</text_box>
 				<connector uid="248" angle="41.7128">
 					<from>
 						<alias uid="249"/>
@@ -2097,22 +3902,24 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>AntIS_dSL</to>
 				</connector>
-				<aux x="2043.34" y="792.268" name="UNIT per year"/>
-				<aux label_side="left" label_angle="135" x="940.88" y="689.583" name="AntIS initial volume"/>
-				<connector uid="283" angle="182.828">
-					<from>AntIS_initial_volume</from>
+				<aux x="2050.01" y="918.935" name="UNIT per year"/>
+				<aux label_side="bottom" x="526.286" y="181.41" name="Initial AntIS Volume"/>
+				<connector uid="283" angle="163.142">
+					<from>
+						<alias uid="587"/>
+					</from>
 					<to>Sea_level_anomaly_from_Antarctic_Ice_Sheet</to>
 				</connector>
 				<connector uid="284" angle="143.841">
 					<from>AntIS_Volume</from>
 					<to>Sea_level_anomaly_from_Antarctic_Ice_Sheet</to>
 				</connector>
-				<aux label_side="top" x="811.553" y="665.875" name="AntIS max\ncontribution to sea level anomaly"/>
+				<aux label_side="top" x="818.22" y="792.542" name="AntIS max\ncontribution to sea level anomaly"/>
 				<connector uid="291" angle="204.101">
 					<from>AntIS_max_contribution_to_sea_level_anomaly</from>
 					<to>Sea_level_anomaly_from_Antarctic_Ice_Sheet</to>
 				</connector>
-				<aux x="2043.34" y="739.503" name="UNIT per m"/>
+				<aux x="2050.01" y="866.17" name="UNIT per m"/>
 				<connector uid="294" angle="90">
 					<from>
 						<alias uid="295"/>
@@ -2149,16 +3956,16 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>AntIS_fac1</to>
 				</connector>
-				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="313" x="107.803" y="237.514" width="174.368" height="20">Thermosteric sea-level rise</text_box>
-				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="314" x="52.8693" y="759.54" width="279.271" height="20">Sea-level rise from mountain glaciers</text_box>
-				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="316" x="843.319" y="580.98" width="285.969" height="20">Sea-level rise from Antarctic ice sheet</text_box>
-				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="317" x="842.641" y="14" width="311.937" height="20">Sea-level rise from Greenland ice sheet</text_box>
-				<aux label_side="right" label_angle="315" x="647.5" y="440.792" name="UNIT Celsius\nto Kelvin"/>
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="313" x="114.47" y="364.181" width="174.368" height="20">Thermosteric sea-level rise</text_box>
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="314" x="59.536" y="886.207" width="279.271" height="20">Sea-level rise from mountain glaciers</text_box>
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="316" x="849.986" y="707.647" width="285.969" height="20">Sea-level rise from Antarctic ice sheet</text_box>
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="317" x="857.641" y="107.333" width="311.937" height="20">Sea-level rise from Greenland ice sheet</text_box>
+				<aux label_side="right" label_angle="315" x="654.167" y="567.459" name="UNIT Celsius\nto Kelvin"/>
 				<connector uid="318" angle="212.6">
 					<from>UNIT_Celsius_to_Kelvin</from>
 					<to>T_anomaly_for_SLR</to>
 				</connector>
-				<aux x="64.1667" y="314.167" name="selected climate case"/>
+				<aux x="70.8334" y="440.834" name="selected climate case"/>
 				<connector uid="345" angle="344.055">
 					<from>selected_climate_case</from>
 					<to>net_downward_radiative_flux</to>
@@ -2170,28 +3977,28 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 						</plot>
 					</graph>
 				</stacked_container>
-				<stacked_container uid="361" x="1709.42" y="87.5893" width="391.25" height="213.661">
+				<stacked_container uid="361" x="1716.09" y="214.256" width="391.25" height="213.661">
 					<graph width="391.25" height="213.661" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Sea_level_anomaly_from_thermal_expansion[1]"/>
 						</plot>
 					</graph>
 				</stacked_container>
-				<stacked_container uid="362" x="1713.83" y="328.33" width="382.43" height="216.161">
+				<stacked_container uid="362" x="1720.5" y="454.997" width="382.43" height="216.161">
 					<graph width="382.43" height="216.161" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Sea_level_anomaly_from_mountain_glaciers[1]"/>
 						</plot>
 					</graph>
 				</stacked_container>
-				<stacked_container uid="363" x="2130.67" y="88.17" width="394.524" height="212.5">
+				<stacked_container uid="363" x="2137.34" y="214.837" width="394.524" height="212.5">
 					<graph width="394.524" height="212.5" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Sea_level_anomaly_from_Greenland_Ice_Sheet[1]"/>
 						</plot>
 					</graph>
 				</stacked_container>
-				<stacked_container uid="364" x="2136.98" y="327.75" width="394.464" height="217.321">
+				<stacked_container uid="364" x="2143.65" y="454.417" width="394.464" height="217.321">
 					<graph width="394.464" height="217.321" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Sea_level_anomaly_from_Antarctic_Ice_Sheet[1]"/>
@@ -2205,28 +4012,26 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 						</plot>
 					</graph>
 				</stacked_container>
-				<aux label_side="left" label_angle="135" x="767.667" y="213.583" name="initial sea level anomaly from GrIS"/>
-				<connector uid="366" angle="309.101">
-					<from>initial_sea_level_anomaly_from_GrIS</from>
-					<to>Sea_level_anomaly_from_Greenland_Ice_Sheet</to>
-				</connector>
-				<aux x="730" y="759.583" name="initial sea level anomaly from AntIS"/>
-				<connector uid="367" angle="91.6563">
-					<from>initial_sea_level_anomaly_from_AntIS</from>
+				<aux label_side="bottom" x="314.807" y="190.214" name="initial sea level\nanomaly from GrIS SMB"/>
+				<aux x="526.286" y="127.333" name="initial sea level anomaly from AntIS"/>
+				<connector uid="367" angle="42.0986">
+					<from>
+						<alias uid="584"/>
+					</from>
 					<to>Sea_level_anomaly_from_Antarctic_Ice_Sheet</to>
 				</connector>
-				<aux x="341.14" y="957.875" name="initial sea level anomaly from MG"/>
-				<aux x="288.795" y="606.417" name="initial thermosteric sea level anomaly"/>
-				<aux label_side="left" label_angle="135" x="128.833" y="818.736" name="MG temperature\nnonlinearity"/>
+				<aux x="405.64" y="117.333" name="initial sea level\nanomaly from mountain glaciers"/>
+				<aux x="297.838" y="117.333" name="initial sea level anomaly from thermal expansion"/>
+				<aux label_side="left" label_angle="135" x="135.5" y="945.403" name="MG temperature\nnonlinearity"/>
 				<connector uid="368" angle="322.329">
 					<from>MG_temperature_nonlinearity</from>
 					<to>yearly_SLR_from_mountain_glaciers</to>
 				</connector>
-				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="376" x="367.41" y="29.3011" width="226.885" height="27.1429">Marine Ice Cliff Instability?</text_box>
-				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="385.666" y="96.881" name="Include MICI behaviour"/>
-				<aux label_side="right" label_angle="315" x="1205" y="713.494" name="AntIS disintegration volume\nthrough MICI"/>
-				<aux color="blue" label_side="top" x="1303.63" y="689.583" name="MICI AntIS\ndisintegration"/>
-				<aux color="blue" label_side="top" x="1246.48" y="655.375" name="MICI AntIS critical Tant"/>
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="376" x="623.101" y="36.3011" width="226.885" height="27.1429">Marine Ice Cliff Instability?</text_box>
+				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="654.167" y="72.444" name="Include MICI behaviour"/>
+				<aux label_side="right" label_angle="315" x="1211.67" y="840.161" name="AntIS disintegration volume\nthrough MICI"/>
+				<aux color="blue" label_side="top" x="1310.3" y="816.25" name="MICI AntIS\ndisintegration"/>
+				<aux color="blue" label_side="top" x="1253.15" y="782.042" name="MICI AntIS critical Tant"/>
 				<connector uid="377" angle="234.481">
 					<from>MICI_AntIS_critical_Tant</from>
 					<to>AntIS_disintegration_volume_through_MICI</to>
@@ -2235,11 +4040,13 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>MICI_AntIS_disintegration</from>
 					<to>AntIS_disintegration_volume_through_MICI</to>
 				</connector>
-				<connector uid="379" angle="10.8833">
-					<from>AntIS_initial_volume</from>
+				<connector uid="379" angle="0">
+					<from>
+						<alias uid="587"/>
+					</from>
 					<to>AntIS_disintegration_volume_through_MICI</to>
 				</connector>
-				<connector uid="380" angle="269.998">
+				<connector uid="380" angle="270">
 					<from>AntIS_disintegration_volume_through_MICI</from>
 					<to>yearly_change_in_AntIS_Radius</to>
 				</connector>
@@ -2267,23 +4074,23 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>yearly_SLR_from_mountain_glaciers</to>
 				</connector>
-				<aux label_side="bottom" x="976.88" y="460.778" name="rho GrIS SID min"/>
+				<aux label_side="bottom" x="983.547" y="587.445" name="rho GrIS SID min"/>
 				<connector uid="400" angle="64.773">
 					<from>rho_GrIS_SID_min</from>
 					<to>rho_GrIS_SID</to>
 				</connector>
-				<aux label_side="left" x="935.673" y="78.881" name="nu GrIS SMB min"/>
+				<aux label_side="left" x="950.673" y="172.214" name="nu GrIS SMB min"/>
 				<connector uid="401" angle="329.999">
 					<from>nu_GrIS_SMB_min</from>
 					<to>nu_GrIS_SMB</to>
 				</connector>
-				<aux x="371.762" y="357.392" name="Change in Surface Temperature"/>
-				<aux x="371.762" y="453.155" name="Change in Deep Ocean Temperature"/>
-				<aux x="371.762" y="405.932" name="Change in Upper Ocean Temperature"/>
-				<aux label_side="bottom" x="371.762" y="296.96" name="Heat Capacity of Deep Ocean"/>
-				<aux x="371.762" y="201.849" name="Heat Capacity of Surface"/>
-				<aux x="371.762" y="249.697" name="Heat Capacity of Upper Ocean"/>
-				<connector uid="402" angle="218.067">
+				<aux x="378.429" y="484.059" name="Change in Surface Temperature"/>
+				<aux x="378.429" y="579.822" name="Change in Deep Ocean Temperature"/>
+				<aux x="378.429" y="532.599" name="Change in Upper Ocean Temperature"/>
+				<aux label_side="bottom" x="378.429" y="423.627" name="Heat Capacity of Deep Ocean"/>
+				<aux x="378.429" y="319.404" name="Heat Capacity of Surface"/>
+				<aux x="378.429" y="376.364" name="Heat Capacity of Upper Ocean"/>
+				<connector uid="402" angle="219.454">
 					<from>Heat_Capacity_of_Surface</from>
 					<to>net_downward_radiative_flux</to>
 				</connector>
@@ -2307,26 +4114,26 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>Change_in_Deep_Ocean_Temperature</from>
 					<to>net_downward_radiative_flux</to>
 				</connector>
-				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="493" x="43.7433" y="29.3011" width="271.189" height="19.3123">Scale factors for parametric uncertainty
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="493" x="37.91" y="15.1344" width="271.189" height="19.3123">Scale factors for parametric uncertainty
 </text_box>
-				<text_box uid="494" x="20.1686" y="50.111" width="307.97" height="20.8333">-&gt; Vary between 0 and 1 to match IPCC uncertainty range</text_box>
-				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="68.8334" y="99.111" name="scale factor thermosteric SLR"/>
-				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="68.8334" y="133.778" name="scale factor mountain glaciers"/>
-				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="68.8334" y="169.778" name="scale factor Greenland ice sheet"/>
-				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="68.8334" y="203.904" name="scale factor Antarctic ice sheet"/>
+				<text_box uid="494" x="14.3353" y="35.9443" width="307.97" height="20.8333">-&gt; Vary between 0 and 1 to match IPCC uncertainty range</text_box>
+				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="63.0001" y="84.9443" name="scale factor thermosteric SLR"/>
+				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="63.0001" y="119.611" name="scale factor mountain glaciers"/>
+				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="63.0001" y="155.611" name="scale factor Greenland ice sheet"/>
+				<aux color="#55AAFF" font_color="#55AAFF" label_side="right" x="63.0001" y="189.737" name="scale factor Antarctic ice sheet"/>
 				<connector uid="495" angle="310.993">
 					<from>
 						<alias uid="496"/>
 					</from>
 					<to>energy_input_to_SLR_conversion_factor</to>
 				</connector>
-				<aux color="blue" label_side="bottom" x="255.671" y="664.25" name="energy input to SLR\nconversion factor max"/>
+				<aux color="blue" label_side="bottom" x="262.338" y="790.917" name="energy input to SLR\nconversion factor max"/>
 				<connector uid="497" angle="126.869">
 					<from>energy_input_to_SLR_conversion_factor_max</from>
 					<to>energy_input_to_SLR_conversion_factor</to>
 				</connector>
-				<aux color="blue" label_side="bottom" x="182.813" y="1030.25" name="MG Tdep rate max"/>
-				<aux x="202.398" y="985" name="MG Tdep rate"/>
+				<aux color="blue" label_side="bottom" x="189.48" y="1156.92" name="MG Tdep rate max"/>
+				<aux x="209.065" y="1111.67" name="MG Tdep rate"/>
 				<connector uid="498" angle="5.50942">
 					<from>MG_Tdep_rate_min</from>
 					<to>MG_Tdep_rate</to>
@@ -2345,12 +4152,12 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>MG_Tdep_rate</to>
 				</connector>
-				<aux x="171.479" y="640.542" name="energy input to SLR\nconversion factor"/>
+				<aux x="178.146" y="767.209" name="energy input to SLR\nconversion factor"/>
 				<connector uid="503" angle="67.6615">
 					<from>energy_input_to_SLR_conversion_factor</from>
 					<to>yearly_thermosteric_sea_level_rise</to>
 				</connector>
-				<aux label_side="bottom" x="940.88" y="428.944" name="rho GrIS SID max"/>
+				<aux label_side="bottom" x="947.547" y="555.611" name="rho GrIS SID max"/>
 				<connector uid="504" angle="16.5343">
 					<from>rho_GrIS_SID_max</from>
 					<to>rho_GrIS_SID</to>
@@ -2361,26 +4168,26 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>rho_GrIS_SID</to>
 				</connector>
-				<aux label_side="left" x="921.213" y="106.077" name="nu GrIS SMB max"/>
+				<aux label_side="left" x="936.213" y="199.41" name="nu GrIS SMB max"/>
 				<connector uid="508" angle="5.89973">
 					<from>nu_GrIS_SMB_max</from>
 					<to>nu_GrIS_SMB</to>
 				</connector>
-				<connector uid="509" angle="257.228">
+				<connector uid="509" angle="256.648">
 					<from>
 						<alias uid="510"/>
 					</from>
 					<to>nu_GrIS_SMB</to>
 				</connector>
-				<aux x="1138.29" y="389.446" name="MICI disintegration discharge"/>
+				<aux x="1144.96" y="516.113" name="MICI disintegration discharge"/>
 				<connector uid="512" angle="149.162">
 					<from>Sea_level_anomaly_from_GrIS_DIS</from>
 					<to>Sea_level_anomaly_from_Greenland_Ice_Sheet</to>
 				</connector>
-				<flow x="1021.92" y="328.111" name="yearly SLR from GrIS DIS">
+				<flow x="1028.59" y="454.778" name="yearly SLR from GrIS DIS">
 					<pts>
-						<pt x="1162.5" y="328.111"/>
-						<pt x="893.34" y="328.111"/>
+						<pt x="1169.17" y="454.778"/>
+						<pt x="900.007" y="454.778"/>
 					</pts>
 				</flow>
 				<connector uid="513" angle="75.9119">
@@ -2409,9 +4216,9 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>Sea_level_anomaly_from_GrIS_DIS</from>
 					<to>yearly_SLR_from_GrIS_DIS</to>
 				</connector>
-				<aux x="1220" y="501.667" name="MICI GrIS Tcrit min"/>
-				<aux label_side="bottom" x="1305.14" y="501.667" name="MICI GrIS Tcrit max"/>
-				<aux x="1250.86" y="457.154" name="MICI GrIS Tcrit"/>
+				<aux x="1226.67" y="628.334" name="MICI GrIS Tcrit min"/>
+				<aux label_side="bottom" x="1311.81" y="628.334" name="MICI GrIS Tcrit max"/>
+				<aux x="1257.53" y="583.821" name="MICI GrIS Tcrit"/>
 				<connector uid="519" angle="30.6512">
 					<from>
 						<alias uid="506"/>
@@ -2430,9 +4237,9 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>MICI_GrIS_Tcrit</from>
 					<to>MICI_disintegration_discharge</to>
 				</connector>
-				<aux x="1339.17" y="414.167" name="MICI GrIS\ndischarge rate min"/>
-				<aux x="1418.4" y="414.167" name="MICI GrIS\ndischarge rate max"/>
-				<aux x="1370.03" y="369.654" name="MICI GrIS discharge rate"/>
+				<aux x="1345.84" y="540.834" name="MICI GrIS\ndischarge rate min"/>
+				<aux x="1425.07" y="540.834" name="MICI GrIS\ndischarge rate max"/>
+				<aux x="1376.7" y="496.321" name="MICI GrIS discharge rate"/>
 				<connector uid="523" angle="58.8409">
 					<from>MICI_GrIS_discharge_rate_min</from>
 					<to>MICI_GrIS_discharge_rate</to>
@@ -2465,10 +4272,10 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>MICI_disintegration_discharge</to>
 				</connector>
-				<aux color="blue" label_side="right" x="1381.86" y="616.125" name="MICI AntIS critical Tant min"/>
-				<aux color="blue" label_side="right" x="1389.02" y="641.25" name="MICI AntIS critical Tant max"/>
-				<aux color="blue" label_side="right" x="1399.36" y="674.25" name="MICI AntIS disintegration min"/>
-				<aux color="blue" label_side="right" x="1406.52" y="699.375" name="MICI AntIS disintegration max"/>
+				<aux color="blue" label_side="right" x="1388.53" y="742.792" name="MICI AntIS critical Tant min"/>
+				<aux color="blue" label_side="right" x="1395.69" y="767.917" name="MICI AntIS critical Tant max"/>
+				<aux color="blue" label_side="right" x="1406.03" y="800.917" name="MICI AntIS disintegration min"/>
+				<aux color="blue" label_side="right" x="1413.19" y="826.042" name="MICI AntIS disintegration max"/>
 				<connector uid="531" angle="225.507">
 					<from>
 						<alias uid="530"/>
@@ -2503,8 +4310,8 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>yearly_SLR_from_GrIS_DIS</to>
 				</connector>
-				<aux color="blue" label_side="top" x="1811.85" y="911.285" name="AntOcean T\nconversion param a min"/>
-				<aux color="blue" label_side="bottom" x="1811.85" y="957.375" name="AntOcean T\nconversion param a max"/>
+				<aux color="blue" label_side="top" x="1818.52" y="1037.95" name="AntOcean T\nconversion param a min"/>
+				<aux color="blue" label_side="bottom" x="1818.52" y="1084.04" name="AntOcean T\nconversion param a max"/>
 				<connector uid="540" angle="220.799">
 					<from>AntOcean_T_conversion_param_a_min</from>
 					<to>AntOcean_T_conversion_param_a</to>
@@ -2519,8 +4326,8 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>AntOcean_T_conversion_param_a</to>
 				</connector>
-				<aux color="blue" label_side="bottom" x="1437.23" y="1444.06" name="AntIS param h0 max"/>
-				<aux color="blue" label_side="top" x="1482.56" y="1393.87" name="AntIS param h0 min"/>
+				<aux color="blue" label_side="bottom" x="1443.9" y="1570.73" name="AntIS param h0 max"/>
+				<aux color="blue" label_side="top" x="1489.23" y="1520.54" name="AntIS param h0 min"/>
 				<connector uid="543" angle="188.066">
 					<from>AntIS_param_h0_min</from>
 					<to>AntIS_param_h0</to>
@@ -2535,32 +4342,32 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					</from>
 					<to>AntIS_param_h0</to>
 				</connector>
-				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="550" x="62.536" y="1109.92" width="250.39" height="20">Sea-level rise from land water storage</text_box>
-				<aux label_side="right" x="205.398" y="1224.29" name="Sea level anomaly from LWS"/>
-				<aux x="138.338" y="1315.67" name="Sea level anomaly from\ngroundwater withdrawal"/>
-				<stock label_side="top" x="309.056" y="1432.34" name="Land water storage from\nwater impoundment"/>
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="550" x="69.2027" y="1236.59" width="250.39" height="20">Sea-level rise from land water storage</text_box>
+				<aux label_side="right" x="212.065" y="1350.96" name="Sea level anomaly from LWS"/>
+				<aux x="145.005" y="1442.34" name="Sea level anomaly from\ngroundwater withdrawal"/>
+				<stock label_side="top" x="315.723" y="1559.01" name="Land water storage from\nwater impoundment"/>
 				<connector uid="551" angle="87.0186">
 					<from>Sea_level_anomaly_from_groundwater_withdrawal</from>
 					<to>Sea_level_anomaly_from_LWS</to>
 				</connector>
-				<aux x="213.5" y="1297.67" name="Cubic metre to SLR"/>
+				<aux x="220.167" y="1424.34" name="Cubic metre to SLR"/>
 				<connector uid="552" angle="155.614">
 					<from>Cubic_metre_to_SLR</from>
 					<to>Sea_level_anomaly_from_groundwater_withdrawal</to>
 				</connector>
-				<flow x="379.306" y="1433.34" name="Water catchment in\nglobal dams">
+				<flow x="385.973" y="1560.01" name="Water catchment in\nglobal dams">
 					<pts>
-						<pt x="439.056" y="1433.34"/>
-						<pt x="331.556" y="1433.34"/>
+						<pt x="445.723" y="1560.01"/>
+						<pt x="338.223" y="1560.01"/>
 					</pts>
 				</flow>
-				<aux x="259.556" y="1459.78" name="Initial water storage from water impoundment"/>
-				<aux x="106.361" y="1211.83" name="initial sea level anomaly from LWS"/>
-				<connector uid="553" angle="2.80865">
+				<aux x="266.223" y="1586.45" name="Initial water storage from water impoundment"/>
+				<aux x="108.98" y="1332.96" name="initial sea level anomaly from LWS"/>
+				<connector uid="553" angle="5.49869">
 					<from>initial_sea_level_anomaly_from_LWS</from>
 					<to>Sea_level_anomaly_from_LWS</to>
 				</connector>
-				<aux x="277.556" y="1338.96" name="Sea level anomaly from water impoundment"/>
+				<aux x="284.223" y="1465.63" name="Sea level anomaly from water impoundment"/>
 				<connector uid="555" angle="114.823">
 					<from>Sea_level_anomaly_from_water_impoundment</from>
 					<to>Sea_level_anomaly_from_LWS</to>
@@ -2573,17 +4380,17 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>Cubic_metre_to_SLR</from>
 					<to>Sea_level_anomaly_from_water_impoundment</to>
 				</connector>
-				<aux x="340.556" y="1513.5" name="Water catchment per\nGW of hydropower"/>
+				<aux x="347.223" y="1640.17" name="Water catchment per\nGW of hydropower"/>
 				<connector uid="558" angle="51.0708">
 					<from>Water_catchment_per_GW_of_hydropower</from>
 					<to>Water_catchment_in_global_dams</to>
 				</connector>
-				<stock font_style="italic" font_weight="bold" x="66.6667" y="1415" name="total groundwater anomaly"/>
+				<stock font_style="italic" font_weight="bold" x="73.3334" y="1541.67" name="total groundwater anomaly"/>
 				<connector uid="559" angle="65.7256">
 					<from>total_groundwater_anomaly</from>
 					<to>Sea_level_anomaly_from_groundwater_withdrawal</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="475" y="1490" name="Installation of\nHydropower Capacity"/>
+				<aux font_style="italic" font_weight="bold" x="481.667" y="1616.67" name="Installation of\nHydropower Capacity"/>
 				<connector uid="560" angle="147.095">
 					<from>Installation_of_Hydropower_Capacity</from>
 					<to>Water_catchment_in_global_dams</to>
@@ -2592,124 +4399,143 @@ https://doi.org/10.1016/j.rser.2024.114439</doc>
 					<from>Sea_level_anomaly_from_LWS</from>
 					<to>Total_global_sea_level_anomaly</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="566.667" y="426.667" name="Surface Temperature Anomaly"/>
+				<aux font_style="italic" font_weight="bold" x="573.334" y="553.334" name="Surface Temperature Anomaly"/>
 				<connector uid="582" angle="298.74">
 					<from>Surface_Temperature_Anomaly</from>
 					<to>T_anomaly_for_SLR</to>
 				</connector>
-				<alias font_style="italic" label_side="top" uid="151" x="227.286" y="857.611" width="18" height="18">
+				<text_box font_weight="bold" text_decoration="underline" font_size="14pt" uid="585" x="328.139" y="63.444" width="224" height="39.23">Initialisation from FRIDA-Clim</text_box>
+				<aux label_side="bottom" x="408.974" y="190.214" name="initial sea level\nanomaly from GrIS DIS"/>
+				<aux label_side="bottom" x="526.286" y="231.778" name="Initial AntIS Radius"/>
+				<aux font_style="italic" font_weight="bold" x="683.333" y="181.41" name="selected climate case 1"/>
+				<aux font_style="italic" font_weight="bold" x="863.333" y="861.667" name="selected climate case 2"/>
+				<connector uid="588" angle="175.702">
+					<from>selected_climate_case_2</from>
+					<to>Sea_level_anomaly_from_Antarctic_Ice_Sheet</to>
+				</connector>
+				<connector uid="589" angle="357.88">
+					<from>selected_climate_case_2</from>
+					<to>AntIS_disintegration_volume_through_MICI</to>
+				</connector>
+				<alias font_style="italic" label_side="top" uid="151" x="233.953" y="984.278" width="18" height="18">
 					<of>T_anomaly_for_SLR</of>
 				</alias>
-				<alias font_style="italic" label_side="right" label_angle="315" uid="159" x="1095.98" y="243.139" width="18" height="18">
+				<alias font_style="italic" label_side="right" label_angle="315" uid="159" x="1102.65" y="369.806" width="18" height="18">
 					<of>T_anomaly_for_SLR</of>
 				</alias>
-				<alias font_style="italic" label_side="right" uid="174" x="1775.56" y="1061.41" width="18" height="18">
+				<alias font_style="italic" label_side="right" uid="174" x="1782.23" y="1188.08" width="18" height="18">
 					<of>T_anomaly_for_SLR</of>
 				</alias>
-				<alias font_style="italic" uid="233" x="813.727" y="1508.06" width="18" height="18">
+				<alias font_style="italic" uid="233" x="820.394" y="1634.73" width="18" height="18">
 					<of>AntIS_param_mu</of>
 				</alias>
-				<alias font_style="italic" label_side="right" uid="235" x="1455.56" y="1161.41" width="18" height="18">
+				<alias font_style="italic" label_side="right" uid="235" x="1462.23" y="1288.08" width="18" height="18">
 					<of>AntIS_param_mu</of>
 				</alias>
-				<alias font_style="italic" uid="231" x="1019.17" y="1003.25" width="18" height="18">
+				<alias font_style="italic" uid="231" x="1025.84" y="1129.92" width="18" height="18">
 					<of>AntIS_param_mu</of>
 				</alias>
-				<alias font_style="italic" label_side="top" uid="239" x="1329.14" y="1097.16" width="18" height="18">
+				<alias font_style="italic" label_side="top" uid="239" x="1335.81" y="1223.83" width="18" height="18">
 					<of>AntIS_param_slope</of>
 				</alias>
-				<alias font_style="italic" label_side="left" uid="237" x="1380.02" y="762.095" width="18" height="18">
+				<alias font_style="italic" label_side="left" uid="237" x="1386.69" y="888.762" width="18" height="18">
 					<of>AntIS_param_slope</of>
 				</alias>
-				<alias font_style="italic" label_side="left" uid="246" x="890.887" y="1015.29" width="18" height="18">
+				<alias font_style="italic" label_side="left" uid="246" x="897.554" y="1141.96" width="18" height="18">
 					<of>AntIS_param_slope</of>
 				</alias>
-				<alias font_style="italic" uid="241" x="640.542" y="1508.06" width="18" height="18">
+				<alias font_style="italic" uid="241" x="647.209" y="1634.73" width="18" height="18">
 					<of>AntIS_param_slope</of>
 				</alias>
-				<alias font_style="italic" uid="249" x="732.774" y="1508.06" width="18" height="18">
+				<alias font_style="italic" uid="249" x="739.441" y="1634.73" width="18" height="18">
 					<of>AntIS_param_b0</of>
 				</alias>
-				<alias font_style="italic" label_side="left" uid="254" x="1380.02" y="791.333" width="18" height="18">
+				<alias font_style="italic" label_side="left" uid="254" x="1386.69" y="918" width="18" height="18">
 					<of>AntIS_param_b0</of>
 				</alias>
-				<alias font_style="italic" label_side="bottom" uid="266" x="1256.82" y="1158.07" width="18" height="18">
+				<alias font_style="italic" label_side="bottom" uid="266" x="1263.49" y="1284.74" width="18" height="18">
 					<of>AntIS_param_b0</of>
 				</alias>
-				<alias font_style="italic" label_side="left" uid="256" x="896.377" y="1043.41" width="18" height="18">
+				<alias font_style="italic" label_side="left" uid="256" x="903.044" y="1170.08" width="18" height="18">
 					<of>AntIS_param_b0</of>
 				</alias>
-				<alias color="blue" background="white" font_style="italic" label_side="bottom" uid="262" x="1334" y="1164.81" width="36.6667" height="31.4394">
+				<alias color="blue" background="white" font_style="italic" label_side="bottom" uid="262" x="1340.67" y="1291.48" width="36.6667" height="31.4394">
 					<shape type="rectangle" width="45" height="35"/>
 					<of>AntIS_Radius</of>
 				</alias>
-				<alias color="blue" background="white" font_style="italic" label_side="bottom" uid="259" x="887.797" y="1490.71" width="45" height="35">
+				<alias color="blue" background="white" font_style="italic" label_side="bottom" uid="259" x="894.464" y="1617.38" width="45" height="35">
 					<shape type="rectangle" width="45" height="35"/>
 					<of>AntIS_Radius</of>
 				</alias>
-				<alias font_style="italic" uid="268" x="1419.82" y="1178.48" width="18" height="18">
+				<alias font_style="italic" uid="268" x="1426.49" y="1305.15" width="18" height="18">
 					<of>AntIS_epsilon1</of>
 				</alias>
-				<alias font_style="italic" uid="270" x="1134.5" y="1033.29" width="18" height="18">
+				<alias font_style="italic" uid="270" x="1141.17" y="1159.96" width="18" height="18">
 					<of>AntIS_delta</of>
 				</alias>
-				<alias font_style="italic" uid="272" x="1207" y="1143.41" width="18" height="18">
+				<alias font_style="italic" uid="272" x="1213.67" y="1270.08" width="18" height="18">
 					<of>AntIS_epsilon2</of>
 				</alias>
-				<alias font_style="italic" uid="274" x="607.834" y="1300.08" width="18" height="18">
+				<alias font_style="italic" uid="274" x="614.501" y="1426.75" width="18" height="18">
 					<of>AntIS_epsilon2</of>
 				</alias>
-				<alias color="blue" background="white" font_style="italic" uid="295" x="1181" y="1407.38" width="18" height="18">
+				<alias color="blue" background="white" font_style="italic" uid="295" x="1187.67" y="1534.05" width="18" height="18">
 					<shape type="circle" radius="18"/>
 					<of>UNIT_per_m</of>
 				</alias>
-				<alias font_style="italic" label_side="right" uid="297" x="1470.34" y="759.25" width="18" height="18">
+				<alias font_style="italic" label_side="right" uid="297" x="1477.01" y="885.917" width="18" height="18">
 					<of>UNIT_per_m</of>
 				</alias>
-				<alias font_style="italic" uid="299" x="943.667" y="1057.58" width="18" height="18">
+				<alias font_style="italic" uid="299" x="950.334" y="1184.25" width="18" height="18">
 					<of>UNIT_per_m</of>
 				</alias>
-				<alias font_style="italic" uid="301" x="744.964" y="1168.29" width="18" height="18">
+				<alias font_style="italic" uid="301" x="751.631" y="1294.96" width="18" height="18">
 					<of>UNIT_per_year</of>
 				</alias>
-				<alias font_style="italic" uid="303" x="1145.34" y="1428.41" width="18" height="18">
+				<alias font_style="italic" uid="303" x="1152.01" y="1555.08" width="18" height="18">
 					<of>UNIT_per_year</of>
 				</alias>
-				<alias font_style="italic" uid="305" x="1485.42" y="1085.08" width="18" height="18">
+				<alias font_style="italic" uid="305" x="1492.09" y="1211.75" width="18" height="18">
 					<of>UNIT_per_m</of>
 				</alias>
-				<alias font_style="italic" label_side="left" label_angle="225" uid="398" x="96.646" y="948.875" width="18" height="18">
+				<alias font_style="italic" label_side="left" label_angle="225" uid="398" x="103.313" y="1075.54" width="18" height="18">
 					<of>UNIT_Kelvin</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="492" x="1154.58" y="632.25" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="492" x="1161.25" y="758.917" width="18" height="18">
 					<of>Include_MICI_behaviour</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="496" x="85.3127" y="542.75" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="496" x="91.9794" y="669.417" width="18" height="18">
 					<of>scale_factor_thermosteric_SLR</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="right" label_angle="315" uid="502" x="245.286" y="994" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="right" label_angle="315" uid="502" x="251.953" y="1120.67" width="18" height="18">
 					<of>scale_factor_mountain_glaciers</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" uid="506" x="1095.98" y="469.778" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" uid="506" x="1102.65" y="596.445" width="18" height="18">
 					<of>scale_factor_Greenland_ice_sheet</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="510" x="1001.33" y="65.6107" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="510" x="1016.33" y="158.944" width="18" height="18">
 					<of>scale_factor_Greenland_ice_sheet</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="530" x="1276.63" y="589.125" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="top" uid="530" x="1283.3" y="715.792" width="18" height="18">
 					<of>scale_factor_Antarctic_ice_sheet</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="left" label_angle="225" uid="538" x="924.512" y="371.779" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="left" label_angle="225" uid="538" x="931.179" y="498.446" width="18" height="18">
 					<of>Include_MICI_behaviour</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="right" uid="539" x="1853.5" y="924.601" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" label_side="right" uid="539" x="1860.17" y="1051.27" width="18" height="18">
 					<of>scale_factor_Antarctic_ice_sheet</of>
 				</alias>
-				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" uid="546" x="1517.88" y="1425.38" width="18" height="18">
+				<alias color="#55AAFF" font_style="italic" font_color="#55AAFF" uid="546" x="1524.55" y="1552.05" width="18" height="18">
 					<of>scale_factor_Antarctic_ice_sheet</of>
 				</alias>
-				<alias font_style="italic" uid="547" x="947.042" y="1131.21" width="16.75" height="16.75">
+				<alias font_style="italic" uid="547" x="953.709" y="1257.88" width="16.75" height="16.75">
 					<of>Total_global_sea_level_anomaly</of>
+				</alias>
+				<alias font_style="italic" uid="584" x="704.667" y="861.667" width="18" height="18">
+					<of>initial_sea_level_anomaly_from_AntIS</of>
+				</alias>
+				<alias font_style="italic" uid="587" x="939.333" y="803.5" width="18" height="18">
+					<of>Initial_AntIS_Volume</of>
 				</alias>
 			</view>
 		</views>
