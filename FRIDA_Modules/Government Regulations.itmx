@@ -7,7 +7,7 @@
 		<name>Government Regulations</name>
 		<uuid>309c5090-8988-4575-b19f-edb0ca37529d</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="4.5" isee:build_number="4098" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.5" isee:build_number="4109" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<ai_information>
 		<status verified="false"/>
@@ -20,7 +20,7 @@
 	<dimensions>
 		<dim name="Run" size="11"/>
 	</dimensions>
-	<isee:prefs saved_runs="10" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
+	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="true" layer="model" isee:design="Deluxe Tabbed Blue Gold" isee:design_custom="false" interface_accessible="true" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
 		<isee:tag_styles>
 			<isee:tag_style tag="Assumption"/>
 			<isee:tag_style tag="Calibrated Output"/>
@@ -46,14 +46,20 @@
 			<isee:ignored_word>INvestment</isee:ignored_word>
 			<isee:ignored_word>Edenhofer</isee:ignored_word>
 			<isee:ignored_word>hydropower</isee:ignored_word>
+			<isee:ignored_word>C3S</isee:ignored_word>
+			<isee:ignored_word>CLD</isee:ignored_word>
+			<isee:ignored_word>Balancer</isee:ignored_word>
+			<isee:ignored_word>nitrous</isee:ignored_word>
+			<isee:ignored_word>incentivized</isee:ignored_word>
 		</isee:ignored_words>
+		<interface_template>/Users/bschoenberg/code/WorldTrans/clones/mustafa/WorldTransFRIDA-ILE/Template</interface_template>
 	</isee:prefs>
 	<isee:multiplayer_settings include_chat="true" allow_observers="false" advance_time_increment="1" max_advance_time_in_ms="0" model_stops_when_players_drop="false" observer_start_page="home_page" enabled="false"/>
 	<isee:time_formats default_format="Builtin">
 		<isee:time_format name="Builtin" type="adaptive"/>
 	</isee:time_formats>
 	<isee:number_format_extenders/>
-	<default_format scale_by="1"/>
+	<isee:default_format scale_by="1"/>
 	<model_units>
 		<unit name="Gh">
 			<eqn>Giga*h</eqn>
@@ -542,7 +548,7 @@ ELSE GF_non_agricultural_water_use_policy</eqn>
 				<eqn>0</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="inflation goal policy">
+			<aux name="inflation goal policy" access="output">
 				<doc>${Policy}
 </doc>
 				<eqn>0.02</eqn>
@@ -550,7 +556,7 @@ ELSE GF_non_agricultural_water_use_policy</eqn>
 				<range min="0" max="0.1"/>
 				<units>1/year</units>
 			</aux>
-			<aux name="unemployment goal policy">
+			<aux name="unemployment goal policy" access="output">
 				<doc>${Policy}
 </doc>
 				<eqn>0.05</eqn>
@@ -647,7 +653,7 @@ This policy lever simulates stricter/looser building standards for concrete stru
 				<range min="0" max="0.02"/>
 				<units>1/year</units>
 			</aux>
-			<aux name="government debt to\nGDP ratio target">
+			<aux name="government debt to\nGDP ratio target" access="output">
 				<doc>${Policy}
 </doc>
 				<eqn>1.2</eqn>
@@ -729,7 +735,7 @@ RAMP((government_debt_to_GDP_ratio_target-calibration_period_government_debt_to_
 				<range min="2025" max="2075"/>
 				<units>Year</units>
 			</aux>
-			<aux name="max change per year in inflation">
+			<aux name="max change per year in inflation" access="output">
 				<doc>${Policy}
 </doc>
 				<eqn>.001</eqn>
@@ -737,7 +743,7 @@ RAMP((government_debt_to_GDP_ratio_target-calibration_period_government_debt_to_
 				<range min="0.0001" max="0.02"/>
 				<units>1/year^2</units>
 			</aux>
-			<aux name="max change per year\nin unemployment">
+			<aux name="max change per year\nin unemployment" access="output">
 				<doc>${Policy}
 </doc>
 				<eqn>.001</eqn>
@@ -2419,14 +2425,23 @@ non_agricultural_water_use_start_year_first_level, non_agricultural_water_use_ti
 		<views>
 			<style>
 				<isee:loop_indicator text_align="left"/>
-				<slider color="#66CC66"/>
+				<graph font_color="white" font_size="14pt" axis_color="white" grid_color="white" axis_title_font_color="white" axis_title_font_size="14pt" axis_label_font_color="white" axis_label_font_size="12pt">
+					<isee:series_styles>
+						<isee:series_style color="#00FFB3" thickness="1"/>
+						<isee:series_style color="#FF6666" thickness="1"/>
+						<isee:series_style color="#CC66FF" thickness="1" pen_style="dotted"/>
+						<isee:series_style color="#66FFFF" thickness="1" pen_style="dashed"/>
+						<isee:series_style color="#FF9966" thickness="1"/>
+						<isee:series_style color="white" thickness="1" pen_style="dot_dashed"/>
+					</isee:series_styles>
+				</graph>
 				<isee:date_time_input background="white" font_size="10pt"/>
 				<isee:dropdown_input background="white"/>
 				<isee:data_manager_widget background="white" font_size="10pt"/>
 				<isee:chat_bot_widget background="white" font_size="10pt"/>
 				<gauge num_minor_ticks="11"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="5" isee:page_rows="7" isee:scroll_x="1842.5" isee:scroll_y="1000" zoom="40" isee:popup_graphs_are_comparative="false" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="6" isee:page_rows="9" isee:scroll_x="931.667" isee:scroll_y="1350" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style>
 					<graph>
 						<isee:series_styles>
@@ -2611,7 +2626,7 @@ N2O 1:273</text_box>
 					<from>share_of_public_investments_financed_by_rent_taxation</from>
 					<to>sum_of_public_investment_tax_share</to>
 				</connector>
-				<aux color="black" background="#FFD479" font_color="black" x="1453.09" y="475.654" name="growth rate target for\ngovernment public investments"/>
+				<aux color="black" background="#FFD479" font_color="black" x="1447.66" y="394.474" name="growth rate target for\ngovernment public investments"/>
 				<aux background="white" label_side="bottom" x="4270" y="1558.57" name="share of excess atmospheric\nCO2 stored"/>
 				<group locked="true" color="black" font_color="black" x="2482.33" y="75.285" width="751.311" height="659.022" name="Climate-driven default\ninsurance policy"/>
 				<aux color="black" background="#00F900" font_color="black" x="2832.31" y="452.554" name="fraction of loans insured"/>
@@ -3601,8 +3616,8 @@ ELSE 1</eqn>
 					</isee:series_styles>
 				</graph>
 			</style>
-			<aux font_weight="bold" font_size="9pt" x="306" y="123" name="input"/>
-			<aux font_size="9pt" x="310" y="229" name="output"/>
+			<aux font_weight="bold" x="306" y="123" name="input"/>
+			<aux x="310" y="229" name="output"/>
 			<connector uid="1" angle="259.046">
 				<from>input</from>
 				<to>output</to>
@@ -3669,7 +3684,7 @@ RAMP((second_level -first_level)/time_to_implement_second_level, start_year_firs
 				<units>widget</units>
 			</aux>
 		</variables>
-		<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+		<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 			<style>
 				<graph>
 					<isee:series_styles>
@@ -3689,13 +3704,13 @@ RAMP((second_level -first_level)/time_to_implement_second_level, start_year_firs
 					</isee:series_styles>
 				</graph>
 			</style>
-			<aux font_size="9pt" x="485.651" y="284.67" name="Output"/>
-			<aux font_weight="bold" font_size="9pt" x="298.833" y="212.5" name="start\nyear first level"/>
-			<aux font_weight="bold" font_size="9pt" x="298.833" y="311.5" name="time to implement first level"/>
-			<aux font_weight="bold" font_size="9pt" x="298.833" y="396.5" name="first level"/>
-			<aux font_weight="bold" font_size="9pt" x="670.83" y="214.5" name="time to\nstart second level"/>
-			<aux font_weight="bold" font_size="9pt" x="670.83" y="313.5" name="time to implement second level"/>
-			<aux font_weight="bold" font_size="9pt" x="670.83" y="398.5" name="second level"/>
+			<aux x="485.651" y="284.67" name="Output"/>
+			<aux font_weight="bold" x="298.833" y="212.5" name="start\nyear first level"/>
+			<aux font_weight="bold" x="298.833" y="311.5" name="time to implement first level"/>
+			<aux font_weight="bold" x="298.833" y="396.5" name="first level"/>
+			<aux font_weight="bold" x="670.83" y="214.5" name="time to\nstart second level"/>
+			<aux font_weight="bold" x="670.83" y="313.5" name="time to implement second level"/>
+			<aux font_weight="bold" x="670.83" y="398.5" name="second level"/>
 			<connector uid="1" angle="353.82">
 				<from>start_year_first_level</from>
 				<to>Output</to>
@@ -3753,12 +3768,30 @@ RAMP((second_level -first_level)/time_to_implement_second_level, start_year_firs
 				<units>widget</units>
 			</aux>
 		</variables>
-		<view isee:show_pages="false" background="white" page_width="768" page_height="576" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
-			<style/>
-			<aux font_size="9pt" x="485.651" y="284.67" name="Output"/>
-			<aux font_weight="bold" font_size="9pt" x="298.833" y="212.5" name="start\nyear first level"/>
-			<aux font_weight="bold" font_size="9pt" x="298.833" y="311.5" name="time to implement first level"/>
-			<aux font_weight="bold" font_size="9pt" x="298.833" y="396.5" name="first level"/>
+		<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<style>
+				<graph>
+					<isee:series_styles>
+						<isee:series_style color="blue" thickness="1"/>
+						<isee:series_style color="red" thickness="1"/>
+						<isee:series_style color="fuchsia" thickness="1"/>
+						<isee:series_style color="#008F44" thickness="1"/>
+						<isee:series_style color="#FF7F00" thickness="1"/>
+						<isee:series_style color="#7F00FF" thickness="1"/>
+						<isee:series_style color="#0CA0FF" thickness="1"/>
+						<isee:series_style color="lime" thickness="1"/>
+						<isee:series_style color="#FF007F" thickness="1"/>
+						<isee:series_style color="aqua" thickness="1"/>
+						<isee:series_style color="#F586FF" thickness="1"/>
+						<isee:series_style color="black" thickness="1"/>
+						<isee:series_style color="#C8C8C8" thickness="1"/>
+					</isee:series_styles>
+				</graph>
+			</style>
+			<aux x="485.651" y="284.67" name="Output"/>
+			<aux font_weight="bold" x="298.833" y="212.5" name="start\nyear first level"/>
+			<aux font_weight="bold" x="298.833" y="311.5" name="time to implement first level"/>
+			<aux font_weight="bold" x="298.833" y="396.5" name="first level"/>
 			<connector uid="1" angle="353.82">
 				<from>start_year_first_level</from>
 				<to>Output</to>
